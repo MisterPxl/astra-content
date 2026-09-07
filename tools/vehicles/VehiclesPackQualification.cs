@@ -91,13 +91,34 @@ public static class VehiclesPackQualification
         ContractValidation.Require(!duplicate.CanImport, "Import over the author sources must be blocked: " + string.Join("; ", duplicate.Errors));
         Debug.Log("VEHICLES_EXPORTED " + manifest.archive.fileCount + " files, " + manifest.archive.bytes + " bytes, SHA256=" + manifest.archive.sha256);
     }
+    public static void VerifyPublic()
+    {
+        var cacheRoot = Path.Combine(Root, "Library/VehiclesPublic-" + Guid.NewGuid().ToString("N"));
+        System.Threading.Tasks.Task.Run(async () =>
+        {
+            using (var timeout = new CancellationTokenSource(TimeSpan.FromSeconds(45)))
+            using (var cache = new ContentCache(cacheRoot, false, TimeSpan.FromSeconds(15)))
+            {
+                var client = new CatalogClient(cache);
+                var catalog = await client.Load(BaseUrl + "catalog.json", timeout.Token);
+                ContractValidation.Require(!catalog.Offline && catalog.Search("vehicles").Any(p => p.id == Id),
+                    "Public catalogue does not expose Vehicles online.");
+                var packs = await client.Resolve(catalog, Id, "1.0.0", timeout.Token);
+                ContractValidation.Require(packs.Count == 1 && packs[0].license == "MIT", "Unexpected public pack resolution.");
+                var manifest = packs[0];
+                var archive = await cache.Fetch(manifest.archive.url, manifest.archive.sha256, manifest.archive.bytes, timeout.Token);
+                PackArchive.Extract(archive, manifest, Path.Combine(cacheRoot, "stage"), timeout.Token);
+            }
+        }).GetAwaiter().GetResult();
+        Debug.Log("VEHICLES_PUBLIC_VERIFIED catalogue, resolution, HTTPS download and archive integrity via the real Hub client.");
+    }
     public static void Generate()
     {
         Setup();
         var type = AppDomain.CurrentDomain.GetAssemblies().Select(a => a.GetType("Motion.Vehicles.Boat.Editor.ArcadeBoatAssetsCreator"))
             .First(t => t != null);
         type.GetMethod("CreateAssets").Invoke(null, null);
-        // Remove obsolete embedded MonoScript objects by saving loaded scenes/prefabs.
+        // Remove obsolete embedded MonoScript objects by saving loaded scenes.
         const string root = "Assets/AstraContent/astra.vehicles";
         foreach (var path in Directory.GetFiles(Path.Combine(Root, root), "*.unity", SearchOption.AllDirectories))
         {

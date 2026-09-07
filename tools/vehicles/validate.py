@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate a Vehicles catalogue and its archive, including every hash and GUID reference."""
+"""Validate a Vehicles catalogue and its archive, including payload hashes and the GUID inventory."""
 import argparse
 import hashlib
 import json
