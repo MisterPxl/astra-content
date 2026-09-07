@@ -1,0 +1,25 @@
+{
+    "schemaVersion": 1,
+    "packs": [
+        {
+            "id": "astra.vehicles",
+            "displayName": "Vehicles",
+            "description": "Voitures, bateaux, avions légers et jets : physique, variantes arcade, clavier/manette, caméra, télémétrie et démos éditables.",
+            "category": "Gameplay",
+            "recommendedVersion": "1.0.0",
+            "manifestUrl": "https://raw.githubusercontent.com/MisterPxl/astra-content/main/manifests/astra.vehicles/1.0.0.json",
+            "manifestSha256": "e4faebe9b47905b22efa95eac52dd4a46c776e29c5cc4be946c5e9a5adee5717",
+            "tags": [
+                "vehicles",
+                "car",
+                "boat",
+                "plane",
+                "arcade",
+                "physics",
+                "demo",
+                "urp"
+            ],
+            "compressedBytes": 233714
+        }
+    ]
+}

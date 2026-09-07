@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "astra.vehicles",
+  "version": "1.0.0",
+  "displayName": "Vehicles",
+  "description": "Voitures, bateaux, avions légers et jets : physique, variantes arcade, clavier/manette, caméra, télémétrie et démos éditables.",
+  "category": "Gameplay",
+  "tags": [
+    "vehicles",
+    "car",
+    "boat",
+    "plane",
+    "arcade",
+    "physics",
+    "demo",
+    "urp"
+  ],
+  "compatibility": {
+    "minimumUnity": "6000.4.0f1",
+    "maximumUnityExclusive": "6000.4.0f2",
+    "testedUnity": [
+      "6000.4.0f1"
+    ],
+    "renderPipelines": [
+      "urp"
+    ],
+    "platforms": [
+      "StandaloneOSX"
+    ]
+  },
+  "contentDependencies": [],
+  "projectPrerequisites": [
+    {
+      "kind": "capability",
+      "name": "input-system-enabled"
+    },
+    {
+      "kind": "package",
+      "name": "com.unity.inputsystem",
+      "minimumVersion": "1.19.0",
+      "maximumVersionExclusive": "1.19.1"
+    },
+    {
+      "kind": "package",
+      "name": "com.unity.render-pipelines.universal",
+      "minimumVersion": "17.4.0",
+      "maximumVersionExclusive": "17.4.1"
+    },
+    {
+      "kind": "package",
+      "name": "com.unity.modules.audio",
+      "minimumVersion": "1.0.0"
+    },
+    {
+      "kind": "package",
+      "name": "com.unity.modules.physics",
+      "minimumVersion": "1.0.0"
+    },
+    {
+      "kind": "package",
+      "name": "com.unity.modules.imgui",
+      "minimumVersion": "1.0.0"
+    }
+  ],
+  "containsCode": true,
+  "license": "MIT",
+  "attribution": "Copyright (c) 2026 Alexis Gomes. Code et modèles procéduraux issus de MotionTest ; licence MIT.",
+  "sources": [],
+  "releaseNotes": "Première version : huit prefabs, trois scènes, quatre assemblies runtime et outils de génération. Références Unity des classes eau, atmosphère et contrôle de vol réparées pour un import autonome."
+}

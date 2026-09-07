@@ -24,3 +24,7 @@ restent des prérequis et ne sont pas ajoutés automatiquement par le Hub.
 
 Le pack Adventure est une seule unité `astra.adventure`. Ses assemblies internes
 peuvent rester distinctes sans devenir plusieurs entrées de catalogue.
+
+Le pack Vehicles suit le même principe : une seule unité `astra.vehicles` pour
+Core, Car, Boat et Plane. Sa recette d'assemblage et de qualification est dans
+[`packs/vehicles/README.md`](packs/vehicles/README.md).

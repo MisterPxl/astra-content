@@ -1,0 +1,23 @@
+{
+    "schemaVersion": 1,
+    "revision": "vehicles-v1",
+    "categories": [
+        "Gameplay"
+    ],
+    "pages": [
+        {
+            "url": "https://raw.githubusercontent.com/MisterPxl/astra-content/main/catalogs/vehicles-v1/pages/gameplay.json",
+            "sha256": "b08194fb5619f5f3a5a998aec721ba1f4a9cce4e02a2d3f316b0a8a0fe10bd92",
+            "bytes": 887
+        }
+    ],
+    "versions": [
+        {
+            "url": "https://raw.githubusercontent.com/MisterPxl/astra-content/main/manifests/astra.vehicles/1.0.0.json",
+            "sha256": "e4faebe9b47905b22efa95eac52dd4a46c776e29c5cc4be946c5e9a5adee5717",
+            "bytes": 2642,
+            "id": "astra.vehicles",
+            "version": "1.0.0"
+        }
+    ]
+}
