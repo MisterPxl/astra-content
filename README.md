@@ -1,23 +1,18 @@
 # Astra Content
 
-Catalogue privé des packs éditables pour **Astra Content Hub** dans Unity.
+Catalogue public des packs éditables pour **Astra Content Hub** dans Unity.
 
-## Accès au catalogue
+## Connecter le Hub
 
-Le dépôt est privé et seul le compte propriétaire `MisterPxl` figure parmi ses
-collaborateurs. L’URL du catalogue est :
+Dans **Tools > Astra > Content Hub > Open**, renseigner cette URL de catalogue :
 
 ```text
 https://raw.githubusercontent.com/MisterPxl/astra-content/main/catalog.json
 ```
 
-Cette URL exige désormais une authentification GitHub. Le Hub actuel prend en
-charge les catalogues publics HTTPS et les fixtures locales ; son accès à ce
-dépôt privé reste à implémenter. Le catalogue local reste utilisable pendant ce
-temps. Ne pas intégrer de jeton dans une URL ou dans les fichiers versionnés.
-
-Le Hub installe les packs éditables sous `Assets/AstraContent/<pack-id>/`, avec
-leurs métadonnées Unity.
+Les métadonnées sont accessibles en HTTPS, sans compte GitHub. Le Hub télécharge
+les archives uniquement à la demande et installe les fichiers éditables sous
+`Assets/AstraContent/<pack-id>/`, avec leurs métadonnées Unity.
 
 ## État du catalogue
 
@@ -37,7 +32,7 @@ restent à finaliser. Aucun candidat de test local n’est distribué par ce dé
 - **GitHub Releases** : archives ZIP des packs, hors de l’historique Git.
 
 Chaque pack déclarera sa licence, ses attributions et ses prérequis dans son
-manifeste et ses notices incluses. La visibilité privée du dépôt est indépendante
-du choix de licence pour le code des futurs packs.
+manifeste et ses notices incluses. La visibilité publique de ce dépôt ne choisit
+pas une licence pour le code des futurs packs.
 
 Voir [le guide de publication](CONTRIBUTING.md) et [les releases](https://github.com/MisterPxl/astra-content/releases).
