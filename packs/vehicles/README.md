@@ -63,3 +63,7 @@ Unity reçoivent des GUID lors de la génération. Le test de déterminisme comp
 les deux ZIP produits à partir d'un même état auteur finalisé.
 
 Voir [le bilan de validation](Validation.md) et le [guide de publication](../../CONTRIBUTING.md).
+
+Après publication, `VehiclesPackQualification.VerifyPublic` dans un projet de
+qualification contrôle le catalogue public, résout `astra.vehicles@1.0.0`,
+télécharge l'archive avec le client réel du Hub et vérifie son extraction.

@@ -15,6 +15,8 @@ Qualification du 7 septembre 2026 sur macOS, Unity 6000.4.0f1, Input System
 | Scripts, références sérialisées, matériaux, configurations, GUID | Valides ; aucun script manquant ni GUID dupliqué |
 | Tests EditMode Motion | 34 réussis, 0 échec |
 | Tests PlayMode Astra Vehicles | 2 réussis, 0 échec |
+| Téléchargement public sans authentification | Taille et SHA-256 identiques à l’archive qualifiée |
+| Client réel du Hub sur le catalogue public | Lecture en ligne, résolution, téléchargement HTTPS et extraction vérifiés |
 
 Les tests PlayMode instancient chacun des huit prefabs pendant 100 pas de physique,
 vérifient les scripts et les valeurs finies de position/vitesse, puis chargent les
