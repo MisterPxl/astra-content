@@ -9,13 +9,16 @@ FBX, textures volumineuses, caches et ZIP restent hors de l’historique Git.
    et le document `pack.json` doivent correspondre ; ne pas publier le candidat
    local avec ses adresses `127.0.0.1` ou sa notice de licence provisoire.
 3. Créer une release par pack/version, par exemple `adventure-v1.0.0`, et joindre
-   le ZIP. Télécharger l’archive sans authentification et vérifier son SHA-256.
+   le ZIP. Télécharger l’archive avec un accès authentifié et vérifier son SHA-256.
+   L’import distant depuis ce dépôt privé nécessite d’abord une prise en charge
+   de l’authentification dans le Hub.
 4. Ajouter le manifeste immuable sous `manifests/<id>/<version>.json`, puis les
    pages et l’index d’une nouvelle révision sous `catalogs/<revision>/`.
 5. Valider les JSON avec les schémas du dossier `schemas/`, contrôler les tailles,
    empreintes et URLs, puis tester leur lecture par le Hub.
 6. Mettre à jour `catalog.json` en dernier, lorsque toutes les ressources sont
-   accessibles publiquement. Conserver les anciennes révisions et versions.
+   accessibles avec l’authentification prévue pour le Hub. Conserver les anciennes
+   révisions et versions.
 
 Une version publiée est immuable : ne pas remplacer son ZIP, son manifeste ou
 les pages d’une révision déjà référencée. Publier une nouvelle version/révision.
