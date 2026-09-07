@@ -1,0 +1,212 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Astra Content Hub V1 receipt",
+  "type": "object",
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "id": {
+      "type": "string",
+      "maxLength": 100,
+      "pattern": "^[a-z][a-z0-9]*(?:[.-][a-z0-9]+)+$"
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^(0|[1-9]\\d*)\\.(0|[1-9]\\d*)\\.(0|[1-9]\\d*)$"
+    },
+    "archiveSha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "destination": {
+      "type": "string",
+      "pattern": "^Assets/AstraContent/"
+    },
+    "installedUtc": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "state": {
+      "enum": [
+        "AwaitingUnityImport",
+        "Imported",
+        "ImportedWithErrors"
+      ]
+    },
+    "contentDependencies": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "maxLength": 100,
+            "pattern": "^[a-z][a-z0-9]*(?:[.-][a-z0-9]+)+$"
+          },
+          "version": {
+            "type": "string",
+            "pattern": "^(0|[1-9]\\d*)\\.(0|[1-9]\\d*)\\.(0|[1-9]\\d*)$"
+          }
+        },
+        "required": [
+          "id",
+          "version"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "files": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "path": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 220,
+            "pattern": "^(?!/)(?!.*(?:^|/)\\.)(?!.*\\\\)[^:<>\"|?*]+$"
+          },
+          "bytes": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 8589934592
+          },
+          "sha256": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$"
+          },
+          "guid": {
+            "anyOf": [
+              {
+                "type": "string",
+                "pattern": "^[a-f0-9]{32}$"
+              },
+              {
+                "const": ""
+              }
+            ]
+          }
+        },
+        "required": [
+          "path",
+          "bytes",
+          "sha256",
+          "guid"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "normalizedMetaPaths": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "installedFiles": {
+      "anyOf": [
+        {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "path": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 220,
+                "pattern": "^(?!/)(?!.*(?:^|/)\\.)(?!.*\\\\)[^:<>\"|?*]+$"
+              },
+              "bytes": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 8589934592
+              },
+              "sha256": {
+                "type": "string",
+                "pattern": "^[a-f0-9]{64}$"
+              },
+              "guid": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "pattern": "^[a-f0-9]{32}$"
+                  },
+                  {
+                    "const": ""
+                  }
+                ]
+              }
+            },
+            "required": [
+              "path",
+              "bytes",
+              "sha256",
+              "guid"
+            ],
+            "additionalProperties": false
+          }
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "metaBaselines": {
+      "anyOf": [
+        {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "path": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 220,
+                "pattern": "^(?!/)(?!.*(?:^|/)\\.)(?!.*\\\\)[^:<>\"|?*]+$"
+              },
+              "canonicalSha256": {
+                "type": "string",
+                "pattern": "^[a-f0-9]{64}$"
+              }
+            },
+            "required": [
+              "path",
+              "canonicalSha256"
+            ],
+            "additionalProperties": false
+          }
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "rootMetaSha256": {
+      "anyOf": [
+        {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        {
+          "const": ""
+        },
+        {
+          "type": "null"
+        }
+      ]
+    }
+  },
+  "required": [
+    "schemaVersion",
+    "id",
+    "version",
+    "archiveSha256",
+    "destination",
+    "installedUtc",
+    "state",
+    "contentDependencies",
+    "files",
+    "normalizedMetaPaths"
+  ],
+  "additionalProperties": false
+}

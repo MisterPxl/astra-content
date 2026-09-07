@@ -1,0 +1,232 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Astra Content Hub V1 pack",
+  "type": "object",
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "id": {
+      "type": "string",
+      "maxLength": 100,
+      "pattern": "^[a-z][a-z0-9]*(?:[.-][a-z0-9]+)+$"
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^(0|[1-9]\\d*)\\.(0|[1-9]\\d*)\\.(0|[1-9]\\d*)$"
+    },
+    "displayName": {
+      "type": "string",
+      "minLength": 1
+    },
+    "description": {
+      "type": "string",
+      "minLength": 1
+    },
+    "category": {
+      "type": "string",
+      "minLength": 1
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "compatibility": {
+      "type": "object",
+      "properties": {
+        "minimumUnity": {
+          "type": "string",
+          "pattern": "^\\d+\\.\\d+\\.\\d+[abfp]\\d+$"
+        },
+        "maximumUnityExclusive": {
+          "type": "string",
+          "pattern": "^\\d+\\.\\d+\\.\\d+[abfp]\\d+$"
+        },
+        "testedUnity": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^\\d+\\.\\d+\\.\\d+[abfp]\\d+$"
+          },
+          "minItems": 1
+        },
+        "renderPipelines": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "platforms": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      },
+      "required": [
+        "minimumUnity",
+        "maximumUnityExclusive",
+        "testedUnity",
+        "renderPipelines",
+        "platforms"
+      ],
+      "additionalProperties": false
+    },
+    "contentDependencies": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "maxLength": 100,
+            "pattern": "^[a-z][a-z0-9]*(?:[.-][a-z0-9]+)+$"
+          },
+          "version": {
+            "type": "string",
+            "pattern": "^(0|[1-9]\\d*)\\.(0|[1-9]\\d*)\\.(0|[1-9]\\d*)$"
+          }
+        },
+        "required": [
+          "id",
+          "version"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "projectPrerequisites": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "kind": {
+            "enum": [
+              "package",
+              "assembly",
+              "capability"
+            ]
+          },
+          "name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minimumVersion": {
+            "anyOf": [
+              {
+                "type": "string",
+                "pattern": "^(0|[1-9]\\d*)\\.(0|[1-9]\\d*)\\.(0|[1-9]\\d*)$"
+              },
+              {
+                "const": ""
+              }
+            ]
+          },
+          "maximumVersionExclusive": {
+            "anyOf": [
+              {
+                "type": "string",
+                "pattern": "^(0|[1-9]\\d*)\\.(0|[1-9]\\d*)\\.(0|[1-9]\\d*)$"
+              },
+              {
+                "const": ""
+              }
+            ]
+          }
+        },
+        "required": [
+          "kind",
+          "name",
+          "minimumVersion",
+          "maximumVersionExclusive"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "containsCode": {
+      "type": "boolean"
+    },
+    "license": {
+      "type": "string",
+      "minLength": 1
+    },
+    "attribution": {
+      "type": "string"
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "releaseNotes": {
+      "type": "string"
+    },
+    "files": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "path": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 220,
+            "pattern": "^(?!/)(?!.*(?:^|/)\\.)(?!.*\\\\)[^:<>\"|?*]+$"
+          },
+          "bytes": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 8589934592
+          },
+          "sha256": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$"
+          },
+          "guid": {
+            "anyOf": [
+              {
+                "type": "string",
+                "pattern": "^[a-f0-9]{32}$"
+              },
+              {
+                "const": ""
+              }
+            ]
+          }
+        },
+        "required": [
+          "path",
+          "bytes",
+          "sha256",
+          "guid"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 1,
+      "maxItems": 100000
+    }
+  },
+  "required": [
+    "schemaVersion",
+    "id",
+    "version",
+    "displayName",
+    "description",
+    "category",
+    "tags",
+    "compatibility",
+    "contentDependencies",
+    "projectPrerequisites",
+    "containsCode",
+    "license",
+    "attribution",
+    "sources",
+    "releaseNotes",
+    "files"
+  ],
+  "additionalProperties": false
+}

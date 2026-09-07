@@ -1,0 +1,10 @@
+*.zip
+*.unitypackage
+*.fbx
+*.blend
+.DS_Store
+__pycache__/
+.venv/
+Library/
+Temp/
+Logs/

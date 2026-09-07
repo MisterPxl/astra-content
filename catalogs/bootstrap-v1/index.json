@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "revision": "bootstrap-v1",
+  "categories": [
+    "Gameplay"
+  ],
+  "pages": [
+    {
+      "url": "https://raw.githubusercontent.com/MisterPxl/astra-content/main/catalogs/bootstrap-v1/pages/gameplay.json",
+      "sha256": "ff1713eee247570623c150461cae7785b78c9defeb3c3b532c00c48e8d013607",
+      "bytes": 40
+    }
+  ],
+  "versions": []
+}
