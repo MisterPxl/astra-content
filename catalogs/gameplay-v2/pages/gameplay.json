@@ -1,0 +1,74 @@
+{
+    "schemaVersion": 1,
+    "packs": [
+        {
+            "id": "astra.adventure",
+            "displayName": "Adventure",
+            "description": "Contrôleur action-aventure, inputs clavier/manette et démo humanoïde animée avec caméra, escalade, épée et arc.",
+            "category": "Gameplay",
+            "recommendedVersion": "1.0.0",
+            "manifestUrl": "https://raw.githubusercontent.com/MisterPxl/astra-content/main/manifests/astra.adventure/1.0.0.json",
+            "manifestSha256": "06f03dcc12b7c19ce79096eaf41e8ba5eb6055972e725a7e83ea004a12d2a3f3",
+            "tags": [
+                "controller",
+                "character",
+                "animation",
+                "demo",
+                "urp"
+            ],
+            "compressedBytes": 15984351,
+            "thumbnail": {
+                "url": "https://raw.githubusercontent.com/MisterPxl/astra-content/main/thumbnails/astra.adventure/icon.png",
+                "sha256": "9d73eccaee1535b7698d31ff695d8dfca52fdf8efc319ab99584b15d83b4c59d",
+                "bytes": 156194
+            }
+        },
+        {
+            "id": "astra.dialogue",
+            "displayName": "Astra Dialogue",
+            "description": "Éditeur de conversations à bulles, conditions de jeu extensibles, échanges Excel et présentation chaleureuse avec démo au verger.",
+            "category": "Gameplay",
+            "recommendedVersion": "0.1.2",
+            "manifestUrl": "https://raw.githubusercontent.com/MisterPxl/astra-content/main/manifests/astra.dialogue/0.1.2.json",
+            "manifestSha256": "16d1d3dc801c375b43d1a8036a8096e9fc47a2133ece4988b3e4036b793abc62",
+            "tags": [
+                "dialogue",
+                "narrative",
+                "editor",
+                "conditions",
+                "xlsx"
+            ],
+            "compressedBytes": 94494,
+            "thumbnail": {
+                "url": "https://raw.githubusercontent.com/MisterPxl/astra-content/main/thumbnails/astra.dialogue/icon.png",
+                "sha256": "29f2e54b04713f5f519e0f7b68a1dfe59a88f24f4f8b27b4fd8f4d59acd39d9e",
+                "bytes": 4483
+            }
+        },
+        {
+            "id": "astra.vehicles",
+            "displayName": "Vehicles",
+            "description": "Voitures, bateaux, avions légers et jets : physique, variantes arcade, clavier/manette, caméra, télémétrie et démos éditables.",
+            "category": "Gameplay",
+            "recommendedVersion": "1.0.0",
+            "manifestUrl": "https://raw.githubusercontent.com/MisterPxl/astra-content/main/manifests/astra.vehicles/1.0.0.json",
+            "manifestSha256": "e4faebe9b47905b22efa95eac52dd4a46c776e29c5cc4be946c5e9a5adee5717",
+            "tags": [
+                "vehicles",
+                "car",
+                "boat",
+                "plane",
+                "arcade",
+                "physics",
+                "demo",
+                "urp"
+            ],
+            "compressedBytes": 233714,
+            "thumbnail": {
+                "url": "https://raw.githubusercontent.com/MisterPxl/astra-content/main/thumbnails/astra.vehicles/icon.png",
+                "sha256": "f0adcec07a019f38b92f2396fb4a7e3f17c8ca68f28d0c24d3211dafa5dba939",
+                "bytes": 139048
+            }
+        }
+    ]
+}

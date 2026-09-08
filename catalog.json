@@ -1,6 +1,6 @@
 {
     "schemaVersion": 1,
-    "revision": "gameplay-v1",
-    "indexUrl": "https://raw.githubusercontent.com/MisterPxl/astra-content/main/catalogs/gameplay-v1/index.json",
-    "indexSha256": "ddafb59d6b20950e074bc6282987eb33a85f32d993d8fa923ea45ebc27b484be"
+    "revision": "gameplay-v2",
+    "indexUrl": "https://raw.githubusercontent.com/MisterPxl/astra-content/main/catalogs/gameplay-v2/index.json",
+    "indexSha256": "7b48042fbd6e88458f17dabe0feddd6ef2da01b3d5742846ef353632329c714f"
 }

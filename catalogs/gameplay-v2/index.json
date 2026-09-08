@@ -1,0 +1,37 @@
+{
+    "schemaVersion": 1,
+    "revision": "gameplay-v2",
+    "categories": [
+        "Gameplay"
+    ],
+    "pages": [
+        {
+            "url": "https://raw.githubusercontent.com/MisterPxl/astra-content/main/catalogs/gameplay-v2/pages/gameplay.json",
+            "sha256": "391dc085126b137cf598452e29491dbe27c07f3c31d371fe017c6a0b1082ff6b",
+            "bytes": 3311
+        }
+    ],
+    "versions": [
+        {
+            "url": "https://raw.githubusercontent.com/MisterPxl/astra-content/main/manifests/astra.adventure/1.0.0.json",
+            "sha256": "06f03dcc12b7c19ce79096eaf41e8ba5eb6055972e725a7e83ea004a12d2a3f3",
+            "bytes": 3066,
+            "id": "astra.adventure",
+            "version": "1.0.0"
+        },
+        {
+            "url": "https://raw.githubusercontent.com/MisterPxl/astra-content/main/manifests/astra.dialogue/0.1.2.json",
+            "sha256": "16d1d3dc801c375b43d1a8036a8096e9fc47a2133ece4988b3e4036b793abc62",
+            "bytes": 2835,
+            "id": "astra.dialogue",
+            "version": "0.1.2"
+        },
+        {
+            "url": "https://raw.githubusercontent.com/MisterPxl/astra-content/main/manifests/astra.vehicles/1.0.0.json",
+            "sha256": "e4faebe9b47905b22efa95eac52dd4a46c776e29c5cc4be946c5e9a5adee5717",
+            "bytes": 2642,
+            "id": "astra.vehicles",
+            "version": "1.0.0"
+        }
+    ]
+}

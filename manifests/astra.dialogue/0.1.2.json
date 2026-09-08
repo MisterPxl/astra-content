@@ -1,0 +1,77 @@
+{
+    "schemaVersion": 1,
+    "id": "astra.dialogue",
+    "version": "0.1.2",
+    "displayName": "Astra Dialogue",
+    "description": "Éditeur de conversations à bulles, conditions de jeu extensibles, échanges Excel et présentation chaleureuse avec démo au verger.",
+    "category": "Gameplay",
+    "tags": [
+        "dialogue",
+        "narrative",
+        "editor",
+        "conditions",
+        "xlsx"
+    ],
+    "compatibility": {
+        "minimumUnity": "6000.4.0f1",
+        "maximumUnityExclusive": "6000.4.0f2",
+        "testedUnity": [
+            "6000.4.0f1"
+        ],
+        "renderPipelines": [],
+        "platforms": [
+            "StandaloneOSX"
+        ]
+    },
+    "contentDependencies": [],
+    "projectPrerequisites": [
+        {
+            "kind": "package",
+            "name": "com.unity.modules.uielements",
+            "minimumVersion": "1.0.0",
+            "maximumVersionExclusive": ""
+        },
+        {
+            "kind": "package",
+            "name": "com.unity.modules.ui",
+            "minimumVersion": "1.0.0",
+            "maximumVersionExclusive": ""
+        },
+        {
+            "kind": "package",
+            "name": "com.unity.modules.jsonserialize",
+            "minimumVersion": "1.0.0",
+            "maximumVersionExclusive": ""
+        },
+        {
+            "kind": "package",
+            "name": "com.unity.modules.imgui",
+            "minimumVersion": "1.0.0",
+            "maximumVersionExclusive": ""
+        },
+        {
+            "kind": "package",
+            "name": "com.unity.modules.audio",
+            "minimumVersion": "1.0.0",
+            "maximumVersionExclusive": ""
+        },
+        {
+            "kind": "package",
+            "name": "com.unity.modules.imageconversion",
+            "minimumVersion": "1.0.0",
+            "maximumVersionExclusive": ""
+        }
+    ],
+    "containsCode": true,
+    "license": "MIT",
+    "attribution": "Copyright (c) 2026 Alexis Gomes. Code, formes de démonstration et syllabes synthétiques Astra sous licence MIT. Voir LICENSES/LICENSE.txt.",
+    "sources": [],
+    "releaseNotes": "Correctifs de revue 0.1.2 : validation alignée sur les ports, raccourcis et undo du studio, import « nouvelle conversation » par feuille, aperçu d'import avec dry-run, lecture de classeur plus stricte, récupérations d'import sous Library, purge des baselines, textes d'interface résolus et feuille de style de présentation. Première publication publique sous licence MIT ; qualification Windows à réaliser.",
+    "archive": {
+        "url": "https://github.com/MisterPxl/astra-content/releases/download/dialogue-v0.1.2/astra.dialogue-0.1.2.zip",
+        "sha256": "f9796c54522bb0f3b065ae851c873b3d412becdd76d8332648477d0b82b3d30f",
+        "bytes": 94494,
+        "expandedBytes": 301251,
+        "fileCount": 91
+    }
+}

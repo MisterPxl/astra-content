@@ -21,6 +21,12 @@ contrôleur action-aventure, Input System et une démo humanoïde animée avec c
 escalade, épée et arc. Le code et la démo Astra sont distribués sous **licence MIT** ;
 les modèles, textures et animations Quaternius conservent leurs notices **CC0-1.0**.
 
+**[Dialogue 0.1.2](packs/dialogue/README.md)** (`astra.dialogue`) regroupe Dialogue
+Studio (éditeur de conversations à bulles), un moteur d'exécution avec conditions et
+actions extensibles, des échanges XLSX à comparaison à trois versions, une présentation
+UI Toolkit et la démo du verger. Code et démo distribués sous **licence MIT** ; indifférent
+au pipeline de rendu, sans Input System.
+
 **[Vehicles 1.0.0](packs/vehicles/README.md)** (`astra.vehicles`) regroupe les
 voitures, bateaux, avions légers et jets de MotionTest, avec leurs variantes
 arcade : huit prefabs, trois scènes, physique, clavier/manette, caméra et télémétrie.
