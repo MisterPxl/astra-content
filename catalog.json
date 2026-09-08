@@ -1,6 +1,6 @@
 {
     "schemaVersion": 1,
-    "revision": "vehicles-v1",
-    "indexUrl": "https://raw.githubusercontent.com/MisterPxl/astra-content/main/catalogs/vehicles-v1/index.json",
-    "indexSha256": "7c9d5de9b4e4834ccb4f464d598752399802383fc0235e52d93789019e8dbf44"
+    "revision": "gameplay-v1",
+    "indexUrl": "https://raw.githubusercontent.com/MisterPxl/astra-content/main/catalogs/gameplay-v1/index.json",
+    "indexSha256": "ddafb59d6b20950e074bc6282987eb33a85f32d993d8fa923ea45ebc27b484be"
 }

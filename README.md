@@ -16,6 +16,11 @@ les archives uniquement à la demande et installe les fichiers éditables sous
 
 ## État du catalogue
 
+**[Adventure 1.0.0](packs/adventure/README.md)** (`astra.adventure`) regroupe un
+contrôleur action-aventure, Input System et une démo humanoïde animée avec caméra,
+escalade, épée et arc. Le code et la démo Astra sont distribués sous **licence MIT** ;
+les modèles, textures et animations Quaternius conservent leurs notices **CC0-1.0**.
+
 **[Vehicles 1.0.0](packs/vehicles/README.md)** (`astra.vehicles`) regroupe les
 voitures, bateaux, avions légers et jets de MotionTest, avec leurs variantes
 arcade : huit prefabs, trois scènes, physique, clavier/manette, caméra et télémétrie.
@@ -25,16 +30,13 @@ Prérequis qualifiés : **Unity 6000.4.0f1**, **URP 17.4.0**, **Input System 1.1
 backend Input System actif et cible macOS. Les prérequis sont à préparer avant
 l'import ; le Hub ne modifie pas les packages ni les réglages du projet.
 
-Le pack `astra.adventure` reste prévu ; sa licence de code et sa publication
-restent à finaliser.
-
 ## Organisation
 
 - `catalog.json` : pointeur vers la révision courante.
 - `catalogs/<revision>/` : index et pages immuables de métadonnées.
 - `schemas/` : contrats JSON V1 du Hub.
 - `manifests/<pack-id>/<version>.json` : manifestes des versions publiées.
-- `thumbnails/<pack-id>/` : futurs aperçus légers.
+- `thumbnails/<pack-id>/` : aperçus légers affichés dans le Hub.
 - **GitHub Releases** : archives ZIP des packs, hors de l’historique Git.
 
 Chaque pack déclare sa licence, ses attributions et ses prérequis dans son

@@ -1,0 +1,52 @@
+{
+    "schemaVersion": 1,
+    "packs": [
+        {
+            "id": "astra.adventure",
+            "displayName": "Adventure",
+            "description": "Contrôleur action-aventure, inputs clavier/manette et démo humanoïde animée avec caméra, escalade, épée et arc.",
+            "category": "Gameplay",
+            "recommendedVersion": "1.0.0",
+            "manifestUrl": "https://raw.githubusercontent.com/MisterPxl/astra-content/main/manifests/astra.adventure/1.0.0.json",
+            "manifestSha256": "06f03dcc12b7c19ce79096eaf41e8ba5eb6055972e725a7e83ea004a12d2a3f3",
+            "tags": [
+                "controller",
+                "character",
+                "animation",
+                "demo",
+                "urp"
+            ],
+            "compressedBytes": 15984351,
+            "thumbnail": {
+                "url": "https://raw.githubusercontent.com/MisterPxl/astra-content/main/thumbnails/astra.adventure/icon.png",
+                "sha256": "9d73eccaee1535b7698d31ff695d8dfca52fdf8efc319ab99584b15d83b4c59d",
+                "bytes": 156194
+            }
+        },
+        {
+            "id": "astra.vehicles",
+            "displayName": "Vehicles",
+            "description": "Voitures, bateaux, avions légers et jets : physique, variantes arcade, clavier/manette, caméra, télémétrie et démos éditables.",
+            "category": "Gameplay",
+            "recommendedVersion": "1.0.0",
+            "manifestUrl": "https://raw.githubusercontent.com/MisterPxl/astra-content/main/manifests/astra.vehicles/1.0.0.json",
+            "manifestSha256": "e4faebe9b47905b22efa95eac52dd4a46c776e29c5cc4be946c5e9a5adee5717",
+            "tags": [
+                "vehicles",
+                "car",
+                "boat",
+                "plane",
+                "arcade",
+                "physics",
+                "demo",
+                "urp"
+            ],
+            "compressedBytes": 233714,
+            "thumbnail": {
+                "url": "https://raw.githubusercontent.com/MisterPxl/astra-content/main/thumbnails/astra.vehicles/icon.png",
+                "sha256": "f0adcec07a019f38b92f2396fb4a7e3f17c8ca68f28d0c24d3211dafa5dba939",
+                "bytes": 139048
+            }
+        }
+    ]
+}

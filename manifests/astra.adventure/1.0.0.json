@@ -1,0 +1,89 @@
+{
+    "schemaVersion": 1,
+    "id": "astra.adventure",
+    "version": "1.0.0",
+    "displayName": "Adventure",
+    "description": "Contrôleur action-aventure, inputs clavier/manette et démo humanoïde animée avec caméra, escalade, épée et arc.",
+    "category": "Gameplay",
+    "tags": [
+        "controller",
+        "character",
+        "animation",
+        "demo",
+        "urp"
+    ],
+    "compatibility": {
+        "minimumUnity": "6000.4.0f1",
+        "maximumUnityExclusive": "6000.4.0f2",
+        "testedUnity": [
+            "6000.4.0f1"
+        ],
+        "renderPipelines": [
+            "urp"
+        ],
+        "platforms": [
+            "StandaloneOSX"
+        ]
+    },
+    "contentDependencies": [],
+    "projectPrerequisites": [
+        {
+            "kind": "capability",
+            "name": "input-system-enabled",
+            "minimumVersion": "",
+            "maximumVersionExclusive": ""
+        },
+        {
+            "kind": "package",
+            "name": "com.unity.inputsystem",
+            "minimumVersion": "1.19.0",
+            "maximumVersionExclusive": "1.19.1"
+        },
+        {
+            "kind": "package",
+            "name": "com.unity.render-pipelines.universal",
+            "minimumVersion": "17.4.0",
+            "maximumVersionExclusive": "17.4.1"
+        },
+        {
+            "kind": "package",
+            "name": "com.unity.modules.animation",
+            "minimumVersion": "1.0.0",
+            "maximumVersionExclusive": ""
+        },
+        {
+            "kind": "package",
+            "name": "com.unity.modules.audio",
+            "minimumVersion": "1.0.0",
+            "maximumVersionExclusive": ""
+        },
+        {
+            "kind": "package",
+            "name": "com.unity.modules.physics",
+            "minimumVersion": "1.0.0",
+            "maximumVersionExclusive": ""
+        },
+        {
+            "kind": "package",
+            "name": "com.unity.modules.imgui",
+            "minimumVersion": "1.0.0",
+            "maximumVersionExclusive": ""
+        }
+    ],
+    "containsCode": true,
+    "license": "MIT AND CC0-1.0",
+    "attribution": "Copyright (c) 2026 Alexis Gomes. Code et démo Astra sous licence MIT ; modèles, textures et animations Quaternius sous CC0-1.0. Voir LICENSES/LICENSE.txt et Demo/Art/Quaternius/PROVENANCE.json.",
+    "sources": [
+        "https://quaternius.com/packs/universalbasecharacters.html",
+        "https://quaternius.com/packs/universalanimationlibrary.html",
+        "https://quaternius.com/packs/universalanimationlibrary2.html"
+    ],
+    "releaseNotes": "Première publication publique : pack unique regroupant contrôleur, Input System et démo humanoïde animée. Inclut scène, armes, caméra, escalade, épée et arc.",
+    "archive": {
+        "url": "https://github.com/MisterPxl/astra-content/releases/download/adventure-v1.0.0/astra.adventure-1.0.0.zip",
+        "sha256": "703c7aa9d38859126b2c1ba464d55be7119fe724baeb781c18e6ee5cd10bd2d8",
+        "bytes": 15984351,
+        "expandedBytes": 56499078,
+        "fileCount": 142
+    }
+}
