@@ -1,0 +1,24 @@
+{
+    "schemaVersion": 1,
+    "packs": [
+        {
+            "id": "astra.ariadne",
+            "displayName": "Ariadne - UI Poolable Collections",
+            "description": "Collections UGUI virtualis\u00e9es : listes verticales, listes horizontales et grilles, cellules recycl\u00e9es par pool, tailles variables, items pleine largeur et sources de donn\u00e9es sectionn\u00e9es.",
+            "category": "UI",
+            "recommendedVersion": "1.0.0",
+            "manifestUrl": "https://raw.githubusercontent.com/MisterPxl/astra-content/main/manifests/astra.ariadne/1.0.0.json",
+            "manifestSha256": "47298cbcac430b99910bd16299326b9c6319243e26d84694cbc9c9b8cef1ba6b",
+            "tags": [
+                "ui",
+                "ugui",
+                "collection",
+                "list",
+                "grid",
+                "pooling",
+                "virtualization"
+            ],
+            "compressedBytes": 50537
+        }
+    ]
+}

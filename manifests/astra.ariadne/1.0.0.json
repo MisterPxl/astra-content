@@ -1,0 +1,47 @@
+{
+    "schemaVersion": 1,
+    "id": "astra.ariadne",
+    "version": "1.0.0",
+    "displayName": "Ariadne - UI Poolable Collections",
+    "description": "Collections UGUI virtualis\u00e9es : listes verticales, listes horizontales et grilles, cellules recycl\u00e9es par pool, tailles variables, items pleine largeur et sources de donn\u00e9es sectionn\u00e9es.",
+    "category": "UI",
+    "tags": [
+        "ui",
+        "ugui",
+        "collection",
+        "list",
+        "grid",
+        "pooling",
+        "virtualization"
+    ],
+    "compatibility": {
+        "minimumUnity": "6000.0.0f1",
+        "maximumUnityExclusive": "7000.0.0a1",
+        "testedUnity": [
+            "6000.4.0f1"
+        ],
+        "renderPipelines": [],
+        "platforms": []
+    },
+    "contentDependencies": [],
+    "projectPrerequisites": [
+        {
+            "kind": "package",
+            "name": "com.unity.ugui",
+            "minimumVersion": "2.0.0",
+            "maximumVersionExclusive": ""
+        }
+    ],
+    "containsCode": true,
+    "license": "MIT",
+    "attribution": "Copyright (c) 2026 Alexis Gomes. Code et d\u00e9mos Astra sous licence MIT. Voir LICENSES/LICENSE.txt.",
+    "sources": [],
+    "releaseNotes": "Premi\u00e8re publication : collections UGUI virtualis\u00e9es avec pool de cellules, trois dispositions (verticale, horizontale, grille), tailles d'item variables, items pleine largeur, mappage d'index et sources sectionn\u00e9es. D\u00e9mos incluses sous Demo/.",
+    "archive": {
+        "url": "https://github.com/MisterPxl/astra-content/releases/download/ariadne-v1.0.0/astra.ariadne-1.0.0.zip",
+        "sha256": "2273ccdd015d538a1d8a3645dc1b25abdf8f94eb8736ac16df7a78c475a82944",
+        "bytes": 50537,
+        "expandedBytes": 95619,
+        "fileCount": 96
+    }
+}
