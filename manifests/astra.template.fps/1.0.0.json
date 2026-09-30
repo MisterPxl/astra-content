@@ -1,0 +1,76 @@
+{
+    "schemaVersion": 1,
+    "id": "astra.template.fps",
+    "version": "1.0.0",
+    "displayName": "FPS Template",
+    "description": "Template MW2 : s\u00e9lection de mode, The Pit et Team Deathmatch contre bots.",
+    "category": "Templates",
+    "tags": [
+        "fps",
+        "template",
+        "mw2"
+    ],
+    "compatibility": {
+        "minimumUnity": "6000.4.0f1",
+        "maximumUnityExclusive": "6000.4.0f2",
+        "testedUnity": [
+            "6000.4.0f1"
+        ],
+        "renderPipelines": [
+            "urp"
+        ],
+        "platforms": [
+            "StandaloneOSX"
+        ]
+    },
+    "contentDependencies": [
+        {
+            "id": "astra.fps",
+            "version": "1.0.0"
+        }
+    ],
+    "projectPrerequisites": [
+        {
+            "kind": "capability",
+            "name": "input-system-enabled",
+            "minimumVersion": "",
+            "maximumVersionExclusive": ""
+        },
+        {
+            "kind": "package",
+            "name": "com.unity.inputsystem",
+            "minimumVersion": "1.19.0",
+            "maximumVersionExclusive": "1.19.1"
+        },
+        {
+            "kind": "package",
+            "name": "com.unity.ai.navigation",
+            "minimumVersion": "2.0.11",
+            "maximumVersionExclusive": "2.0.12"
+        },
+        {
+            "kind": "package",
+            "name": "com.unity.ugui",
+            "minimumVersion": "2.0.0",
+            "maximumVersionExclusive": "2.0.1"
+        },
+        {
+            "kind": "package",
+            "name": "com.unity.render-pipelines.universal",
+            "minimumVersion": "17.4.0",
+            "maximumVersionExclusive": "17.4.1"
+        }
+    ],
+    "containsCode": false,
+    "license": "MIT",
+    "attribution": "Copyright (c) 2026 Alexis Gomes. Contenu sous licence MIT ; aucun asset tiers.",
+    "sources": [],
+    "releaseNotes": "Premi\u00e8re publication du template FPS.",
+    "archive": {
+        "url": "https://github.com/MisterPxl/astra-content/releases/download/template-fps-v1.0.0/astra.template.fps-1.0.0.zip",
+        "sha256": "791d1c1bf29423c8e61ec4bb28c617ef925f80b9c57d0ee74917f4a46b97e207",
+        "bytes": 81111,
+        "expandedBytes": 397095,
+        "fileCount": 72
+    }
+}

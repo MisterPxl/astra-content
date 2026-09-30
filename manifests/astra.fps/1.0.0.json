@@ -1,0 +1,83 @@
+{
+    "schemaVersion": 1,
+    "id": "astra.fps",
+    "version": "1.0.0",
+    "displayName": "FPS",
+    "description": "Simulation FPS (armes, sant\u00e9, modes, bots), vues Unity et int\u00e9gration au framework Astra.",
+    "category": "Gameplay",
+    "tags": [
+        "fps",
+        "shooter",
+        "mw2-style"
+    ],
+    "compatibility": {
+        "minimumUnity": "6000.4.0f1",
+        "maximumUnityExclusive": "6000.4.0f2",
+        "testedUnity": [
+            "6000.4.0f1"
+        ],
+        "renderPipelines": [
+            "urp"
+        ],
+        "platforms": [
+            "StandaloneOSX"
+        ]
+    },
+    "contentDependencies": [],
+    "projectPrerequisites": [
+        {
+            "kind": "capability",
+            "name": "input-system-enabled",
+            "minimumVersion": "",
+            "maximumVersionExclusive": ""
+        },
+        {
+            "kind": "package",
+            "name": "com.unity.inputsystem",
+            "minimumVersion": "1.19.0",
+            "maximumVersionExclusive": "1.19.1"
+        },
+        {
+            "kind": "package",
+            "name": "com.unity.ai.navigation",
+            "minimumVersion": "2.0.11",
+            "maximumVersionExclusive": "2.0.12"
+        },
+        {
+            "kind": "package",
+            "name": "com.unity.ugui",
+            "minimumVersion": "2.0.0",
+            "maximumVersionExclusive": "2.0.1"
+        },
+        {
+            "kind": "assembly",
+            "name": "Astra.Framework.Game.HUD.Runtime",
+            "minimumVersion": "",
+            "maximumVersionExclusive": ""
+        },
+        {
+            "kind": "assembly",
+            "name": "Astra.Framework.Game.Spawning.Runtime",
+            "minimumVersion": "",
+            "maximumVersionExclusive": ""
+        },
+        {
+            "kind": "assembly",
+            "name": "Astra.Framework.Game.Characters.Runtime",
+            "minimumVersion": "",
+            "maximumVersionExclusive": ""
+        }
+    ],
+    "containsCode": true,
+    "license": "MIT",
+    "attribution": "Copyright (c) 2026 Alexis Gomes. Code sous licence MIT.",
+    "sources": [],
+    "releaseNotes": "Premi\u00e8re publication : Fps.Core, Fps.Unity et Fps.Astra.",
+    "archive": {
+        "url": "https://github.com/MisterPxl/astra-content/releases/download/fps-v1.0.0/astra.fps-1.0.0.zip",
+        "sha256": "c029e773ecb2a8f7376e9a6dde90464b9e2b0e3f7eb27d4f5fffe6a21d183ad4",
+        "bytes": 61591,
+        "expandedBytes": 119081,
+        "fileCount": 108
+    }
+}
