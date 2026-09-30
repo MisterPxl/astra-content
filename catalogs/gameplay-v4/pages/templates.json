@@ -1,0 +1,38 @@
+{
+    "schemaVersion": 1,
+    "packs": [
+        {
+            "id": "astra.template.match3",
+            "displayName": "Match3 Template",
+            "description": "Template de genre match-3 pr\u00eat \u00e0 jouer : sc\u00e8ne de d\u00e9part, niveaux, prefabs et composition \u00e0 appliquer avec Setup, sans \u00e9crire une ligne de code.",
+            "category": "Templates",
+            "recommendedVersion": "2.0.0",
+            "manifestUrl": "https://raw.githubusercontent.com/MisterPxl/astra-content/main/manifests/astra.template.match3/2.0.0.json",
+            "manifestSha256": "c615567693cf1de0c5dfc655154127e9e20068b188cf71a3e94a5d8661e022b1",
+            "tags": [
+                "template",
+                "puzzle",
+                "match3",
+                "mobile",
+                "touch"
+            ],
+            "compressedBytes": 21530
+        },
+        {
+            "id": "astra.template.melee",
+            "displayName": "Melee Template",
+            "description": "Template de platform fighter local pour deux \u00e0 quatre joueurs : lobby, stage, combattant et composition \u00e0 appliquer avec Setup.",
+            "category": "Templates",
+            "recommendedVersion": "1.2.0",
+            "manifestUrl": "https://raw.githubusercontent.com/MisterPxl/astra-content/main/manifests/astra.template.melee/1.2.0.json",
+            "manifestSha256": "6b98128747c0ed59b01ae1106f5d53059945808e6494d1a67bb59d545ee03fb7",
+            "tags": [
+                "template",
+                "melee",
+                "platform-fighter",
+                "local-multiplayer"
+            ],
+            "compressedBytes": 6863300
+        }
+    ]
+}

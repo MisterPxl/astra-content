@@ -32,6 +32,12 @@ voitures, bateaux, avions légers et jets de MotionTest, avec leurs variantes
 arcade : huit prefabs, trois scènes, physique, clavier/manette, caméra et télémétrie.
 Le code et les modèles procéduraux sont distribués sous **licence MIT**.
 
+**[Match3 2.0.0](packs/match3/README.md)** (`astra.match3`) et **[Melee 1.2.0](packs/melee/README.md)**
+(`astra.melee`) sont des packs de gameplay livrés avec leur **template de genre**
+(`astra.template.match3`, `astra.template.melee`), publiés dans la catégorie **Templates** du
+Hub : le template tire son pack de gameplay, puis Astra Setup applique sa composition. Code et
+contenu sous **licence MIT** ; les assets Quaternius de Melee Template restent en **CC0-1.0**.
+
 Prérequis qualifiés : **Unity 6000.4.0f1**, **URP 17.4.0**, **Input System 1.19.0**,
 backend Input System actif et cible macOS. Les prérequis sont à préparer avant
 l'import ; le Hub ne modifie pas les packages ni les réglages du projet.

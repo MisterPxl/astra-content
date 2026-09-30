@@ -1,0 +1,59 @@
+{
+    "schemaVersion": 1,
+    "id": "astra.melee",
+    "version": "1.2.0",
+    "displayName": "Melee",
+    "description": "Simulation d\u00e9terministe et vues Unity pour un platform fighter local, avec int\u00e9gration au framework Astra.",
+    "category": "Gameplay",
+    "tags": [
+        "melee",
+        "platform-fighter",
+        "local-multiplayer"
+    ],
+    "compatibility": {
+        "minimumUnity": "6000.4.0f1",
+        "maximumUnityExclusive": "6000.4.0f2",
+        "testedUnity": [
+            "6000.4.0f1"
+        ],
+        "renderPipelines": [
+            "urp"
+        ],
+        "platforms": [
+            "StandaloneOSX"
+        ]
+    },
+    "contentDependencies": [],
+    "projectPrerequisites": [
+        {
+            "kind": "capability",
+            "name": "input-system-enabled",
+            "minimumVersion": "",
+            "maximumVersionExclusive": ""
+        },
+        {
+            "kind": "package",
+            "name": "com.unity.inputsystem",
+            "minimumVersion": "1.19.0",
+            "maximumVersionExclusive": "1.19.1"
+        },
+        {
+            "kind": "assembly",
+            "name": "Astra.Framework.Game.HUD.Runtime",
+            "minimumVersion": "",
+            "maximumVersionExclusive": ""
+        }
+    ],
+    "containsCode": true,
+    "license": "MIT",
+    "attribution": "Copyright (c) 2026 Alexis Gomes. Code sous licence MIT.",
+    "sources": [],
+    "releaseNotes": "Contr\u00f4le a\u00e9rien retun\u00e9 (style Ultimate), direction au d\u00e9collage et au double saut, JumpEvent pour le feedback visuel, correctif HUD FitToScreen quand le widget est parent\u00e9 sous la couche Screen.",
+    "archive": {
+        "url": "https://github.com/MisterPxl/astra-content/releases/download/melee-v1.2.0/astra.melee-1.2.0.zip",
+        "sha256": "f6ac874ddb02149c54ad2a019e7170cdbc4c5174b50925b915a32da704dee90a",
+        "bytes": 68612,
+        "expandedBytes": 193579,
+        "fileCount": 72
+    }
+}

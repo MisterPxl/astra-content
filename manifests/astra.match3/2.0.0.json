@@ -1,0 +1,62 @@
+{
+    "schemaVersion": 1,
+    "id": "astra.match3",
+    "version": "2.0.0",
+    "displayName": "Match3",
+    "description": "R\u00e8gles, plateau et scoring d'un puzzle match-3 tactile, en C# pur et test\u00e9, pr\u00eat \u00e0 \u00eatre branch\u00e9 au framework par un template.",
+    "category": "Gameplay",
+    "tags": [
+        "puzzle",
+        "match3",
+        "mobile",
+        "touch"
+    ],
+    "compatibility": {
+        "minimumUnity": "6000.4.0f1",
+        "maximumUnityExclusive": "6000.4.0f2",
+        "testedUnity": [
+            "6000.4.0f1"
+        ],
+        "renderPipelines": [
+            "urp"
+        ],
+        "platforms": [
+            "StandaloneOSX",
+            "Android",
+            "iOS"
+        ]
+    },
+    "contentDependencies": [],
+    "projectPrerequisites": [
+        {
+            "kind": "capability",
+            "name": "input-system-enabled",
+            "minimumVersion": "",
+            "maximumVersionExclusive": ""
+        },
+        {
+            "kind": "package",
+            "name": "com.unity.inputsystem",
+            "minimumVersion": "1.19.0",
+            "maximumVersionExclusive": "1.19.1"
+        },
+        {
+            "kind": "assembly",
+            "name": "Astra.Framework.Game.HUD.Runtime",
+            "minimumVersion": "",
+            "maximumVersionExclusive": ""
+        }
+    ],
+    "containsCode": true,
+    "license": "MIT",
+    "attribution": "Copyright (c) 2026 Alexis Gomes. Code sous licence MIT.",
+    "sources": [],
+    "releaseNotes": "2.0.0 : simulation temps r\u00e9el \u00e0 ticks fixes, r\u00e9servation de cases, swipes pendant cascades, power-ups Royal Match (Rocket, TNT, Propeller, Light Ball) et combos.",
+    "archive": {
+        "url": "https://github.com/MisterPxl/astra-content/releases/download/match3-v2.0.0/astra.match3-2.0.0.zip",
+        "sha256": "923d78ed831e19882dd4245dc90c4f3af3e8c753b8410e0799a960394b7d7ec2",
+        "bytes": 80412,
+        "expandedBytes": 167721,
+        "fileCount": 125
+    }
+}

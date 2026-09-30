@@ -1,0 +1,74 @@
+{
+    "schemaVersion": 1,
+    "id": "astra.template.match3",
+    "version": "2.0.0",
+    "displayName": "Match3 Template",
+    "description": "Template de genre match-3 pr\u00eat \u00e0 jouer : sc\u00e8ne de d\u00e9part, niveaux, prefabs et composition \u00e0 appliquer avec Setup, sans \u00e9crire une ligne de code.",
+    "category": "Templates",
+    "tags": [
+        "template",
+        "puzzle",
+        "match3",
+        "mobile",
+        "touch"
+    ],
+    "compatibility": {
+        "minimumUnity": "6000.4.0f1",
+        "maximumUnityExclusive": "6000.4.0f2",
+        "testedUnity": [
+            "6000.4.0f1"
+        ],
+        "renderPipelines": [
+            "urp"
+        ],
+        "platforms": [
+            "StandaloneOSX",
+            "Android",
+            "iOS"
+        ]
+    },
+    "contentDependencies": [
+        {
+            "id": "astra.match3",
+            "version": "2.0.0"
+        }
+    ],
+    "projectPrerequisites": [
+        {
+            "kind": "capability",
+            "name": "input-system-enabled",
+            "minimumVersion": "",
+            "maximumVersionExclusive": ""
+        },
+        {
+            "kind": "package",
+            "name": "com.unity.inputsystem",
+            "minimumVersion": "1.19.0",
+            "maximumVersionExclusive": "1.19.1"
+        },
+        {
+            "kind": "package",
+            "name": "com.unity.render-pipelines.universal",
+            "minimumVersion": "17.4.0",
+            "maximumVersionExclusive": "17.4.1"
+        },
+        {
+            "kind": "package",
+            "name": "com.unity.ugui",
+            "minimumVersion": "2.0.0",
+            "maximumVersionExclusive": "2.0.1"
+        }
+    ],
+    "containsCode": false,
+    "license": "MIT",
+    "attribution": "Copyright (c) 2026 Alexis Gomes. Contenu sous licence MIT.",
+    "sources": [],
+    "releaseNotes": "2.0.0 : align\u00e9 sur astra.match3 2.0.0 (simulation temps r\u00e9el, power-ups Royal Match, BoardSimulationDriver sur le prefab plateau).",
+    "archive": {
+        "url": "https://github.com/MisterPxl/astra-content/releases/download/template-match3-v2.0.0/astra.template.match3-2.0.0.zip",
+        "sha256": "aad39aa585746b0cba6f9b898237c8b49e38a903bdb16bb0c334f70502754f45",
+        "bytes": 21530,
+        "expandedBytes": 60593,
+        "fileCount": 30
+    }
+}
