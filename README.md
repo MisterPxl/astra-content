@@ -39,8 +39,8 @@ livrés avec leur **template de genre** (`astra.template.match3`, `astra.templat
 de gameplay, puis Astra Setup applique sa composition. Code et contenu sous **licence MIT** ; les
 assets Quaternius de Melee Template restent en **CC0-1.0**.
 
-**[Grass 0.1.0](packs/grass/README.md)** (`astra.grass`), **[Snow 0.1.0](packs/snow/README.md)**
-(`astra.snow`) et **[Water 0.1.0](packs/water/README.md)** (`astra.water`) forment la catégorie
+**[Grass 0.1.1](packs/grass/README.md)** (`astra.grass`), **[Snow 0.1.1](packs/snow/README.md)**
+(`astra.snow`) et **[Water 0.1.1](packs/water/README.md)** (`astra.water`) forment la catégorie
 **Environment** : herbe peinte au pinceau avec vent, interacteurs et rendu GPU indirect ; neige
 déformable avec couverture des objets ; eau à vagues de Gerstner, réfraction, écume, ondulations
 et flottaison. Trois packs URP indépendants, code et démos sous **licence MIT**, sans asset tiers.

@@ -1,0 +1,61 @@
+{
+    "schemaVersion": 1,
+    "id": "astra.snow",
+    "version": "0.1.1",
+    "displayName": "Astra Snow",
+    "description": "Neige stylis\u00e9e pour URP : sol d\u00e9formable avec traces des interacteurs qui se comblent, recouvrement des objets selon la normale, ombres bleut\u00e9es et scintillement.",
+    "category": "Environment",
+    "tags": [
+        "snow",
+        "environment",
+        "urp",
+        "deformation",
+        "shader"
+    ],
+    "compatibility": {
+        "minimumUnity": "6000.4.0f1",
+        "maximumUnityExclusive": "6000.4.0f2",
+        "testedUnity": [
+            "6000.4.0f1"
+        ],
+        "renderPipelines": [
+            "urp"
+        ],
+        "platforms": [
+            "StandaloneOSX"
+        ]
+    },
+    "contentDependencies": [],
+    "projectPrerequisites": [
+        {
+            "kind": "package",
+            "name": "com.unity.render-pipelines.universal",
+            "minimumVersion": "17.4.0",
+            "maximumVersionExclusive": ""
+        },
+        {
+            "kind": "package",
+            "name": "com.unity.modules.physics",
+            "minimumVersion": "1.0.0",
+            "maximumVersionExclusive": ""
+        },
+        {
+            "kind": "package",
+            "name": "com.unity.inputsystem",
+            "minimumVersion": "1.19.0",
+            "maximumVersionExclusive": ""
+        }
+    ],
+    "containsCode": true,
+    "license": "MIT",
+    "attribution": "Copyright (c) 2026 Alexis Gomes. Code et contenu de d\u00e9monstration Astra sous licence MIT. Voir LICENSES/LICENSE.txt.",
+    "sources": [],
+    "releaseNotes": "D\u00e9mo compatible Input System, Legacy et Both ; commandes clavier prot\u00e9g\u00e9es et pr\u00e9requis Input System explicite.",
+    "archive": {
+        "url": "https://github.com/MisterPxl/astra-content/releases/download/snow-v0.1.1/astra.snow-0.1.1.zip",
+        "sha256": "f3982076c2c1155e001fbb7f9d2e4aef2adf85061fc0fae36f839cc2aedee618",
+        "bytes": 245206,
+        "expandedBytes": 1556055,
+        "fileCount": 52
+    }
+}

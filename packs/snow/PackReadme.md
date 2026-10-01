@@ -27,3 +27,5 @@ Les scènes de jeu doivent vivre hors du dossier du pack (**Create Snow Demo** e
 
 - Unity **6000.4.0f1**, **Universal Render Pipeline** 17.4+.
 - Compute shaders pour la déformation (sans compute, le sol reste lisse et les shaders fonctionnent).
+
+Prérequis démo : **Input System 1.19+**. Commandes compatibles avec Input System, Legacy et Both.

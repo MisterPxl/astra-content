@@ -13,10 +13,9 @@ Le shader attend **Depth Texture** et **Opaque Texture** sur l'asset URP actif ;
 du `WaterSurface` le signale et propose de les activer, sans le faire seul. Qualifié sur
 macOS ; le Hub ne modifie ni les packages ni les réglages de rendu.
 
-Archive publiée via GitHub Releases sous le tag `water-v0.1.0` : 60 fichiers, 424 251 octets,
-SHA-256 `557ea68384c82a889faecee9deaa1bbab7cf8036158280209fc854c3b9b6563b`. Export
-reproductible, import et vérification dans un consommateur URP vierge (scripts, matériaux,
-shaders et scène `Demo/Generated/Lake.unity` sans référence manquante).
+Version **0.1.1** : démo compatible Input System, Legacy et Both. Input System 1.19+ est un prérequis explicite.
+Archive : `water-v0.1.1`, 60 fichiers, 424833 octets,
+SHA-256 `1cc485eb30b02ec1b751ee777477b5406485cfedd25fe3c761f0bee451d82eb1`.
 
 Le guide complet du pack est [PackReadme.md](PackReadme.md) ; la préparation et la
 qualification sont décrites dans le dépôt auteur `AI_Testing_Sandbox`,

@@ -1,0 +1,62 @@
+{
+    "schemaVersion": 1,
+    "id": "astra.water",
+    "version": "0.1.1",
+    "displayName": "Astra Water",
+    "description": "Eau stylis\u00e9e pour URP : vagues de Gerstner, couleur par profondeur et r\u00e9fraction, \u00e9cume de rivage et de cr\u00eate, ondulations propag\u00e9es par les interacteurs, flottaison.",
+    "category": "Environment",
+    "tags": [
+        "water",
+        "environment",
+        "urp",
+        "waves",
+        "buoyancy",
+        "shader"
+    ],
+    "compatibility": {
+        "minimumUnity": "6000.4.0f1",
+        "maximumUnityExclusive": "6000.4.0f2",
+        "testedUnity": [
+            "6000.4.0f1"
+        ],
+        "renderPipelines": [
+            "urp"
+        ],
+        "platforms": [
+            "StandaloneOSX"
+        ]
+    },
+    "contentDependencies": [],
+    "projectPrerequisites": [
+        {
+            "kind": "package",
+            "name": "com.unity.render-pipelines.universal",
+            "minimumVersion": "17.4.0",
+            "maximumVersionExclusive": ""
+        },
+        {
+            "kind": "package",
+            "name": "com.unity.modules.physics",
+            "minimumVersion": "1.0.0",
+            "maximumVersionExclusive": ""
+        },
+        {
+            "kind": "package",
+            "name": "com.unity.inputsystem",
+            "minimumVersion": "1.19.0",
+            "maximumVersionExclusive": ""
+        }
+    ],
+    "containsCode": true,
+    "license": "MIT",
+    "attribution": "Copyright (c) 2026 Alexis Gomes. Code et contenu de d\u00e9monstration Astra sous licence MIT. Voir LICENSES/LICENSE.txt.",
+    "sources": [],
+    "releaseNotes": "D\u00e9mo compatible Input System, Legacy et Both ; commandes clavier prot\u00e9g\u00e9es et pr\u00e9requis Input System explicite.",
+    "archive": {
+        "url": "https://github.com/MisterPxl/astra-content/releases/download/water-v0.1.1/astra.water-0.1.1.zip",
+        "sha256": "1cc485eb30b02ec1b751ee777477b5406485cfedd25fe3c761f0bee451d82eb1",
+        "bytes": 424833,
+        "expandedBytes": 1781311,
+        "fileCount": 60
+    }
+}

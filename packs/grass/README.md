@@ -12,10 +12,9 @@ Licence : code, shaders et contenu de démonstration Astra sous MIT
 Prérequis : Unity 6000.4.0f1, Universal Render Pipeline 17.4+ et le module Physics.
 Qualifié sur macOS ; le Hub ne modifie ni les packages ni les réglages de rendu.
 
-Archive publiée via GitHub Releases sous le tag `grass-v0.1.0` : 97 fichiers, 132 110 octets,
-SHA-256 `21633d3e9fa8fb46aa9ef9ff188fb749f4ab0b94c3613025416cc463c704b993`. Export
-reproductible, import et vérification dans un consommateur URP vierge (scripts, matériaux,
-shaders et scène `Demo/Generated/Meadow.unity` sans référence manquante).
+Version **0.1.1** : démo compatible Input System, Legacy et Both. Input System 1.19+ est un prérequis explicite.
+Archive : `grass-v0.1.1`, 97 fichiers, 134081 octets,
+SHA-256 `f1be6432c6aeec1fc2e4279b849e57c778ffcc86f804eb530a53b00fac901194`.
 
 Le guide complet du pack est [PackReadme.md](PackReadme.md) ; la préparation et la
 qualification sont décrites dans le dépôt auteur `AI_Testing_Sandbox`,

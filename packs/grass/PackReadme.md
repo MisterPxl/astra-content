@@ -30,3 +30,6 @@ Les scènes de jeu et données peintes doivent vivre **hors** du dossier du pack
 
 - Unity **6000.4.0f1**
 - **Universal Render Pipeline** 17.4+
+- **Input System** 1.19+ pour les commandes clavier de la démo (WASD/flèches, Tab pour la vue de dessus).
+
+Les commandes de la démo prennent en charge Input System, Legacy et Both.

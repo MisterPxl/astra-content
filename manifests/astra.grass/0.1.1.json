@@ -1,0 +1,63 @@
+{
+    "schemaVersion": 1,
+    "id": "astra.grass",
+    "version": "0.1.1",
+    "displayName": "Astra Grass",
+    "description": "Herbe stylis\u00e9e en touffes pour URP : peinture au pinceau, color shading, vent, interacteurs avec trails, correction de perspective et rendu GPU indirect optimis\u00e9.",
+    "category": "Environment",
+    "tags": [
+        "grass",
+        "vegetation",
+        "urp",
+        "environment",
+        "gpu"
+    ],
+    "compatibility": {
+        "minimumUnity": "6000.4.0f1",
+        "maximumUnityExclusive": "6000.4.0f2",
+        "testedUnity": [
+            "6000.4.0f1"
+        ],
+        "renderPipelines": [
+            "urp"
+        ],
+        "platforms": [
+            "StandaloneOSX",
+            "Android",
+            "iOS"
+        ]
+    },
+    "contentDependencies": [],
+    "projectPrerequisites": [
+        {
+            "kind": "package",
+            "name": "com.unity.inputsystem",
+            "minimumVersion": "1.19.0",
+            "maximumVersionExclusive": ""
+        },
+        {
+            "kind": "package",
+            "name": "com.unity.render-pipelines.universal",
+            "minimumVersion": "17.4.0",
+            "maximumVersionExclusive": ""
+        },
+        {
+            "kind": "package",
+            "name": "com.unity.modules.physics",
+            "minimumVersion": "1.0.0",
+            "maximumVersionExclusive": ""
+        }
+    ],
+    "containsCode": true,
+    "license": "MIT",
+    "attribution": "Copyright (c) 2026 Alexis Gomes. Code et contenu de d\u00e9monstration Astra sous licence MIT. Voir LICENSES/LICENSE.txt.",
+    "sources": [],
+    "releaseNotes": "D\u00e9mo compatible Input System, Legacy et Both ; commandes clavier prot\u00e9g\u00e9es et pr\u00e9requis Input System explicite. Corrections de rendu instanci\u00e9, shader et interactions avec les colliders.",
+    "archive": {
+        "url": "https://github.com/MisterPxl/astra-content/releases/download/grass-v0.1.1/astra.grass-0.1.1.zip",
+        "sha256": "f1be6432c6aeec1fc2e4279b849e57c778ffcc86f804eb530a53b00fac901194",
+        "bytes": 134081,
+        "expandedBytes": 358438,
+        "fileCount": 97
+    }
+}
