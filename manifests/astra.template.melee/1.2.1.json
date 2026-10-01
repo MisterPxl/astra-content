@@ -1,0 +1,80 @@
+{
+    "schemaVersion": 1,
+    "id": "astra.template.melee",
+    "version": "1.2.1",
+    "displayName": "Melee Template",
+    "description": "Template de platform fighter local pour deux \u00e0 quatre joueurs : lobby, stage, combattant et composition \u00e0 appliquer avec Setup.",
+    "category": "Templates",
+    "tags": [
+        "template",
+        "melee",
+        "platform-fighter",
+        "local-multiplayer"
+    ],
+    "compatibility": {
+        "minimumUnity": "6000.4.0f1",
+        "maximumUnityExclusive": "6000.4.0f2",
+        "testedUnity": [
+            "6000.4.0f1"
+        ],
+        "renderPipelines": [
+            "urp"
+        ],
+        "platforms": [
+            "StandaloneOSX"
+        ]
+    },
+    "contentDependencies": [
+        {
+            "id": "astra.melee",
+            "version": "1.2.0"
+        }
+    ],
+    "projectPrerequisites": [
+        {
+            "kind": "capability",
+            "name": "input-system-enabled",
+            "minimumVersion": "",
+            "maximumVersionExclusive": ""
+        },
+        {
+            "kind": "package",
+            "name": "com.unity.inputsystem",
+            "minimumVersion": "1.19.0",
+            "maximumVersionExclusive": "1.19.1"
+        },
+        {
+            "kind": "package",
+            "name": "com.unity.render-pipelines.universal",
+            "minimumVersion": "17.4.0",
+            "maximumVersionExclusive": "17.4.1"
+        },
+        {
+            "kind": "package",
+            "name": "com.unity.ugui",
+            "minimumVersion": "2.0.0",
+            "maximumVersionExclusive": "2.0.1"
+        },
+        {
+            "kind": "package",
+            "name": "com.unity.modules.animation",
+            "minimumVersion": "1.0.0",
+            "maximumVersionExclusive": ""
+        }
+    ],
+    "containsCode": false,
+    "license": "MIT AND CC0-1.0",
+    "attribution": "Copyright (c) 2026 Alexis Gomes. Contenu du template sous licence MIT ; mod\u00e8le, textures et animations Quaternius sous CC0-1.0. Voir LICENSES/LICENSE.txt et Art/Quaternius/PROVENANCE.json.",
+    "sources": [
+        "https://quaternius.com/packs/universalbasecharacters.html",
+        "https://quaternius.com/packs/universalanimationlibrary.html"
+    ],
+    "releaseNotes": "1.2.1 : guide d'extension livr\u00e9 dans le pack (README.md en anglais, README.fr.md en fran\u00e7ais) : combattants, coups, stage, r\u00e8gles, contr\u00f4les, effets, mod\u00e8le et limites actuelles. Contenu de jeu inchang\u00e9 depuis 1.2.0.",
+    "archive": {
+        "url": "https://github.com/MisterPxl/astra-content/releases/download/template-melee-v1.2.1/astra.template.melee-1.2.1.zip",
+        "sha256": "f453ca40bd26ca9a30e394a6cd27cd709d33932b441425d81f9370577207da6e",
+        "bytes": 6871719,
+        "expandedBytes": 26762513,
+        "fileCount": 74
+    }
+}

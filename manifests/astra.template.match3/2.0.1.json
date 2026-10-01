@@ -1,0 +1,74 @@
+{
+    "schemaVersion": 1,
+    "id": "astra.template.match3",
+    "version": "2.0.1",
+    "displayName": "Match3 Template",
+    "description": "Template de genre match-3 pr\u00eat \u00e0 jouer : sc\u00e8ne de d\u00e9part, niveaux, prefabs et composition \u00e0 appliquer avec Setup, sans \u00e9crire une ligne de code.",
+    "category": "Templates",
+    "tags": [
+        "template",
+        "puzzle",
+        "match3",
+        "mobile",
+        "touch"
+    ],
+    "compatibility": {
+        "minimumUnity": "6000.4.0f1",
+        "maximumUnityExclusive": "6000.4.0f2",
+        "testedUnity": [
+            "6000.4.0f1"
+        ],
+        "renderPipelines": [
+            "urp"
+        ],
+        "platforms": [
+            "StandaloneOSX",
+            "Android",
+            "iOS"
+        ]
+    },
+    "contentDependencies": [
+        {
+            "id": "astra.match3",
+            "version": "2.0.0"
+        }
+    ],
+    "projectPrerequisites": [
+        {
+            "kind": "capability",
+            "name": "input-system-enabled",
+            "minimumVersion": "",
+            "maximumVersionExclusive": ""
+        },
+        {
+            "kind": "package",
+            "name": "com.unity.inputsystem",
+            "minimumVersion": "1.19.0",
+            "maximumVersionExclusive": "1.19.1"
+        },
+        {
+            "kind": "package",
+            "name": "com.unity.render-pipelines.universal",
+            "minimumVersion": "17.4.0",
+            "maximumVersionExclusive": "17.4.1"
+        },
+        {
+            "kind": "package",
+            "name": "com.unity.ugui",
+            "minimumVersion": "2.0.0",
+            "maximumVersionExclusive": "2.0.1"
+        }
+    ],
+    "containsCode": false,
+    "license": "MIT",
+    "attribution": "Copyright (c) 2026 Alexis Gomes. Contenu sous licence MIT.",
+    "sources": [],
+    "releaseNotes": "2.0.1 : guide d'extension livr\u00e9 dans le pack (README.md en anglais, README.fr.md en fran\u00e7ais) : niveaux, ressenti, visuels, power-ups, motifs, combos, objectifs et limites actuelles. Contenu de jeu inchang\u00e9 depuis 2.0.0.",
+    "archive": {
+        "url": "https://github.com/MisterPxl/astra-content/releases/download/template-match3-v2.0.1/astra.template.match3-2.0.1.zip",
+        "sha256": "94890af59b3f69396854ae044d860c2be7138ead190c50e0eedb8b0be8f9a857",
+        "bytes": 30976,
+        "expandedBytes": 80661,
+        "fileCount": 34
+    }
+}

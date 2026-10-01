@@ -1,0 +1,57 @@
+{
+    "schemaVersion": 1,
+    "packs": [
+        {
+            "id": "astra.grass",
+            "displayName": "Astra Grass",
+            "description": "Herbe stylis\u00e9e en touffes pour URP : peinture au pinceau, color shading, vent, interacteurs avec trails, correction de perspective et rendu GPU indirect optimis\u00e9.",
+            "category": "Environment",
+            "recommendedVersion": "0.1.0",
+            "manifestUrl": "https://raw.githubusercontent.com/MisterPxl/astra-content/main/manifests/astra.grass/0.1.0.json",
+            "manifestSha256": "66371e493fb33cc4dfa1e48f9f90b46d3690d37192ca1bc0539712f9952e570c",
+            "tags": [
+                "grass",
+                "vegetation",
+                "urp",
+                "environment",
+                "gpu"
+            ],
+            "compressedBytes": 132110
+        },
+        {
+            "id": "astra.snow",
+            "displayName": "Astra Snow",
+            "description": "Neige stylis\u00e9e pour URP : sol d\u00e9formable avec traces des interacteurs qui se comblent, recouvrement des objets selon la normale, ombres bleut\u00e9es et scintillement.",
+            "category": "Environment",
+            "recommendedVersion": "0.1.0",
+            "manifestUrl": "https://raw.githubusercontent.com/MisterPxl/astra-content/main/manifests/astra.snow/0.1.0.json",
+            "manifestSha256": "32c8364ee0be91df0ee9ff31f5652a0dd49dcc8a89fcec9394b07adad68890b3",
+            "tags": [
+                "snow",
+                "environment",
+                "urp",
+                "deformation",
+                "shader"
+            ],
+            "compressedBytes": 244719
+        },
+        {
+            "id": "astra.water",
+            "displayName": "Astra Water",
+            "description": "Eau stylis\u00e9e pour URP : vagues de Gerstner, couleur par profondeur et r\u00e9fraction, \u00e9cume de rivage et de cr\u00eate, ondulations propag\u00e9es par les interacteurs, flottaison.",
+            "category": "Environment",
+            "recommendedVersion": "0.1.0",
+            "manifestUrl": "https://raw.githubusercontent.com/MisterPxl/astra-content/main/manifests/astra.water/0.1.0.json",
+            "manifestSha256": "dcdfc6037de1d006a1b0f04088dab3c8a49e8090c4ee3ecccfd9dc3fe2e0d823",
+            "tags": [
+                "water",
+                "environment",
+                "urp",
+                "waves",
+                "buoyancy",
+                "shader"
+            ],
+            "compressedBytes": 424251
+        }
+    ]
+}
