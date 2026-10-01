@@ -1,0 +1,55 @@
+{
+    "schemaVersion": 1,
+    "id": "astra.snow",
+    "version": "0.1.0",
+    "displayName": "Astra Snow",
+    "description": "Neige stylis\u00e9e pour URP : sol d\u00e9formable avec traces des interacteurs qui se comblent, recouvrement des objets selon la normale, ombres bleut\u00e9es et scintillement.",
+    "category": "Environment",
+    "tags": [
+        "snow",
+        "environment",
+        "urp",
+        "deformation",
+        "shader"
+    ],
+    "compatibility": {
+        "minimumUnity": "6000.4.0f1",
+        "maximumUnityExclusive": "6000.4.0f2",
+        "testedUnity": [
+            "6000.4.0f1"
+        ],
+        "renderPipelines": [
+            "urp"
+        ],
+        "platforms": [
+            "StandaloneOSX"
+        ]
+    },
+    "contentDependencies": [],
+    "projectPrerequisites": [
+        {
+            "kind": "package",
+            "name": "com.unity.render-pipelines.universal",
+            "minimumVersion": "17.4.0",
+            "maximumVersionExclusive": ""
+        },
+        {
+            "kind": "package",
+            "name": "com.unity.modules.physics",
+            "minimumVersion": "1.0.0",
+            "maximumVersionExclusive": ""
+        }
+    ],
+    "containsCode": true,
+    "license": "MIT",
+    "attribution": "Copyright (c) 2026 Alexis Gomes. Code et contenu de d\u00e9monstration Astra sous licence MIT. Voir LICENSES/LICENSE.txt.",
+    "sources": [],
+    "releaseNotes": "Premi\u00e8re version 0.1.0 : sol de neige d\u00e9formable (SnowSurface, SnowInteractor, compute de d\u00e9formation), shader de recouvrement, d\u00e9mo Snowfield.",
+    "archive": {
+        "url": "https://github.com/MisterPxl/astra-content/releases/download/snow-v0.1.0/astra.snow-0.1.0.zip",
+        "sha256": "89529431e84bf3e3575bba9e72434f72f6e0665846790a560bcdbfca9a2d838f",
+        "bytes": 244719,
+        "expandedBytes": 1554730,
+        "fileCount": 52
+    }
+}

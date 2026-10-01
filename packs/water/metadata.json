@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "id": "astra.water",
+  "version": "0.1.0",
+  "displayName": "Astra Water",
+  "description": "Eau stylisée pour URP : vagues de Gerstner, couleur par profondeur et réfraction, écume de rivage et de crête, ondulations propagées par les interacteurs, flottaison.",
+  "category": "Environment",
+  "tags": [
+    "water",
+    "environment",
+    "urp",
+    "waves",
+    "buoyancy",
+    "shader"
+  ],
+  "compatibility": {
+    "minimumUnity": "6000.4.0f1",
+    "maximumUnityExclusive": "6000.4.0f2",
+    "testedUnity": [
+      "6000.4.0f1"
+    ],
+    "renderPipelines": [
+      "urp"
+    ],
+    "platforms": [
+      "StandaloneOSX"
+    ]
+  },
+  "contentDependencies": [],
+  "projectPrerequisites": [
+    {
+      "kind": "package",
+      "name": "com.unity.render-pipelines.universal",
+      "minimumVersion": "17.4.0",
+      "maximumVersionExclusive": ""
+    },
+    {
+      "kind": "package",
+      "name": "com.unity.modules.physics",
+      "minimumVersion": "1.0.0",
+      "maximumVersionExclusive": ""
+    }
+  ],
+  "containsCode": true,
+  "license": "MIT",
+  "attribution": "Copyright (c) 2026 Alexis Gomes. Code et contenu de démonstration Astra sous licence MIT. Voir LICENSES/LICENSE.txt.",
+  "sources": [],
+  "releaseNotes": "Première version 0.1.0 : shader Astra/Water (Gerstner, profondeur, réfraction, écume, Fresnel), WaterSurface avec simulation d'ondulations compute, WaterInteractor, WaterFloater, démo Lake."
+}

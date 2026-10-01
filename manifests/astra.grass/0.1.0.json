@@ -1,0 +1,57 @@
+{
+    "schemaVersion": 1,
+    "id": "astra.grass",
+    "version": "0.1.0",
+    "displayName": "Astra Grass",
+    "description": "Herbe stylis\u00e9e en touffes pour URP : peinture au pinceau, color shading, vent, interacteurs avec trails, correction de perspective et rendu GPU indirect optimis\u00e9.",
+    "category": "Environment",
+    "tags": [
+        "grass",
+        "vegetation",
+        "urp",
+        "environment",
+        "gpu"
+    ],
+    "compatibility": {
+        "minimumUnity": "6000.4.0f1",
+        "maximumUnityExclusive": "6000.4.0f2",
+        "testedUnity": [
+            "6000.4.0f1"
+        ],
+        "renderPipelines": [
+            "urp"
+        ],
+        "platforms": [
+            "StandaloneOSX",
+            "Android",
+            "iOS"
+        ]
+    },
+    "contentDependencies": [],
+    "projectPrerequisites": [
+        {
+            "kind": "package",
+            "name": "com.unity.render-pipelines.universal",
+            "minimumVersion": "17.4.0",
+            "maximumVersionExclusive": ""
+        },
+        {
+            "kind": "package",
+            "name": "com.unity.modules.physics",
+            "minimumVersion": "1.0.0",
+            "maximumVersionExclusive": ""
+        }
+    ],
+    "containsCode": true,
+    "license": "MIT",
+    "attribution": "Copyright (c) 2026 Alexis Gomes. Code et contenu de d\u00e9monstration Astra sous licence MIT. Voir LICENSES/LICENSE.txt.",
+    "sources": [],
+    "releaseNotes": "Premi\u00e8re version 0.1.0 : peinture au pinceau, profils qualit\u00e9 desktop/mobile, shader URP avec correction de perspective, vent, interacteurs, compute culling et d\u00e9mo Meadow.",
+    "archive": {
+        "url": "https://github.com/MisterPxl/astra-content/releases/download/grass-v0.1.0/astra.grass-0.1.0.zip",
+        "sha256": "21633d3e9fa8fb46aa9ef9ff188fb749f4ab0b94c3613025416cc463c704b993",
+        "bytes": 132110,
+        "expandedBytes": 352319,
+        "fileCount": 97
+    }
+}

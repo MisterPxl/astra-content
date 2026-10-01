@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "id": "astra.grass",
+  "version": "0.1.0",
+  "displayName": "Astra Grass",
+  "description": "Herbe stylisée en touffes pour URP : peinture au pinceau, color shading, vent, interacteurs avec trails, correction de perspective et rendu GPU indirect optimisé.",
+  "category": "Environment",
+  "tags": [
+    "grass",
+    "vegetation",
+    "urp",
+    "environment",
+    "gpu"
+  ],
+  "compatibility": {
+    "minimumUnity": "6000.4.0f1",
+    "maximumUnityExclusive": "6000.4.0f2",
+    "testedUnity": [
+      "6000.4.0f1"
+    ],
+    "renderPipelines": [
+      "urp"
+    ],
+    "platforms": [
+      "StandaloneOSX",
+      "Android",
+      "iOS"
+    ]
+  },
+  "contentDependencies": [],
+  "projectPrerequisites": [
+    {
+      "kind": "package",
+      "name": "com.unity.render-pipelines.universal",
+      "minimumVersion": "17.4.0",
+      "maximumVersionExclusive": ""
+    },
+    {
+      "kind": "package",
+      "name": "com.unity.modules.physics",
+      "minimumVersion": "1.0.0",
+      "maximumVersionExclusive": ""
+    }
+  ],
+  "containsCode": true,
+  "license": "MIT",
+  "attribution": "Copyright (c) 2026 Alexis Gomes. Code et contenu de démonstration Astra sous licence MIT. Voir LICENSES/LICENSE.txt.",
+  "sources": [],
+  "releaseNotes": "Première version 0.1.0 : peinture au pinceau, profils qualité desktop/mobile, shader URP avec correction de perspective, vent, interacteurs, compute culling et démo Meadow."
+}

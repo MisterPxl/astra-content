@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "id": "astra.snow",
+  "version": "0.1.0",
+  "displayName": "Astra Snow",
+  "description": "Neige stylisée pour URP : sol déformable avec traces des interacteurs qui se comblent, recouvrement des objets selon la normale, ombres bleutées et scintillement.",
+  "category": "Environment",
+  "tags": [
+    "snow",
+    "environment",
+    "urp",
+    "deformation",
+    "shader"
+  ],
+  "compatibility": {
+    "minimumUnity": "6000.4.0f1",
+    "maximumUnityExclusive": "6000.4.0f2",
+    "testedUnity": [
+      "6000.4.0f1"
+    ],
+    "renderPipelines": [
+      "urp"
+    ],
+    "platforms": [
+      "StandaloneOSX"
+    ]
+  },
+  "contentDependencies": [],
+  "projectPrerequisites": [
+    {
+      "kind": "package",
+      "name": "com.unity.render-pipelines.universal",
+      "minimumVersion": "17.4.0",
+      "maximumVersionExclusive": ""
+    },
+    {
+      "kind": "package",
+      "name": "com.unity.modules.physics",
+      "minimumVersion": "1.0.0",
+      "maximumVersionExclusive": ""
+    }
+  ],
+  "containsCode": true,
+  "license": "MIT",
+  "attribution": "Copyright (c) 2026 Alexis Gomes. Code et contenu de démonstration Astra sous licence MIT. Voir LICENSES/LICENSE.txt.",
+  "sources": [],
+  "releaseNotes": "Première version 0.1.0 : sol de neige déformable (SnowSurface, SnowInteractor, compute de déformation), shader de recouvrement, démo Snowfield."
+}
