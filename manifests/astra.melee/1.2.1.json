@@ -1,0 +1,65 @@
+{
+    "schemaVersion": 1,
+    "id": "astra.melee",
+    "version": "1.2.1",
+    "displayName": "Melee",
+    "description": "Simulation d\u00e9terministe et vues Unity pour un platform fighter local, avec int\u00e9gration au framework Astra.",
+    "category": "Gameplay",
+    "tags": [
+        "melee",
+        "platform-fighter",
+        "local-multiplayer"
+    ],
+    "compatibility": {
+        "minimumUnity": "6000.4.0f1",
+        "maximumUnityExclusive": "6000.4.0f2",
+        "testedUnity": [
+            "6000.4.0f1"
+        ],
+        "renderPipelines": [
+            "urp"
+        ],
+        "platforms": [
+            "StandaloneOSX"
+        ]
+    },
+    "contentDependencies": [],
+    "projectPrerequisites": [
+        {
+            "kind": "capability",
+            "name": "input-system-enabled",
+            "minimumVersion": "",
+            "maximumVersionExclusive": ""
+        },
+        {
+            "kind": "package",
+            "name": "com.unity.inputsystem",
+            "minimumVersion": "1.19.0",
+            "maximumVersionExclusive": "1.19.1"
+        },
+        {
+            "kind": "assembly",
+            "name": "Astra.Framework.Game.HUD.Runtime",
+            "minimumVersion": "",
+            "maximumVersionExclusive": ""
+        },
+        {
+            "kind": "assembly",
+            "name": "Astra.Framework.Game.FlowPresentation.Runtime",
+            "minimumVersion": "",
+            "maximumVersionExclusive": ""
+        }
+    ],
+    "containsCode": true,
+    "license": "MIT",
+    "attribution": "Copyright (c) 2026 Alexis Gomes. Code sous licence MIT.",
+    "sources": [],
+    "releaseNotes": "1.2.1 : lobby et stage pilot\u00e9s par des phases de gameplay (Lobby, Stage), services du match enregistr\u00e9s sur le scope run, identifiant de module melee.module. Requiert le framework Game Flow Foundation (Game.FlowPresentation) ; sans lui le Hub refuse l'import. R\u00e8gles de jeu inchang\u00e9es depuis 1.2.0.",
+    "archive": {
+        "url": "https://github.com/MisterPxl/astra-content/releases/download/melee-v1.2.1/astra.melee-1.2.1.zip",
+        "sha256": "b9b50806baf350b34fa3a3d359d906c17ddcec3e7cfbe68b7f876be6a8f1d725",
+        "bytes": 69462,
+        "expandedBytes": 194794,
+        "fileCount": 74
+    }
+}

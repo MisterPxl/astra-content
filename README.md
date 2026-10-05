@@ -32,7 +32,7 @@ voitures, bateaux, avions légers et jets de MotionTest, avec leurs variantes
 arcade : huit prefabs, trois scènes, physique, clavier/manette, caméra et télémétrie.
 Le code et les modèles procéduraux sont distribués sous **licence MIT**.
 
-**[Match3 2.0.0](packs/match3/README.md)** (`astra.match3`), **[Melee 1.2.0](packs/melee/README.md)**
+**[Match3 2.0.0](packs/match3/README.md)** (`astra.match3`), **[Melee 1.2.1](packs/melee/README.md)**
 (`astra.melee`) et **[FPS 1.0.0](packs/fps/README.md)** (`astra.fps`) sont des packs de gameplay
 livrés avec leur **template de genre** (`astra.template.match3`, `astra.template.melee`,
 `astra.template.fps`), publiés dans la catégorie **Templates** du Hub : le template tire son pack
