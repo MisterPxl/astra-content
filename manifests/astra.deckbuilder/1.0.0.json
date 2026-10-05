@@ -1,0 +1,100 @@
+{
+    "schemaVersion": 1,
+    "id": "astra.deckbuilder",
+    "version": "1.0.0",
+    "displayName": "Deckbuilder",
+    "description": "Simulation de run et de combat au tour pour un deckbuilder roguelite, pr\u00e9sentation Unity UI et int\u00e9gration au framework Astra.",
+    "category": "Gameplay",
+    "tags": [
+        "deckbuilder",
+        "cards",
+        "roguelite",
+        "turn-based",
+        "mobile",
+        "touch"
+    ],
+    "compatibility": {
+        "minimumUnity": "6000.4.0f1",
+        "maximumUnityExclusive": "6000.4.0f2",
+        "testedUnity": [
+            "6000.4.0f1"
+        ],
+        "renderPipelines": [
+            "urp"
+        ],
+        "platforms": [
+            "StandaloneOSX",
+            "Android",
+            "iOS"
+        ]
+    },
+    "contentDependencies": [],
+    "projectPrerequisites": [
+        {
+            "kind": "capability",
+            "name": "input-system-enabled",
+            "minimumVersion": "",
+            "maximumVersionExclusive": ""
+        },
+        {
+            "kind": "package",
+            "name": "com.unity.inputsystem",
+            "minimumVersion": "1.19.0",
+            "maximumVersionExclusive": "1.19.1"
+        },
+        {
+            "kind": "package",
+            "name": "com.unity.ugui",
+            "minimumVersion": "2.0.0",
+            "maximumVersionExclusive": "2.0.1"
+        },
+        {
+            "kind": "package",
+            "name": "com.misterpxl.valkyrie",
+            "minimumVersion": "2.1.0",
+            "maximumVersionExclusive": "2.1.1"
+        },
+        {
+            "kind": "assembly",
+            "name": "Astra.Framework.Core.UI.Runtime",
+            "minimumVersion": "",
+            "maximumVersionExclusive": ""
+        },
+        {
+            "kind": "assembly",
+            "name": "Astra.Framework.Game.Flow.Runtime",
+            "minimumVersion": "",
+            "maximumVersionExclusive": ""
+        },
+        {
+            "kind": "assembly",
+            "name": "Astra.Framework.Core.Localization.Runtime",
+            "minimumVersion": "",
+            "maximumVersionExclusive": ""
+        },
+        {
+            "kind": "assembly",
+            "name": "Astra.Framework.Game.HUD.Runtime",
+            "minimumVersion": "",
+            "maximumVersionExclusive": ""
+        },
+        {
+            "kind": "assembly",
+            "name": "Astra.Framework.Game.FlowPresentation.Runtime",
+            "minimumVersion": "",
+            "maximumVersionExclusive": ""
+        }
+    ],
+    "containsCode": true,
+    "license": "MIT",
+    "attribution": "Copyright (c) 2026 Alexis Gomes. Code sous licence MIT.",
+    "sources": [],
+    "releaseNotes": "1.0.0 : simulation de run et de combat (Deckbuilder.Core), vues Unity UI et d\u00e9mo, pont Deckbuilder.Astra (\u00e9crans, sauvegarde du run, entr\u00e9e Continuer du menu), identifiant de module deckbuilder.module. Requiert le framework Game Flow Foundation (Game.FlowPresentation) ; sans lui le Hub refuse l'import.",
+    "archive": {
+        "url": "https://github.com/MisterPxl/astra-content/releases/download/deckbuilder-v1.0.0/astra.deckbuilder-1.0.0.zip",
+        "sha256": "c98edea2a4fcb677881bb91ad963eff9a65f10e7542c55282eef5790554e154e",
+        "bytes": 204217,
+        "expandedBytes": 772824,
+        "fileCount": 303
+    }
+}

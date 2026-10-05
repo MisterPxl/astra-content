@@ -33,9 +33,10 @@ arcade : huit prefabs, trois scènes, physique, clavier/manette, caméra et tél
 Le code et les modèles procéduraux sont distribués sous **licence MIT**.
 
 **[Match3 2.0.0](packs/match3/README.md)** (`astra.match3`), **[Melee 1.2.1](packs/melee/README.md)**
-(`astra.melee`) et **[FPS 1.0.0](packs/fps/README.md)** (`astra.fps`) sont des packs de gameplay
+(`astra.melee`), **[FPS 1.0.0](packs/fps/README.md)** (`astra.fps`) et
+**[Deckbuilder 1.0.0](packs/deckbuilder/README.md)** (`astra.deckbuilder`) sont des packs de gameplay
 livrés avec leur **template de genre** (`astra.template.match3`, `astra.template.melee`,
-`astra.template.fps`), publiés dans la catégorie **Templates** du Hub : le template tire son pack
+`astra.template.fps`, `astra.template.deckbuilder`), publiés dans la catégorie **Templates** du Hub : le template tire son pack
 de gameplay, puis Astra Setup applique sa composition. Code et contenu sous **licence MIT** ; les
 assets Quaternius de Melee Template restent en **CC0-1.0**.
 

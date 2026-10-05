@@ -1,0 +1,72 @@
+{
+    "schemaVersion": 1,
+    "packs": [
+        {
+            "id": "astra.template.match3",
+            "displayName": "Match3 Template",
+            "description": "Template de genre match-3 pr\u00eat \u00e0 jouer : sc\u00e8ne de d\u00e9part, niveaux, prefabs et composition \u00e0 appliquer avec Setup, sans \u00e9crire une ligne de code.",
+            "category": "Templates",
+            "recommendedVersion": "2.0.1",
+            "manifestUrl": "https://raw.githubusercontent.com/MisterPxl/astra-content/main/manifests/astra.template.match3/2.0.1.json",
+            "manifestSha256": "fd26ac418a333aa151e0793cbc0bd4032ca7d00e71eab822eb8f2ad64c7900a8",
+            "tags": [
+                "template",
+                "puzzle",
+                "match3",
+                "mobile",
+                "touch"
+            ],
+            "compressedBytes": 30976
+        },
+        {
+            "id": "astra.template.melee",
+            "displayName": "Melee Template",
+            "description": "Template de platform fighter local pour deux \u00e0 quatre joueurs : lobby, stage, combattant et composition \u00e0 appliquer avec Setup.",
+            "category": "Templates",
+            "recommendedVersion": "1.2.2",
+            "manifestUrl": "https://raw.githubusercontent.com/MisterPxl/astra-content/main/manifests/astra.template.melee/1.2.2.json",
+            "manifestSha256": "b02da1c9b2449a326fb7d9ecf020579189316dfa2f181457fa4cf1b14e3a9cb0",
+            "tags": [
+                "template",
+                "melee",
+                "platform-fighter",
+                "local-multiplayer"
+            ],
+            "compressedBytes": 6871781
+        },
+        {
+            "id": "astra.template.fps",
+            "displayName": "FPS Template",
+            "description": "Template MW2 : s\u00e9lection de mode, The Pit et Team Deathmatch contre bots.",
+            "category": "Templates",
+            "recommendedVersion": "1.0.0",
+            "manifestUrl": "https://raw.githubusercontent.com/MisterPxl/astra-content/main/manifests/astra.template.fps/1.0.0.json",
+            "manifestSha256": "25f56e9b87588e09dc5d10ab7df84a614a7d9cc582e5f1f2e2dda5f37bc9304b",
+            "tags": [
+                "fps",
+                "template",
+                "mw2"
+            ],
+            "compressedBytes": 81111
+        },
+        {
+            "id": "astra.template.deckbuilder",
+            "displayName": "Deckbuilder Template",
+            "description": "Template roguelite deckbuilder pr\u00eat \u00e0 jouer : carte de run, combat au tour, sauvegarde et menu Continuer, sans code auteur.",
+            "category": "Templates",
+            "recommendedVersion": "1.0.0",
+            "manifestUrl": "https://raw.githubusercontent.com/MisterPxl/astra-content/main/manifests/astra.template.deckbuilder/1.0.0.json",
+            "manifestSha256": "2c3fbba2cb522d5adff814bf44bf037a777e41534970875970364f62cf75a8b7",
+            "tags": [
+                "template",
+                "deckbuilder",
+                "cards",
+                "roguelite",
+                "turn-based",
+                "mobile",
+                "touch"
+            ],
+            "compressedBytes": 135095
+        }
+    ]
+}

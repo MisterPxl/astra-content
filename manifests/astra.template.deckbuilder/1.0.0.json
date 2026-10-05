@@ -1,0 +1,82 @@
+{
+    "schemaVersion": 1,
+    "id": "astra.template.deckbuilder",
+    "version": "1.0.0",
+    "displayName": "Deckbuilder Template",
+    "description": "Template roguelite deckbuilder pr\u00eat \u00e0 jouer : carte de run, combat au tour, sauvegarde et menu Continuer, sans code auteur.",
+    "category": "Templates",
+    "tags": [
+        "template",
+        "deckbuilder",
+        "cards",
+        "roguelite",
+        "turn-based",
+        "mobile",
+        "touch"
+    ],
+    "compatibility": {
+        "minimumUnity": "6000.4.0f1",
+        "maximumUnityExclusive": "6000.4.0f2",
+        "testedUnity": [
+            "6000.4.0f1"
+        ],
+        "renderPipelines": [
+            "urp"
+        ],
+        "platforms": [
+            "StandaloneOSX",
+            "Android",
+            "iOS"
+        ]
+    },
+    "contentDependencies": [
+        {
+            "id": "astra.deckbuilder",
+            "version": "1.0.0"
+        }
+    ],
+    "projectPrerequisites": [
+        {
+            "kind": "capability",
+            "name": "input-system-enabled",
+            "minimumVersion": "",
+            "maximumVersionExclusive": ""
+        },
+        {
+            "kind": "package",
+            "name": "com.unity.inputsystem",
+            "minimumVersion": "1.19.0",
+            "maximumVersionExclusive": "1.19.1"
+        },
+        {
+            "kind": "package",
+            "name": "com.unity.render-pipelines.universal",
+            "minimumVersion": "17.4.0",
+            "maximumVersionExclusive": "17.4.1"
+        },
+        {
+            "kind": "package",
+            "name": "com.unity.ugui",
+            "minimumVersion": "2.0.0",
+            "maximumVersionExclusive": "2.0.1"
+        },
+        {
+            "kind": "assembly",
+            "name": "Astra.Framework.Game.FlowPresentation.Runtime",
+            "minimumVersion": "",
+            "maximumVersionExclusive": ""
+        }
+    ],
+    "containsCode": false,
+    "license": "MIT",
+    "attribution": "Copyright (c) 2026 Alexis Gomes. Contenu sous licence MIT ; aucun asset tiers.",
+    "sources": [],
+    "releaseNotes": "1.0.0 : template G5 deckbuilder (carte, combat, sauvegarde de run), composition par identifiants de module (astra.core.localization, deckbuilder.module). Requiert le framework Game Flow Foundation (Game.FlowPresentation).",
+    "archive": {
+        "url": "https://github.com/MisterPxl/astra-content/releases/download/template-deckbuilder-v1.0.0/astra.template.deckbuilder-1.0.0.zip",
+        "sha256": "727c04d27b41ab9134fffc069919cfd38cce09f14451295d90c49f87e437da28",
+        "bytes": 135095,
+        "expandedBytes": 643670,
+        "fileCount": 145
+    }
+}
