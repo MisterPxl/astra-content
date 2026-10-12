@@ -13,9 +13,9 @@ Le shader attend **Depth Texture** et **Opaque Texture** sur l'asset URP actif ;
 du `WaterSurface` le signale et propose de les activer, sans le faire seul. Qualifié sur
 macOS ; le Hub ne modifie ni les packages ni les réglages de rendu.
 
-Version **0.1.1** : démo compatible Input System, Legacy et Both. Input System 1.19+ est un prérequis explicite.
-Archive : `water-v0.1.1`, 60 fichiers, 424833 octets,
-SHA-256 `1cc485eb30b02ec1b751ee777477b5406485cfedd25fe3c761f0bee451d82eb1`.
+Version **0.1.2** : les menus de l'éditeur trouvent le pack là où le Hub l'installe (`Assets/AstraContent/astra.water`) et n'écrivent plus dans le pack installé ni dans `Assets/_Project/Features` ; les assets générés vont sous `Assets/WaterGenerated` ou le dossier de la démo.
+Archive : `water-v0.1.2`, 64 fichiers, 428159 octets,
+SHA-256 `99aad3c57b18d1a75f1abb1c7aebed35751fc03629c5128cf6c6233db477e44c`.
 
 Le guide complet du pack est [PackReadme.md](PackReadme.md) ; la préparation et la
 qualification sont décrites dans le dépôt auteur `AI_Testing_Sandbox`,

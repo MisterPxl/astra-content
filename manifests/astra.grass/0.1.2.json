@@ -1,0 +1,63 @@
+{
+    "schemaVersion": 1,
+    "id": "astra.grass",
+    "version": "0.1.2",
+    "displayName": "Astra Grass",
+    "description": "Herbe stylis\u00e9e en touffes pour URP : peinture au pinceau, color shading, vent, interacteurs avec trails, correction de perspective et rendu GPU indirect optimis\u00e9.",
+    "category": "Environment",
+    "tags": [
+        "grass",
+        "vegetation",
+        "urp",
+        "environment",
+        "gpu"
+    ],
+    "compatibility": {
+        "minimumUnity": "6000.4.0f1",
+        "maximumUnityExclusive": "6000.4.0f2",
+        "testedUnity": [
+            "6000.4.0f1"
+        ],
+        "renderPipelines": [
+            "urp"
+        ],
+        "platforms": [
+            "StandaloneOSX",
+            "Android",
+            "iOS"
+        ]
+    },
+    "contentDependencies": [],
+    "projectPrerequisites": [
+        {
+            "kind": "package",
+            "name": "com.unity.inputsystem",
+            "minimumVersion": "1.19.0",
+            "maximumVersionExclusive": ""
+        },
+        {
+            "kind": "package",
+            "name": "com.unity.render-pipelines.universal",
+            "minimumVersion": "17.4.0",
+            "maximumVersionExclusive": ""
+        },
+        {
+            "kind": "package",
+            "name": "com.unity.modules.physics",
+            "minimumVersion": "1.0.0",
+            "maximumVersionExclusive": ""
+        }
+    ],
+    "containsCode": true,
+    "license": "MIT",
+    "attribution": "Copyright (c) 2026 Alexis Gomes. Code et contenu de d\u00e9monstration Astra sous licence MIT. Voir LICENSES/LICENSE.txt.",
+    "sources": [],
+    "releaseNotes": "Menus de l'\u00e9diteur corrig\u00e9s pour un pack install\u00e9 par le Hub : le dossier du pack est trouv\u00e9 l\u00e0 o\u00f9 il est install\u00e9 (Assets/AstraContent/astra.grass) au lieu du chemin fixe Assets/_Project/Features/Grass, les shaders compute sont bien r\u00e9f\u00e9renc\u00e9s et rien n'est plus \u00e9crit dans le pack install\u00e9. Create Grass Field et Build Feature Meadow cr\u00e9ent leurs assets sous Assets/GrassGenerated, Create Meadow Demo sous Assets/GrassMeadowDemo.",
+    "archive": {
+        "url": "https://github.com/MisterPxl/astra-content/releases/download/grass-v0.1.2/astra.grass-0.1.2.zip",
+        "sha256": "009edc10331d7f9060d800fcc1387c7785a0ed31d129e9eb757bac6299407c4a",
+        "bytes": 137320,
+        "expandedBytes": 363684,
+        "fileCount": 101
+    }
+}

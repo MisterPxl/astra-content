@@ -1,0 +1,61 @@
+{
+    "schemaVersion": 1,
+    "id": "astra.snow",
+    "version": "0.1.2",
+    "displayName": "Astra Snow",
+    "description": "Neige stylis\u00e9e pour URP : sol d\u00e9formable avec traces des interacteurs qui se comblent, recouvrement des objets selon la normale, ombres bleut\u00e9es et scintillement.",
+    "category": "Environment",
+    "tags": [
+        "snow",
+        "environment",
+        "urp",
+        "deformation",
+        "shader"
+    ],
+    "compatibility": {
+        "minimumUnity": "6000.4.0f1",
+        "maximumUnityExclusive": "6000.4.0f2",
+        "testedUnity": [
+            "6000.4.0f1"
+        ],
+        "renderPipelines": [
+            "urp"
+        ],
+        "platforms": [
+            "StandaloneOSX"
+        ]
+    },
+    "contentDependencies": [],
+    "projectPrerequisites": [
+        {
+            "kind": "package",
+            "name": "com.unity.render-pipelines.universal",
+            "minimumVersion": "17.4.0",
+            "maximumVersionExclusive": ""
+        },
+        {
+            "kind": "package",
+            "name": "com.unity.modules.physics",
+            "minimumVersion": "1.0.0",
+            "maximumVersionExclusive": ""
+        },
+        {
+            "kind": "package",
+            "name": "com.unity.inputsystem",
+            "minimumVersion": "1.19.0",
+            "maximumVersionExclusive": ""
+        }
+    ],
+    "containsCode": true,
+    "license": "MIT",
+    "attribution": "Copyright (c) 2026 Alexis Gomes. Code et contenu de d\u00e9monstration Astra sous licence MIT. Voir LICENSES/LICENSE.txt.",
+    "sources": [],
+    "releaseNotes": "Menus de l'\u00e9diteur corrig\u00e9s pour un pack install\u00e9 par le Hub : le dossier du pack est trouv\u00e9 l\u00e0 o\u00f9 il est install\u00e9 (Assets/AstraContent/astra.snow) au lieu du chemin fixe Assets/_Project/Features/Snow, le shader compute de d\u00e9formation est bien r\u00e9f\u00e9renc\u00e9 et rien n'est plus \u00e9crit dans le pack install\u00e9. Create Snow Surface et Build Feature Snowfield cr\u00e9ent leurs assets sous Assets/SnowGenerated, Create Snow Demo sous Assets/SnowDemo.",
+    "archive": {
+        "url": "https://github.com/MisterPxl/astra-content/releases/download/snow-v0.1.2/astra.snow-0.1.2.zip",
+        "sha256": "613baeeda293aa7ed50ad4d783e2ccb6593fb60086ba7f0d2f099bf474080a06",
+        "bytes": 248523,
+        "expandedBytes": 1561855,
+        "fileCount": 56
+    }
+}

@@ -23,11 +23,13 @@ Le shader a besoin de **Depth Texture** et **Opaque Texture** sur l'asset URP ac
 
 ## Démarrage rapide
 
-1. **Tools > Astra > Water > Build Feature Lake** — scène `Demo/Generated/Lake.unity`.
+1. Ouvrir la scène livrée `Demo/Generated/Lake.unity`, ou **Tools > Astra > Water > Create Water Demo** pour une copie modifiable sous `Assets/WaterDemo`.
 2. Play : **WASD** déplace le marcheur, **Espace** saute (éclaboussure), **Tab** bascule la vue de dessus, **R** calme la surface.
 3. **Tools > Astra > Water > Create Water Surface** ajoute un plan d'eau prêt à l'emploi dans la scène active.
 
 Les scènes de jeu doivent vivre hors du dossier du pack (**Create Water Demo** en fait une copie).
+Les menus trouvent le pack là où il est installé et n'écrivent jamais dans `Assets/AstraContent/astra.water` :
+**Create Water Surface** et **Build Feature Lake** créent leurs matériaux, maillages et scène sous `Assets/WaterGenerated`.
 
 ## Prérequis
 

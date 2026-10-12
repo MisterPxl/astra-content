@@ -11,11 +11,13 @@ Pack Content Hub **astra.grass** : herbe stylisée en touffes pour URP (desktop 
 
 ## Démarrage rapide
 
-1. **Tools > Astra > Grass > Build Feature Meadow** — scène de démo sous `Demo/Generated/Meadow.unity`.
+1. Ouvrir la scène livrée `Demo/Generated/Meadow.unity`, ou **Tools > Astra > Grass > Create Meadow Demo** pour une copie modifiable sous `Assets/GrassMeadowDemo`.
 2. **Tools > Astra > Grass > Create Grass Field** — nouvelle instance dans la scène active.
 3. Sélectionner le `Grass Field`, activer l’outil **Grass Paint** dans la barre d’outils Scene.
 
 Les scènes de jeu et données peintes doivent vivre **hors** du dossier du pack (copie via **Create Meadow Demo**).
+Les menus trouvent le pack là où il est installé et n’écrivent jamais dans `Assets/AstraContent/astra.grass` :
+**Create Grass Field** et **Build Feature Meadow** créent leurs assets par défaut et la scène sous `Assets/GrassGenerated`.
 
 ## Assets clés
 

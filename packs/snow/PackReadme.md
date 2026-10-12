@@ -17,11 +17,13 @@ Pack Content Hub **astra.snow** : neige stylisée pour URP (desktop et mobile), 
 
 ## Démarrage rapide
 
-1. **Tools > Astra > Snow > Build Feature Snowfield** — scène `Demo/Generated/Snowfield.unity`.
+1. Ouvrir la scène livrée `Demo/Generated/Snowfield.unity`, ou **Tools > Astra > Snow > Create Snow Demo** pour une copie modifiable sous `Assets/SnowDemo`.
 2. Play : **WASD** déplace le marcheur, **Tab** bascule la vue de dessus, **R** remet la neige à neuf.
 3. **Tools > Astra > Snow > Create Snow Surface** ajoute un sol prêt à l'emploi dans la scène active.
 
 Les scènes de jeu doivent vivre hors du dossier du pack (**Create Snow Demo** en fait une copie).
+Les menus trouvent le pack là où il est installé et n'écrivent jamais dans `Assets/AstraContent/astra.snow` :
+**Create Snow Surface** et **Build Feature Snowfield** créent leurs matériaux, maillage et scène sous `Assets/SnowGenerated`.
 
 ## Prérequis
 

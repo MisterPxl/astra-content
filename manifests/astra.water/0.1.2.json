@@ -1,0 +1,62 @@
+{
+    "schemaVersion": 1,
+    "id": "astra.water",
+    "version": "0.1.2",
+    "displayName": "Astra Water",
+    "description": "Eau stylis\u00e9e pour URP : vagues de Gerstner, couleur par profondeur et r\u00e9fraction, \u00e9cume de rivage et de cr\u00eate, ondulations propag\u00e9es par les interacteurs, flottaison.",
+    "category": "Environment",
+    "tags": [
+        "water",
+        "environment",
+        "urp",
+        "waves",
+        "buoyancy",
+        "shader"
+    ],
+    "compatibility": {
+        "minimumUnity": "6000.4.0f1",
+        "maximumUnityExclusive": "6000.4.0f2",
+        "testedUnity": [
+            "6000.4.0f1"
+        ],
+        "renderPipelines": [
+            "urp"
+        ],
+        "platforms": [
+            "StandaloneOSX"
+        ]
+    },
+    "contentDependencies": [],
+    "projectPrerequisites": [
+        {
+            "kind": "package",
+            "name": "com.unity.render-pipelines.universal",
+            "minimumVersion": "17.4.0",
+            "maximumVersionExclusive": ""
+        },
+        {
+            "kind": "package",
+            "name": "com.unity.modules.physics",
+            "minimumVersion": "1.0.0",
+            "maximumVersionExclusive": ""
+        },
+        {
+            "kind": "package",
+            "name": "com.unity.inputsystem",
+            "minimumVersion": "1.19.0",
+            "maximumVersionExclusive": ""
+        }
+    ],
+    "containsCode": true,
+    "license": "MIT",
+    "attribution": "Copyright (c) 2026 Alexis Gomes. Code et contenu de d\u00e9monstration Astra sous licence MIT. Voir LICENSES/LICENSE.txt.",
+    "sources": [],
+    "releaseNotes": "Menus de l'\u00e9diteur corrig\u00e9s pour un pack install\u00e9 par le Hub : le dossier du pack est trouv\u00e9 l\u00e0 o\u00f9 il est install\u00e9 (Assets/AstraContent/astra.water) au lieu du chemin fixe Assets/_Project/Features/Water, le shader compute d'ondulations est bien r\u00e9f\u00e9renc\u00e9 et rien n'est plus \u00e9crit dans le pack install\u00e9. Create Water Surface et Build Feature Lake cr\u00e9ent leurs assets sous Assets/WaterGenerated, Create Water Demo sous Assets/WaterDemo.",
+    "archive": {
+        "url": "https://github.com/MisterPxl/astra-content/releases/download/water-v0.1.2/astra.water-0.1.2.zip",
+        "sha256": "99aad3c57b18d1a75f1abb1c7aebed35751fc03629c5128cf6c6233db477e44c",
+        "bytes": 428159,
+        "expandedBytes": 1787124,
+        "fileCount": 64
+    }
+}
