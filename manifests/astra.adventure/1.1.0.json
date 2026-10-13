@@ -1,0 +1,113 @@
+{
+    "schemaVersion": 1,
+    "id": "astra.adventure",
+    "version": "1.1.0",
+    "displayName": "Adventure",
+    "description": "Contr\u00f4leur action-aventure, inputs clavier/manette et d\u00e9mo humano\u00efde anim\u00e9e avec cam\u00e9ra, escalade, \u00e9p\u00e9e et arc.",
+    "category": "Gameplay",
+    "tags": [
+        "controller",
+        "character",
+        "animation",
+        "demo",
+        "urp"
+    ],
+    "compatibility": {
+        "minimumUnity": "6000.4.0f1",
+        "maximumUnityExclusive": "6000.4.0f2",
+        "testedUnity": [
+            "6000.4.0f1"
+        ],
+        "renderPipelines": [
+            "urp"
+        ],
+        "platforms": [
+            "StandaloneOSX"
+        ]
+    },
+    "contentDependencies": [],
+    "projectPrerequisites": [
+        {
+            "kind": "capability",
+            "name": "input-system-enabled",
+            "minimumVersion": "",
+            "maximumVersionExclusive": ""
+        },
+        {
+            "kind": "package",
+            "name": "com.unity.inputsystem",
+            "minimumVersion": "1.19.0",
+            "maximumVersionExclusive": "1.19.1"
+        },
+        {
+            "kind": "package",
+            "name": "com.unity.render-pipelines.universal",
+            "minimumVersion": "17.4.0",
+            "maximumVersionExclusive": "17.4.1"
+        },
+        {
+            "kind": "package",
+            "name": "com.unity.modules.animation",
+            "minimumVersion": "1.0.0",
+            "maximumVersionExclusive": ""
+        },
+        {
+            "kind": "package",
+            "name": "com.unity.modules.audio",
+            "minimumVersion": "1.0.0",
+            "maximumVersionExclusive": ""
+        },
+        {
+            "kind": "package",
+            "name": "com.unity.modules.physics",
+            "minimumVersion": "1.0.0",
+            "maximumVersionExclusive": ""
+        },
+        {
+            "kind": "package",
+            "name": "com.unity.modules.imgui",
+            "minimumVersion": "1.0.0",
+            "maximumVersionExclusive": ""
+        },
+        {
+            "kind": "package",
+            "name": "com.unity.ugui",
+            "minimumVersion": "2.0.0",
+            "maximumVersionExclusive": "2.0.1"
+        },
+        {
+            "kind": "assembly",
+            "name": "Astra.Framework.Game.Characters.Runtime",
+            "minimumVersion": "",
+            "maximumVersionExclusive": ""
+        },
+        {
+            "kind": "assembly",
+            "name": "Astra.Framework.Game.HUD.Runtime",
+            "minimumVersion": "",
+            "maximumVersionExclusive": ""
+        },
+        {
+            "kind": "assembly",
+            "name": "Astra.Framework.Game.FlowPresentation.Runtime",
+            "minimumVersion": "",
+            "maximumVersionExclusive": ""
+        }
+    ],
+    "containsCode": true,
+    "license": "MIT AND CC0-1.0",
+    "attribution": "Copyright (c) 2026 Alexis Gomes. Code et d\u00e9mo Astra sous licence MIT ; mod\u00e8les, textures et animations Quaternius sous CC0-1.0. Voir LICENSES/LICENSE.txt et Demo/Art/Quaternius/PROVENANCE.json.",
+    "sources": [
+        "https://quaternius.com/packs/universalbasecharacters.html",
+        "https://quaternius.com/packs/universalanimationlibrary.html",
+        "https://quaternius.com/packs/universalanimationlibrary2.html"
+    ],
+    "releaseNotes": "1.1.0 : ajoute l'assembly Adventure.Astra, pont vers le framework Astra (module adventure.module, cam\u00e9ra, entr\u00e9es Gameplay, sant\u00e9 en quarts de c\u0153ur, zones de d\u00e9g\u00e2ts et d'arriv\u00e9e, fin de run). Requiert le framework Game Flow Foundation (Game.FlowPresentation) ; sans lui le Hub refuse l'import. Les assemblies Adventure.Controller, Adventure.Input et Adventure.Sample sont inchang\u00e9s et la version 1.0.0 reste utilisable hors framework.",
+    "archive": {
+        "url": "https://github.com/MisterPxl/astra-content/releases/download/adventure-v1.1.0/astra.adventure-1.1.0.zip",
+        "sha256": "9ea850bfb4209a1375ab1a7e428daa43c69f02c7682f1288bbce9944f129a796",
+        "bytes": 16034778,
+        "expandedBytes": 56595096,
+        "fileCount": 219
+    }
+}
