@@ -16,10 +16,14 @@ les archives uniquement à la demande et installe les fichiers éditables sous
 
 ## État du catalogue
 
-**[Adventure 1.0.0](packs/adventure/README.md)** (`astra.adventure`) regroupe un
+**[Adventure 1.1.0](packs/adventure/README.md)** (`astra.adventure`) regroupe un
 contrôleur action-aventure, Input System et une démo humanoïde animée avec caméra,
-escalade, épée et arc. Le code et la démo Astra sont distribués sous **licence MIT** ;
-les modèles, textures et animations Quaternius conservent leurs notices **CC0-1.0**.
+escalade, épée et arc, avec depuis la 1.1.0 un pont vers le framework Astra
+(`Adventure.Astra`). Il est livré avec son **template de genre**
+(`astra.template.adventure` 1.0.0, catégorie **Templates**) : parcours de démarrage et HUD
+cœurs, roue d'endurance et réticule d'arc. La 1.0.0 reste disponible hors framework. Le code et
+la démo Astra sont distribués sous **licence MIT** ; les modèles, textures et animations
+Quaternius conservent leurs notices **CC0-1.0**.
 
 **[Dialogue 0.1.2](packs/dialogue/README.md)** (`astra.dialogue`) regroupe Dialogue
 Studio (éditeur de conversations à bulles), un moteur d'exécution avec conditions et
