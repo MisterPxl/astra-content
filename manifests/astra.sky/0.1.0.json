@@ -1,0 +1,56 @@
+{
+    "schemaVersion": 1,
+    "id": "astra.sky",
+    "version": "0.1.0",
+    "displayName": "Astra Sky",
+    "description": "Ciel jour/nuit pour URP : profil horaire, ambiante Trilight, brouillard et soleil pilot\u00e9s par l'heure, shader de ciel avec \u00e9toiles, lune et nuages, r\u00e9flexions temps r\u00e9el, horloge et fen\u00eatres horaires pour le gameplay.",
+    "category": "Environment",
+    "tags": [
+        "sky",
+        "environment",
+        "urp",
+        "time-of-day",
+        "day-night",
+        "shader"
+    ],
+    "compatibility": {
+        "minimumUnity": "6000.4.0f1",
+        "maximumUnityExclusive": "6000.4.0f2",
+        "testedUnity": [
+            "6000.4.0f1"
+        ],
+        "renderPipelines": [
+            "urp"
+        ],
+        "platforms": [
+            "StandaloneOSX"
+        ]
+    },
+    "contentDependencies": [],
+    "projectPrerequisites": [
+        {
+            "kind": "package",
+            "name": "com.unity.render-pipelines.universal",
+            "minimumVersion": "17.4.0",
+            "maximumVersionExclusive": ""
+        },
+        {
+            "kind": "package",
+            "name": "com.unity.inputsystem",
+            "minimumVersion": "1.19.0",
+            "maximumVersionExclusive": ""
+        }
+    ],
+    "containsCode": true,
+    "license": "MIT",
+    "attribution": "Copyright (c) 2026 Alexis Gomes. Code et contenu de d\u00e9monstration Astra sous licence MIT. Voir LICENSES/LICENSE.txt.",
+    "sources": [],
+    "releaseNotes": "Premi\u00e8re version.",
+    "archive": {
+        "url": "https://github.com/MisterPxl/astra-content/releases/download/sky-v0.1.0/astra.sky-0.1.0.zip",
+        "sha256": "169fc336c793fb216a819a712339679ddb5394346f1285eb425cd57ee406643b",
+        "bytes": 99339,
+        "expandedBytes": 366170,
+        "fileCount": 119
+    }
+}
