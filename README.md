@@ -41,10 +41,12 @@ de gameplay, puis Astra Setup applique sa composition. Code et contenu sous **li
 assets Quaternius de Melee Template restent en **CC0-1.0**.
 
 **[Grass 0.1.2](packs/grass/README.md)** (`astra.grass`), **[Snow 0.1.2](packs/snow/README.md)**
-(`astra.snow`) et **[Water 0.1.2](packs/water/README.md)** (`astra.water`) forment la catégorie
+(`astra.snow`), **[Water 0.1.2](packs/water/README.md)** (`astra.water`) et
+**[Sky 0.1.0](packs/sky/README.md)** (`astra.sky`) forment la catégorie
 **Environment** : herbe peinte au pinceau avec vent, interacteurs et rendu GPU indirect ; neige
 déformable avec couverture des objets ; eau à vagues de Gerstner, réfraction, écume, ondulations
-et flottaison. Trois packs URP indépendants, code et démos sous **licence MIT**, sans asset tiers.
+et flottaison ; ciel jour/nuit avec étoiles, lune, nuages, réflexions et horloge de jeu. Quatre
+packs URP indépendants, code et démos sous **licence MIT**, sans asset tiers.
 
 Prérequis qualifiés : **Unity 6000.4.0f1**, **URP 17.4.0**, **Input System 1.19.0**,
 backend Input System actif et cible macOS. Les prérequis sont à préparer avant

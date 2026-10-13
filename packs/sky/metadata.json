@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "id": "astra.sky",
+  "version": "0.1.0",
+  "displayName": "Astra Sky",
+  "description": "Ciel jour/nuit pour URP : profil horaire, ambiante Trilight, brouillard et soleil pilotés par l'heure, shader de ciel avec étoiles, lune et nuages, réflexions temps réel, horloge et fenêtres horaires pour le gameplay.",
+  "category": "Environment",
+  "tags": [
+    "sky",
+    "environment",
+    "urp",
+    "time-of-day",
+    "day-night",
+    "shader"
+  ],
+  "compatibility": {
+    "minimumUnity": "6000.4.0f1",
+    "maximumUnityExclusive": "6000.4.0f2",
+    "testedUnity": [
+      "6000.4.0f1"
+    ],
+    "renderPipelines": [
+      "urp"
+    ],
+    "platforms": [
+      "StandaloneOSX"
+    ]
+  },
+  "contentDependencies": [],
+  "projectPrerequisites": [
+    {
+      "kind": "package",
+      "name": "com.unity.render-pipelines.universal",
+      "minimumVersion": "17.4.0",
+      "maximumVersionExclusive": ""
+    },
+    {
+      "kind": "package",
+      "name": "com.unity.inputsystem",
+      "minimumVersion": "1.19.0",
+      "maximumVersionExclusive": ""
+    }
+  ],
+  "containsCode": true,
+  "license": "MIT",
+  "attribution": "Copyright (c) 2026 Alexis Gomes. Code et contenu de démonstration Astra sous licence MIT. Voir LICENSES/LICENSE.txt.",
+  "sources": [],
+  "releaseNotes": "Première version."
+}
