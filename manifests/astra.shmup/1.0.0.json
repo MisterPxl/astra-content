@@ -1,0 +1,66 @@
+{
+    "schemaVersion": 1,
+    "id": "astra.shmup",
+    "version": "1.0.0",
+    "displayName": "Shmup",
+    "description": "Simulation 60 Hz et vues Unity pour un shoot'em up horizontal solo ou coop locale, avec int\u00e9gration au framework Astra.",
+    "category": "Gameplay",
+    "tags": [
+        "shmup",
+        "shoot-em-up",
+        "local-multiplayer",
+        "2d"
+    ],
+    "compatibility": {
+        "minimumUnity": "6000.4.0f1",
+        "maximumUnityExclusive": "6000.4.0f2",
+        "testedUnity": [
+            "6000.4.0f1"
+        ],
+        "renderPipelines": [
+            "urp"
+        ],
+        "platforms": [
+            "StandaloneOSX"
+        ]
+    },
+    "contentDependencies": [],
+    "projectPrerequisites": [
+        {
+            "kind": "capability",
+            "name": "input-system-enabled",
+            "minimumVersion": "",
+            "maximumVersionExclusive": ""
+        },
+        {
+            "kind": "package",
+            "name": "com.unity.inputsystem",
+            "minimumVersion": "1.19.0",
+            "maximumVersionExclusive": "1.19.1"
+        },
+        {
+            "kind": "assembly",
+            "name": "Astra.Framework.Game.HUD.Runtime",
+            "minimumVersion": "",
+            "maximumVersionExclusive": ""
+        },
+        {
+            "kind": "assembly",
+            "name": "Astra.Framework.Game.FlowPresentation.Runtime",
+            "minimumVersion": "",
+            "maximumVersionExclusive": ""
+        }
+    ],
+    "containsCode": true,
+    "license": "MIT",
+    "attribution": "Copyright (c) 2026 Alexis Gomes. Code sous licence MIT.",
+    "sources": [],
+    "releaseNotes": "1.0.0 : premier pack gameplay shmup horizontal (Shmup.Core, Shmup.Unity, Shmup.Astra) avec module shmup.module.",
+    "archive": {
+        "url": "https://github.com/MisterPxl/astra-content/releases/download/shmup-v1.0.0/astra.shmup-1.0.0.zip",
+        "sha256": "98a0d5ba9066e3696881f33b14fb2f887ca029d95719d341f6277aa9592ee565",
+        "bytes": 59913,
+        "expandedBytes": 127496,
+        "fileCount": 102
+    }
+}
