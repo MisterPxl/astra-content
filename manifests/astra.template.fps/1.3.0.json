@@ -1,0 +1,82 @@
+{
+    "schemaVersion": 1,
+    "id": "astra.template.fps",
+    "version": "1.3.0",
+    "displayName": "FPS Template",
+    "description": "Template MW2 : s\u00e9lection de mode, The Pit et Team Deathmatch contre bots.",
+    "category": "Templates",
+    "tags": [
+        "fps",
+        "template",
+        "mw2"
+    ],
+    "compatibility": {
+        "minimumUnity": "6000.4.0f1",
+        "maximumUnityExclusive": "6000.4.0f2",
+        "testedUnity": [
+            "6000.4.0f1"
+        ],
+        "renderPipelines": [
+            "urp"
+        ],
+        "platforms": [
+            "StandaloneOSX"
+        ]
+    },
+    "contentDependencies": [
+        {
+            "id": "astra.fps",
+            "version": "1.3.0"
+        }
+    ],
+    "projectPrerequisites": [
+        {
+            "kind": "capability",
+            "name": "input-system-enabled",
+            "minimumVersion": "",
+            "maximumVersionExclusive": ""
+        },
+        {
+            "kind": "package",
+            "name": "com.unity.inputsystem",
+            "minimumVersion": "1.19.0",
+            "maximumVersionExclusive": "1.19.1"
+        },
+        {
+            "kind": "package",
+            "name": "com.unity.ai.navigation",
+            "minimumVersion": "2.0.11",
+            "maximumVersionExclusive": "2.0.12"
+        },
+        {
+            "kind": "package",
+            "name": "com.unity.ugui",
+            "minimumVersion": "2.0.0",
+            "maximumVersionExclusive": "2.0.1"
+        },
+        {
+            "kind": "package",
+            "name": "com.unity.render-pipelines.universal",
+            "minimumVersion": "17.4.0",
+            "maximumVersionExclusive": "17.4.1"
+        },
+        {
+            "kind": "assembly",
+            "name": "Astra.Framework.Game.FlowPresentation.Runtime",
+            "minimumVersion": "",
+            "maximumVersionExclusive": ""
+        }
+    ],
+    "containsCode": false,
+    "license": "MIT",
+    "attribution": "Copyright (c) 2026 Alexis Gomes. Contenu sous licence MIT ; aucun asset tiers.",
+    "sources": [],
+    "releaseNotes": "1.3.0 : requiert astra.fps 1.3.0 (HUD typ\u00e9). Requiert le framework Game \u00e0 partir du tag framework-game-2026-10-15 (HUD typ\u00e9) ; sur un framework plus ancien, l'import ne compile pas. 1.2.0 : molette pour changer d'arme, mod\u00e8les d'armes en primitives (M4A1, USP .45, Intervention), Intervention pos\u00e9e dans le Pit et \u00e9changeable au sol, overlay de lunette, panneau LOADOUT dans FpsModeSelect, impacts qui suivent la surface. Composition par identifiants de module (astra.core.preferences, astra.game.*, fps.module) ; PreferencesModule ajout\u00e9 pour persister le loadout. Guide d'extension README.md / README.fr.md. D\u00e9pend de astra.fps 1.2.0. Requiert Game.FlowPresentation ; sans lui le Hub refuse l'import. Inclut 1.1.0, jamais publi\u00e9e : bots arm\u00e9s en TDM, frag et flash dans le loadout, couteau, HUD \u00e9quipement / mort / flash.",
+    "archive": {
+        "url": "https://github.com/MisterPxl/astra-content/releases/download/template-fps-v1.3.0/astra.template.fps-1.3.0.zip",
+        "sha256": "319a4c48f09835c8ffeaf3bddc1cb02a2c6f80f50bd15647cbc1a697982c9b4e",
+        "bytes": 245162,
+        "expandedBytes": 785354,
+        "fileCount": 133
+    }
+}

@@ -1,0 +1,95 @@
+{
+    "schemaVersion": 1,
+    "id": "astra.template.adventure",
+    "version": "1.1.0",
+    "displayName": "Adventure Template",
+    "description": "Template d'action-aventure \u00e0 la troisi\u00e8me personne : un parcours lin\u00e9aire (\u00e9p\u00e9e, cibles, ronces, escalade, arc, sanctuaire), des c\u0153urs et une roue d'endurance, \u00e0 appliquer avec Setup.",
+    "category": "Templates",
+    "tags": [
+        "template",
+        "adventure",
+        "third-person",
+        "action"
+    ],
+    "compatibility": {
+        "minimumUnity": "6000.4.0f1",
+        "maximumUnityExclusive": "6000.4.0f2",
+        "testedUnity": [
+            "6000.4.0f1"
+        ],
+        "renderPipelines": [
+            "urp"
+        ],
+        "platforms": [
+            "StandaloneOSX"
+        ]
+    },
+    "contentDependencies": [
+        {
+            "id": "astra.adventure",
+            "version": "1.2.0"
+        }
+    ],
+    "projectPrerequisites": [
+        {
+            "kind": "capability",
+            "name": "input-system-enabled",
+            "minimumVersion": "",
+            "maximumVersionExclusive": ""
+        },
+        {
+            "kind": "package",
+            "name": "com.unity.inputsystem",
+            "minimumVersion": "1.19.0",
+            "maximumVersionExclusive": "1.19.1"
+        },
+        {
+            "kind": "package",
+            "name": "com.unity.render-pipelines.universal",
+            "minimumVersion": "17.4.0",
+            "maximumVersionExclusive": "17.4.1"
+        },
+        {
+            "kind": "package",
+            "name": "com.unity.ugui",
+            "minimumVersion": "2.0.0",
+            "maximumVersionExclusive": "2.0.1"
+        },
+        {
+            "kind": "package",
+            "name": "com.unity.modules.animation",
+            "minimumVersion": "1.0.0",
+            "maximumVersionExclusive": ""
+        },
+        {
+            "kind": "assembly",
+            "name": "Astra.Framework.Game.Characters.Runtime",
+            "minimumVersion": "",
+            "maximumVersionExclusive": ""
+        },
+        {
+            "kind": "assembly",
+            "name": "Astra.Framework.Game.HUD.Runtime",
+            "minimumVersion": "",
+            "maximumVersionExclusive": ""
+        },
+        {
+            "kind": "assembly",
+            "name": "Astra.Framework.Game.FlowPresentation.Runtime",
+            "minimumVersion": "",
+            "maximumVersionExclusive": ""
+        }
+    ],
+    "containsCode": false,
+    "license": "MIT",
+    "attribution": "Copyright (c) 2026 Alexis Gomes. Contenu du template sous licence MIT (sprites du HUD g\u00e9n\u00e9r\u00e9s). Le h\u00e9ros, ses animations (Quaternius, CC0-1.0) et les armes viennent du pack astra.adventure. Voir LICENSES/LICENSE.txt.",
+    "sources": [],
+    "releaseNotes": "1.1.0 : requiert astra.adventure 1.2.0 (HUD typ\u00e9). Requiert le framework Game \u00e0 partir du tag framework-game-2026-10-15 (HUD typ\u00e9) ; sur un framework plus ancien, l'import ne compile pas. 1.0.0 : premi\u00e8re version. Parcours AdventureStarter, h\u00e9ros, HUD (c\u0153urs, roue d'endurance), configuration, composition par identifiants de module (astra.game.characters, adventure.module). D\u00e9pend de astra.adventure 1.1.0. Requiert Game.FlowPresentation ; sans lui le Hub refuse l'import.",
+    "archive": {
+        "url": "https://github.com/MisterPxl/astra-content/releases/download/template-adventure-v1.1.0/astra.template.adventure-1.1.0.zip",
+        "sha256": "b604cef72d08ee88050dcfe463015117bb68e014a2b5910f59f984efd23ebd21",
+        "bytes": 122105,
+        "expandedBytes": 509510,
+        "fileCount": 49
+    }
+}

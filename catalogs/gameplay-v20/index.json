@@ -1,0 +1,404 @@
+{
+    "schemaVersion": 1,
+    "revision": "gameplay-v20",
+    "categories": [
+        "Gameplay",
+        "UI",
+        "Templates",
+        "Environment",
+        "Bridges"
+    ],
+    "pages": [
+        {
+            "url": "https://raw.githubusercontent.com/MisterPxl/astra-content/main/catalogs/gameplay-v20/pages/gameplay.json",
+            "sha256": "a61a4e1082aa87194ce2fc1b668a852d318cb5b1f5d980818a9fc50eb2c8cb27",
+            "bytes": 9990
+        },
+        {
+            "url": "https://raw.githubusercontent.com/MisterPxl/astra-content/main/catalogs/gameplay-v20/pages/ui.json",
+            "sha256": "c32d14bf526ed296109047f184aba04db7e555bd83b87265fa2c750b0cd2abb6",
+            "bytes": 1252
+        },
+        {
+            "url": "https://raw.githubusercontent.com/MisterPxl/astra-content/main/catalogs/gameplay-v20/pages/templates.json",
+            "sha256": "6e8b87f41a2fbac22e412b4f5f82cb70b9408ac882bbb8f7537d52c0db97e9a7",
+            "bytes": 6271
+        },
+        {
+            "url": "https://raw.githubusercontent.com/MisterPxl/astra-content/main/catalogs/gameplay-v20/pages/environment.json",
+            "sha256": "34b2a405913c9f883cdfd805a1aec1acd3e3c6f456e737708cb5bff8afd3b8d7",
+            "bytes": 4589
+        },
+        {
+            "url": "https://raw.githubusercontent.com/MisterPxl/astra-content/main/catalogs/gameplay-v20/pages/bridges.json",
+            "sha256": "7267e3008ba2b765005eb7ca81b1e940ac9e558fd6fd12488b606398a65e38d2",
+            "bytes": 934
+        }
+    ],
+    "versions": [
+        {
+            "url": "https://raw.githubusercontent.com/MisterPxl/astra-content/main/manifests/astra.adventure/1.0.0.json",
+            "sha256": "06f03dcc12b7c19ce79096eaf41e8ba5eb6055972e725a7e83ea004a12d2a3f3",
+            "bytes": 3066,
+            "id": "astra.adventure",
+            "version": "1.0.0"
+        },
+        {
+            "url": "https://raw.githubusercontent.com/MisterPxl/astra-content/main/manifests/astra.dialogue/0.1.2.json",
+            "sha256": "16d1d3dc801c375b43d1a8036a8096e9fc47a2133ece4988b3e4036b793abc62",
+            "bytes": 2835,
+            "id": "astra.dialogue",
+            "version": "0.1.2"
+        },
+        {
+            "url": "https://raw.githubusercontent.com/MisterPxl/astra-content/main/manifests/astra.vehicles/1.0.0.json",
+            "sha256": "e4faebe9b47905b22efa95eac52dd4a46c776e29c5cc4be946c5e9a5adee5717",
+            "bytes": 2642,
+            "id": "astra.vehicles",
+            "version": "1.0.0"
+        },
+        {
+            "url": "https://raw.githubusercontent.com/MisterPxl/astra-content/main/manifests/astra.ariadne/1.0.0.json",
+            "sha256": "47298cbcac430b99910bd16299326b9c6319243e26d84694cbc9c9b8cef1ba6b",
+            "bytes": 1790,
+            "id": "astra.ariadne",
+            "version": "1.0.0"
+        },
+        {
+            "url": "https://raw.githubusercontent.com/MisterPxl/astra-content/main/manifests/astra.match3/2.0.0.json",
+            "sha256": "b63d8b11b44ae17aefe6c6dc653192453c52ddfc7a67a8e4a61fb26742ffe53d",
+            "bytes": 2005,
+            "id": "astra.match3",
+            "version": "2.0.0"
+        },
+        {
+            "url": "https://raw.githubusercontent.com/MisterPxl/astra-content/main/manifests/astra.melee/1.2.0.json",
+            "sha256": "b917b066f138b856bf68f51a9214791fa99de36d22f913d5dfcf6d8b8e93aeb1",
+            "bytes": 1965,
+            "id": "astra.melee",
+            "version": "1.2.0"
+        },
+        {
+            "url": "https://raw.githubusercontent.com/MisterPxl/astra-content/main/manifests/astra.template.match3/2.0.1.json",
+            "sha256": "fd26ac418a333aa151e0793cbc0bd4032ca7d00e71eab822eb8f2ad64c7900a8",
+            "bytes": 2423,
+            "id": "astra.template.match3",
+            "version": "2.0.1"
+        },
+        {
+            "url": "https://raw.githubusercontent.com/MisterPxl/astra-content/main/manifests/astra.template.melee/1.2.1.json",
+            "sha256": "47461c336fb1d2eafed98a23f4b4fef6b7b6ccb003c5a869560f133674093fc3",
+            "bytes": 2833,
+            "id": "astra.template.melee",
+            "version": "1.2.1"
+        },
+        {
+            "url": "https://raw.githubusercontent.com/MisterPxl/astra-content/main/manifests/astra.fps/1.0.0.json",
+            "sha256": "e7d087191a748e2015b58760d890a656becf3e8526300b93c6ada70a5b346314",
+            "bytes": 2509,
+            "id": "astra.fps",
+            "version": "1.0.0"
+        },
+        {
+            "url": "https://raw.githubusercontent.com/MisterPxl/astra-content/main/manifests/astra.template.fps/1.0.0.json",
+            "sha256": "25f56e9b87588e09dc5d10ab7df84a614a7d9cc582e5f1f2e2dda5f37bc9304b",
+            "bytes": 2244,
+            "id": "astra.template.fps",
+            "version": "1.0.0"
+        },
+        {
+            "url": "https://raw.githubusercontent.com/MisterPxl/astra-content/main/manifests/astra.grass/0.1.0.json",
+            "sha256": "66371e493fb33cc4dfa1e48f9f90b46d3690d37192ca1bc0539712f9952e570c",
+            "bytes": 1956,
+            "id": "astra.grass",
+            "version": "0.1.0"
+        },
+        {
+            "url": "https://raw.githubusercontent.com/MisterPxl/astra-content/main/manifests/astra.snow/0.1.0.json",
+            "sha256": "32c8364ee0be91df0ee9ff31f5652a0dd49dcc8a89fcec9394b07adad68890b3",
+            "bytes": 1895,
+            "id": "astra.snow",
+            "version": "0.1.0"
+        },
+        {
+            "url": "https://raw.githubusercontent.com/MisterPxl/astra-content/main/manifests/astra.water/0.1.0.json",
+            "sha256": "dcdfc6037de1d006a1b0f04088dab3c8a49e8090c4ee3ecccfd9dc3fe2e0d823",
+            "bytes": 1974,
+            "id": "astra.water",
+            "version": "0.1.0"
+        },
+        {
+            "url": "https://raw.githubusercontent.com/MisterPxl/astra-content/main/manifests/astra.grass/0.1.1.json",
+            "sha256": "f351bb2b1e0a1182cd44bfa7b5cf40f24da8bc1cdd58f7c4b13bdf63daa36d79",
+            "bytes": 2159,
+            "id": "astra.grass",
+            "version": "0.1.1"
+        },
+        {
+            "url": "https://raw.githubusercontent.com/MisterPxl/astra-content/main/manifests/astra.snow/0.1.1.json",
+            "sha256": "d93e24edf2d68a5be4ffd2c020f08684ad5b1c23c6a36ced6045d264cc6f2885",
+            "bytes": 2042,
+            "id": "astra.snow",
+            "version": "0.1.1"
+        },
+        {
+            "url": "https://raw.githubusercontent.com/MisterPxl/astra-content/main/manifests/astra.water/0.1.1.json",
+            "sha256": "d0bf97283b900cb40918a0f48a3bbca45aaa892b13d5093c515e9a4ca3c6b9f9",
+            "bytes": 2075,
+            "id": "astra.water",
+            "version": "0.1.1"
+        },
+        {
+            "id": "astra.melee",
+            "version": "1.2.1",
+            "url": "https://raw.githubusercontent.com/MisterPxl/astra-content/main/manifests/astra.melee/1.2.1.json",
+            "sha256": "7a3dd5a9b8e8f1e6cb3911b9879b7d16dd17c6afe7287b1d1bd7747be69841af",
+            "bytes": 2262
+        },
+        {
+            "id": "astra.template.melee",
+            "version": "1.2.2",
+            "url": "https://raw.githubusercontent.com/MisterPxl/astra-content/main/manifests/astra.template.melee/1.2.2.json",
+            "sha256": "b02da1c9b2449a326fb7d9ecf020579189316dfa2f181457fa4cf1b14e3a9cb0",
+            "bytes": 3043
+        },
+        {
+            "id": "astra.deckbuilder",
+            "version": "1.0.0",
+            "url": "https://raw.githubusercontent.com/MisterPxl/astra-content/main/manifests/astra.deckbuilder/1.0.0.json",
+            "sha256": "2fbd82896e56202aab6ae4e93b9756c6d70431b9cb84e43699db6b1fbf193fcd",
+            "bytes": 3318
+        },
+        {
+            "id": "astra.template.deckbuilder",
+            "version": "1.0.0",
+            "url": "https://raw.githubusercontent.com/MisterPxl/astra-content/main/manifests/astra.template.deckbuilder/1.0.0.json",
+            "sha256": "2c3fbba2cb522d5adff814bf44bf037a777e41534970875970364f62cf75a8b7",
+            "bytes": 2661
+        },
+        {
+            "id": "astra.match3",
+            "version": "2.0.1",
+            "url": "https://raw.githubusercontent.com/MisterPxl/astra-content/main/manifests/astra.match3/2.0.1.json",
+            "sha256": "e245f24c9be251792bbe2770d08cebdf9600be4b0e5506bcab81d690242e75ea",
+            "bytes": 2265
+        },
+        {
+            "id": "astra.template.match3",
+            "version": "2.0.2",
+            "url": "https://raw.githubusercontent.com/MisterPxl/astra-content/main/manifests/astra.template.match3/2.0.2.json",
+            "sha256": "63d7d581253e8190cfaf0c9905bd1461c8282666a1ca3717485ef0252e9ccf43",
+            "bytes": 2621
+        },
+        {
+            "id": "astra.fps",
+            "version": "1.2.0",
+            "url": "https://raw.githubusercontent.com/MisterPxl/astra-content/main/manifests/astra.fps/1.2.0.json",
+            "sha256": "76e14cda938d37e3ee4c5d554adac24e1fd2247b71a00e7ff51d573114ff1b41",
+            "bytes": 3182
+        },
+        {
+            "id": "astra.template.fps",
+            "version": "1.2.0",
+            "url": "https://raw.githubusercontent.com/MisterPxl/astra-content/main/manifests/astra.template.fps/1.2.0.json",
+            "sha256": "d625e1a94348552950e924c2880139cf350d7e170c8b0857b4e4c2309ea85c5e",
+            "bytes": 3083
+        },
+        {
+            "id": "astra.grass",
+            "version": "0.1.2",
+            "url": "https://raw.githubusercontent.com/MisterPxl/astra-content/main/manifests/astra.grass/0.1.2.json",
+            "sha256": "1e48c1a8e6309fb74d22eb37b8d43e49ea1f77406efe4465742b621e9e5fbdf8",
+            "bytes": 2445
+        },
+        {
+            "id": "astra.snow",
+            "version": "0.1.2",
+            "url": "https://raw.githubusercontent.com/MisterPxl/astra-content/main/manifests/astra.snow/0.1.2.json",
+            "sha256": "7786351dec83dae7775d0bca2df9017146b3ad044f3598059169def308e0bdc5",
+            "bytes": 2415
+        },
+        {
+            "id": "astra.water",
+            "version": "0.1.2",
+            "url": "https://raw.githubusercontent.com/MisterPxl/astra-content/main/manifests/astra.water/0.1.2.json",
+            "sha256": "221cde77668c728f62c56c503307bd06aff56b1d44a239a4ffd18c2cba14b015",
+            "bytes": 2443
+        },
+        {
+            "id": "astra.sky",
+            "version": "0.1.0",
+            "url": "https://raw.githubusercontent.com/MisterPxl/astra-content/main/manifests/astra.sky/0.1.0.json",
+            "sha256": "5cd91e1e597a8933c2d0cc7b36d8b0192e264297e893f0e0234334ae2b07bd6f",
+            "bytes": 1831
+        },
+        {
+            "id": "astra.adventure",
+            "version": "1.1.0",
+            "url": "https://raw.githubusercontent.com/MisterPxl/astra-content/main/manifests/astra.adventure/1.1.0.json",
+            "sha256": "5db27376df9102cc6146d3f9f8f42ebdcc7511f28c01df7fba7b25afe03626eb",
+            "bytes": 4161
+        },
+        {
+            "id": "astra.template.adventure",
+            "version": "1.0.0",
+            "url": "https://raw.githubusercontent.com/MisterPxl/astra-content/main/manifests/astra.template.adventure/1.0.0.json",
+            "sha256": "893ae6204b9f4342a8f17ed87000eb21e34ac8d2ddaca61b4bcd7be2496d8f4e",
+            "bytes": 3442
+        },
+        {
+            "id": "astra.softbody",
+            "version": "0.3.0",
+            "url": "https://raw.githubusercontent.com/MisterPxl/astra-content/main/manifests/astra.softbody/0.3.0.json",
+            "sha256": "8b4500babfc20e35da8758f4776ab7257713345495f441330b631341346afc55",
+            "bytes": 3393
+        },
+        {
+            "id": "astra.quests",
+            "version": "1.0.0",
+            "url": "https://raw.githubusercontent.com/MisterPxl/astra-content/main/manifests/astra.quests/1.0.0.json",
+            "sha256": "79bf7b87aeaa0fe9464ee630dcb23698466982c205a4898f21f4c5e0f7f844e9",
+            "bytes": 3198
+        },
+        {
+            "id": "astra.shmup",
+            "version": "1.0.0",
+            "url": "https://raw.githubusercontent.com/MisterPxl/astra-content/main/manifests/astra.shmup/1.0.0.json",
+            "sha256": "546ac27f4c02f4937165de908ba4d57a4467acfe8f959c1eb09d34d5d60e584c",
+            "bytes": 2073
+        },
+        {
+            "id": "astra.template.shmup",
+            "version": "1.0.0",
+            "url": "https://raw.githubusercontent.com/MisterPxl/astra-content/main/manifests/astra.template.shmup/1.0.0.json",
+            "sha256": "460a5100937d5c0b32d8707cd2bec5785ec2707889d5caa65bbd00204506efc9",
+            "bytes": 2563
+        },
+        {
+            "id": "astra.quests",
+            "version": "1.0.1",
+            "url": "https://raw.githubusercontent.com/MisterPxl/astra-content/main/manifests/astra.quests/1.0.1.json",
+            "sha256": "e31c7d5fae3fa1ddb7ffafdded5b7038a7abe59c09f31132c10d288951313d95",
+            "bytes": 3274
+        },
+        {
+            "id": "astra.dialogue",
+            "version": "0.1.3",
+            "url": "https://raw.githubusercontent.com/MisterPxl/astra-content/main/manifests/astra.dialogue/0.1.3.json",
+            "sha256": "18fa7298322da59ceb259a8569f11ea485d13e8d4173f2c2f8739a9f540b0edb",
+            "bytes": 2989
+        },
+        {
+            "id": "astra.quests.dialogue",
+            "version": "1.0.0",
+            "url": "https://raw.githubusercontent.com/MisterPxl/astra-content/main/manifests/astra.quests.dialogue/1.0.0.json",
+            "sha256": "008468ce20e8d3277804b0338b637120af72849fd4b5a2ce402ea2b3d263f8e7",
+            "bytes": 2744
+        },
+        {
+            "id": "astra.shmup",
+            "version": "1.1.0",
+            "url": "https://raw.githubusercontent.com/MisterPxl/astra-content/main/manifests/astra.shmup/1.1.0.json",
+            "sha256": "0fac45a79ef1556a8f7e9b1904e26782db4792df741bd3f42e18d216346d6204",
+            "bytes": 2573
+        },
+        {
+            "id": "astra.template.shmup",
+            "version": "1.1.0",
+            "url": "https://raw.githubusercontent.com/MisterPxl/astra-content/main/manifests/astra.template.shmup/1.1.0.json",
+            "sha256": "8eb2562f89c9ed1e9e6a8560482f630359d1030008b2ae4e3a05369a3d1ee54d",
+            "bytes": 2867
+        },
+        {
+            "id": "astra.match3",
+            "version": "2.1.0",
+            "url": "https://raw.githubusercontent.com/MisterPxl/astra-content/main/manifests/astra.match3/2.1.0.json",
+            "sha256": "a64e31556b0b18611e3c5ccd0aac38783e07fb9d1474c7c130072ed8a06c1380",
+            "bytes": 2583
+        },
+        {
+            "id": "astra.template.match3",
+            "version": "2.1.0",
+            "url": "https://raw.githubusercontent.com/MisterPxl/astra-content/main/manifests/astra.template.match3/2.1.0.json",
+            "sha256": "936d98440de1f29bc7717f9800f74f95c79a71e94782300e0bde4ddc7ea58d6a",
+            "bytes": 2821
+        },
+        {
+            "id": "astra.melee",
+            "version": "1.3.0",
+            "url": "https://raw.githubusercontent.com/MisterPxl/astra-content/main/manifests/astra.melee/1.3.0.json",
+            "sha256": "a1c13c7fc1bbd689d6e5bd678489de402c3b96a400549215d881c967a0eaebea",
+            "bytes": 2580
+        },
+        {
+            "id": "astra.template.melee",
+            "version": "1.3.0",
+            "url": "https://raw.githubusercontent.com/MisterPxl/astra-content/main/manifests/astra.template.melee/1.3.0.json",
+            "sha256": "a6ed4661ae717493167f938eccad55f33c6faf2caeda78501c20f980149b2e4c",
+            "bytes": 3242
+        },
+        {
+            "id": "astra.fps",
+            "version": "1.3.0",
+            "url": "https://raw.githubusercontent.com/MisterPxl/astra-content/main/manifests/astra.fps/1.3.0.json",
+            "sha256": "36472e58041a5e61ca55889f77a2447e09f9041326efa792dfe9baa8160bf58b",
+            "bytes": 3500
+        },
+        {
+            "id": "astra.template.fps",
+            "version": "1.3.0",
+            "url": "https://raw.githubusercontent.com/MisterPxl/astra-content/main/manifests/astra.template.fps/1.3.0.json",
+            "sha256": "b9c6cbffde5740cd9cea6d7844bf438b17ef22e8a9e6950c6a932c9d885bba31",
+            "bytes": 3280
+        },
+        {
+            "id": "astra.adventure",
+            "version": "1.2.0",
+            "url": "https://raw.githubusercontent.com/MisterPxl/astra-content/main/manifests/astra.adventure/1.2.0.json",
+            "sha256": "ee5a566c83c3477d7a1f4c19a294bd7a5895562982d70114d8201602f1f97066",
+            "bytes": 4479
+        },
+        {
+            "id": "astra.template.adventure",
+            "version": "1.1.0",
+            "url": "https://raw.githubusercontent.com/MisterPxl/astra-content/main/manifests/astra.template.adventure/1.1.0.json",
+            "sha256": "e1dc15d7bb759ddb9d8b3c9284352977f0ddb75308e6ba681a75c4ab1b8f6ef6",
+            "bytes": 3645
+        },
+        {
+            "id": "astra.deckbuilder",
+            "version": "1.1.0",
+            "url": "https://raw.githubusercontent.com/MisterPxl/astra-content/main/manifests/astra.deckbuilder/1.1.0.json",
+            "sha256": "b7b9d102c8b333c629e04acb99e4c9493f81040aff6ea98a5ce2b3b51ded9004",
+            "bytes": 4282
+        },
+        {
+            "id": "astra.template.deckbuilder",
+            "version": "1.1.0",
+            "url": "https://raw.githubusercontent.com/MisterPxl/astra-content/main/manifests/astra.template.deckbuilder/1.1.0.json",
+            "sha256": "a6e0908827e8a70c674a1d6a3b7772c714f07dc7f096b89bddf7eb28633de36e",
+            "bytes": 3061
+        },
+        {
+            "id": "astra.quests",
+            "version": "1.1.0",
+            "url": "https://raw.githubusercontent.com/MisterPxl/astra-content/main/manifests/astra.quests/1.1.0.json",
+            "sha256": "2e68e6dead149e8700abe771afb03327a17af6e1f1003e2d3d9be26fc1a16c64",
+            "bytes": 4000
+        },
+        {
+            "id": "astra.dialogue",
+            "version": "0.1.4",
+            "url": "https://raw.githubusercontent.com/MisterPxl/astra-content/main/manifests/astra.dialogue/0.1.4.json",
+            "sha256": "dc2a48c5acaa816bcfb310806c37b20d73745aa4adf17c1356b2105f74d731a4",
+            "bytes": 3123
+        },
+        {
+            "id": "astra.quests.dialogue",
+            "version": "1.1.0",
+            "url": "https://raw.githubusercontent.com/MisterPxl/astra-content/main/manifests/astra.quests.dialogue/1.1.0.json",
+            "sha256": "21d08872966c69055fbb1757c7827d1b1ee3953a41771175e23a18a7583c648c",
+            "bytes": 3322
+        }
+    ]
+}

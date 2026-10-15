@@ -1,0 +1,82 @@
+{
+    "schemaVersion": 1,
+    "id": "astra.template.deckbuilder",
+    "version": "1.1.0",
+    "displayName": "Deckbuilder Template",
+    "description": "Template roguelite deckbuilder pr\u00eat \u00e0 jouer : carte de run, combat au tour, sauvegarde et menu Continuer, sans code auteur.",
+    "category": "Templates",
+    "tags": [
+        "template",
+        "deckbuilder",
+        "cards",
+        "roguelite",
+        "turn-based",
+        "mobile",
+        "touch"
+    ],
+    "compatibility": {
+        "minimumUnity": "6000.4.0f1",
+        "maximumUnityExclusive": "6000.4.0f2",
+        "testedUnity": [
+            "6000.4.0f1"
+        ],
+        "renderPipelines": [
+            "urp"
+        ],
+        "platforms": [
+            "StandaloneOSX",
+            "Android",
+            "iOS"
+        ]
+    },
+    "contentDependencies": [
+        {
+            "id": "astra.deckbuilder",
+            "version": "1.1.0"
+        }
+    ],
+    "projectPrerequisites": [
+        {
+            "kind": "capability",
+            "name": "input-system-enabled",
+            "minimumVersion": "",
+            "maximumVersionExclusive": ""
+        },
+        {
+            "kind": "package",
+            "name": "com.unity.inputsystem",
+            "minimumVersion": "1.19.0",
+            "maximumVersionExclusive": "1.19.1"
+        },
+        {
+            "kind": "package",
+            "name": "com.unity.render-pipelines.universal",
+            "minimumVersion": "17.4.0",
+            "maximumVersionExclusive": "17.4.1"
+        },
+        {
+            "kind": "package",
+            "name": "com.unity.ugui",
+            "minimumVersion": "2.0.0",
+            "maximumVersionExclusive": "2.0.1"
+        },
+        {
+            "kind": "assembly",
+            "name": "Astra.Framework.Game.FlowPresentation.Runtime",
+            "minimumVersion": "",
+            "maximumVersionExclusive": ""
+        }
+    ],
+    "containsCode": false,
+    "license": "MIT",
+    "attribution": "Copyright (c) 2026 Alexis Gomes. Contenu sous licence MIT ; aucun asset tiers.",
+    "sources": [],
+    "releaseNotes": "1.1.0 : requiert astra.deckbuilder 1.1.0 ; RunConfig expose Shop Rules et Rest Rules, MaxEnergy et DrawPerTurn du personnage sont pris en compte, guide mis \u00e0 jour (ordre des statuts, limites lev\u00e9es). HUD typ\u00e9 via astra.deckbuilder 1.1.0. Requiert le framework Game \u00e0 partir du tag framework-game-2026-10-15 (HUD typ\u00e9) ; sur un framework plus ancien, l'import ne compile pas. 1.0.0 : template G5 deckbuilder (carte, combat, sauvegarde de run), composition par identifiants de module (astra.core.localization, deckbuilder.module). Requiert le framework Game Flow Foundation (Game.FlowPresentation).",
+    "archive": {
+        "url": "https://github.com/MisterPxl/astra-content/releases/download/template-deckbuilder-v1.1.0/astra.template.deckbuilder-1.1.0.zip",
+        "sha256": "d272498c9055e44863855dcc82bfee403f65d89af2cb7ab2f67ea7c7ccbef55f",
+        "bytes": 135679,
+        "expandedBytes": 643836,
+        "fileCount": 145
+    }
+}

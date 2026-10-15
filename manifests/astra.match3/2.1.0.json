@@ -1,0 +1,68 @@
+{
+    "schemaVersion": 1,
+    "id": "astra.match3",
+    "version": "2.1.0",
+    "displayName": "Match3",
+    "description": "R\u00e8gles, plateau et scoring d'un puzzle match-3 tactile, en C# pur et test\u00e9, pr\u00eat \u00e0 \u00eatre branch\u00e9 au framework par un template.",
+    "category": "Gameplay",
+    "tags": [
+        "puzzle",
+        "match3",
+        "mobile",
+        "touch"
+    ],
+    "compatibility": {
+        "minimumUnity": "6000.4.0f1",
+        "maximumUnityExclusive": "6000.4.0f2",
+        "testedUnity": [
+            "6000.4.0f1"
+        ],
+        "renderPipelines": [
+            "urp"
+        ],
+        "platforms": [
+            "StandaloneOSX",
+            "Android",
+            "iOS"
+        ]
+    },
+    "contentDependencies": [],
+    "projectPrerequisites": [
+        {
+            "kind": "capability",
+            "name": "input-system-enabled",
+            "minimumVersion": "",
+            "maximumVersionExclusive": ""
+        },
+        {
+            "kind": "package",
+            "name": "com.unity.inputsystem",
+            "minimumVersion": "1.19.0",
+            "maximumVersionExclusive": "1.19.1"
+        },
+        {
+            "kind": "assembly",
+            "name": "Astra.Framework.Game.HUD.Runtime",
+            "minimumVersion": "",
+            "maximumVersionExclusive": ""
+        },
+        {
+            "kind": "assembly",
+            "name": "Astra.Framework.Game.FlowPresentation.Runtime",
+            "minimumVersion": "",
+            "maximumVersionExclusive": ""
+        }
+    ],
+    "containsCode": true,
+    "license": "MIT",
+    "attribution": "Copyright (c) 2026 Alexis Gomes. Code sous licence MIT.",
+    "sources": [],
+    "releaseNotes": "2.1.0 : HUD typ\u00e9 (lot O11) : le widget d\u00e9rive de HudWidgetView, s'ajoute par IGameHudService.Add et s'affiche par Show<T>/Hide<T> (cl\u00e9 texte retir\u00e9e). Requiert le framework Game \u00e0 partir du tag framework-game-2026-10-15 (HUD typ\u00e9) ; sur un framework plus ancien, l'import ne compile pas. 2.0.1 : identifiant de module match3.module, pour composer le template par identifiant. Requiert le framework Game Flow Foundation (Game.FlowPresentation) ; sans lui le Hub refuse l'import. R\u00e8gles de jeu inchang\u00e9es depuis 2.0.0.",
+    "archive": {
+        "url": "https://github.com/MisterPxl/astra-content/releases/download/match3-v2.1.0/astra.match3-2.1.0.zip",
+        "sha256": "7d387e11014b1b8806fda36049a80a6059efafb65c2d0590ee33babc8929494e",
+        "bytes": 80415,
+        "expandedBytes": 166577,
+        "fileCount": 125
+    }
+}

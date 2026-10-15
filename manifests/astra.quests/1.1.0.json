@@ -1,0 +1,92 @@
+{
+    "schemaVersion": 1,
+    "id": "astra.quests",
+    "version": "1.1.0",
+    "displayName": "Quests & Achievements",
+    "description": "Qu\u00eates et achievements data-driven (signaux, stats, conditions, r\u00e9compenses, qu\u00eates chronom\u00e9tr\u00e9es et quotidiennes, paliers, plateformes) : Core pur, assets Unity, modules Astra avec journal, galerie, suivi HUD et toast rempla\u00e7ables.",
+    "category": "Gameplay",
+    "tags": [
+        "quests",
+        "achievements",
+        "progression",
+        "meta"
+    ],
+    "compatibility": {
+        "minimumUnity": "6000.4.0f1",
+        "maximumUnityExclusive": "6000.4.0f2",
+        "testedUnity": [
+            "6000.4.0f1"
+        ],
+        "renderPipelines": [
+            "urp"
+        ],
+        "platforms": [
+            "StandaloneOSX",
+            "Android",
+            "iOS"
+        ]
+    },
+    "contentDependencies": [],
+    "projectPrerequisites": [
+        {
+            "kind": "package",
+            "name": "com.misterpxl.valkyrie",
+            "minimumVersion": "2.1.0",
+            "maximumVersionExclusive": "2.1.1"
+        },
+        {
+            "kind": "package",
+            "name": "com.unity.ugui",
+            "minimumVersion": "2.0.0",
+            "maximumVersionExclusive": "2.0.1"
+        },
+        {
+            "kind": "assembly",
+            "name": "Astra.Framework.Core.Save.Profile.Runtime",
+            "minimumVersion": "",
+            "maximumVersionExclusive": ""
+        },
+        {
+            "kind": "assembly",
+            "name": "Astra.Framework.Core.UI.Runtime",
+            "minimumVersion": "",
+            "maximumVersionExclusive": ""
+        },
+        {
+            "kind": "assembly",
+            "name": "Astra.Framework.Game.HUD.Runtime",
+            "minimumVersion": "",
+            "maximumVersionExclusive": ""
+        },
+        {
+            "kind": "assembly",
+            "name": "Astra.Framework.Core.Localization.Runtime",
+            "minimumVersion": "",
+            "maximumVersionExclusive": ""
+        },
+        {
+            "kind": "assembly",
+            "name": "Astra.Framework.Game.Flow.Runtime",
+            "minimumVersion": "",
+            "maximumVersionExclusive": ""
+        },
+        {
+            "kind": "assembly",
+            "name": "Astra.Framework.Game.FlowPresentation.Runtime",
+            "minimumVersion": "",
+            "maximumVersionExclusive": ""
+        }
+    ],
+    "containsCode": true,
+    "license": "MIT",
+    "attribution": "Copyright (c) 2026 Alexis Gomes. Code sous licence MIT.",
+    "sources": [],
+    "releaseNotes": "1.1.0 : r\u00e8gles Aegis Qu\u00eate inatteignable (erreur ; stat exig\u00e9e sans source en information) et Signal orphelin (information) ; IProgressUsageAuthoring et ConditionAuthoring.CollectRequirements pour que les nouveaux n\u0153uds, assets et composants soient vus par ces r\u00e8gles. Le tracker et le toast d'achievement passent au HUD typ\u00e9 (lot O11) : le widget d\u00e9rive de HudWidgetView, s'ajoute par IGameHudService.Add et s'affiche par Show<T>/Hide<T> (cl\u00e9 texte retir\u00e9e). Les \u00e9tapes d'UI Quests s'ex\u00e9cutent apr\u00e8s l'\u00e9tape HUD. Requiert le framework Game \u00e0 partir du tag framework-game-2026-10-15 (HUD typ\u00e9) ; sur un framework plus ancien, l'import ne compile pas. 1.0.1 : ProgressionModule expose Progression pour le c\u00e2blage dialogue. 1.0.0 : qu\u00eates, achievements, stats et signaux ; sauvegardes slot et profil ; modules quests.progression, quests.quests, quests.achievements ; vues par d\u00e9faut, Progression Browser, r\u00e8gles Aegis et d\u00e9mo (module quests.demo, Demo/) \u00e0 ajouter \u00e0 la main.",
+    "archive": {
+        "url": "https://github.com/MisterPxl/astra-content/releases/download/quests-v1.1.0/astra.quests-1.1.0.zip",
+        "sha256": "459bd41ac600206e854a866a68845fc09f76c7a5dabd6a693fd8bb32a195cac9",
+        "bytes": 220510,
+        "expandedBytes": 619207,
+        "fileCount": 311
+    }
+}
