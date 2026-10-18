@@ -12,9 +12,9 @@ Licence : code, shaders et contenu de démonstration Astra sous MIT
 Prérequis : Unity 6000.4.0f1, Universal Render Pipeline 17.4+ et le module Physics.
 Qualifié sur macOS ; le Hub ne modifie ni les packages ni les réglages de rendu.
 
-Version **0.1.2** : les menus de l'éditeur trouvent le pack là où le Hub l'installe (`Assets/AstraContent/astra.grass`) et n'écrivent plus dans le pack installé ni dans `Assets/_Project/Features` ; les assets générés vont sous `Assets/GrassGenerated` ou le dossier de la démo.
-Archive : `grass-v0.1.2`, 101 fichiers, 137320 octets,
-SHA-256 `009edc10331d7f9060d800fcc1387c7785a0ed31d129e9eb757bac6299407c4a`.
+Version **0.2.0** : les passes d'ombre et de profondeur utilisent les fragments partagés de `astra.shaders.core` 0.1.0, que le Hub importe dans la même transaction. La scène de démo Meadow est régénérée (profil d'herbe et profil de qualité présents) et Build Feature Meadow remplace `MeadowFieldData.asset` au lieu d'en créer une copie.
+Archive : `grass-v0.2.0`, 103 fichiers, 139359 octets,
+SHA-256 `35a918da713f9c788562b7a1106e9f458855fe12b6864805e43314becb7275e9`.
 
 Le guide complet du pack est [PackReadme.md](PackReadme.md) ; la préparation et la
 qualification sont décrites dans le dépôt auteur `AI_Testing_Sandbox`,

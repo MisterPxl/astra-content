@@ -1,20 +1,6 @@
 # Adventure
 
-Un seul pack contient le contrôleur, les inputs et la démo humanoïde animée, plus, depuis la
-version 1.1.0, le pont vers le framework Astra.
-
-## Version 1.1.0
-
-- Nouvelle assembly `Adventure.Astra` : module `adventure.module` (caméra, entrées Gameplay,
-  santé en quarts de cœur, zones de dégâts et d'arrivée, fin de run) pour le framework Astra.
-- Rig orbital extrait de la caméra de la démo (`AdventureOrbitRig`), et ajouts non cassants sur
-  les assemblies existantes (`IsExhausted`, `HitLanded`, `AdventureArrow.Landed`, `Pivot`).
-- **Prérequis nouveau** : le framework Astra avec Game Flow Foundation
-  (`Astra.Framework.Game.Characters.Runtime`, `Game.HUD.Runtime` et `Game.FlowPresentation.Runtime`),
-  ainsi que `com.unity.ugui` 2.0.0. Le Hub refuse l'import sans eux.
-- La version **1.0.0** reste publiée pour un usage autonome, hors framework.
-- Le template `astra.template.adventure` 1.0.0 (parcours de démarrage, HUD cœurs, roue d'endurance
-  et réticule d'arc) dépend exactement de cette version.
+Un seul pack contient le contrôleur, les inputs et la démo humanoïde animée.
 
 ## Démarrer
 
@@ -57,6 +43,5 @@ le Hub bloque leurs GUID existants.
 
 Ce contenu constitue une base de prototype : plateformes mobiles, natation, vol,
 réseau et animations dédiées d’arc/escalade ne sont pas implémentés. Ces dernières
-utilisent des poses procédurales. Le code et la démo Astra sont distribués sous
-licence MIT ; les assets Quaternius conservent leurs notices CC0 dans
-`Demo/Art/Quaternius/`.
+utilisent des poses procédurales. Voir les notices dans `LICENSES/` et
+`Demo/Art/Quaternius/`. Le code et la démo Astra sont distribués sous licence MIT ; les assets Quaternius conservent leurs notices CC0.

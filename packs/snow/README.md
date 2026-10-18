@@ -11,9 +11,9 @@ Licence : code, shaders et contenu de démonstration Astra sous MIT
 Prérequis : Unity 6000.4.0f1, Universal Render Pipeline 17.4+ et le module Physics.
 Qualifié sur macOS ; le Hub ne modifie ni les packages ni les réglages de rendu.
 
-Version **0.1.2** : les menus de l'éditeur trouvent le pack là où le Hub l'installe (`Assets/AstraContent/astra.snow`) et n'écrivent plus dans le pack installé ni dans `Assets/_Project/Features` ; les assets générés vont sous `Assets/SnowGenerated` ou le dossier de la démo.
-Archive : `snow-v0.1.2`, 56 fichiers, 248523 octets,
-SHA-256 `613baeeda293aa7ed50ad4d783e2ccb6593fb60086ba7f0d2f099bf474080a06`.
+Version **0.2.0** : les passes d'ombre et de profondeur utilisent les fragments partagés de `astra.shaders.core` 0.1.0, que le Hub importe dans la même transaction. Le motif du scintillement change (hash du core) et DepthNormals gère les normales octaédriques.
+Archive : `snow-v0.2.0`, 56 fichiers, 248762 octets,
+SHA-256 `c664a2ad61bad24090f9f6b52d1231d5bc894ec9bdd0b7b09e39f5441473d3b0`.
 
 Le guide complet du pack est [PackReadme.md](PackReadme.md) ; la préparation et la
 qualification sont décrites dans le dépôt auteur `AI_Testing_Sandbox`,

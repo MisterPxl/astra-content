@@ -16,7 +16,7 @@ les archives uniquement à la demande et installe les fichiers éditables sous
 
 ## État du catalogue
 
-**[Adventure 1.1.0](packs/adventure/README.md)** (`astra.adventure`) regroupe un
+**[Adventure 1.2.0](packs/adventure/README.md)** (`astra.adventure`) regroupe un
 contrôleur action-aventure, Input System et une démo humanoïde animée avec caméra,
 escalade, épée et arc, avec depuis la 1.1.0 un pont vers le framework Astra
 (`Adventure.Astra`). Il est livré avec son **template de genre**
@@ -25,22 +25,35 @@ cœurs, roue d'endurance et réticule d'arc. La 1.0.0 reste disponible hors fram
 la démo Astra sont distribués sous **licence MIT** ; les modèles, textures et animations
 Quaternius conservent leurs notices **CC0-1.0**.
 
-**[Dialogue 0.1.2](packs/dialogue/README.md)** (`astra.dialogue`) regroupe Dialogue
+**[Dialogue 0.1.4](packs/dialogue/README.md)** (`astra.dialogue`) regroupe Dialogue
 Studio (éditeur de conversations à bulles), un moteur d'exécution avec conditions et
 actions extensibles, des échanges XLSX à comparaison à trois versions, une présentation
 UI Toolkit et la démo du verger. Code et démo distribués sous **licence MIT** ; indifférent
 au pipeline de rendu, sans Input System.
+
+**[Quests & Achievements 1.1.0](packs/quests/README.md)** (`astra.quests`) apporte des quêtes
+et des succès pilotés par les données (signaux, stats, conditions, récompenses, quêtes
+chronométrées, paliers), avec journal, galerie, suivi HUD et règles Aegis. Son pont
+**[Quests ↔ Dialogue 1.1.0](packs/quests-dialogue/README.md)** (`astra.quests.dialogue`,
+catégorie **Bridges**) relie la progression aux conversations d'Astra Dialogue : conditions,
+actions et objectifs de dialogue. Code sous **licence MIT**, sans asset tiers.
+
+**[Soft Body 2D & 3D 0.3.0](packs/softbody/README.md)** (`astra.softbody`) simule des corps mous
+(gelée, ballons sous pression, plastique) en 2D et en 3D, avec préparation de sprites et de
+maillages, découpe libre et playgrounds. Pack URP sans dépendance au framework Astra, code et
+exemples sous **licence MIT**.
 
 **[Vehicles 1.0.0](packs/vehicles/README.md)** (`astra.vehicles`) regroupe les
 voitures, bateaux, avions légers et jets de MotionTest, avec leurs variantes
 arcade : huit prefabs, trois scènes, physique, clavier/manette, caméra et télémétrie.
 Le code et les modèles procéduraux sont distribués sous **licence MIT**.
 
-**[Match3 2.0.1](packs/match3/README.md)** (`astra.match3`), **[Melee 1.2.1](packs/melee/README.md)**
-(`astra.melee`), **[FPS 1.2.0](packs/fps/README.md)** (`astra.fps`) et
-**[Deckbuilder 1.0.0](packs/deckbuilder/README.md)** (`astra.deckbuilder`) sont des packs de gameplay
+**[Match3 2.1.0](packs/match3/README.md)** (`astra.match3`), **[Melee 1.3.0](packs/melee/README.md)**
+(`astra.melee`), **[FPS 1.3.0](packs/fps/README.md)** (`astra.fps`),
+**[Deckbuilder 1.1.0](packs/deckbuilder/README.md)** (`astra.deckbuilder`) et
+**[Shmup 1.1.0](packs/shmup/README.md)** (`astra.shmup`) sont des packs de gameplay
 livrés avec leur **template de genre** (`astra.template.match3`, `astra.template.melee`,
-`astra.template.fps`, `astra.template.deckbuilder`), publiés dans la catégorie **Templates** du Hub : le template tire son pack
+`astra.template.fps`, `astra.template.deckbuilder`, `astra.template.shmup`), publiés dans la catégorie **Templates** du Hub : le template tire son pack
 de gameplay, puis Astra Setup applique sa composition. Code et contenu sous **licence MIT** ; les
 assets Quaternius de Melee Template restent en **CC0-1.0**.
 

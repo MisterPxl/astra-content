@@ -1,4 +1,4 @@
-# Astra Dialogue — 0.1.2 local candidate
+# Astra Dialogue 0.1.4
 
 Create branching conversations in Unity with multi-line bubbles, project-defined
 conditions, a playable preview, and reviewed Excel exchanges. The runtime has no
@@ -158,7 +158,7 @@ stable exchange IDs alone do not migrate serialized Unity assets.
 
 The codec writes/reads standard OOXML using .NET XML/ZIP libraries in the Editor.
 Native Excel and Google Sheets interoperability must be qualified separately from
-the automated codec tests. Word, Ink and Yarn import are not part of this candidate.
+the automated codec tests. Word, Ink and Yarn import are not part of this version.
 
 ## Presentation and inputs
 
@@ -179,9 +179,9 @@ The artwork and syllables in the orchard are original geometric/synthetic assets
 
 Pointer and navigation events are handled by UI Toolkit. Configure the host's UI
 input actions when using the Input System or mixing UI Toolkit with uGUI. This
-candidate does not alter a consumer's input settings or install input packages.
+pack does not alter a consumer's input settings or install input packages.
 The sample is render-pipeline independent; graphics compatibility is only claimed
-for the environments actually listed in the validation report.
+for the environment qualified so far: Unity 6000.4.0f1 on macOS, Built-in pipeline.
 
 ## Content Hub and updates
 
@@ -206,11 +206,12 @@ XLSX round trips, field conflicts, deleted records, stale plans, Unity reference
 preservation, port-aware validation, layout side effects, per-sheet identities, import
 previews, a 2 000-line workbook, trimmed links and generated Ids, inherited extension
 fields, recovery retention, baseline purge and character naming. PlayMode tests cover
-text revelation, navigation and lifecycle.
-See the repository's `Documentation/Astra/ContentHub/Dialogue/README.md` for measured
-results and isolated Hub commands.
+text revelation, navigation and lifecycle. These tests are not part of the published
+pack.
 
-This is a local 0.1.2 candidate. Automated tests do not establish large-team editing
-usability, complete localization, native spreadsheet compatibility or Windows support.
+Version 0.1.3 is published in the public Astra Content catalogue; 0.1.4 adds
+`DialogueSession.ChoiceSelected`, raised when an available choice is picked, before the
+session enters its target. Earlier, 0.1.3 added `DialogueRunner.SessionStarted`. Automated tests do
+not establish large-team editing usability, complete localization, native spreadsheet compatibility or Windows support.
 Code, demo shapes and synthesized syllables are distributed under the MIT License; see
-`LICENSES/LICENSE.txt`. The pack is published in the public Astra Content catalogue.
+`LICENSES/LICENSE.txt`.
