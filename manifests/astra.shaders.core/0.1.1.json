@@ -1,0 +1,53 @@
+{
+    "schemaVersion": 1,
+    "id": "astra.shaders.core",
+    "version": "0.1.1",
+    "displayName": "Astra Shaders Core",
+    "description": "Biblioth\u00e8que HLSL pour URP partag\u00e9e par les packs Astra : hash, bruits (valeur, gradient, Voronoi, FBM), triplanar, dither, flash et dissolve, passes ShadowCaster, DepthOnly et DepthNormals avec d\u00e9formation, fonctions pour Shader Graph.",
+    "category": "Shaders",
+    "tags": [
+        "shader",
+        "hlsl",
+        "urp",
+        "noise",
+        "library"
+    ],
+    "compatibility": {
+        "minimumUnity": "6000.4.0f1",
+        "maximumUnityExclusive": "6000.4.0f2",
+        "testedUnity": [
+            "6000.4.0f1"
+        ],
+        "renderPipelines": [
+            "urp"
+        ],
+        "platforms": [
+            "StandaloneOSX",
+            "Android",
+            "iOS"
+        ]
+    },
+    "contentDependencies": [],
+    "projectPrerequisites": [
+        {
+            "kind": "package",
+            "name": "com.unity.render-pipelines.universal",
+            "minimumVersion": "17.4.0",
+            "maximumVersionExclusive": ""
+        }
+    ],
+    "containsCode": true,
+    "license": "MIT",
+    "attribution": "Copyright (c) 2026 Alexis Gomes. Biblioth\u00e8que de shaders Astra sous licence MIT. Hash d'apr\u00e8s \u00ab Hash without Sine \u00bb, Copyright (c) 2014 David Hoskins, licence MIT. Voir LICENSES/.",
+    "sources": [
+        "https://www.shadertoy.com/view/4djSRW"
+    ],
+    "releaseNotes": "0.1.1 : sc\u00e8ne de d\u00e9monstration ShadersShowcase.unity (Tools > Astra > Shaders > Build Demo) : les bruits de la biblioth\u00e8que, les quatre shaders de debug, triplanar, d\u00e9placement par bruit, fondu dither, flash et dissolve, avec des shaders d'exemple dans Demo/Shaders et un composant MaterialPropertyPulse qui anime les effets en Play. Dans un pack install\u00e9 par le Hub, la d\u00e9mo est g\u00e9n\u00e9r\u00e9e sous Assets/ShadersCoreGenerated et rien n'est \u00e9crit dans le pack. Les packs qui d\u00e9pendent de astra.shaders.core 0.1.0 restent inchang\u00e9s. 0.1.0 : Premi\u00e8re version.",
+    "archive": {
+        "url": "https://github.com/MisterPxl/astra-content/releases/download/shaders-core-v0.1.1/astra.shaders.core-0.1.1.zip",
+        "sha256": "1d284e73a8ec6c60dac61ebbb0b587174fbe29c9b7c0acc6b75fa1ed65c1e815",
+        "bytes": 110928,
+        "expandedBytes": 309638,
+        "fileCount": 108
+    }
+}
