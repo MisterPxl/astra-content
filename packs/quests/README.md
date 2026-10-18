@@ -1,6 +1,6 @@
 # Quests & Achievements
 
-Pack public `astra.quests` **1.1.0** (catégorie `Gameplay`) : quêtes et succès pilotés par les
+Pack public `astra.quests` **2.0.0** (catégorie `Gameplay`) : quêtes et succès pilotés par les
 données, pour n'importe quel jeu Astra. Le contenu est fait de ScriptableObjects ; le jeu lève
 des signaux, remonte des stats et peut remplacer les vues par défaut.
 
@@ -19,11 +19,15 @@ des signaux, remonte des stats et peut remplacer les vues par défaut.
 - **`Demo/`** : écran de démonstration (module `quests.demo`) à ajouter à la main dans la
   composition ; à supprimer avant de livrer.
 
+La 2.0.0 publie les valeurs de HUD du suivi (quête suivie, titre, objectifs, temps, limite de
+temps) dans des clés `QuestsHudValuesAsset`, exigées par `QuestsModule` ; `QuestTrackerHudWidget`
+n'implémente plus `IQuestTrackerView` (c'est `QuestTrackerHudPublisher`) et perd ses champs
+`_panel`, `_title`, `_objectives` et `_time`. Elle requiert le framework Game avec le HUD à valeurs.
 La 1.1.0 ajoute les deux règles Aegis « Quête inatteignable » et « Signal orphelin », et passe le
 tracker et le toast d'achievement au HUD typé (le widget dérive de `HudWidgetView`, s'ajoute par
 `IGameHudService.Add` et s'affiche par `Show<T>` / `Hide<T>`). Elle requiert le framework Game à
 partir du tag `framework-game-2026-10-15` : sur un framework plus ancien, l'import ne compile pas.
-`astra.quests` 1.0.0 et 1.0.1 restent disponibles pour ces projets (la 1.0.1 expose `Progression`
+`astra.quests` 1.0.0, 1.0.1 et 1.1.0 restent disponibles pour ces projets (la 1.0.1 expose `Progression`
 sur `ProgressionModule`, nécessaire au pont dialogue).
 
 Ce pack n'est pas un template : il ne modifie pas la composition du projet. Le guide du pack
@@ -41,5 +45,5 @@ Prérequis qualifiés : **Unity 6000.4.0f1**, **ugui 2.0.0** et **Valkyrie 2.1.0
 projet consommateur doit embarquer le framework Game Flow Foundation. Plateformes déclarées :
 macOS, Android et iOS.
 
-Archive publiée via GitHub Releases sous le tag `quests-v1.1.0` (`quests-v1.0.0` et
-`quests-v1.0.1` restent disponibles).
+Archive publiée via GitHub Releases sous le tag `quests-v2.0.0` (`quests-v1.0.0`,
+`quests-v1.0.1` et `quests-v1.1.0` restent disponibles).
