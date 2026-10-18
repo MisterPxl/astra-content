@@ -1,0 +1,68 @@
+{
+    "schemaVersion": 1,
+    "id": "astra.match3",
+    "version": "4.0.0",
+    "displayName": "Match3",
+    "description": "R\u00e8gles, plateau et scoring d'un puzzle match-3 tactile, en C# pur et test\u00e9, pr\u00eat \u00e0 \u00eatre branch\u00e9 au framework par un template.",
+    "category": "Gameplay",
+    "tags": [
+        "puzzle",
+        "match3",
+        "mobile",
+        "touch"
+    ],
+    "compatibility": {
+        "minimumUnity": "6000.4.0f1",
+        "maximumUnityExclusive": "6000.4.0f2",
+        "testedUnity": [
+            "6000.4.0f1"
+        ],
+        "renderPipelines": [
+            "urp"
+        ],
+        "platforms": [
+            "StandaloneOSX",
+            "Android",
+            "iOS"
+        ]
+    },
+    "contentDependencies": [],
+    "projectPrerequisites": [
+        {
+            "kind": "capability",
+            "name": "input-system-enabled",
+            "minimumVersion": "",
+            "maximumVersionExclusive": ""
+        },
+        {
+            "kind": "package",
+            "name": "com.unity.inputsystem",
+            "minimumVersion": "1.19.0",
+            "maximumVersionExclusive": "1.19.1"
+        },
+        {
+            "kind": "assembly",
+            "name": "Astra.Framework.Game.HUD.Runtime",
+            "minimumVersion": "",
+            "maximumVersionExclusive": ""
+        },
+        {
+            "kind": "assembly",
+            "name": "Astra.Framework.Game.FlowPresentation.Runtime",
+            "minimumVersion": "",
+            "maximumVersionExclusive": ""
+        }
+    ],
+    "containsCode": true,
+    "license": "MIT",
+    "attribution": "Copyright (c) 2026 Alexis Gomes. Code sous licence MIT.",
+    "sources": [],
+    "releaseNotes": "4.0.0 : types de pi\u00e8ces ouverts (lot F9). Rupture : l'\u00e9num\u00e9ration PieceColor est supprim\u00e9e. Une pi\u00e8ce porte un index de type (Piece.Type, position dans la palette du niveau) ; LevelDefinition.PieceTypeCount remplace Colors, SessionCounters.Cleared, BoardEvent, les power-ups (SwappedType, MostCommonType) et MatchShapeInfo utilisent l'index, et CollectColorGoal devient CollectPieceTypeGoal(type, count, label). C\u00f4t\u00e9 Unity, PieceTypeAsset (Id, DisplayName, Sprite facultatif, Teinte blanche par d\u00e9faut, Icon facultatif) d\u00e9crit un type ; LevelAsset._pieceTypes (3 minimum, sans doublon ni vide) remplace _colors, avec PieceTypeSet comme aide de saisie facultative ; CollectPieceTypeGoalAuthoring remplace CollectColorGoalAuthoring et son libell\u00e9 vient du DisplayName ; PieceView prend sprite et teinte du type (ColorTints retir\u00e9) et BoardView.Bind re\u00e7oit les types du niveau. Les raccourcis de compatibilit\u00e9 de LevelAsset (_kinds, score cible 2.x) sont retir\u00e9s. R\u00e9ordonner les types d'un niveau change le plateau produit par un seed. 3.0.0 : 3.0.0 : niveaux ouverts (lots O1, O2). Un niveau porte une liste d'objectifs choisis par type ([SerializeReference] LevelGoalAuthoring : score, collecte d'une couleur, power-ups d\u00e9clench\u00e9s ; tous requis) et un asset de r\u00e8gles optionnel (Match3RulesAsset ; StandardMatch3RulesAsset expose le score par pi\u00e8ce touch\u00e9e et le multiplicateur de cascade, \u00e0 d\u00e9river pour ajouter motifs et combos). La session compte les pi\u00e8ces d\u00e9truites par couleur et les power-ups d\u00e9clench\u00e9s (SessionState.Counters). Match3 publie ses valeurs de HUD (Match3HudValuesAsset : score, coups restants et jou\u00e9s, niveau, objectif, progression, statut), exig\u00e9es par le module. Rupture : LevelGoalType, l'ancienne signature de LevelAsset.Configure et Match3HudWidget.Bind sont retir\u00e9s ; les niveaux 2.x gardent leur score cible, converti en objectif de score au chargement. 2.1.0 : HUD typ\u00e9 (lot O11) : le widget d\u00e9rive de HudWidgetView, s'ajoute par IGameHudService.Add et s'affiche par Show<T>/Hide<T> (cl\u00e9 texte retir\u00e9e). Requiert le framework Game \u00e0 partir du tag framework-game-2026-10-15 (HUD typ\u00e9) ; sur un framework plus ancien, l'import ne compile pas. 2.0.1 : identifiant de module match3.module, pour composer le template par identifiant. Requiert le framework Game Flow Foundation (Game.FlowPresentation) ; sans lui le Hub refuse l'import. R\u00e8gles de jeu inchang\u00e9es depuis 2.0.0.",
+    "archive": {
+        "url": "https://github.com/MisterPxl/astra-content/releases/download/match3-v4.0.0/astra.match3-4.0.0.zip",
+        "sha256": "151c49b1ccd8cf6a1856dd33ad939de0ae93b1d43f47408267a95bdcc894286b",
+        "bytes": 96882,
+        "expandedBytes": 191771,
+        "fileCount": 151
+    }
+}

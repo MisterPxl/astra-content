@@ -1,0 +1,113 @@
+{
+    "schemaVersion": 1,
+    "id": "astra.adventure",
+    "version": "2.0.1",
+    "displayName": "Adventure",
+    "description": "Contr\u00f4leur action-aventure, inputs clavier/manette et d\u00e9mo humano\u00efde anim\u00e9e avec cam\u00e9ra, escalade, \u00e9p\u00e9e et arc.",
+    "category": "Gameplay",
+    "tags": [
+        "controller",
+        "character",
+        "animation",
+        "demo",
+        "urp"
+    ],
+    "compatibility": {
+        "minimumUnity": "6000.4.0f1",
+        "maximumUnityExclusive": "6000.4.0f2",
+        "testedUnity": [
+            "6000.4.0f1"
+        ],
+        "renderPipelines": [
+            "urp"
+        ],
+        "platforms": [
+            "StandaloneOSX"
+        ]
+    },
+    "contentDependencies": [],
+    "projectPrerequisites": [
+        {
+            "kind": "capability",
+            "name": "input-system-enabled",
+            "minimumVersion": "",
+            "maximumVersionExclusive": ""
+        },
+        {
+            "kind": "package",
+            "name": "com.unity.inputsystem",
+            "minimumVersion": "1.19.0",
+            "maximumVersionExclusive": "1.19.1"
+        },
+        {
+            "kind": "package",
+            "name": "com.unity.render-pipelines.universal",
+            "minimumVersion": "17.4.0",
+            "maximumVersionExclusive": "17.4.1"
+        },
+        {
+            "kind": "package",
+            "name": "com.unity.modules.animation",
+            "minimumVersion": "1.0.0",
+            "maximumVersionExclusive": ""
+        },
+        {
+            "kind": "package",
+            "name": "com.unity.modules.audio",
+            "minimumVersion": "1.0.0",
+            "maximumVersionExclusive": ""
+        },
+        {
+            "kind": "package",
+            "name": "com.unity.modules.physics",
+            "minimumVersion": "1.0.0",
+            "maximumVersionExclusive": ""
+        },
+        {
+            "kind": "package",
+            "name": "com.unity.modules.imgui",
+            "minimumVersion": "1.0.0",
+            "maximumVersionExclusive": ""
+        },
+        {
+            "kind": "package",
+            "name": "com.unity.ugui",
+            "minimumVersion": "2.0.0",
+            "maximumVersionExclusive": "2.0.1"
+        },
+        {
+            "kind": "assembly",
+            "name": "Astra.Framework.Game.Characters.Runtime",
+            "minimumVersion": "",
+            "maximumVersionExclusive": ""
+        },
+        {
+            "kind": "assembly",
+            "name": "Astra.Framework.Game.HUD.Runtime",
+            "minimumVersion": "",
+            "maximumVersionExclusive": ""
+        },
+        {
+            "kind": "assembly",
+            "name": "Astra.Framework.Game.FlowPresentation.Runtime",
+            "minimumVersion": "",
+            "maximumVersionExclusive": ""
+        }
+    ],
+    "containsCode": true,
+    "license": "MIT AND CC0-1.0",
+    "attribution": "Copyright (c) 2026 Alexis Gomes. Code et d\u00e9mo Astra sous licence MIT ; mod\u00e8les, textures et animations Quaternius sous CC0-1.0. Voir LICENSES/LICENSE.txt et Demo/Art/Quaternius/PROVENANCE.json.",
+    "sources": [
+        "https://quaternius.com/packs/universalbasecharacters.html",
+        "https://quaternius.com/packs/universalanimationlibrary.html",
+        "https://quaternius.com/packs/universalanimationlibrary2.html"
+    ],
+    "releaseNotes": "2.0.1 : les c\u0153urs du HUD ne cherchent plus leurs images Fill et Flash par nom d'enfant : le mod\u00e8le de c\u0153ur porte un composant AdventureHeartCell qui les r\u00e9f\u00e9rence (champ _template d'AdventureHeartsElement retyp\u00e9). Un mod\u00e8le sans image assign\u00e9e produit une erreur explicite au lieu d'une NullReferenceException. 2.0.0 : le jeu publie ses valeurs de HUD (sant\u00e9 en quarts de c\u0153ur, fl\u00e8ches, arc) dans des cl\u00e9s AdventureHudValuesAsset, requises par le module (le nouveau champ Hud Values d'AdventureModule doit \u00eatre renseign\u00e9, sinon l'initialisation \u00e9choue). Rupture : AdventureCombatElement perd ses champs s\u00e9rialis\u00e9s _bowGroup et _arrowCount et la propri\u00e9t\u00e9 BowVisible ; le compteur de fl\u00e8ches et l'ic\u00f4ne d'arc sont des \u00e9l\u00e9ments HudValueText et HudValueToggle. Requiert le framework Game avec le HUD \u00e0 valeurs (HudValueText, HudValueToggle). 1.2.0 : HUD typ\u00e9 (lot O11) : le widget d\u00e9rive de HudWidgetView, s'ajoute par IGameHudService.Add et s'affiche par Show<T>/Hide<T> (cl\u00e9 texte retir\u00e9e). Requiert le framework Game \u00e0 partir du tag framework-game-2026-10-15 (HUD typ\u00e9) ; sur un framework plus ancien, l'import ne compile pas. 1.1.0 : ajoute l'assembly Adventure.Astra, pont vers le framework Astra (module adventure.module, cam\u00e9ra, entr\u00e9es Gameplay, sant\u00e9 en quarts de c\u0153ur, zones de d\u00e9g\u00e2ts et d'arriv\u00e9e, fin de run). Requiert le framework Game Flow Foundation (Game.FlowPresentation) ; sans lui le Hub refuse l'import. Les assemblies Adventure.Controller, Adventure.Input et Adventure.Sample sont inchang\u00e9s et la version 1.0.0 reste utilisable hors framework.",
+    "archive": {
+        "url": "https://github.com/MisterPxl/astra-content/releases/download/adventure-v2.0.1/astra.adventure-2.0.1.zip",
+        "sha256": "4b92ed6962988b19ad6cf5c723c347adfde323e61ada246aaaa6c0d483117a99",
+        "bytes": 16038045,
+        "expandedBytes": 56599226,
+        "fileCount": 223
+    }
+}

@@ -1,0 +1,73 @@
+{
+    "schemaVersion": 1,
+    "packs": [
+        {
+            "id": "astra.shaders.core",
+            "displayName": "Astra Shaders Core",
+            "description": "Biblioth\u00e8que HLSL pour URP partag\u00e9e par les packs Astra : hash, bruits (valeur, gradient, Voronoi, FBM), triplanar, dither, flash et dissolve, passes ShadowCaster, DepthOnly et DepthNormals avec d\u00e9formation, fonctions pour Shader Graph.",
+            "category": "Shaders",
+            "recommendedVersion": "0.1.0",
+            "manifestUrl": "https://raw.githubusercontent.com/MisterPxl/astra-content/main/manifests/astra.shaders.core/0.1.0.json",
+            "manifestSha256": "77b9cc5112d0400a0cb103eee8d7d2392d32f8eb248606c2186bba2d8777aafb",
+            "tags": [
+                "shader",
+                "hlsl",
+                "urp",
+                "noise",
+                "library"
+            ],
+            "compressedBytes": 37903
+        },
+        {
+            "id": "astra.shaders.stylized",
+            "displayName": "Astra Shaders Stylized",
+            "description": "Shaders toon pour URP : \u00e9clairage en bandes ou par rampe, ombres teint\u00e9es, lumi\u00e8res additionnelles Forward+, rim, sp\u00e9culaire en bande, contour par coque invers\u00e9e avec normales liss\u00e9es cuites, variante triplanar sans UV. Flash et dissolve compatibles avec astra.shaders.fx.",
+            "category": "Shaders",
+            "recommendedVersion": "0.1.1",
+            "manifestUrl": "https://raw.githubusercontent.com/MisterPxl/astra-content/main/manifests/astra.shaders.stylized/0.1.1.json",
+            "manifestSha256": "f6b3dd88cd67b5916fbd48b9d4d2beec668b801ab146200fadd2e3eb39d14f6a",
+            "tags": [
+                "shader",
+                "toon",
+                "outline",
+                "triplanar",
+                "urp"
+            ],
+            "compressedBytes": 135248
+        },
+        {
+            "id": "astra.shaders.fx",
+            "displayName": "Astra Shaders FX",
+            "description": "Effets pour URP : sprite avec flash, contour et dissolve pour le Universal Renderer, bouclier (fresnel, intersection, motif hexagonal ou Voronoi, 8 impacts), tra\u00een\u00e9es, distorsion (chaleur, onde de choc), particules qui se dissolvent. Composants AstraHitFlash, AstraDissolve et AstraShieldHits, sans allocation par frame.",
+            "category": "Shaders",
+            "recommendedVersion": "0.1.1",
+            "manifestUrl": "https://raw.githubusercontent.com/MisterPxl/astra-content/main/manifests/astra.shaders.fx/0.1.1.json",
+            "manifestSha256": "74166f4f9dd6e2b63993bae24f235d8fe54272d12ca2beacd7ce53603be65f78",
+            "tags": [
+                "shader",
+                "vfx",
+                "sprite",
+                "dissolve",
+                "urp"
+            ],
+            "compressedBytes": 202468
+        },
+        {
+            "id": "astra.shaders.ui",
+            "displayName": "Astra Shaders UI",
+            "description": "Shaders et composants uGUI : formes SDF (coins arrondis par coin, bordure, d\u00e9grad\u00e9, ombre port\u00e9e), jauges circulaires segment\u00e9es, cartes holographiques qui suivent le pointeur, dissolve d'\u00e9l\u00e9ments d'interface. Compatibles Mask, RectMask2D et CanvasGroup, un seul draw call pour des centaines de formes.",
+            "category": "Shaders",
+            "recommendedVersion": "0.1.1",
+            "manifestUrl": "https://raw.githubusercontent.com/MisterPxl/astra-content/main/manifests/astra.shaders.ui/0.1.1.json",
+            "manifestSha256": "1376c025473b362bce7c858e86840214298fc72b4f64c49eb69fc5582561ef1e",
+            "tags": [
+                "shader",
+                "ui",
+                "ugui",
+                "sdf",
+                "urp"
+            ],
+            "compressedBytes": 92900
+        }
+    ]
+}
