@@ -1,0 +1,68 @@
+{
+    "schemaVersion": 1,
+    "id": "astra.grass",
+    "version": "0.2.0",
+    "displayName": "Astra Grass",
+    "description": "Herbe stylis\u00e9e en touffes pour URP : peinture au pinceau, color shading, vent, interacteurs avec trails, correction de perspective et rendu GPU indirect optimis\u00e9.",
+    "category": "Environment",
+    "tags": [
+        "grass",
+        "vegetation",
+        "urp",
+        "environment",
+        "gpu"
+    ],
+    "compatibility": {
+        "minimumUnity": "6000.4.0f1",
+        "maximumUnityExclusive": "6000.4.0f2",
+        "testedUnity": [
+            "6000.4.0f1"
+        ],
+        "renderPipelines": [
+            "urp"
+        ],
+        "platforms": [
+            "StandaloneOSX",
+            "Android",
+            "iOS"
+        ]
+    },
+    "contentDependencies": [
+        {
+            "id": "astra.shaders.core",
+            "version": "0.1.0"
+        }
+    ],
+    "projectPrerequisites": [
+        {
+            "kind": "package",
+            "name": "com.unity.inputsystem",
+            "minimumVersion": "1.19.0",
+            "maximumVersionExclusive": ""
+        },
+        {
+            "kind": "package",
+            "name": "com.unity.render-pipelines.universal",
+            "minimumVersion": "17.4.0",
+            "maximumVersionExclusive": ""
+        },
+        {
+            "kind": "package",
+            "name": "com.unity.modules.physics",
+            "minimumVersion": "1.0.0",
+            "maximumVersionExclusive": ""
+        }
+    ],
+    "containsCode": true,
+    "license": "MIT",
+    "attribution": "Copyright (c) 2026 Alexis Gomes. Code et contenu de d\u00e9monstration Astra sous licence MIT. Voir LICENSES/LICENSE.txt.",
+    "sources": [],
+    "releaseNotes": "0.2.0 : les passes ShadowCaster, DepthOnly et une nouvelle passe DepthNormals utilisent les fragments de astra.shaders.core ; l'ombre des brins re\u00e7oit le biais de normale et le clamp du plan proche d'URP, et DepthOnly \u00e9crit la profondeur au lieu de rien. La sc\u00e8ne de d\u00e9mo Meadow.unity est r\u00e9g\u00e9n\u00e9r\u00e9e : en 0.1.2 elle n'avait ni profil d'herbe ni profil de qualit\u00e9, et aucune herbe n'\u00e9tait dessin\u00e9e. Build Feature Meadow remplace MeadowFieldData.asset au lieu d'en cr\u00e9er une copie \u00e0 chaque reconstruction. D\u00e9pend de astra.shaders.core 0.1.0. 0.1.2 : Menus de l'\u00e9diteur corrig\u00e9s pour un pack install\u00e9 par le Hub : le dossier du pack est trouv\u00e9 l\u00e0 o\u00f9 il est install\u00e9 (Assets/AstraContent/astra.grass) au lieu du chemin fixe Assets/_Project/Features/Grass, les shaders compute sont bien r\u00e9f\u00e9renc\u00e9s et rien n'est plus \u00e9crit dans le pack install\u00e9. Create Grass Field et Build Feature Meadow cr\u00e9ent leurs assets sous Assets/GrassGenerated, Create Meadow Demo sous Assets/GrassMeadowDemo.",
+    "archive": {
+        "url": "https://github.com/MisterPxl/astra-content/releases/download/grass-v0.2.0/astra.grass-0.2.0.zip",
+        "sha256": "35a918da713f9c788562b7a1106e9f458855fe12b6864805e43314becb7275e9",
+        "bytes": 139359,
+        "expandedBytes": 365737,
+        "fileCount": 103
+    }
+}

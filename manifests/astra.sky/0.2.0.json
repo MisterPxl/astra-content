@@ -1,0 +1,61 @@
+{
+    "schemaVersion": 1,
+    "id": "astra.sky",
+    "version": "0.2.0",
+    "displayName": "Astra Sky",
+    "description": "Ciel jour/nuit pour URP : profil horaire, ambiante Trilight, brouillard et soleil pilot\u00e9s par l'heure, shader de ciel avec \u00e9toiles, lune et nuages, r\u00e9flexions temps r\u00e9el, horloge et fen\u00eatres horaires pour le gameplay.",
+    "category": "Environment",
+    "tags": [
+        "sky",
+        "environment",
+        "urp",
+        "time-of-day",
+        "day-night",
+        "shader"
+    ],
+    "compatibility": {
+        "minimumUnity": "6000.4.0f1",
+        "maximumUnityExclusive": "6000.4.0f2",
+        "testedUnity": [
+            "6000.4.0f1"
+        ],
+        "renderPipelines": [
+            "urp"
+        ],
+        "platforms": [
+            "StandaloneOSX"
+        ]
+    },
+    "contentDependencies": [
+        {
+            "id": "astra.shaders.core",
+            "version": "0.1.0"
+        }
+    ],
+    "projectPrerequisites": [
+        {
+            "kind": "package",
+            "name": "com.unity.render-pipelines.universal",
+            "minimumVersion": "17.4.0",
+            "maximumVersionExclusive": ""
+        },
+        {
+            "kind": "package",
+            "name": "com.unity.inputsystem",
+            "minimumVersion": "1.19.0",
+            "maximumVersionExclusive": ""
+        }
+    ],
+    "containsCode": true,
+    "license": "MIT",
+    "attribution": "Copyright (c) 2026 Alexis Gomes. Code et contenu de d\u00e9monstration Astra sous licence MIT. Voir LICENSES/LICENSE.txt.",
+    "sources": [],
+    "releaseNotes": "0.2.0 : le bruit des nuages et le hash des \u00e9toiles viennent maintenant de astra.shaders.core (AstraPeriodicValueNoise2, AstraHash33), avec des formules identiques : le ciel est rendu au pixel pr\u00e8s comme en 0.1.1. D\u00e9pend de astra.shaders.core 0.1.0. 0.1.1 : Build Demo corrig\u00e9 pour un pack install\u00e9 par le Hub : le dossier du pack est trouv\u00e9 l\u00e0 o\u00f9 il est install\u00e9 (Assets/AstraContent/astra.sky) et rien n'est plus \u00e9crit dans le pack install\u00e9. Build Demo g\u00e9n\u00e8re DayCycle.unity et ses mat\u00e9riaux sous Assets/SkyGenerated. 0.1.0 : Premi\u00e8re version.",
+    "archive": {
+        "url": "https://github.com/MisterPxl/astra-content/releases/download/sky-v0.2.0/astra.sky-0.2.0.zip",
+        "sha256": "af3fe5146f75dcb0d969ff54eb1ba24e200ba97329e2a7f357e6a201b4905d7b",
+        "bytes": 100440,
+        "expandedBytes": 368401,
+        "fileCount": 119
+    }
+}

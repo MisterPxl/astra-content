@@ -1,0 +1,22 @@
+{
+    "schemaVersion": 1,
+    "packs": [
+        {
+            "id": "astra.shaders.core",
+            "displayName": "Astra Shaders Core",
+            "description": "Biblioth\u00e8que HLSL pour URP partag\u00e9e par les packs Astra : hash, bruits (valeur, gradient, Voronoi, FBM), triplanar, dither, flash et dissolve, passes ShadowCaster, DepthOnly et DepthNormals avec d\u00e9formation, fonctions pour Shader Graph.",
+            "category": "Shaders",
+            "recommendedVersion": "0.1.0",
+            "manifestUrl": "https://raw.githubusercontent.com/MisterPxl/astra-content/main/manifests/astra.shaders.core/0.1.0.json",
+            "manifestSha256": "77b9cc5112d0400a0cb103eee8d7d2392d32f8eb248606c2186bba2d8777aafb",
+            "tags": [
+                "shader",
+                "hlsl",
+                "urp",
+                "noise",
+                "library"
+            ],
+            "compressedBytes": 37903
+        }
+    ]
+}

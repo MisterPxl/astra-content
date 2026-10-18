@@ -1,0 +1,67 @@
+{
+    "schemaVersion": 1,
+    "id": "astra.water",
+    "version": "0.2.0",
+    "displayName": "Astra Water",
+    "description": "Eau stylis\u00e9e pour URP : vagues de Gerstner, couleur par profondeur et r\u00e9fraction, \u00e9cume de rivage et de cr\u00eate, ondulations propag\u00e9es par les interacteurs, flottaison.",
+    "category": "Environment",
+    "tags": [
+        "water",
+        "environment",
+        "urp",
+        "waves",
+        "buoyancy",
+        "shader"
+    ],
+    "compatibility": {
+        "minimumUnity": "6000.4.0f1",
+        "maximumUnityExclusive": "6000.4.0f2",
+        "testedUnity": [
+            "6000.4.0f1"
+        ],
+        "renderPipelines": [
+            "urp"
+        ],
+        "platforms": [
+            "StandaloneOSX"
+        ]
+    },
+    "contentDependencies": [
+        {
+            "id": "astra.shaders.core",
+            "version": "0.1.0"
+        }
+    ],
+    "projectPrerequisites": [
+        {
+            "kind": "package",
+            "name": "com.unity.render-pipelines.universal",
+            "minimumVersion": "17.4.0",
+            "maximumVersionExclusive": ""
+        },
+        {
+            "kind": "package",
+            "name": "com.unity.modules.physics",
+            "minimumVersion": "1.0.0",
+            "maximumVersionExclusive": ""
+        },
+        {
+            "kind": "package",
+            "name": "com.unity.inputsystem",
+            "minimumVersion": "1.19.0",
+            "maximumVersionExclusive": ""
+        }
+    ],
+    "containsCode": true,
+    "license": "MIT",
+    "attribution": "Copyright (c) 2026 Alexis Gomes. Code et contenu de d\u00e9monstration Astra sous licence MIT. Voir LICENSES/LICENSE.txt.",
+    "sources": [],
+    "releaseNotes": "0.2.0 : le bruit de la surface et de l'\u00e9cume vient maintenant de astra.shaders.core (AstraValueNoise2, hash Hoskins). Le motif des normales et de l'\u00e9cume change ; le rendu reste le m\u00eame en moyenne. D\u00e9pend de astra.shaders.core 0.1.0. 0.1.2 : Menus de l'\u00e9diteur corrig\u00e9s pour un pack install\u00e9 par le Hub : le dossier du pack est trouv\u00e9 l\u00e0 o\u00f9 il est install\u00e9 (Assets/AstraContent/astra.water) au lieu du chemin fixe Assets/_Project/Features/Water, le shader compute d'ondulations est bien r\u00e9f\u00e9renc\u00e9 et rien n'est plus \u00e9crit dans le pack install\u00e9. Create Water Surface et Build Feature Lake cr\u00e9ent leurs assets sous Assets/WaterGenerated, Create Water Demo sous Assets/WaterDemo.",
+    "archive": {
+        "url": "https://github.com/MisterPxl/astra-content/releases/download/water-v0.2.0/astra.water-0.2.0.zip",
+        "sha256": "a708325b1c695391e428088d2943f483620d60a70e4827f50aad8560d4d32283",
+        "bytes": 428353,
+        "expandedBytes": 1787149,
+        "fileCount": 64
+    }
+}
