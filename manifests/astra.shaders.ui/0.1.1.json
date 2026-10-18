@@ -1,0 +1,66 @@
+{
+    "schemaVersion": 1,
+    "id": "astra.shaders.ui",
+    "version": "0.1.1",
+    "displayName": "Astra Shaders UI",
+    "description": "Shaders et composants uGUI : formes SDF (coins arrondis par coin, bordure, d\u00e9grad\u00e9, ombre port\u00e9e), jauges circulaires segment\u00e9es, cartes holographiques qui suivent le pointeur, dissolve d'\u00e9l\u00e9ments d'interface. Compatibles Mask, RectMask2D et CanvasGroup, un seul draw call pour des centaines de formes.",
+    "category": "Shaders",
+    "tags": [
+        "shader",
+        "ui",
+        "ugui",
+        "sdf",
+        "urp"
+    ],
+    "compatibility": {
+        "minimumUnity": "6000.4.0f1",
+        "maximumUnityExclusive": "6000.4.0f2",
+        "testedUnity": [
+            "6000.4.0f1"
+        ],
+        "renderPipelines": [
+            "urp"
+        ],
+        "platforms": [
+            "StandaloneOSX"
+        ]
+    },
+    "contentDependencies": [
+        {
+            "id": "astra.shaders.core",
+            "version": "0.1.0"
+        }
+    ],
+    "projectPrerequisites": [
+        {
+            "kind": "package",
+            "name": "com.unity.render-pipelines.universal",
+            "minimumVersion": "17.4.0",
+            "maximumVersionExclusive": ""
+        },
+        {
+            "kind": "package",
+            "name": "com.unity.ugui",
+            "minimumVersion": "2.0.0",
+            "maximumVersionExclusive": ""
+        },
+        {
+            "kind": "package",
+            "name": "com.unity.inputsystem",
+            "minimumVersion": "1.19.0",
+            "maximumVersionExclusive": ""
+        }
+    ],
+    "containsCode": true,
+    "license": "MIT",
+    "attribution": "Copyright (c) 2026 Alexis Gomes. Shaders, composants et contenu de d\u00e9monstration Astra sous licence MIT. Voir LICENSES/LICENSE.txt.",
+    "sources": [],
+    "releaseNotes": "0.1.1 : sc\u00e8ne galerie UiGallery.unity (Tools > Astra > Shaders > Build UI Gallery) : une rang\u00e9e par th\u00e8me (formes, d\u00e9grad\u00e9s, anneaux, foil, dissolve et d\u00e9coupe), un \u00e9l\u00e9ment \u00e9tiquet\u00e9 par r\u00e9glage. 0.1.0 : Premi\u00e8re version. D\u00e9pend de astra.shaders.core 0.1.0.",
+    "archive": {
+        "url": "https://github.com/MisterPxl/astra-content/releases/download/shaders-ui-v0.1.1/astra.shaders.ui-0.1.1.zip",
+        "sha256": "3bf314949e43e83f56bf08942b8191969e163236fcbc771f3c6c7c68dc0b6f1a",
+        "bytes": 92900,
+        "expandedBytes": 439658,
+        "fileCount": 86
+    }
+}
