@@ -12,6 +12,10 @@ Licence : code, shaders et contenu de démonstration Astra sous MIT
 Prérequis : Unity 6000.4.0f1, Universal Render Pipeline 17.4+ et le module Physics.
 Qualifié sur macOS ; le Hub ne modifie ni les packages ni les réglages de rendu.
 
+Version **0.2.2** : la dépendance passe sur `astra.shaders.core` 0.1.1, sans autre changement.
+Archive : `grass-v0.2.2`, 103 fichiers, 140898 octets,
+SHA-256 `51c4f513df87ebfebf6d73c80d3aa7a0493d1fdfdb929458eed170ecdbcd78c9`.
+
 Version **0.2.1** : rendu corrigé et allégé. Les buffers des touffes visibles grandissent quand on peint au-delà de leur capacité (le shader écrivait hors limites), plus aucune allocation par caméra et par image, la carte des traces n'avance qu'une fois par image depuis la première caméra de jeu, et seules les caméras de jeu et la vue Scene dessinent l'herbe. `GrassInteractionSystem.SelectNearest` remplit une liste fournie (l'ancienne surcharge renvoyant un tableau est retirée).
 Archive : `grass-v0.2.1`, 103 fichiers, 140832 octets,
 SHA-256 `add66fd78e693a386a0c7ae963cecfab4880caeae8ba74bd6599a4aa2dde86d5`.

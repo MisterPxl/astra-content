@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "astra.water",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "displayName": "Astra Water",
   "description": "Eau stylisée pour URP : vagues de Gerstner, couleur par profondeur et réfraction, écume de rivage et de crête, ondulations propagées par les interacteurs, flottaison.",
   "category": "Environment",
@@ -29,7 +29,7 @@
   "contentDependencies": [
     {
       "id": "astra.shaders.core",
-      "version": "0.1.0"
+      "version": "0.1.1"
     }
   ],
   "projectPrerequisites": [
@@ -56,5 +56,5 @@
   "license": "MIT",
   "attribution": "Copyright (c) 2026 Alexis Gomes. Code et contenu de démonstration Astra sous licence MIT. Voir LICENSES/LICENSE.txt.",
   "sources": [],
-  "releaseNotes": "0.2.0 : le bruit de la surface et de l'écume vient maintenant de astra.shaders.core (AstraValueNoise2, hash Hoskins). Le motif des normales et de l'écume change ; le rendu reste le même en moyenne. Dépend de astra.shaders.core 0.1.0. 0.1.2 : Menus de l'éditeur corrigés pour un pack installé par le Hub : le dossier du pack est trouvé là où il est installé (Assets/AstraContent/astra.water) au lieu du chemin fixe Assets/_Project/Features/Water, le shader compute d'ondulations est bien référencé et rien n'est plus écrit dans le pack installé. Create Water Surface et Build Feature Lake créent leurs assets sous Assets/WaterGenerated, Create Water Demo sous Assets/WaterDemo."
+  "releaseNotes": "0.2.1 : dépendance déplacée sur astra.shaders.core 0.1.1, aucun autre changement. 0.2.0 : le bruit de la surface et de l'écume vient maintenant de astra.shaders.core (AstraValueNoise2, hash Hoskins). Le motif des normales et de l'écume change ; le rendu reste le même en moyenne. Dépend de astra.shaders.core 0.1.0. 0.1.2 : Menus de l'éditeur corrigés pour un pack installé par le Hub : le dossier du pack est trouvé là où il est installé (Assets/AstraContent/astra.water) au lieu du chemin fixe Assets/_Project/Features/Water, le shader compute d'ondulations est bien référencé et rien n'est plus écrit dans le pack installé. Create Water Surface et Build Feature Lake créent leurs assets sous Assets/WaterGenerated, Create Water Demo sous Assets/WaterDemo."
 }

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "astra.sky",
-  "version": "0.1.0",
+  "version": "0.2.1",
   "displayName": "Astra Sky",
   "description": "Ciel jour/nuit pour URP : profil horaire, ambiante Trilight, brouillard et soleil pilotés par l'heure, shader de ciel avec étoiles, lune et nuages, réflexions temps réel, horloge et fenêtres horaires pour le gameplay.",
   "category": "Environment",
@@ -26,7 +26,12 @@
       "StandaloneOSX"
     ]
   },
-  "contentDependencies": [],
+  "contentDependencies": [
+    {
+      "id": "astra.shaders.core",
+      "version": "0.1.1"
+    }
+  ],
   "projectPrerequisites": [
     {
       "kind": "package",
@@ -45,5 +50,5 @@
   "license": "MIT",
   "attribution": "Copyright (c) 2026 Alexis Gomes. Code et contenu de démonstration Astra sous licence MIT. Voir LICENSES/LICENSE.txt.",
   "sources": [],
-  "releaseNotes": "Première version."
+  "releaseNotes": "0.2.1 : dépendance déplacée sur astra.shaders.core 0.1.1, aucun autre changement. 0.2.0 : le bruit des nuages et le hash des étoiles viennent maintenant de astra.shaders.core (AstraPeriodicValueNoise2, AstraHash33), avec des formules identiques : le ciel est rendu au pixel près comme en 0.1.1. Dépend de astra.shaders.core 0.1.0. 0.1.1 : Build Demo corrigé pour un pack installé par le Hub : le dossier du pack est trouvé là où il est installé (Assets/AstraContent/astra.sky) et rien n'est plus écrit dans le pack installé. Build Demo génère DayCycle.unity et ses matériaux sous Assets/SkyGenerated. 0.1.0 : Première version."
 }

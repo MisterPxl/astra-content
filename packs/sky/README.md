@@ -16,6 +16,10 @@ de la démo, backends Input System, Legacy et Both). `SkyReflections` exige **Re
 Probes** dans le niveau de qualité actif ; son inspecteur le signale et propose de l'activer, sans
 le faire seul. Qualifié sur macOS ; le Hub ne modifie ni les packages ni les réglages de rendu.
 
+Version **0.2.1** : la dépendance passe sur `astra.shaders.core` 0.1.1, sans autre changement.
+Archive : `sky-v0.2.1`, 119 fichiers, 100516 octets,
+SHA-256 `95cf19e7a7cf9ae67da58ada37f5f3ac1cd55a76f8535617d68cffba62253d69`.
+
 Version **0.2.0** : le bruit des nuages et le hash des étoiles viennent de `astra.shaders.core` 0.1.0, que le Hub importe dans la même transaction, avec des formules identiques (rendu au pixel près comme en 0.1.1). La 0.1.1 corrigeait Build Demo pour un pack installé par le Hub : il écrit sous `Assets/SkyGenerated` et plus rien dans le pack installé.
 Archive : `sky-v0.2.0`, 119 fichiers, 100440 octets,
 SHA-256 `af3fe5146f75dcb0d969ff54eb1ba24e200ba97329e2a7f357e6a201b4905d7b`.

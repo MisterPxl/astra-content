@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "astra.grass",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "displayName": "Astra Grass",
   "description": "Herbe stylisée en touffes pour URP : peinture au pinceau, color shading, vent, interacteurs avec trails, correction de perspective et rendu GPU indirect optimisé.",
   "category": "Environment",
@@ -30,7 +30,7 @@
   "contentDependencies": [
     {
       "id": "astra.shaders.core",
-      "version": "0.1.0"
+      "version": "0.1.1"
     }
   ],
   "projectPrerequisites": [
@@ -57,5 +57,5 @@
   "license": "MIT",
   "attribution": "Copyright (c) 2026 Alexis Gomes. Code et contenu de démonstration Astra sous licence MIT. Voir LICENSES/LICENSE.txt.",
   "sources": [],
-  "releaseNotes": "0.2.1 : rendu corrigé et allégé. Les buffers des touffes visibles grandissent quand on peint au-delà de leur capacité (avant, le shader écrivait hors limites). Plus aucune allocation par caméra et par image : buffers d'interacteurs persistants, plans de frustum réutilisés, sélection des interacteurs les plus proches sans tri complet ni copie (GrassInteractionSystem.SelectNearest remplit une liste fournie, l'ancienne surcharge renvoyant un tableau est retirée). La carte des traces n'avance qu'une fois par image, depuis la première caméra de jeu : la vue Scene ouverte en même temps ne double plus la décroissance. Seules les caméras de jeu et la vue Scene dessinent l'herbe ; les caméras détruites libèrent leurs buffers. 0.2.0 : les passes ShadowCaster, DepthOnly et une nouvelle passe DepthNormals utilisent les fragments de astra.shaders.core ; l'ombre des brins reçoit le biais de normale et le clamp du plan proche d'URP, et DepthOnly écrit la profondeur au lieu de rien. La scène de démo Meadow.unity est régénérée : en 0.1.2 elle n'avait ni profil d'herbe ni profil de qualité, et aucune herbe n'était dessinée. Build Feature Meadow remplace MeadowFieldData.asset au lieu d'en créer une copie à chaque reconstruction. Dépend de astra.shaders.core 0.1.0. 0.1.2 : Menus de l'éditeur corrigés pour un pack installé par le Hub : le dossier du pack est trouvé là où il est installé (Assets/AstraContent/astra.grass) au lieu du chemin fixe Assets/_Project/Features/Grass, les shaders compute sont bien référencés et rien n'est plus écrit dans le pack installé. Create Grass Field et Build Feature Meadow créent leurs assets sous Assets/GrassGenerated, Create Meadow Demo sous Assets/GrassMeadowDemo."
+  "releaseNotes": "0.2.2 : dépendance déplacée sur astra.shaders.core 0.1.1, aucun autre changement. 0.2.1 : rendu corrigé et allégé. Les buffers des touffes visibles grandissent quand on peint au-delà de leur capacité (avant, le shader écrivait hors limites). Plus aucune allocation par caméra et par image : buffers d'interacteurs persistants, plans de frustum réutilisés, sélection des interacteurs les plus proches sans tri complet ni copie (GrassInteractionSystem.SelectNearest remplit une liste fournie, l'ancienne surcharge renvoyant un tableau est retirée). La carte des traces n'avance qu'une fois par image, depuis la première caméra de jeu : la vue Scene ouverte en même temps ne double plus la décroissance. Seules les caméras de jeu et la vue Scene dessinent l'herbe ; les caméras détruites libèrent leurs buffers. 0.2.0 : les passes ShadowCaster, DepthOnly et une nouvelle passe DepthNormals utilisent les fragments de astra.shaders.core ; l'ombre des brins reçoit le biais de normale et le clamp du plan proche d'URP, et DepthOnly écrit la profondeur au lieu de rien. La scène de démo Meadow.unity est régénérée : en 0.1.2 elle n'avait ni profil d'herbe ni profil de qualité, et aucune herbe n'était dessinée. Build Feature Meadow remplace MeadowFieldData.asset au lieu d'en créer une copie à chaque reconstruction. Dépend de astra.shaders.core 0.1.0. 0.1.2 : Menus de l'éditeur corrigés pour un pack installé par le Hub : le dossier du pack est trouvé là où il est installé (Assets/AstraContent/astra.grass) au lieu du chemin fixe Assets/_Project/Features/Grass, les shaders compute sont bien référencés et rien n'est plus écrit dans le pack installé. Create Grass Field et Build Feature Meadow créent leurs assets sous Assets/GrassGenerated, Create Meadow Demo sous Assets/GrassMeadowDemo."
 }

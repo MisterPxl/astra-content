@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "astra.snow",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "displayName": "Astra Snow",
   "description": "Neige stylisée pour URP : sol déformable avec traces des interacteurs qui se comblent, recouvrement des objets selon la normale, ombres bleutées et scintillement.",
   "category": "Environment",
@@ -28,7 +28,7 @@
   "contentDependencies": [
     {
       "id": "astra.shaders.core",
-      "version": "0.1.0"
+      "version": "0.1.1"
     }
   ],
   "projectPrerequisites": [
@@ -55,5 +55,5 @@
   "license": "MIT",
   "attribution": "Copyright (c) 2026 Alexis Gomes. Code et contenu de démonstration Astra sous licence MIT. Voir LICENSES/LICENSE.txt.",
   "sources": [],
-  "releaseNotes": "0.2.0 : le hash du scintillement et du relief vient maintenant de astra.shaders.core (AstraHash13), donc le motif des paillettes change. Les passes ShadowCaster, DepthOnly et DepthNormals du sol et du recouvrement sont celles du core ; DepthNormals gère les normales octaédriques et les rendering layers. Dépend de astra.shaders.core 0.1.0. 0.1.2 : Menus de l'éditeur corrigés pour un pack installé par le Hub : le dossier du pack est trouvé là où il est installé (Assets/AstraContent/astra.snow) au lieu du chemin fixe Assets/_Project/Features/Snow, le shader compute de déformation est bien référencé et rien n'est plus écrit dans le pack installé. Create Snow Surface et Build Feature Snowfield créent leurs assets sous Assets/SnowGenerated, Create Snow Demo sous Assets/SnowDemo."
+  "releaseNotes": "0.2.1 : dépendance déplacée sur astra.shaders.core 0.1.1, aucun autre changement. 0.2.0 : le hash du scintillement et du relief vient maintenant de astra.shaders.core (AstraHash13), donc le motif des paillettes change. Les passes ShadowCaster, DepthOnly et DepthNormals du sol et du recouvrement sont celles du core ; DepthNormals gère les normales octaédriques et les rendering layers. Dépend de astra.shaders.core 0.1.0. 0.1.2 : Menus de l'éditeur corrigés pour un pack installé par le Hub : le dossier du pack est trouvé là où il est installé (Assets/AstraContent/astra.snow) au lieu du chemin fixe Assets/_Project/Features/Snow, le shader compute de déformation est bien référencé et rien n'est plus écrit dans le pack installé. Create Snow Surface et Build Feature Snowfield créent leurs assets sous Assets/SnowGenerated, Create Snow Demo sous Assets/SnowDemo."
 }
