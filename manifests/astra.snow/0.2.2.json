@@ -1,0 +1,67 @@
+{
+    "schemaVersion": 2,
+    "id": "astra.snow",
+    "version": "0.2.2",
+    "displayName": "Astra Snow",
+    "description": "Neige stylis\u00e9e pour URP : sol d\u00e9formable avec traces des interacteurs qui se comblent, recouvrement des objets selon la normale, ombres bleut\u00e9es et scintillement.",
+    "category": "Environment",
+    "tags": [
+        "snow",
+        "environment",
+        "urp",
+        "deformation",
+        "shader"
+    ],
+    "compatibility": {
+        "minimumUnity": "6000.4.0f1",
+        "maximumUnityExclusive": "6000.4.0f2",
+        "testedUnity": [
+            "6000.4.0f1"
+        ],
+        "renderPipelines": [
+            "urp"
+        ],
+        "platforms": [
+            "StandaloneOSX"
+        ]
+    },
+    "contentDependencies": [
+        {
+            "id": "astra.shaders.core",
+            "minimumVersion": "0.1.2",
+            "maximumVersionExclusive": "0.2.0"
+        }
+    ],
+    "projectPrerequisites": [
+        {
+            "kind": "package",
+            "name": "com.unity.render-pipelines.universal",
+            "minimumVersion": "17.4.0",
+            "maximumVersionExclusive": ""
+        },
+        {
+            "kind": "package",
+            "name": "com.unity.modules.physics",
+            "minimumVersion": "1.0.0",
+            "maximumVersionExclusive": ""
+        },
+        {
+            "kind": "package",
+            "name": "com.unity.inputsystem",
+            "minimumVersion": "1.19.0",
+            "maximumVersionExclusive": ""
+        }
+    ],
+    "containsCode": true,
+    "license": "MIT",
+    "attribution": "Copyright (c) 2026 Alexis Gomes. Code et contenu de d\u00e9monstration Astra sous licence MIT. Voir LICENSES/LICENSE.txt.",
+    "sources": [],
+    "releaseNotes": "0.2.2 : contrat Content Hub V2 : d\u00e9pendances par plages de versions, aucun changement de contenu. D\u00e9pend de astra.shaders.core [0.1.2, 0.2.0). Requiert le framework \u00e0 partir du tag framework-game-2026-10-19 (Core : framework-core-2026-10-19) ; un Hub plus ancien ne lit pas le catalogue gameplay-v26. 0.2.1 : d\u00e9pendance d\u00e9plac\u00e9e sur astra.shaders.core 0.1.1, aucun autre changement. 0.2.0 : le hash du scintillement et du relief vient maintenant de astra.shaders.core (AstraHash13), donc le motif des paillettes change. Les passes ShadowCaster, DepthOnly et DepthNormals du sol et du recouvrement sont celles du core ; DepthNormals g\u00e8re les normales octa\u00e9driques et les rendering layers. D\u00e9pend de astra.shaders.core 0.1.0. 0.1.2 : Menus de l'\u00e9diteur corrig\u00e9s pour un pack install\u00e9 par le Hub : le dossier du pack est trouv\u00e9 l\u00e0 o\u00f9 il est install\u00e9 (Assets/AstraContent/astra.snow) au lieu du chemin fixe Assets/_Project/Features/Snow, le shader compute de d\u00e9formation est bien r\u00e9f\u00e9renc\u00e9 et rien n'est plus \u00e9crit dans le pack install\u00e9. Create Snow Surface et Build Feature Snowfield cr\u00e9ent leurs assets sous Assets/SnowGenerated, Create Snow Demo sous Assets/SnowDemo.",
+    "archive": {
+        "url": "https://github.com/MisterPxl/astra-content/releases/download/snow-v0.2.2/astra.snow-0.2.2.zip",
+        "sha256": "ce31d4f65e0fda2da8a083cc5cb0a82d56ee8477203ce50103c56fd49716ab85",
+        "bytes": 249121,
+        "expandedBytes": 1559164,
+        "fileCount": 56
+    }
+}

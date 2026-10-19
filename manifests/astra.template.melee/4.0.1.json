@@ -1,0 +1,87 @@
+{
+    "schemaVersion": 2,
+    "id": "astra.template.melee",
+    "version": "4.0.1",
+    "displayName": "Melee Template",
+    "description": "Template de platform fighter local pour deux \u00e0 quatre joueurs : lobby, stage, combattant et composition \u00e0 appliquer avec Setup.",
+    "category": "Templates",
+    "tags": [
+        "template",
+        "melee",
+        "platform-fighter",
+        "local-multiplayer"
+    ],
+    "compatibility": {
+        "minimumUnity": "6000.4.0f1",
+        "maximumUnityExclusive": "6000.4.0f2",
+        "testedUnity": [
+            "6000.4.0f1"
+        ],
+        "renderPipelines": [
+            "urp"
+        ],
+        "platforms": [
+            "StandaloneOSX"
+        ]
+    },
+    "contentDependencies": [
+        {
+            "id": "astra.melee",
+            "minimumVersion": "4.0.1",
+            "maximumVersionExclusive": "5.0.0"
+        }
+    ],
+    "projectPrerequisites": [
+        {
+            "kind": "capability",
+            "name": "input-system-enabled",
+            "minimumVersion": "",
+            "maximumVersionExclusive": ""
+        },
+        {
+            "kind": "package",
+            "name": "com.unity.inputsystem",
+            "minimumVersion": "1.19.0",
+            "maximumVersionExclusive": "1.19.1"
+        },
+        {
+            "kind": "package",
+            "name": "com.unity.render-pipelines.universal",
+            "minimumVersion": "17.4.0",
+            "maximumVersionExclusive": "17.4.1"
+        },
+        {
+            "kind": "package",
+            "name": "com.unity.ugui",
+            "minimumVersion": "2.0.0",
+            "maximumVersionExclusive": "2.0.1"
+        },
+        {
+            "kind": "package",
+            "name": "com.unity.modules.animation",
+            "minimumVersion": "1.0.0",
+            "maximumVersionExclusive": ""
+        },
+        {
+            "kind": "assembly",
+            "name": "Astra.Framework.Game.FlowPresentation.Runtime",
+            "minimumVersion": "",
+            "maximumVersionExclusive": ""
+        }
+    ],
+    "containsCode": false,
+    "license": "MIT AND CC0-1.0",
+    "attribution": "Copyright (c) 2026 Alexis Gomes. Contenu du template sous licence MIT ; mod\u00e8le, textures et animations Quaternius sous CC0-1.0. Voir LICENSES/LICENSE.txt et Art/Quaternius/PROVENANCE.json.",
+    "sources": [
+        "https://quaternius.com/packs/universalbasecharacters.html",
+        "https://quaternius.com/packs/universalanimationlibrary.html"
+    ],
+    "releaseNotes": "4.0.1 : contrat Content Hub V2 : d\u00e9pendances par plages de versions, aucun changement de contenu. D\u00e9pend de astra.melee [4.0.1, 5.0.0). Requiert le framework \u00e0 partir du tag framework-game-2026-10-19 (Core : framework-core-2026-10-19) ; un Hub plus ancien ne lit pas le catalogue gameplay-v26. 4.0.0 : requiert astra.melee 4.0.0 (capacit\u00e9s en assets). Le template livre 12 capacit\u00e9s par combattant dans Config/Moves (Heavy a ses propres copies dans Config/Moves/Heavy) : sol neutre, c\u00f4t\u00e9, haut, bas ; air neutre, c\u00f4t\u00e9, haut, bas (nouveaux) ; Special selon le stick (haut = uppercut de r\u00e9cup\u00e9ration, une fois par temps de vol ; neutre = rafale de 3 coups ; c\u00f4t\u00e9 = coup de poing lanc\u00e9 ; bas = plongeon). Le Fighter.controller partag\u00e9 a 32 cr\u00e9neaux d'attaque (Attack_00 \u00e0 Attack_31) et chaque combattant remplace les clips au spawn : recette \u00ab Ajouter une capacit\u00e9 sans code \u00bb. Rupture : les anciens assets de combattants (MoveAuthoring) sont remplac\u00e9s ; reconstruire les assets du template (Tools > Astra > Melee > Rebuild template assets). Guide : tableau des contr\u00f4les mis \u00e0 jour, section \u00ab Mise \u00e0 jour depuis 3.x \u00bb. 3.0.0 : requiert astra.melee 3.0.0 (\u00e9crans de s\u00e9lection du stage puis du combattant). Le template livre deux \u00e9crans, MeleeStageSelectScreen puis MeleeFighterSelectScreen, \u00e0 la place du lobby sur un seul \u00e9cran. \u00c9cran du stage : grille fa\u00e7on Smash avec une tuile Al\u00e9atoire, un curseur partag\u00e9 d\u00e9plac\u00e9 par toutes les manettes, n'importe quel joueur valide. \u00c9cran des combattants : grille avec une tuile Al\u00e9atoire et un curseur par humain ; quatre panneaux dessous (un panneau vide ajoute un CPU, son propre panneau CPU permet de choisir son combattant, de changer son niveau gauche/droite ou de le retirer avec Bouclier ; Bouclier sur son propre panneau = spectateur). Choisir un combattant = pr\u00eat ; un appui court sur Special annule le pr\u00eat ou, pour l'h\u00f4te non pr\u00eat, revient \u00e0 l'\u00e9cran du stage. La banni\u00e8re \u00ab Pr\u00eats au combat ! \u00bb pr\u00e9c\u00e8de le d\u00e9part de 1,5 s. Les tuiles affichent le nom et le sprite Portrait ou Preview quand il est renseign\u00e9 ; les cartes du HUD affichent \u00ab CPU \u00bb pour les CPU. Rupture : MeleeLobbyScreen, MeleeStageSelector, ToggleReady, CycleStage et CycleFighter sont retir\u00e9s ; reconstruire les assets du template (Tools > Astra > Melee > Rebuild template assets). Guide : contr\u00f4les de s\u00e9lection r\u00e9\u00e9crits, section \u00ab Mise \u00e0 jour depuis 2.x \u00bb. 2.1.0 : requiert astra.melee 2.1.0 (joueurs CPU, ajout compatible). Le template livre trois niveaux de CPU, Facile, Normal et Difficile (assets StandardCpuAsset dans Config/Cpu/), list\u00e9s dans le champ Cpu Behaviours (_cpuBehaviours) de MeleeModule. \u00c0 l'\u00e9tape des combattants du lobby, un joueur ajoute un CPU avec Esquive, le contr\u00f4le (combattant, niveau, retrait) et peut se mettre spectateur avec Bouclier pour regarder un match CPU contre CPU, en choisissant les combattants et les niveaux, avec pause, sortie et \u00e9cran de r\u00e9sultats ; les CPU ne valident jamais les r\u00e9sultats. Une nouvelle graine par match est \u00e9crite dans la console. Guide : recettes \u00ab R\u00e9gler un niveau de CPU \u00bb et \u00ab \u00c9crire son propre CPU \u00bb, nouvelles limites actuelles. Apr\u00e8s la mise \u00e0 jour, reconstruire les assets du template (Tools > Astra > Melee > Rebuild template assets) pour obtenir les niveaux de CPU. 2.0.0 : requiert astra.melee 2.0.0 (choix du combattant et du stage). Le lobby a deux \u00e9tapes : d'abord le stage (n'importe quelle manette le d\u00e9place, n'importe quel joueur valide avec Jump), puis le combattant de chacun (stick gauche/droite, avant de se mettre pr\u00eat) ; un appui court sur Special par l'h\u00f4te revient au stage, \u00ab Lobby \u00bb apr\u00e8s un match aussi. Une entr\u00e9e \u00ab Al\u00e9atoire \u00bb existe pour chacun. Le template livre deux combattants (Brawler et une variante lourde, chacune avec son ViewPrefab) et deux stages ; guide : recettes \u00ab Ajouter un combattant \u00bb et \u00ab Ajouter une ar\u00e8ne \u00bb, section \u00ab Mise \u00e0 jour depuis 1.x \u00bb. Rupture : MeleeModule.Stage est remplac\u00e9 par Stages ; reconstruire les assets du template (Tools > Astra > Melee > Rebuild template assets). 1.4.0 : requiert astra.melee 1.4.0. Le minuteur et le compte \u00e0 rebours du HUD sont des \u00e9l\u00e9ments de HUD g\u00e9n\u00e9riques lisant Config/Hud/MeleeHudValues.asset (d\u00e9g\u00e2ts, stocks et vivant par slot, temps restant, compte \u00e0 rebours, statut) ; guide : recette \u00ab Ajouter un \u00e9l\u00e9ment de HUD sans code \u00bb. 1.3.0 : requiert astra.melee 1.3.0 (HUD typ\u00e9). Requiert le framework Game \u00e0 partir du tag framework-game-2026-10-15 (HUD typ\u00e9) ; sur un framework plus ancien, l'import ne compile pas. 1.2.2 : composition par identifiants de module (astra.game.*, melee.module) pour le framework Game Flow Foundation. D\u00e9pend de astra.melee 1.2.1. Requiert Game.FlowPresentation ; sans lui le Hub refuse l'import. Contenu de jeu inchang\u00e9 depuis 1.2.1.",
+    "archive": {
+        "url": "https://github.com/MisterPxl/astra-content/releases/download/template-melee-v4.0.1/astra.template.melee-4.0.1.zip",
+        "sha256": "2dd3a9c7a7212d1f5e8af3f6e8ea19ed8fb66f8bdcfc7681c05b7bc4e1477dfb",
+        "bytes": 6998450,
+        "expandedBytes": 27191044,
+        "fileCount": 237
+    }
+}

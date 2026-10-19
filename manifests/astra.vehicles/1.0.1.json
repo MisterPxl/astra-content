@@ -1,0 +1,82 @@
+{
+    "schemaVersion": 2,
+    "id": "astra.vehicles",
+    "version": "1.0.1",
+    "displayName": "Vehicles",
+    "description": "Voitures, bateaux, avions l\u00e9gers et jets : physique, variantes arcade, clavier/manette, cam\u00e9ra, t\u00e9l\u00e9m\u00e9trie et d\u00e9mos \u00e9ditables.",
+    "category": "Gameplay",
+    "tags": [
+        "vehicles",
+        "car",
+        "boat",
+        "plane",
+        "arcade",
+        "physics",
+        "demo",
+        "urp"
+    ],
+    "compatibility": {
+        "minimumUnity": "6000.4.0f1",
+        "maximumUnityExclusive": "6000.4.0f2",
+        "testedUnity": [
+            "6000.4.0f1"
+        ],
+        "renderPipelines": [
+            "urp"
+        ],
+        "platforms": [
+            "StandaloneOSX"
+        ]
+    },
+    "contentDependencies": [],
+    "projectPrerequisites": [
+        {
+            "kind": "capability",
+            "name": "input-system-enabled",
+            "minimumVersion": "",
+            "maximumVersionExclusive": ""
+        },
+        {
+            "kind": "package",
+            "name": "com.unity.inputsystem",
+            "minimumVersion": "1.19.0",
+            "maximumVersionExclusive": "1.19.1"
+        },
+        {
+            "kind": "package",
+            "name": "com.unity.render-pipelines.universal",
+            "minimumVersion": "17.4.0",
+            "maximumVersionExclusive": "17.4.1"
+        },
+        {
+            "kind": "package",
+            "name": "com.unity.modules.audio",
+            "minimumVersion": "1.0.0",
+            "maximumVersionExclusive": ""
+        },
+        {
+            "kind": "package",
+            "name": "com.unity.modules.physics",
+            "minimumVersion": "1.0.0",
+            "maximumVersionExclusive": ""
+        },
+        {
+            "kind": "package",
+            "name": "com.unity.modules.imgui",
+            "minimumVersion": "1.0.0",
+            "maximumVersionExclusive": ""
+        }
+    ],
+    "containsCode": true,
+    "license": "MIT",
+    "attribution": "Copyright (c) 2026 Alexis Gomes. Code et mod\u00e8les proc\u00e9duraux issus de MotionTest ; licence MIT.",
+    "sources": [],
+    "releaseNotes": "1.0.1 : contrat Content Hub V2 : d\u00e9pendances par plages de versions, aucun changement de contenu. Requiert le framework \u00e0 partir du tag framework-game-2026-10-19 (Core : framework-core-2026-10-19) ; un Hub plus ancien ne lit pas le catalogue gameplay-v26. 1.0.0 : Premi\u00e8re version : huit prefabs, trois sc\u00e8nes, quatre assemblies runtime et outils de g\u00e9n\u00e9ration. R\u00e9f\u00e9rences Unity des classes eau, atmosph\u00e8re et contr\u00f4le de vol r\u00e9par\u00e9es pour un import autonome.",
+    "archive": {
+        "url": "https://github.com/MisterPxl/astra-content/releases/download/vehicles-v1.0.1/astra.vehicles-1.0.1.zip",
+        "sha256": "9edbec5480d40dbd810f1eaeb370cfd0d9d5108a373094d9e4c6d98c1e8524da",
+        "bytes": 233879,
+        "expandedBytes": 820466,
+        "fileCount": 257
+    }
+}

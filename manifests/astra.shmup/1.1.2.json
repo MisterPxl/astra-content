@@ -1,0 +1,66 @@
+{
+    "schemaVersion": 2,
+    "id": "astra.shmup",
+    "version": "1.1.2",
+    "displayName": "Shmup",
+    "description": "Simulation 60 Hz et vues Unity pour un shoot'em up horizontal solo ou coop locale, avec int\u00e9gration au framework Astra.",
+    "category": "Gameplay",
+    "tags": [
+        "shmup",
+        "shoot-em-up",
+        "local-multiplayer",
+        "2d"
+    ],
+    "compatibility": {
+        "minimumUnity": "6000.4.0f1",
+        "maximumUnityExclusive": "6000.4.0f2",
+        "testedUnity": [
+            "6000.4.0f1"
+        ],
+        "renderPipelines": [
+            "urp"
+        ],
+        "platforms": [
+            "StandaloneOSX"
+        ]
+    },
+    "contentDependencies": [],
+    "projectPrerequisites": [
+        {
+            "kind": "capability",
+            "name": "input-system-enabled",
+            "minimumVersion": "",
+            "maximumVersionExclusive": ""
+        },
+        {
+            "kind": "package",
+            "name": "com.unity.inputsystem",
+            "minimumVersion": "1.19.0",
+            "maximumVersionExclusive": "1.19.1"
+        },
+        {
+            "kind": "assembly",
+            "name": "Astra.Framework.Game.HUD.Runtime",
+            "minimumVersion": "",
+            "maximumVersionExclusive": ""
+        },
+        {
+            "kind": "assembly",
+            "name": "Astra.Framework.Game.FlowPresentation.Runtime",
+            "minimumVersion": "",
+            "maximumVersionExclusive": ""
+        }
+    ],
+    "containsCode": true,
+    "license": "MIT",
+    "attribution": "Copyright (c) 2026 Alexis Gomes. Code sous licence MIT.",
+    "sources": [],
+    "releaseNotes": "1.1.2 : contrat Content Hub V2 : d\u00e9pendances par plages de versions, aucun changement de contenu. Requiert le framework \u00e0 partir du tag framework-game-2026-10-19 (Core : framework-core-2026-10-19) ; un Hub plus ancien ne lit pas le catalogue gameplay-v26. 1.1.1 : correctifs de simulation. Les \u00e9metteurs ne gardent plus d'\u00e9tat : la spirale tourne par tireur (EmitterContext.ShotIndex, nouveau champ StartAngleDegrees) au lieu de partager un seul angle entre tous les ennemis d'un m\u00eame type et les deux joueurs ; le compteur repart \u00e0 z\u00e9ro \u00e0 chaque phase de boss. Un ennemi tu\u00e9 par une balle est cr\u00e9dit\u00e9 au joueur qui l'a tir\u00e9e (score, cha\u00eene, bonus) et non plus toujours au joueur 1. Le hachage d'\u00e9tat inclut les compteurs de tirs, ses valeurs changent. 1.1.0 : HUD typ\u00e9 (lot O11) : le widget d\u00e9rive de HudWidgetView, s'ajoute par IGameHudService.Add et s'affiche par Show<T>/Hide<T> (cl\u00e9 texte retir\u00e9e). ShmupHudValuesAsset publie \u00e0 chaque frame le score, les vies, les bombes, la puissance et le multiplicateur par joueur, et le statut de la partie ; ShmupModule exige cet asset. Requiert le framework Game \u00e0 partir du tag framework-game-2026-10-15 (HUD typ\u00e9) ; sur un framework plus ancien, l'import ne compile pas. 1.0.0 : premier pack gameplay shmup horizontal (Shmup.Core, Shmup.Unity, Shmup.Astra) avec module shmup.module.",
+    "archive": {
+        "url": "https://github.com/MisterPxl/astra-content/releases/download/shmup-v1.1.2/astra.shmup-1.1.2.zip",
+        "sha256": "6512abc8fa6811073861b046efc26f865eb244ce60df747c17b9fd3c131e56c5",
+        "bytes": 62757,
+        "expandedBytes": 132000,
+        "fileCount": 104
+    }
+}

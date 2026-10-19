@@ -1,0 +1,100 @@
+{
+    "schemaVersion": 2,
+    "id": "astra.deckbuilder",
+    "version": "3.0.1",
+    "displayName": "Deckbuilder",
+    "description": "Simulation de run et de combat au tour pour un deckbuilder roguelite, pr\u00e9sentation Unity UI et int\u00e9gration au framework Astra.",
+    "category": "Gameplay",
+    "tags": [
+        "deckbuilder",
+        "cards",
+        "roguelite",
+        "turn-based",
+        "mobile",
+        "touch"
+    ],
+    "compatibility": {
+        "minimumUnity": "6000.4.0f1",
+        "maximumUnityExclusive": "6000.4.0f2",
+        "testedUnity": [
+            "6000.4.0f1"
+        ],
+        "renderPipelines": [
+            "urp"
+        ],
+        "platforms": [
+            "StandaloneOSX",
+            "Android",
+            "iOS"
+        ]
+    },
+    "contentDependencies": [],
+    "projectPrerequisites": [
+        {
+            "kind": "capability",
+            "name": "input-system-enabled",
+            "minimumVersion": "",
+            "maximumVersionExclusive": ""
+        },
+        {
+            "kind": "package",
+            "name": "com.unity.inputsystem",
+            "minimumVersion": "1.19.0",
+            "maximumVersionExclusive": "1.19.1"
+        },
+        {
+            "kind": "package",
+            "name": "com.unity.ugui",
+            "minimumVersion": "2.0.0",
+            "maximumVersionExclusive": "2.0.1"
+        },
+        {
+            "kind": "package",
+            "name": "com.misterpxl.valkyrie",
+            "minimumVersion": "2.1.0",
+            "maximumVersionExclusive": "2.1.1"
+        },
+        {
+            "kind": "assembly",
+            "name": "Astra.Framework.Core.UI.Runtime",
+            "minimumVersion": "",
+            "maximumVersionExclusive": ""
+        },
+        {
+            "kind": "assembly",
+            "name": "Astra.Framework.Game.Flow.Runtime",
+            "minimumVersion": "",
+            "maximumVersionExclusive": ""
+        },
+        {
+            "kind": "assembly",
+            "name": "Astra.Framework.Core.Localization.Runtime",
+            "minimumVersion": "",
+            "maximumVersionExclusive": ""
+        },
+        {
+            "kind": "assembly",
+            "name": "Astra.Framework.Game.HUD.Runtime",
+            "minimumVersion": "",
+            "maximumVersionExclusive": ""
+        },
+        {
+            "kind": "assembly",
+            "name": "Astra.Framework.Game.FlowPresentation.Runtime",
+            "minimumVersion": "",
+            "maximumVersionExclusive": ""
+        }
+    ],
+    "containsCode": true,
+    "license": "MIT",
+    "attribution": "Copyright (c) 2026 Alexis Gomes. Code sous licence MIT.",
+    "sources": [],
+    "releaseNotes": "3.0.1 : contrat Content Hub V2 : d\u00e9pendances par plages de versions, aucun changement de contenu. Requiert le framework \u00e0 partir du tag framework-game-2026-10-19 (Core : framework-core-2026-10-19) ; un Hub plus ancien ne lit pas le catalogue gameplay-v26. 3.0.0 : les types de n\u0153ud de la carte sont des assets (NodeKindAsset) portant leur handler (INodeKindHandler), leur route et leur placement (NodePlacement : \u00e9tages, poids, minimum par carte) ; plus d'\u00e9num\u00e9ration ni de table d'identifiants \u00e0 maintenir. Nouveau type \u00e9v\u00e9nement (EventNodeHandler, EventDefinitionAsset, effets or, PV, ajout et retrait de carte, EventScreenView, RunPhase.Event) ; l'\u00e9lite se fait sans code. Changements cassants : DeckbuilderModule.NodeKinds et Routes, RunConfig.BossEncounter, MapRules.*KindId et INodeKindRoute.KindId retir\u00e9s ; sauvegardes de run en version 2 (les anciennes sont \u00e9cart\u00e9es avec un avertissement). 2.0.0 : Deckbuilder publie ses valeurs de HUD (DeckbuilderHudValuesAsset : points de vie et maximum, or, \u00e9tage \u00e0 partir de 1), republi\u00e9es \u00e0 chaque changement de la run (RunState.Changed, DeckbuilderRunService.RunChanged) et exig\u00e9es par le module (Hud Values). Le HUD du template est fait d'\u00e9l\u00e9ments de HUD g\u00e9n\u00e9riques. Rupture : DeckbuilderHudWidget.Bind(run, ...), Refresh() et ses champs de points de vie, d'or et d'\u00e9tage sont retir\u00e9s ; Bind(navigator, texte) ne c\u00e2ble plus que le bouton Deck et la l\u00e9gende d'\u00e9tage. \u00c9nergie et piles restent dans l'\u00e9cran de combat. 1.1.0 : MaxEnergy et DrawPerTurn du personnage pilotent le combat ; tous les statuts passent par ModifyDamageDealt puis ModifyDamageTaken, dans l'ordre de RunConfig > Statuses, arrondis \u00e0 l'inf\u00e9rieur apr\u00e8s chaque statut (Faiblesse et Vuln\u00e9rabilit\u00e9 r\u00e9utilisables sous un autre identifiant ; 10 d\u00e9g\u00e2ts avec Faiblesse et Vuln\u00e9rabilit\u00e9 font 10 au lieu de 11) ; ShopRules (offres, prix, retrait) et RestRules (soin) s\u00e9rialis\u00e9s dans RunConfigAsset. Code : ShopGenerator.Create prend un ShopRules, StatusCatalog accepte une liste ordonn\u00e9e, CombatMath.OpeningDrawCount devient DefaultDrawPerTurn. HUD typ\u00e9 (lot O11) : le widget d\u00e9rive de HudWidgetView, s'ajoute par IGameHudService.Add et s'affiche par Show<T>/Hide<T> (cl\u00e9 texte retir\u00e9e). Requiert le framework Game \u00e0 partir du tag framework-game-2026-10-15 (HUD typ\u00e9) ; sur un framework plus ancien, l'import ne compile pas. 1.0.0 : simulation de run et de combat (Deckbuilder.Core), vues Unity UI et d\u00e9mo, pont Deckbuilder.Astra (\u00e9crans, sauvegarde du run, entr\u00e9e Continuer du menu), identifiant de module deckbuilder.module. Requiert le framework Game Flow Foundation (Game.FlowPresentation) ; sans lui le Hub refuse l'import.",
+    "archive": {
+        "url": "https://github.com/MisterPxl/astra-content/releases/download/deckbuilder-v3.0.1/astra.deckbuilder-3.0.1.zip",
+        "sha256": "d7f060f265570d95fbb0dfed1ab4f2a6aaa5f7c61099f616f66e74867b53fcba",
+        "bytes": 227192,
+        "expandedBytes": 834442,
+        "fileCount": 333
+    }
+}

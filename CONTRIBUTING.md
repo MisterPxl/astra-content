@@ -19,7 +19,7 @@ FBX, textures volumineuses, caches et ZIP restent hors de l’historique Git.
 
 Une version publiée est immuable : ne pas remplacer son ZIP, son manifeste ou
 les pages d’une révision déjà référencée. Publier une nouvelle version/révision.
-Une dépendance à un autre pack indique sa version exacte. Les packages Unity
+Une dépendance à un autre pack indique une plage de versions (`minimumVersion` inclus, `maximumVersionExclusive` exclu, vide pour aucune borne haute ; contrat Content Hub `schemaVersion: 2`). Les packages Unity
 restent des prérequis et ne sont pas ajoutés automatiquement par le Hub.
 
 Le pack Adventure est une seule unité `astra.adventure`. Ses assemblies internes

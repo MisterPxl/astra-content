@@ -1,0 +1,62 @@
+{
+    "schemaVersion": 2,
+    "id": "astra.sky",
+    "version": "0.2.2",
+    "displayName": "Astra Sky",
+    "description": "Ciel jour/nuit pour URP : profil horaire, ambiante Trilight, brouillard et soleil pilot\u00e9s par l'heure, shader de ciel avec \u00e9toiles, lune et nuages, r\u00e9flexions temps r\u00e9el, horloge et fen\u00eatres horaires pour le gameplay.",
+    "category": "Environment",
+    "tags": [
+        "sky",
+        "environment",
+        "urp",
+        "time-of-day",
+        "day-night",
+        "shader"
+    ],
+    "compatibility": {
+        "minimumUnity": "6000.4.0f1",
+        "maximumUnityExclusive": "6000.4.0f2",
+        "testedUnity": [
+            "6000.4.0f1"
+        ],
+        "renderPipelines": [
+            "urp"
+        ],
+        "platforms": [
+            "StandaloneOSX"
+        ]
+    },
+    "contentDependencies": [
+        {
+            "id": "astra.shaders.core",
+            "minimumVersion": "0.1.2",
+            "maximumVersionExclusive": "0.2.0"
+        }
+    ],
+    "projectPrerequisites": [
+        {
+            "kind": "package",
+            "name": "com.unity.render-pipelines.universal",
+            "minimumVersion": "17.4.0",
+            "maximumVersionExclusive": ""
+        },
+        {
+            "kind": "package",
+            "name": "com.unity.inputsystem",
+            "minimumVersion": "1.19.0",
+            "maximumVersionExclusive": ""
+        }
+    ],
+    "containsCode": true,
+    "license": "MIT",
+    "attribution": "Copyright (c) 2026 Alexis Gomes. Code et contenu de d\u00e9monstration Astra sous licence MIT. Voir LICENSES/LICENSE.txt.",
+    "sources": [],
+    "releaseNotes": "0.2.2 : contrat Content Hub V2 : d\u00e9pendances par plages de versions, aucun changement de contenu. D\u00e9pend de astra.shaders.core [0.1.2, 0.2.0). Requiert le framework \u00e0 partir du tag framework-game-2026-10-19 (Core : framework-core-2026-10-19) ; un Hub plus ancien ne lit pas le catalogue gameplay-v26. 0.2.1 : d\u00e9pendance d\u00e9plac\u00e9e sur astra.shaders.core 0.1.1, aucun autre changement. 0.2.0 : le bruit des nuages et le hash des \u00e9toiles viennent maintenant de astra.shaders.core (AstraPeriodicValueNoise2, AstraHash33), avec des formules identiques : le ciel est rendu au pixel pr\u00e8s comme en 0.1.1. D\u00e9pend de astra.shaders.core 0.1.0. 0.1.1 : Build Demo corrig\u00e9 pour un pack install\u00e9 par le Hub : le dossier du pack est trouv\u00e9 l\u00e0 o\u00f9 il est install\u00e9 (Assets/AstraContent/astra.sky) et rien n'est plus \u00e9crit dans le pack install\u00e9. Build Demo g\u00e9n\u00e8re DayCycle.unity et ses mat\u00e9riaux sous Assets/SkyGenerated. 0.1.0 : Premi\u00e8re version.",
+    "archive": {
+        "url": "https://github.com/MisterPxl/astra-content/releases/download/sky-v0.2.2/astra.sky-0.2.2.zip",
+        "sha256": "31c4f75a580b66dbb58056ce930b0c972bb605fda1c2c2c7042f21f52f260026",
+        "bytes": 100801,
+        "expandedBytes": 368839,
+        "fileCount": 119
+    }
+}

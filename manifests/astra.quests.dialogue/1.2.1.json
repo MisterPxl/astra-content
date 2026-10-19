@@ -1,0 +1,88 @@
+{
+    "schemaVersion": 2,
+    "id": "astra.quests.dialogue",
+    "version": "1.2.1",
+    "displayName": "Quests \u2194 Dialogue Bridge",
+    "description": "Dialogue et progression : objectifs Conversation termin\u00e9e et Choix pris ; conditions de qu\u00eate, stats et succ\u00e8s ; actions accepter, proposer, rendre, \u00e9chouer, signal et r\u00e9compenses ; provider Astra pour DialogueRunner et preview \u00e9diteur.",
+    "category": "Bridges",
+    "tags": [
+        "bridge",
+        "quests",
+        "dialogue"
+    ],
+    "compatibility": {
+        "minimumUnity": "6000.4.0f1",
+        "maximumUnityExclusive": "6000.4.0f2",
+        "testedUnity": [
+            "6000.4.0f1"
+        ],
+        "renderPipelines": [
+            "urp"
+        ],
+        "platforms": [
+            "StandaloneOSX"
+        ]
+    },
+    "contentDependencies": [
+        {
+            "id": "astra.quests",
+            "minimumVersion": "2.0.1",
+            "maximumVersionExclusive": "3.0.0"
+        },
+        {
+            "id": "astra.dialogue",
+            "minimumVersion": "0.1.5",
+            "maximumVersionExclusive": "0.2.0"
+        }
+    ],
+    "projectPrerequisites": [
+        {
+            "kind": "package",
+            "name": "com.misterpxl.valkyrie",
+            "minimumVersion": "2.1.0",
+            "maximumVersionExclusive": "2.1.1"
+        },
+        {
+            "kind": "package",
+            "name": "com.unity.ugui",
+            "minimumVersion": "2.0.0",
+            "maximumVersionExclusive": "2.0.1"
+        },
+        {
+            "kind": "assembly",
+            "name": "Astra.Framework.Core.App.Runtime",
+            "minimumVersion": "",
+            "maximumVersionExclusive": ""
+        },
+        {
+            "kind": "assembly",
+            "name": "Astra.Framework.Core.Initialization.Runtime",
+            "minimumVersion": "",
+            "maximumVersionExclusive": ""
+        },
+        {
+            "kind": "assembly",
+            "name": "Astra.Framework.Core.UI.Runtime",
+            "minimumVersion": "",
+            "maximumVersionExclusive": ""
+        },
+        {
+            "kind": "assembly",
+            "name": "Astra.Framework.Game.Flow.Runtime",
+            "minimumVersion": "",
+            "maximumVersionExclusive": ""
+        }
+    ],
+    "containsCode": true,
+    "license": "MIT",
+    "attribution": "Copyright (c) 2026 Alexis Gomes.",
+    "sources": [],
+    "releaseNotes": "1.2.1 : contrat Content Hub V2 : d\u00e9pendances par plages de versions, aucun changement de contenu. D\u00e9pend de astra.quests [2.0.1, 3.0.0), astra.dialogue [0.1.5, 0.2.0). Requiert le framework \u00e0 partir du tag framework-game-2026-10-19 (Core : framework-core-2026-10-19) ; un Hub plus ancien ne lit pas le catalogue gameplay-v26. 1.2.0 : requiert astra.quests 2.0.0 (valeurs de HUD : le suivi de qu\u00eate publie dans des cl\u00e9s, QuestTrackerHudWidget n'impl\u00e9mente plus IQuestTrackerView) ; le code du bridge et son API publique sont inchang\u00e9s, et astra.dialogue reste en 0.1.4. Pour astra.quests 1.1.0, rester sur astra.quests.dialogue 1.1.0. 1.1.0 : objectifs Conversation completed et Choice picked (choix s\u00e9lectionn\u00e9 dans une liste, build en \u00e9chec si le choix dispara\u00eet) ; le provider observe toutes les conversations de son runner, signal de fin de projet optionnel ; usages vus par Aegis (proposer, accepter, lever un signal) ; smoke PlayMode headless. La d\u00e9mo annonc\u00e9e en 1.0.0 n'existait pas : menu et module retir\u00e9s de la documentation et de la composition. Requiert astra.quests 1.1.0, donc le framework Game \u00e0 partir du tag framework-game-2026-10-15 (HUD typ\u00e9). 1.0.0 : conditions et actions dialogue, ProgressionDialogueContextProvider, preview \u00e9diteur.",
+    "archive": {
+        "url": "https://github.com/MisterPxl/astra-content/releases/download/quests-dialogue-v1.2.1/astra.quests.dialogue-1.2.1.zip",
+        "sha256": "46982de644ab172f4be02b9b02ee38687ed3f32fef9b014244519a5d3d095d01",
+        "bytes": 23483,
+        "expandedBytes": 40289,
+        "fileCount": 36
+    }
+}

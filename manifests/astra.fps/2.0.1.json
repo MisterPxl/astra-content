@@ -1,0 +1,89 @@
+{
+    "schemaVersion": 2,
+    "id": "astra.fps",
+    "version": "2.0.1",
+    "displayName": "FPS",
+    "description": "Simulation FPS (armes, sant\u00e9, modes, bots), vues Unity et int\u00e9gration au framework Astra.",
+    "category": "Gameplay",
+    "tags": [
+        "fps",
+        "shooter",
+        "mw2-style"
+    ],
+    "compatibility": {
+        "minimumUnity": "6000.4.0f1",
+        "maximumUnityExclusive": "6000.4.0f2",
+        "testedUnity": [
+            "6000.4.0f1"
+        ],
+        "renderPipelines": [
+            "urp"
+        ],
+        "platforms": [
+            "StandaloneOSX"
+        ]
+    },
+    "contentDependencies": [],
+    "projectPrerequisites": [
+        {
+            "kind": "capability",
+            "name": "input-system-enabled",
+            "minimumVersion": "",
+            "maximumVersionExclusive": ""
+        },
+        {
+            "kind": "package",
+            "name": "com.unity.inputsystem",
+            "minimumVersion": "1.19.0",
+            "maximumVersionExclusive": "1.19.1"
+        },
+        {
+            "kind": "package",
+            "name": "com.unity.ai.navigation",
+            "minimumVersion": "2.0.11",
+            "maximumVersionExclusive": "2.0.12"
+        },
+        {
+            "kind": "package",
+            "name": "com.unity.ugui",
+            "minimumVersion": "2.0.0",
+            "maximumVersionExclusive": "2.0.1"
+        },
+        {
+            "kind": "assembly",
+            "name": "Astra.Framework.Game.HUD.Runtime",
+            "minimumVersion": "",
+            "maximumVersionExclusive": ""
+        },
+        {
+            "kind": "assembly",
+            "name": "Astra.Framework.Game.Spawning.Runtime",
+            "minimumVersion": "",
+            "maximumVersionExclusive": ""
+        },
+        {
+            "kind": "assembly",
+            "name": "Astra.Framework.Game.Characters.Runtime",
+            "minimumVersion": "",
+            "maximumVersionExclusive": ""
+        },
+        {
+            "kind": "assembly",
+            "name": "Astra.Framework.Game.FlowPresentation.Runtime",
+            "minimumVersion": "",
+            "maximumVersionExclusive": ""
+        }
+    ],
+    "containsCode": true,
+    "license": "MIT",
+    "attribution": "Copyright (c) 2026 Alexis Gomes. Code sous licence MIT.",
+    "sources": [],
+    "releaseNotes": "2.0.1 : contrat Content Hub V2 : d\u00e9pendances par plages de versions, aucun changement de contenu. Requiert le framework \u00e0 partir du tag framework-game-2026-10-19 (Core : framework-core-2026-10-19) ; un Hub plus ancien ne lit pas le catalogue gameplay-v26. 2.0.0 : valeurs de HUD (lot O11) : FpsHudValuesAsset publie munitions du chargeur et r\u00e9serve, rechargement (bool\u00e9en), sant\u00e9 et sant\u00e9 maximale, nom et nombre de l\u00e9tal et de tactique, et statut du mode, republi\u00e9s quand ils changent (arme et sant\u00e9 suivent l'image, l'\u00e9quipement est republi\u00e9 \u00e0 chaque jet) ; un seul joueur local, slot 0 ; FpsModule exige l'asset (Hud Values) et le pas d'init \u00e9choue sans lui ou sans une cl\u00e9. Cassant : FpsHudWidget.SetAmmo / SetEquipment / SetStatus / AmmoText / EquipmentText / StatusText retir\u00e9s sans substitut (lire les cl\u00e9s), FpsPlayerDriver.Bind prend IHudValues apr\u00e8s le widget. emplacements d'arme en assets (LoadoutSlotAsset, list\u00e9s par FpsModule.Slots, cl\u00e9 de pr\u00e9f\u00e9rence port\u00e9e par l'asset) ; l'arme r\u00e9f\u00e9rence son emplacement, le panneau LOADOUT g\u00e9n\u00e8re une ligne par emplacement, LoadoutState devient une liste d'armes \u00e9quip\u00e9es (un troisi\u00e8me emplacement ne demande que des assets). Cassant : enum LoadoutSlot, FpsLoadoutPreferences.KeyPrimary / KeySecondary, LoadoutState.Primary / Secondary, LoadoutAsset.Primary / Secondary retir\u00e9s ; FpsModule exige au moins un emplacement. Les armes et loadouts 1.x sont relus (emplacement retrouv\u00e9 par la cl\u00e9 fps.loadout.primary / fps.loadout.secondary) ; les choix joueur sauvegard\u00e9s restent valides. WeaponDefinitionAsset.BurstShotCount (min 1, d\u00e9faut 3 : comportement inchang\u00e9). 1.3.0 : HUD typ\u00e9 (lot O11) : le widget d\u00e9rive de HudWidgetView, s'ajoute par IGameHudService.Add et s'affiche par Show<T>/Hide<T> (cl\u00e9 texte retir\u00e9e). Requiert le framework Game \u00e0 partir du tag framework-game-2026-10-15 (HUD typ\u00e9) ; sur un framework plus ancien, l'import ne compile pas. 1.2.0 : molette pour changer d'arme, mod\u00e8les en primitives par arme (M4A1, USP .45, Intervention), \u00e9change au sol avec ramassage (F / dpad haut), lunette sur l'Intervention, \u00e9diteur de loadout dans le menu des modes, impacts qui suivent la surface touch\u00e9e, identifiant de module fps.module. Requiert le framework Game Flow Foundation (Game.FlowPresentation) ; sans lui le Hub refuse l'import. Inclut 1.1.0, jamais publi\u00e9e : bots qui tirent, grenades frag et flash, couteau, alias 1.0.0 de Fps.Core retir\u00e9s.",
+    "archive": {
+        "url": "https://github.com/MisterPxl/astra-content/releases/download/fps-v2.0.1/astra.fps-2.0.1.zip",
+        "sha256": "720d9c8911a41ef2d009586ab1eae507d67bf0136e2457ed9b4383fc0d8925fe",
+        "bytes": 99814,
+        "expandedBytes": 206102,
+        "fileCount": 155
+    }
+}

@@ -1,0 +1,65 @@
+{
+    "schemaVersion": 2,
+    "id": "astra.melee",
+    "version": "4.0.1",
+    "displayName": "Melee",
+    "description": "Simulation d\u00e9terministe et vues Unity pour un platform fighter local, avec int\u00e9gration au framework Astra.",
+    "category": "Gameplay",
+    "tags": [
+        "melee",
+        "platform-fighter",
+        "local-multiplayer"
+    ],
+    "compatibility": {
+        "minimumUnity": "6000.4.0f1",
+        "maximumUnityExclusive": "6000.4.0f2",
+        "testedUnity": [
+            "6000.4.0f1"
+        ],
+        "renderPipelines": [
+            "urp"
+        ],
+        "platforms": [
+            "StandaloneOSX"
+        ]
+    },
+    "contentDependencies": [],
+    "projectPrerequisites": [
+        {
+            "kind": "capability",
+            "name": "input-system-enabled",
+            "minimumVersion": "",
+            "maximumVersionExclusive": ""
+        },
+        {
+            "kind": "package",
+            "name": "com.unity.inputsystem",
+            "minimumVersion": "1.19.0",
+            "maximumVersionExclusive": "1.19.1"
+        },
+        {
+            "kind": "assembly",
+            "name": "Astra.Framework.Game.HUD.Runtime",
+            "minimumVersion": "",
+            "maximumVersionExclusive": ""
+        },
+        {
+            "kind": "assembly",
+            "name": "Astra.Framework.Game.FlowPresentation.Runtime",
+            "minimumVersion": "",
+            "maximumVersionExclusive": ""
+        }
+    ],
+    "containsCode": true,
+    "license": "MIT",
+    "attribution": "Copyright (c) 2026 Alexis Gomes. Code sous licence MIT.",
+    "sources": [],
+    "releaseNotes": "4.0.1 : contrat Content Hub V2 : d\u00e9pendances par plages de versions, aucun changement de contenu. Requiert le framework \u00e0 partir du tag framework-game-2026-10-19 (Core : framework-core-2026-10-19) ; un Hub plus ancien ne lit pas le catalogue gameplay-v26. 4.0.0 : une capacit\u00e9 est un asset, plus une valeur d'\u00e9num\u00e9ration. MoveId est supprim\u00e9 : l'identit\u00e9 d'une capacit\u00e9 est son index dans FighterDefinition.Moves (32 capacit\u00e9s au plus), FighterState.CurrentMove et MoveStartedEvent.Move sont des entiers (-1 = aucune). Chaque capacit\u00e9 d\u00e9clare un d\u00e9clencheur MoveTrigger (bouton Attack ou Special, direction du stick Neutral, Side, Up, Down ou Any, contexte Ground, Air ou Any) ; MoveResolver.Resolve choisit la capacit\u00e9 la plus sp\u00e9cifique (stick exact avant Any, puis contexte exact avant Any), puis l'index le plus bas, et MoveResolver.TryInputFor en est l'inverse utilis\u00e9 par le CPU ; MoveInputs est supprim\u00e9. Le Special d\u00e9pend maintenant du stick. Multi-coups : MoveDefinition.Hits (HitDefinition[], 16 coups au plus) avec fen\u00eatre de frames, bo\u00eete, d\u00e9g\u00e2ts, recul, angle et hitstop par coup ; MoveHitMask devient un ulong (un bit par coup et par adversaire). Les champs de coup unique (Hitbox, Damage, BaseKnockback, KnockbackGrowth, AngleDegrees, HitstopFrames) et AllowedInAir/AllowedOnGround sont retir\u00e9s de MoveDefinition ; MoveDefinition.Find devient FighterDefinition.MoveAt. Tous les hash changent. Unity : MoveAsset (ScriptableObject partageable entre combattants : d\u00e9clencheur, frames, coups, impulsion, clip) ; FighterDefinitionAsset._moves devient un MoveAsset[] (validation : 32 au plus, aucun vide, avertissement si deux capacit\u00e9s ont le m\u00eame d\u00e9clencheur) ; MoveAuthoring est supprim\u00e9. FighterView.Bind prend les MoveAsset du combattant : le Fighter.controller partag\u00e9 a 32 \u00e9tats Attack_00 \u00e0 Attack_31 et un AnimatorOverrideController est construit au spawn (cr\u00e9neau k = clip de la capacit\u00e9 k) ; la vitesse de l'animation vient de MoveAsset.Clip.length et Jump est jou\u00e9 par un hash d'\u00e9tat s\u00e9rialis\u00e9. Ajouter une capacit\u00e9 ne demande ni code ni reconstruction du controller. Mise \u00e0 jour : recr\u00e9er les capacit\u00e9s des combattants avec des MoveAsset et fournir les clips aux FighterView via Bind. 3.0.0 : \u00e9crans de s\u00e9lection du stage puis du combattant (grilles fa\u00e7on Smash). Le lobby \u00e0 deux \u00e9tapes sur un seul \u00e9cran est remplac\u00e9 par deux \u00e9crans ouverts par IScreenService : MeleeStageSelectScreen puis MeleeFighterSelectScreen. \u00c9cran du stage : grille de tuiles avec une tuile Al\u00e9atoire en dernier, curseur partag\u00e9 d\u00e9plac\u00e9 par toutes les manettes, n'importe quel joueur valide avec Jump. \u00c9cran des combattants : grille de combattants avec une tuile Al\u00e9atoire, un curseur par humain, puis quatre panneaux dessous ; un panneau vide ajoute un CPU, son propre panneau CPU permet de choisir son combattant, de changer son niveau (stick gauche/droite) ou de le retirer (Bouclier), Bouclier sur son propre panneau bascule le mode spectateur. Choisir un combattant = pr\u00eat ; un appui court sur Special annule le pr\u00eat ou, pour l'h\u00f4te non pr\u00eat, revient \u00e0 l'\u00e9cran du stage. La banni\u00e8re \u00ab Pr\u00eats au combat ! \u00bb pr\u00e9c\u00e8de le d\u00e9part du match de 1,5 s ; les r\u00e8gles de d\u00e9part ne changent pas (au moins 2 combattants, au moins un humain, tous les humains pr\u00eats, un spectateur est pr\u00eat). Une tuile affiche le nom et le sprite Portrait (combattant) ou Preview (stage) quand il est renseign\u00e9 ; ajouter un combattant ou un stage aux listes du module ajoute une tuile automatiquement, sans code. Les cartes du HUD affichent \u00ab CPU \u00bb pour les combattants CPU. Rupture : MeleeLobbyScreen, MeleeStageSelector, ToggleReady, CycleStage et CycleFighter sont retir\u00e9s (MeleeMatchService expose d\u00e9sormais SelectStage, SelectRandomStage, SetFighter, SetFighterRandom, SetReady et SetCpuLevel) ; reconstruire les assets du template (Tools > Astra > Melee > Rebuild template assets). La simulation et ses empreintes sont inchang\u00e9es. 2.1.0 : joueurs CPU (ajout compatible, aucune rupture). Un CPU est une source d'entr\u00e9es (CpuInputSource) qui lit l'\u00e9tat du match et renvoie une entr\u00e9e de joueur ; la simulation et ses empreintes sont inchang\u00e9es. Trois niveaux Facile, Normal et Difficile, livr\u00e9s comme assets (StandardCpuAsset, Create > Astra > Melee > CPU (Standard)), autant que l'on veut dans un projet : le module les liste dans le champ facultatif _cpuBehaviours (Cpu Behaviours), dans l'ordre du lobby ; une liste vide supprime l'option CPU. \u00c0 l'\u00e9tape des combattants du lobby, l'humain qui ajoute un CPU (Esquive : ajouter un CPU) le contr\u00f4le : il change son combattant (stick gauche/droite), son niveau (Attaque) ou le retire (Bouclier) ; ses CPU partent avec lui. Mode spectateur (Bouclier sur sa propre carte) : un humain peut regarder un match CPU contre CPU, choisit les combattants et les niveaux des CPU, peut mettre en pause et quitter, et pilote l'\u00e9cran de r\u00e9sultats ; le d\u00e9part exige au moins 2 combattants et au moins un humain, tous les humains pr\u00eats. Les CPU ne valident jamais l'\u00e9cran de r\u00e9sultats. Une nouvelle graine est tir\u00e9e \u00e0 chaque match (revanche comprise) et \u00e9crite dans la console pour reproduire un match. Le cerveau est d\u00e9terministe et vit dans Melee.Core (ICpuBrain, StandardCpuBrain) ; pour \u00e9crire son propre CPU, d\u00e9river CpuBehaviourAsset et impl\u00e9menter CreateBrain(uint seed). 2.0.0 : choix du combattant et du stage dans le lobby (lot C). Chaque joueur choisit son combattant avec sa propre manette (stick gauche/droite) ; un joueur pr\u00eat doit annuler son pr\u00eat pour en changer. Le lobby a deux \u00e9tapes : d'abord le stage (n'importe quelle manette le d\u00e9place avec le stick gauche/droite, y compris vers l'arri\u00e8re, et n'importe quel joueur le valide avec Jump), puis les combattants et le pr\u00eat ; un appui court sur Special par l'h\u00f4te (le premier joueur arriv\u00e9) revient au stage et annule tous les \u00ab pr\u00eat \u00bb, \u00ab Lobby \u00bb apr\u00e8s un match revient \u00e0 l'\u00e9tape du stage en gardant les choix (MeleeMatchService.Step, ConfirmStage, BackToStage). Une entr\u00e9e \u00ab Al\u00e9atoire \u00bb existe pour le combattant et pour le stage : le tirage est fait une seule fois au lancement, une revanche rejoue le m\u00eame. Chaque combattant porte son prefab visuel (FighterDefinitionAsset.ViewPrefab, repli sur le Fighter Prefab du module), un nom (DisplayName) et un portrait optionnel (Portrait). Le module porte plusieurs stages (_stages) ; chaque StageDefinitionAsset a un identifiant (_id), un nom (DisplayName), un aper\u00e7u optionnel (Preview), un prefab optionnel (StagePrefab) et une sc\u00e8ne optionnelle (SceneName), avec repli sur le Stage Prefab et le Stage Scene Name du module. Le d\u00e9marrage v\u00e9rifie que les identifiants sont uniques et que chaque stage a au moins 4 points de spawn. Rupture : MeleeModule.Stage et le champ _stage sont retir\u00e9s, lire MeleeModule.Stages ; pas de migration : un MeleeModule de la version 1.x sans _stages arr\u00eate le d\u00e9marrage avec un message explicite (reconstruire avec Tools > Astra > Melee > Rebuild template assets). La simulation et ses empreintes sont inchang\u00e9es. 1.4.0 : Melee publie ses valeurs de HUD (MeleeHudValuesAsset : d\u00e9g\u00e2ts en pourcent, stocks et vivant par slot de joueur ; temps restant \u00ab m:ss \u00bb, compte \u00e0 rebours et statut du match), republi\u00e9es \u00e0 chaque pas de simulation et exig\u00e9es par le module (Hud Values). Attention : le champ s\u00e9rialis\u00e9 _timerText de MeleeHudWidget est retir\u00e9 (le minuteur est un \u00e9l\u00e9ment de HUD g\u00e9n\u00e9rique) et le texte du compte \u00e0 rebours vient de la valeur publi\u00e9e ; une variante de HUD doit porter un \u00e9l\u00e9ment de HUD sur ces libell\u00e9s. Une variante du module ou du HUD d'une version ant\u00e9rieure est \u00e0 reconstruire (Tools > Astra > Melee > Rebuild template assets). Les r\u00e8gles de jeu et la simulation sont inchang\u00e9es. 1.3.0 : HUD typ\u00e9 (lot O11) : le widget d\u00e9rive de HudWidgetView, s'ajoute par IGameHudService.Add et s'affiche par Show<T>/Hide<T> (cl\u00e9 texte retir\u00e9e). Requiert le framework Game \u00e0 partir du tag framework-game-2026-10-15 (HUD typ\u00e9) ; sur un framework plus ancien, l'import ne compile pas. 1.2.1 : lobby et stage pilot\u00e9s par des phases de gameplay (Lobby, Stage), services du match enregistr\u00e9s sur le scope run, identifiant de module melee.module. Requiert le framework Game Flow Foundation (Game.FlowPresentation) ; sans lui le Hub refuse l'import. R\u00e8gles de jeu inchang\u00e9es depuis 1.2.0.",
+    "archive": {
+        "url": "https://github.com/MisterPxl/astra-content/releases/download/melee-v4.0.1/astra.melee-4.0.1.zip",
+        "sha256": "d92b167db93017f5fc1351b36e3943fd4b8819ce77b35edf06d8592bcb6006df",
+        "bytes": 118084,
+        "expandedBytes": 319760,
+        "fileCount": 111
+    }
+}

@@ -1,0 +1,83 @@
+{
+    "schemaVersion": 2,
+    "id": "astra.template.shmup",
+    "version": "1.1.2",
+    "displayName": "Shmup Template",
+    "description": "Template shoot'em up horizontal solo ou coop locale (1\u20132 joueurs).",
+    "category": "Templates",
+    "tags": [
+        "shmup",
+        "template",
+        "local-multiplayer"
+    ],
+    "compatibility": {
+        "minimumUnity": "6000.4.0f1",
+        "maximumUnityExclusive": "6000.4.0f2",
+        "testedUnity": [
+            "6000.4.0f1"
+        ],
+        "renderPipelines": [
+            "urp"
+        ],
+        "platforms": [
+            "StandaloneOSX"
+        ]
+    },
+    "contentDependencies": [
+        {
+            "id": "astra.shmup",
+            "minimumVersion": "1.1.2",
+            "maximumVersionExclusive": "2.0.0"
+        }
+    ],
+    "projectPrerequisites": [
+        {
+            "kind": "capability",
+            "name": "input-system-enabled",
+            "minimumVersion": "",
+            "maximumVersionExclusive": ""
+        },
+        {
+            "kind": "package",
+            "name": "com.unity.inputsystem",
+            "minimumVersion": "1.19.0",
+            "maximumVersionExclusive": "1.19.1"
+        },
+        {
+            "kind": "package",
+            "name": "com.unity.ugui",
+            "minimumVersion": "2.0.0",
+            "maximumVersionExclusive": "3.0.0"
+        },
+        {
+            "kind": "package",
+            "name": "com.unity.render-pipelines.universal",
+            "minimumVersion": "17.4.0",
+            "maximumVersionExclusive": "17.4.1"
+        },
+        {
+            "kind": "assembly",
+            "name": "Astra.Framework.Game.HUD.Runtime",
+            "minimumVersion": "",
+            "maximumVersionExclusive": ""
+        },
+        {
+            "kind": "assembly",
+            "name": "Astra.Framework.Game.FlowPresentation.Runtime",
+            "minimumVersion": "",
+            "maximumVersionExclusive": ""
+        }
+    ],
+    "containsCode": false,
+    "license": "MIT",
+    "attribution": "Copyright (c) 2026 Alexis Gomes. Placeholder art generated in-editor; replace with Kenney Space Shooter Redux (CC0) for production.",
+    "sources": [],
+    "releaseNotes": "1.1.2 : contrat Content Hub V2 : d\u00e9pendances par plages de versions, aucun changement de contenu. D\u00e9pend de astra.shmup [1.1.2, 2.0.0). Requiert le framework \u00e0 partir du tag framework-game-2026-10-19 (Core : framework-core-2026-10-19) ; un Hub plus ancien ne lit pas le catalogue gameplay-v26. 1.1.1 : requiert astra.shmup 1.1.1 ; chaque ennemi Elite et la derni\u00e8re phase du boss tracent leur propre spirale. 1.1.0 : requiert astra.shmup 1.1.0 ; cl\u00e9s de HUD (Config/Hud) et \u00e9l\u00e9ment de HUD sans code dans le widget (bombes du joueur 1, HudValueText). Requiert le framework Game \u00e0 partir du tag framework-game-2026-10-15 (HUD typ\u00e9) ; sur un framework plus ancien, l'import ne compile pas. 1.0.0 : lobby, stage horizontal, module shmup.module, 2 vaisseaux, 5 ennemis, boss 3 phases.",
+    "archive": {
+        "url": "https://github.com/MisterPxl/astra-content/releases/download/template-shmup-v1.1.2/astra.template.shmup-1.1.2.zip",
+        "sha256": "3ee77e89585ea0d409ae9f2311a64ea92146c5d628bc64c3a3e602673b22987e",
+        "bytes": 114335,
+        "expandedBytes": 192494,
+        "fileCount": 107
+    }
+}

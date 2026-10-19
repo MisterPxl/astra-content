@@ -1,0 +1,81 @@
+{
+    "schemaVersion": 2,
+    "id": "astra.template.match3",
+    "version": "4.0.1",
+    "displayName": "Match3 Template",
+    "description": "Template de genre match-3 pr\u00eat \u00e0 jouer : sc\u00e8ne de d\u00e9part, niveaux, prefabs et composition \u00e0 appliquer avec Setup, sans \u00e9crire une ligne de code.",
+    "category": "Templates",
+    "tags": [
+        "template",
+        "puzzle",
+        "match3",
+        "mobile",
+        "touch"
+    ],
+    "compatibility": {
+        "minimumUnity": "6000.4.0f1",
+        "maximumUnityExclusive": "6000.4.0f2",
+        "testedUnity": [
+            "6000.4.0f1"
+        ],
+        "renderPipelines": [
+            "urp"
+        ],
+        "platforms": [
+            "StandaloneOSX",
+            "Android",
+            "iOS"
+        ]
+    },
+    "contentDependencies": [
+        {
+            "id": "astra.match3",
+            "minimumVersion": "4.0.1",
+            "maximumVersionExclusive": "5.0.0"
+        }
+    ],
+    "projectPrerequisites": [
+        {
+            "kind": "capability",
+            "name": "input-system-enabled",
+            "minimumVersion": "",
+            "maximumVersionExclusive": ""
+        },
+        {
+            "kind": "package",
+            "name": "com.unity.inputsystem",
+            "minimumVersion": "1.19.0",
+            "maximumVersionExclusive": "1.19.1"
+        },
+        {
+            "kind": "package",
+            "name": "com.unity.render-pipelines.universal",
+            "minimumVersion": "17.4.0",
+            "maximumVersionExclusive": "17.4.1"
+        },
+        {
+            "kind": "package",
+            "name": "com.unity.ugui",
+            "minimumVersion": "2.0.0",
+            "maximumVersionExclusive": "2.0.1"
+        },
+        {
+            "kind": "assembly",
+            "name": "Astra.Framework.Game.FlowPresentation.Runtime",
+            "minimumVersion": "",
+            "maximumVersionExclusive": ""
+        }
+    ],
+    "containsCode": false,
+    "license": "MIT",
+    "attribution": "Copyright (c) 2026 Alexis Gomes. Contenu sous licence MIT.",
+    "sources": [],
+    "releaseNotes": "4.0.1 : contrat Content Hub V2 : d\u00e9pendances par plages de versions, aucun changement de contenu. D\u00e9pend de astra.match3 [4.0.1, 5.0.0). Requiert le framework \u00e0 partir du tag framework-game-2026-10-19 (Core : framework-core-2026-10-19) ; un Hub plus ancien ne lit pas le catalogue gameplay-v26. 4.0.0 : requiert astra.match3 4.0.0. Six assets Config/PieceTypes (Red, Green, Blue, Yellow, Purple, Orange, m\u00eames teintes qu'avant) ; les niveaux les r\u00e9f\u00e9rencent et l'objectif du niveau 2 collecte le type Blue. Le guide ajoute la recette \u00ab Ajouter un type de pi\u00e8ce \u00bb et \u00ab Passer de la 3.x \u00e0 la 4.0 \u00bb ; un sprite diff\u00e9rent par type est d\u00e9sormais possible. 3.0.0 : 3.0.0 : requiert astra.match3 3.0.0. Niveau 2 : collecter 18 bleus ; niveau 3 : score 3000 et 2 power-ups. Les niveaux r\u00e9f\u00e9rencent Config/Rules/Match3Rules.asset ; le HUD (score, coups, objectif, progression) est fait d'\u00e9l\u00e9ments de HUD g\u00e9n\u00e9riques lisant Config/Hud/Match3HudValues.asset. 2.1.0 : requiert astra.match3 2.1.0 (HUD typ\u00e9). Requiert le framework Game \u00e0 partir du tag framework-game-2026-10-15 (HUD typ\u00e9) ; sur un framework plus ancien, l'import ne compile pas. 2.0.2 : composition par identifiant de module (match3.module), sans avertissement de Setup. D\u00e9pend de astra.match3 2.0.1. Requiert Game.FlowPresentation ; sans lui le Hub refuse l'import. Contenu de jeu inchang\u00e9 depuis 2.0.1.",
+    "archive": {
+        "url": "https://github.com/MisterPxl/astra-content/releases/download/template-match3-v4.0.1/astra.template.match3-4.0.1.zip",
+        "sha256": "99c2ec2e9b8af9074292c18429332fb3aacf2f7e24617a46ef9c29b566a81f63",
+        "bytes": 51983,
+        "expandedBytes": 109766,
+        "fileCount": 67
+    }
+}

@@ -1,0 +1,77 @@
+{
+    "schemaVersion": 2,
+    "id": "astra.softbody",
+    "version": "0.3.1",
+    "displayName": "Soft Body 2D & 3D",
+    "description": "Simulation XPBD 2D et 3D, gel\u00e9e, ballons et plasticit\u00e9, pr\u00e9paration de sprites/meshes, contacts, d\u00e9coupe libre et profils de simulation PC.",
+    "category": "Gameplay",
+    "tags": [
+        "soft-body",
+        "physics",
+        "2d",
+        "3d",
+        "jelly",
+        "balloon",
+        "destruction"
+    ],
+    "compatibility": {
+        "minimumUnity": "6000.4.0f1",
+        "maximumUnityExclusive": "6000.4.0f2",
+        "testedUnity": [
+            "6000.4.0f1"
+        ],
+        "renderPipelines": [
+            "urp"
+        ],
+        "platforms": [
+            "StandaloneOSX"
+        ]
+    },
+    "contentDependencies": [],
+    "projectPrerequisites": [
+        {
+            "kind": "package",
+            "name": "com.unity.inputsystem",
+            "minimumVersion": "1.19.0",
+            "maximumVersionExclusive": "1.19.1"
+        },
+        {
+            "kind": "package",
+            "name": "com.unity.render-pipelines.universal",
+            "minimumVersion": "17.4.0",
+            "maximumVersionExclusive": "17.4.1"
+        },
+        {
+            "kind": "package",
+            "name": "com.unity.modules.physics2d",
+            "minimumVersion": "1.0.0",
+            "maximumVersionExclusive": ""
+        },
+        {
+            "kind": "package",
+            "name": "com.unity.modules.screencapture",
+            "minimumVersion": "1.0.0",
+            "maximumVersionExclusive": ""
+        },
+        {
+            "kind": "package",
+            "name": "com.unity.modules.physics",
+            "minimumVersion": "1.0.0",
+            "maximumVersionExclusive": ""
+        }
+    ],
+    "containsCode": true,
+    "license": "MIT",
+    "attribution": "Copyright (c) 2026 Alexis Gomes. Code, textures et meshes de d\u00e9monstration originaux sous licence MIT.",
+    "sources": [
+        "https://matthias-research.github.io/pages/publications/XPBD.pdf"
+    ],
+    "releaseNotes": "0.3.1 : contrat Content Hub V2 : d\u00e9pendances par plages de versions, aucun changement de contenu. Requiert le framework \u00e0 partir du tag framework-game-2026-10-19 (Core : framework-core-2026-10-19) ; un Hub plus ancien ne lit pas le catalogue gameplay-v26. 0.3.0 candidate locale : requ\u00eates de contacts une fois par tick, grille de hachage pour les contacts entre objets, buffers agrandis sans troncature silencieuse et fragments li\u00e9s au World qui coupe. Rendu par matrice monde\u2192local, objets endormis non re-rendus, cl\u00e9s de topologie struct (environ \u22129,5 Mo allou\u00e9s en moins par coupe 3D). Changement de comportement : en 2D, le r\u00e9veil et les contacts respectent d\u00e9sormais la matrice de couches Physics2D comme en 3D ; garde-fous num\u00e9riques 2D (vitesses et corrections non finies) ; \u00e9v\u00e9nement 3D CutRejectedWithGeometry. Limites connues document\u00e9es. Qualification refaite en URP (les projets isol\u00e9s 0.2.0 tournaient en Built-in) : tick p95 physique \u221215 \u00e0 \u221240 % contre 0.2.0 reconstruit en URP, frame p95 inchang\u00e9e \u00e0 60 Hz, d\u00e9coupe 3D \u2248 59,4 FPS avec pics. Windows, mobile, multitouch, d\u00e9formation squelettique et pr\u00e9cision voxel restent des limites.",
+    "archive": {
+        "url": "https://github.com/MisterPxl/astra-content/releases/download/softbody-v0.3.1/astra.softbody-0.3.1.zip",
+        "sha256": "0fecd210668ad16facfb65991e0cb0670ad6c77e47d1a4e2866dc22c1e9ead1a",
+        "bytes": 238302,
+        "expandedBytes": 786665,
+        "fileCount": 171
+    }
+}

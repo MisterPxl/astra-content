@@ -1,0 +1,61 @@
+{
+    "schemaVersion": 2,
+    "id": "astra.shaders.fx",
+    "version": "0.1.3",
+    "displayName": "Astra Shaders FX",
+    "description": "Effets pour URP : sprite avec flash, contour et dissolve pour le Universal Renderer, bouclier (fresnel, intersection, motif hexagonal ou Voronoi, 8 impacts), tra\u00een\u00e9es, distorsion (chaleur, onde de choc), particules qui se dissolvent. Composants AstraHitFlash, AstraDissolve et AstraShieldHits, sans allocation par frame.",
+    "category": "Shaders",
+    "tags": [
+        "shader",
+        "vfx",
+        "sprite",
+        "dissolve",
+        "urp"
+    ],
+    "compatibility": {
+        "minimumUnity": "6000.4.0f1",
+        "maximumUnityExclusive": "6000.4.0f2",
+        "testedUnity": [
+            "6000.4.0f1"
+        ],
+        "renderPipelines": [
+            "urp"
+        ],
+        "platforms": [
+            "StandaloneOSX"
+        ]
+    },
+    "contentDependencies": [
+        {
+            "id": "astra.shaders.core",
+            "minimumVersion": "0.1.2",
+            "maximumVersionExclusive": "0.2.0"
+        }
+    ],
+    "projectPrerequisites": [
+        {
+            "kind": "package",
+            "name": "com.unity.render-pipelines.universal",
+            "minimumVersion": "17.4.0",
+            "maximumVersionExclusive": ""
+        },
+        {
+            "kind": "package",
+            "name": "com.unity.inputsystem",
+            "minimumVersion": "1.19.0",
+            "maximumVersionExclusive": ""
+        }
+    ],
+    "containsCode": true,
+    "license": "MIT",
+    "attribution": "Copyright (c) 2026 Alexis Gomes. Shaders, composants et contenu de d\u00e9monstration Astra sous licence MIT. Voir LICENSES/LICENSE.txt.",
+    "sources": [],
+    "releaseNotes": "0.1.3 : contrat Content Hub V2 : d\u00e9pendances par plages de versions, aucun changement de contenu. D\u00e9pend de astra.shaders.core [0.1.2, 0.2.0). Requiert le framework \u00e0 partir du tag framework-game-2026-10-19 (Core : framework-core-2026-10-19) ; un Hub plus ancien ne lit pas le catalogue gameplay-v26. 0.1.2 : d\u00e9pendance d\u00e9plac\u00e9e sur astra.shaders.core 0.1.1, aucun autre changement. 0.1.1 : sc\u00e8ne galerie FxGallery.unity (Tools > Astra > Shaders > Build Fx Gallery) : une \u00e9tag\u00e8re par shader (sprite, bouclier, tra\u00een\u00e9e, distorsion, particules) devant un mur ray\u00e9, un exemple \u00e9tiquet\u00e9 par r\u00e9glage. 0.1.0 : Premi\u00e8re version. D\u00e9pend de astra.shaders.core 0.1.0.",
+    "archive": {
+        "url": "https://github.com/MisterPxl/astra-content/releases/download/shaders-fx-v0.1.3/astra.shaders.fx-0.1.3.zip",
+        "sha256": "44f1e4812d4ca7e1971509adade417da3d35d254783169c1ff8ec3eb80f8a76e",
+        "bytes": 202856,
+        "expandedBytes": 1588832,
+        "fileCount": 161
+    }
+}
