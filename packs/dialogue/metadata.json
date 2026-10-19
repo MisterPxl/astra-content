@@ -1,7 +1,7 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "id": "astra.dialogue",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "displayName": "Astra Dialogue",
   "description": "Éditeur de conversations à bulles, conditions de jeu extensibles, échanges Excel et présentation chaleureuse avec démo au verger.",
   "category": "Gameplay",
@@ -66,5 +66,5 @@
   "license": "MIT",
   "attribution": "Copyright (c) 2026 Alexis Gomes. Code, formes de démonstration et syllabes synthétiques Astra sous licence MIT. Voir LICENSES/LICENSE.txt.",
   "sources": [],
-  "releaseNotes": "0.1.4 : événement DialogueSession.ChoiceSelected (choix pris, avant d'entrer dans sa cible) pour les objectifs de dialogue. 0.1.3 : DialogueRunner.SessionStarted pour attacher les observers de progression. Correctifs de revue 0.1.2 : validation alignée sur les ports, raccourcis et undo du studio, import « nouvelle conversation » par feuille, aperçu d'import avec dry-run, lecture de classeur plus stricte, récupérations d'import sous Library, purge des baselines, textes d'interface résolus et feuille de style de présentation. Première publication publique sous licence MIT ; qualification Windows à réaliser."
+  "releaseNotes": "0.1.5 : contrat Content Hub V2 : dépendances par plages de versions, aucun changement de contenu. Requiert le framework à partir du tag framework-game-2026-10-19 (Core : framework-core-2026-10-19) ; un Hub plus ancien ne lit pas le catalogue gameplay-v26. 0.1.4 : événement DialogueSession.ChoiceSelected (choix pris, avant d'entrer dans sa cible) pour les objectifs de dialogue. 0.1.3 : DialogueRunner.SessionStarted pour attacher les observers de progression. Correctifs de revue 0.1.2 : validation alignée sur les ports, raccourcis et undo du studio, import « nouvelle conversation » par feuille, aperçu d'import avec dry-run, lecture de classeur plus stricte, récupérations d'import sous Library, purge des baselines, textes d'interface résolus et feuille de style de présentation. Première publication publique sous licence MIT ; qualification Windows à réaliser."
 }
