@@ -1,0 +1,95 @@
+{
+    "schemaVersion": 1,
+    "packs": [
+        {
+            "id": "astra.grass",
+            "displayName": "Astra Grass",
+            "description": "Herbe stylis\u00e9e en touffes pour URP : peinture au pinceau, color shading, vent, interacteurs avec trails, correction de perspective et rendu GPU indirect optimis\u00e9.",
+            "category": "Environment",
+            "recommendedVersion": "0.2.2",
+            "manifestUrl": "https://raw.githubusercontent.com/MisterPxl/astra-content/main/manifests/astra.grass/0.2.2.json",
+            "manifestSha256": "060ece95ad7b30159cb922fb0764f2267d5fe4fe54bf488da306d7ed6da2e2c1",
+            "tags": [
+                "grass",
+                "vegetation",
+                "urp",
+                "environment",
+                "gpu"
+            ],
+            "compressedBytes": 140898,
+            "thumbnail": {
+                "url": "https://raw.githubusercontent.com/MisterPxl/astra-content/main/thumbnails/astra.grass/icon.png",
+                "sha256": "95b2a28a63700f04ab1565c58a4729b4c65837145cf6348c6c56a258c5a93ea8",
+                "bytes": 151219
+            }
+        },
+        {
+            "id": "astra.snow",
+            "displayName": "Astra Snow",
+            "description": "Neige stylis\u00e9e pour URP : sol d\u00e9formable avec traces des interacteurs qui se comblent, recouvrement des objets selon la normale, ombres bleut\u00e9es et scintillement.",
+            "category": "Environment",
+            "recommendedVersion": "0.2.1",
+            "manifestUrl": "https://raw.githubusercontent.com/MisterPxl/astra-content/main/manifests/astra.snow/0.2.1.json",
+            "manifestSha256": "39bb121c1987d601c1273ce7dc173a22172f418574470924d20fa97af63f3b5b",
+            "tags": [
+                "snow",
+                "environment",
+                "urp",
+                "deformation",
+                "shader"
+            ],
+            "compressedBytes": 248831,
+            "thumbnail": {
+                "url": "https://raw.githubusercontent.com/MisterPxl/astra-content/main/thumbnails/astra.snow/icon.png",
+                "sha256": "a897d61c6393b5201e2dfd94c12105f1875802c7c224e6edae774bf0c425938f",
+                "bytes": 131554
+            }
+        },
+        {
+            "id": "astra.water",
+            "displayName": "Astra Water",
+            "description": "Eau stylis\u00e9e pour URP : vagues de Gerstner, couleur par profondeur et r\u00e9fraction, \u00e9cume de rivage et de cr\u00eate, ondulations propag\u00e9es par les interacteurs, flottaison.",
+            "category": "Environment",
+            "recommendedVersion": "0.2.1",
+            "manifestUrl": "https://raw.githubusercontent.com/MisterPxl/astra-content/main/manifests/astra.water/0.2.1.json",
+            "manifestSha256": "5e1b2c658b210e0dc8fe7a328d3ff4b6fa72e8f90208836a017dafedc42f6d52",
+            "tags": [
+                "water",
+                "environment",
+                "urp",
+                "waves",
+                "buoyancy",
+                "shader"
+            ],
+            "compressedBytes": 428422,
+            "thumbnail": {
+                "url": "https://raw.githubusercontent.com/MisterPxl/astra-content/main/thumbnails/astra.water/icon.png",
+                "sha256": "f58374a9ae3e6448b92d4535728026fa26ce9a91037cca0e6b0218f57200d97a",
+                "bytes": 165145
+            }
+        },
+        {
+            "id": "astra.sky",
+            "displayName": "Astra Sky",
+            "description": "Ciel jour/nuit pour URP : profil horaire, ambiante Trilight, brouillard et soleil pilot\u00e9s par l'heure, shader de ciel avec \u00e9toiles, lune et nuages, r\u00e9flexions temps r\u00e9el, horloge et fen\u00eatres horaires pour le gameplay.",
+            "category": "Environment",
+            "recommendedVersion": "0.2.1",
+            "manifestUrl": "https://raw.githubusercontent.com/MisterPxl/astra-content/main/manifests/astra.sky/0.2.1.json",
+            "manifestSha256": "ef1b2fb1b73ecacbe26c1edd353cec515bcccf32fed72d3aec7baaff921dc3c5",
+            "tags": [
+                "sky",
+                "environment",
+                "urp",
+                "time-of-day",
+                "day-night",
+                "shader"
+            ],
+            "compressedBytes": 100516,
+            "thumbnail": {
+                "url": "https://raw.githubusercontent.com/MisterPxl/astra-content/main/thumbnails/astra.sky/icon.png",
+                "sha256": "95f8891a91e915dfc70faf089b9984e46b7902a280307202d98107eff22f65b3",
+                "bytes": 122660
+            }
+        }
+    ]
+}

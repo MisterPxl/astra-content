@@ -1,0 +1,128 @@
+{
+    "schemaVersion": 1,
+    "packs": [
+        {
+            "id": "astra.template.match3",
+            "displayName": "Match3 Template",
+            "description": "Template de genre match-3 pr\u00eat \u00e0 jouer : sc\u00e8ne de d\u00e9part, niveaux, prefabs et composition \u00e0 appliquer avec Setup, sans \u00e9crire une ligne de code.",
+            "category": "Templates",
+            "recommendedVersion": "4.0.0",
+            "manifestUrl": "https://raw.githubusercontent.com/MisterPxl/astra-content/main/manifests/astra.template.match3/4.0.0.json",
+            "manifestSha256": "a7a37386811a2d900547e705f7cf5d2cb1bcbe201b7b9ff1bab3b83b1a22a577",
+            "tags": [
+                "template",
+                "puzzle",
+                "match3",
+                "mobile",
+                "touch"
+            ],
+            "compressedBytes": 51746,
+            "thumbnail": {
+                "url": "https://raw.githubusercontent.com/MisterPxl/astra-content/main/thumbnails/astra.template.match3/icon.png",
+                "sha256": "987abb19b7bf33aa5004d23d929e2dc26089ee8afae20cbcb929e5d7cbb8b58d",
+                "bytes": 162657
+            }
+        },
+        {
+            "id": "astra.template.melee",
+            "displayName": "Melee Template",
+            "description": "Template de platform fighter local pour deux \u00e0 quatre joueurs : lobby, stage, combattant et composition \u00e0 appliquer avec Setup.",
+            "category": "Templates",
+            "recommendedVersion": "4.0.0",
+            "manifestUrl": "https://raw.githubusercontent.com/MisterPxl/astra-content/main/manifests/astra.template.melee/4.0.0.json",
+            "manifestSha256": "7d972ddca5f02bcc53f7e96cdb3a331fb8e61d85e1350a81d9a6a64303fe1f1e",
+            "tags": [
+                "template",
+                "melee",
+                "platform-fighter",
+                "local-multiplayer"
+            ],
+            "compressedBytes": 6998216,
+            "thumbnail": {
+                "url": "https://raw.githubusercontent.com/MisterPxl/astra-content/main/thumbnails/astra.template.melee/icon.png",
+                "sha256": "f17f8fc6ae27dd689811828fe9893d3a15726b42c10c76a59c6ff18ff9901ca4",
+                "bytes": 147547
+            }
+        },
+        {
+            "id": "astra.template.fps",
+            "displayName": "FPS Template",
+            "description": "Template MW2 : s\u00e9lection de mode, The Pit et Team Deathmatch contre bots.",
+            "category": "Templates",
+            "recommendedVersion": "2.0.0",
+            "manifestUrl": "https://raw.githubusercontent.com/MisterPxl/astra-content/main/manifests/astra.template.fps/2.0.0.json",
+            "manifestSha256": "c964c4374ba17b6cb3852d70166868f9e7fe7ba94341800a9da97958e4d9b6cc",
+            "tags": [
+                "fps",
+                "template",
+                "mw2"
+            ],
+            "compressedBytes": 265285,
+            "thumbnail": {
+                "url": "https://raw.githubusercontent.com/MisterPxl/astra-content/main/thumbnails/astra.template.fps/icon.png",
+                "sha256": "bb22b7aa467e26b2d024f6ef9120a11913f58b9d9405d39983f954558b462b5a",
+                "bytes": 159835
+            }
+        },
+        {
+            "id": "astra.template.deckbuilder",
+            "displayName": "Deckbuilder Template",
+            "description": "Template roguelite deckbuilder pr\u00eat \u00e0 jouer : carte de run, combat au tour, sauvegarde et menu Continuer, sans code auteur.",
+            "category": "Templates",
+            "recommendedVersion": "3.0.0",
+            "manifestUrl": "https://raw.githubusercontent.com/MisterPxl/astra-content/main/manifests/astra.template.deckbuilder/3.0.0.json",
+            "manifestSha256": "3f70087829344a29ec97f085bdb20ff381c1804ec6635451543db5ce5b24914b",
+            "tags": [
+                "template",
+                "deckbuilder",
+                "cards",
+                "roguelite",
+                "turn-based",
+                "mobile",
+                "touch"
+            ],
+            "compressedBytes": 158478,
+            "thumbnail": {
+                "url": "https://raw.githubusercontent.com/MisterPxl/astra-content/main/thumbnails/astra.template.deckbuilder/icon.png",
+                "sha256": "00d15481d9023f91d05388752fb4e5fe879cf00bc52dc3b67a039b271220c4b4",
+                "bytes": 171533
+            }
+        },
+        {
+            "id": "astra.template.adventure",
+            "displayName": "Adventure Template",
+            "description": "Template d'action-aventure \u00e0 la troisi\u00e8me personne : un parcours lin\u00e9aire (\u00e9p\u00e9e, cibles, ronces, escalade, arc, sanctuaire), des c\u0153urs et une roue d'endurance, \u00e0 appliquer avec Setup.",
+            "category": "Templates",
+            "recommendedVersion": "2.0.1",
+            "manifestUrl": "https://raw.githubusercontent.com/MisterPxl/astra-content/main/manifests/astra.template.adventure/2.0.1.json",
+            "manifestSha256": "4e72dcb965d755b957a0da8a6232af7b1696be15085c75782e63e0b3feb74212",
+            "tags": [
+                "template",
+                "adventure",
+                "third-person",
+                "action"
+            ],
+            "compressedBytes": 129074,
+            "thumbnail": {
+                "url": "https://raw.githubusercontent.com/MisterPxl/astra-content/main/thumbnails/astra.template.adventure/icon.png",
+                "sha256": "e76c85f1f109dc501b33627cdacd7669fcfdda387959ca3beaa1edc96a37da24",
+                "bytes": 162304
+            }
+        },
+        {
+            "id": "astra.template.shmup",
+            "displayName": "Shmup Template",
+            "description": "Template shoot'em up horizontal solo ou coop locale (1\u20132 joueurs).",
+            "category": "Templates",
+            "recommendedVersion": "1.1.1",
+            "manifestUrl": "https://raw.githubusercontent.com/MisterPxl/astra-content/main/manifests/astra.template.shmup/1.1.1.json",
+            "manifestSha256": "0784813ea9948574a5182503e39010e3e397cbaf418cbff2a77571876002b6e8",
+            "tags": [
+                "shmup",
+                "template",
+                "local-multiplayer"
+            ],
+            "compressedBytes": 114074
+        }
+    ]
+}

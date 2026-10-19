@@ -1,0 +1,60 @@
+{
+    "schemaVersion": 1,
+    "id": "astra.shaders.stylized",
+    "version": "0.1.2",
+    "displayName": "Astra Shaders Stylized",
+    "description": "Shaders toon pour URP : \u00e9clairage en bandes ou par rampe, ombres teint\u00e9es, lumi\u00e8res additionnelles Forward+, rim, sp\u00e9culaire en bande, contour par coque invers\u00e9e avec normales liss\u00e9es cuites, variante triplanar sans UV. Flash et dissolve compatibles avec astra.shaders.fx.",
+    "category": "Shaders",
+    "tags": [
+        "shader",
+        "toon",
+        "outline",
+        "triplanar",
+        "urp"
+    ],
+    "compatibility": {
+        "minimumUnity": "6000.4.0f1",
+        "maximumUnityExclusive": "6000.4.0f2",
+        "testedUnity": [
+            "6000.4.0f1"
+        ],
+        "renderPipelines": [
+            "urp"
+        ],
+        "platforms": [
+            "StandaloneOSX"
+        ]
+    },
+    "contentDependencies": [
+        {
+            "id": "astra.shaders.core",
+            "version": "0.1.1"
+        }
+    ],
+    "projectPrerequisites": [
+        {
+            "kind": "package",
+            "name": "com.unity.render-pipelines.universal",
+            "minimumVersion": "17.4.0",
+            "maximumVersionExclusive": ""
+        },
+        {
+            "kind": "package",
+            "name": "com.unity.inputsystem",
+            "minimumVersion": "1.19.0",
+            "maximumVersionExclusive": ""
+        }
+    ],
+    "containsCode": true,
+    "license": "MIT",
+    "attribution": "Copyright (c) 2026 Alexis Gomes. Shaders et contenu de d\u00e9monstration Astra sous licence MIT. Voir LICENSES/LICENSE.txt.",
+    "sources": [],
+    "releaseNotes": "0.1.2 : d\u00e9pendance d\u00e9plac\u00e9e sur astra.shaders.core 0.1.1, aucun autre changement. 0.1.1 : sc\u00e8ne galerie StylizedGallery.unity (Tools > Astra > Shaders > Build Stylized Gallery) : une \u00e9tag\u00e8re par th\u00e8me (bandes, ombre et reflets, contours, triplanaire, effets), un objet \u00e9tiquet\u00e9 par r\u00e9glage. 0.1.0 : Premi\u00e8re version. D\u00e9pend de astra.shaders.core 0.1.0.",
+    "archive": {
+        "url": "https://github.com/MisterPxl/astra-content/releases/download/shaders-stylized-v0.1.2/astra.shaders.stylized-0.1.2.zip",
+        "sha256": "16d34b3baabfcdc49d24f2e56e13091c6d5bf56aa9c4ed8e4c5fbca3d8039aaa",
+        "bytes": 135324,
+        "expandedBytes": 495966,
+        "fileCount": 140
+    }
+}

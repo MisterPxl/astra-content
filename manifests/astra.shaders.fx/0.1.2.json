@@ -1,0 +1,60 @@
+{
+    "schemaVersion": 1,
+    "id": "astra.shaders.fx",
+    "version": "0.1.2",
+    "displayName": "Astra Shaders FX",
+    "description": "Effets pour URP : sprite avec flash, contour et dissolve pour le Universal Renderer, bouclier (fresnel, intersection, motif hexagonal ou Voronoi, 8 impacts), tra\u00een\u00e9es, distorsion (chaleur, onde de choc), particules qui se dissolvent. Composants AstraHitFlash, AstraDissolve et AstraShieldHits, sans allocation par frame.",
+    "category": "Shaders",
+    "tags": [
+        "shader",
+        "vfx",
+        "sprite",
+        "dissolve",
+        "urp"
+    ],
+    "compatibility": {
+        "minimumUnity": "6000.4.0f1",
+        "maximumUnityExclusive": "6000.4.0f2",
+        "testedUnity": [
+            "6000.4.0f1"
+        ],
+        "renderPipelines": [
+            "urp"
+        ],
+        "platforms": [
+            "StandaloneOSX"
+        ]
+    },
+    "contentDependencies": [
+        {
+            "id": "astra.shaders.core",
+            "version": "0.1.1"
+        }
+    ],
+    "projectPrerequisites": [
+        {
+            "kind": "package",
+            "name": "com.unity.render-pipelines.universal",
+            "minimumVersion": "17.4.0",
+            "maximumVersionExclusive": ""
+        },
+        {
+            "kind": "package",
+            "name": "com.unity.inputsystem",
+            "minimumVersion": "1.19.0",
+            "maximumVersionExclusive": ""
+        }
+    ],
+    "containsCode": true,
+    "license": "MIT",
+    "attribution": "Copyright (c) 2026 Alexis Gomes. Shaders, composants et contenu de d\u00e9monstration Astra sous licence MIT. Voir LICENSES/LICENSE.txt.",
+    "sources": [],
+    "releaseNotes": "0.1.2 : d\u00e9pendance d\u00e9plac\u00e9e sur astra.shaders.core 0.1.1, aucun autre changement. 0.1.1 : sc\u00e8ne galerie FxGallery.unity (Tools > Astra > Shaders > Build Fx Gallery) : une \u00e9tag\u00e8re par shader (sprite, bouclier, tra\u00een\u00e9e, distorsion, particules) devant un mur ray\u00e9, un exemple \u00e9tiquet\u00e9 par r\u00e9glage. 0.1.0 : Premi\u00e8re version. D\u00e9pend de astra.shaders.core 0.1.0.",
+    "archive": {
+        "url": "https://github.com/MisterPxl/astra-content/releases/download/shaders-fx-v0.1.2/astra.shaders.fx-0.1.2.zip",
+        "sha256": "e2293c3c1c8c311b964f3cbec7fd28dbdca7ae6872242b709c23d5605e2bb7e6",
+        "bytes": 202538,
+        "expandedBytes": 1588479,
+        "fileCount": 161
+    }
+}
