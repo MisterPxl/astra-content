@@ -2,7 +2,14 @@
 
 Deux entrées de catalogue pour un FPS de style MW2 jouable contre des bots.
 
-- **`astra.fps` 2.0.0** (catégorie `Gameplay`) : simulation FPS en C# pur (armes, santé,
+## Catalogue `gameplay-v26` : contrat Content Hub V2
+
+Contrat `schemaVersion: 2` : les dépendances de contenu sont des plages de versions (`minimumVersion` inclus, `maximumVersionExclusive` exclu). Contenu inchangé : seul `pack.json` (métadonnées) change, d'où un patch. Requiert le framework à partir du tag `framework-game-2026-10-19` (modèle Core : `framework-core-2026-10-19`) ; un Hub plus ancien ne lit pas ce catalogue.
+
+- `astra.fps` **2.0.1** (au lieu de 2.0.0) : release `fps-v2.0.1`, 155 fichiers, 99814 octets, SHA-256 `720d9c8911a41ef2d009586ab1eae507d67bf0136e2457ed9b4383fc0d8925fe` ; dépendances de contenu (plages) : aucune.
+- `astra.template.fps` **2.0.1** (au lieu de 2.0.0) : release `template-fps-v2.0.1`, 163 fichiers, 265500 octets, SHA-256 `764584970747d9436d5baf5a783d4e2965e9af7db1d2be64a7bba9a08b75c298` ; dépendances de contenu (plages) : `astra.fps` [2.0.1, 3.0.0).
+
+- **`astra.fps` 2.0.1** (catégorie `Gameplay`) : simulation FPS en C# pur (armes, santé,
   modes, bots), vues Unity et pont vers le framework Astra (`Fps.Core`, `Fps.Unity`,
   `Fps.Astra`). La 2.0.0 publie les valeurs de HUD (`FpsHudValuesAsset` : munitions, rechargement, santé,
   équipement, statut ; exigé par `FpsModule`), met les emplacements d'arme en assets
@@ -17,11 +24,11 @@ Deux entrées de catalogue pour un FPS de style MW2 jouable contre des bots.
   identifiant de module `fps.module`. Elle incluait la 1.1.0, jamais publiée : bots qui tirent,
   grenades frag et flash, couteau. Depuis la 1.2.0, elle requiert le framework Game Flow
   Foundation (`Game.FlowPresentation`) : le Hub refuse l'import sur une copie plus ancienne.
-- **`astra.template.fps` 2.0.0** (catégorie `Templates`) : template de genre avec sélection de
+- **`astra.template.fps` 2.0.1** (catégorie `Templates`) : template de genre avec sélection de
   mode, **The Pit** et **Team Deathmatch** contre bots armés, HUD, armes, panneau LOADOUT et un
   `composition.json` (identifiants de module `astra.core.preferences`, `astra.game.characters`,
   `astra.game.spawning` et `fps.module` ; `PreferencesModule` persiste le loadout). Il dépend
-  exactement de `astra.fps` 2.0.0, que le Hub importe dans la même transaction. Le guide
+  de `astra.fps` dans la plage [2.0.1, 3.0.0), que le Hub importe dans la même transaction. Le guide
   d'extension est livré dans le pack (`README.md` en anglais, `README.fr.md` en français).
 
 Licence : MIT. Aucun asset tiers.

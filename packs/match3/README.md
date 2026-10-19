@@ -2,7 +2,14 @@
 
 Deux entrées de catalogue pour un puzzle match-3 tactile.
 
-- **`astra.match3` 4.0.0** (catégorie `Gameplay`) : règles, plateau et scoring en C# pur et
+## Catalogue `gameplay-v26` : contrat Content Hub V2
+
+Contrat `schemaVersion: 2` : les dépendances de contenu sont des plages de versions (`minimumVersion` inclus, `maximumVersionExclusive` exclu). Contenu inchangé : seul `pack.json` (métadonnées) change, d'où un patch. Requiert le framework à partir du tag `framework-game-2026-10-19` (modèle Core : `framework-core-2026-10-19`) ; un Hub plus ancien ne lit pas ce catalogue.
+
+- `astra.match3` **4.0.1** (au lieu de 4.0.0) : release `match3-v4.0.1`, 151 fichiers, 97081 octets, SHA-256 `7dab9bce2c95fa8f3f54fd9bf6ce05af6495db1b98c5f2ca39c608bf7de2924b` ; dépendances de contenu (plages) : aucune.
+- `astra.template.match3` **4.0.1** (au lieu de 4.0.0) : release `template-match3-v4.0.1`, 67 fichiers, 51983 octets, SHA-256 `99c2ec2e9b8af9074292c18429332fb3aacf2f7e24617a46ef9c29b566a81f63` ; dépendances de contenu (plages) : `astra.match3` [4.0.1, 5.0.0).
+
+- **`astra.match3` 4.0.1** (catégorie `Gameplay`) : règles, plateau et scoring en C# pur et
   testé. Simulation temps réel à ticks fixes, réservation de cases, swipes pendant les
   cascades, power-ups Royal Match (Rocket, TNT, Propeller, Light Ball) et combos. La 4.0.0 ouvre les types de
   pièces : l'énumération `PieceColor` disparaît au profit de `PieceTypeAsset` (identifiant, nom,
@@ -16,9 +23,9 @@ Deux entrées de catalogue pour un puzzle match-3 tactile.
   le framework Game à partir du tag `framework-game-2026-10-15` : sur un framework plus ancien,
   l'import ne compile pas. La 2.0.1 avait ajouté l'identifiant de module `match3.module` ;
   règles de jeu inchangées depuis 2.0.0.
-- **`astra.template.match3` 4.0.0** (catégorie `Templates`) : template de genre prêt à jouer,
+- **`astra.template.match3` 4.0.1** (catégorie `Templates`) : template de genre prêt à jouer,
   avec scène de départ, niveaux, prefabs et un `composition.json` (identifiant de module
-  `match3.module`, sans avertissement de Setup). Il dépend exactement de `astra.match3` 4.0.0,
+  `match3.module`, sans avertissement de Setup). Il dépend de `astra.match3` dans la plage [4.0.1, 5.0.0),
   que le Hub importe dans la même transaction. Le guide d'extension est livré dans le pack
   (`README.md` en anglais, `README.fr.md` en français) : niveaux, power-ups, motifs, combos,
   objectifs et limites actuelles.

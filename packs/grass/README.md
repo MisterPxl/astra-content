@@ -12,6 +12,12 @@ Licence : code, shaders et contenu de démonstration Astra sous MIT
 Prérequis : Unity 6000.4.0f1, Universal Render Pipeline 17.4+ et le module Physics.
 Qualifié sur macOS ; le Hub ne modifie ni les packages ni les réglages de rendu.
 
+## Catalogue `gameplay-v26` : contrat Content Hub V2
+
+Contrat `schemaVersion: 2` : les dépendances de contenu sont des plages de versions (`minimumVersion` inclus, `maximumVersionExclusive` exclu). Contenu inchangé : seul `pack.json` (métadonnées) change, d'où un patch. Requiert le framework à partir du tag `framework-game-2026-10-19` (modèle Core : `framework-core-2026-10-19`) ; un Hub plus ancien ne lit pas ce catalogue.
+
+- `astra.grass` **0.2.3** (au lieu de 0.2.2) : release `grass-v0.2.3`, 103 fichiers, 141191 octets, SHA-256 `a14caa0bc07ced518ef48bd957b8fa6fc6fe7d7334ce1583f5bf67afbb35916c` ; dépendances de contenu (plages) : `astra.shaders.core` [0.1.2, 0.2.0).
+
 Version **0.2.2** : la dépendance passe sur `astra.shaders.core` 0.1.1, sans autre changement.
 Archive : `grass-v0.2.2`, 103 fichiers, 140898 octets,
 SHA-256 `51c4f513df87ebfebf6d73c80d3aa7a0493d1fdfdb929458eed170ecdbcd78c9`.

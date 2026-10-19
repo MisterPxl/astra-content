@@ -16,6 +16,12 @@ de la démo, backends Input System, Legacy et Both). `SkyReflections` exige **Re
 Probes** dans le niveau de qualité actif ; son inspecteur le signale et propose de l'activer, sans
 le faire seul. Qualifié sur macOS ; le Hub ne modifie ni les packages ni les réglages de rendu.
 
+## Catalogue `gameplay-v26` : contrat Content Hub V2
+
+Contrat `schemaVersion: 2` : les dépendances de contenu sont des plages de versions (`minimumVersion` inclus, `maximumVersionExclusive` exclu). Contenu inchangé : seul `pack.json` (métadonnées) change, d'où un patch. Requiert le framework à partir du tag `framework-game-2026-10-19` (modèle Core : `framework-core-2026-10-19`) ; un Hub plus ancien ne lit pas ce catalogue.
+
+- `astra.sky` **0.2.2** (au lieu de 0.2.1) : release `sky-v0.2.2`, 119 fichiers, 100801 octets, SHA-256 `31c4f75a580b66dbb58056ce930b0c972bb605fda1c2c2c7042f21f52f260026` ; dépendances de contenu (plages) : `astra.shaders.core` [0.1.2, 0.2.0).
+
 Version **0.2.1** : la dépendance passe sur `astra.shaders.core` 0.1.1, sans autre changement.
 Archive : `sky-v0.2.1`, 119 fichiers, 100516 octets,
 SHA-256 `95cf19e7a7cf9ae67da58ada37f5f3ac1cd55a76f8535617d68cffba62253d69`.

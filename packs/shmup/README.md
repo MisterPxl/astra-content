@@ -2,7 +2,14 @@
 
 Deux entrées de catalogue pour un shoot'em up horizontal, solo ou en coopération locale à deux joueurs.
 
-- **`astra.shmup` 1.1.1** (catégorie `Gameplay`) : simulation à 60 Hz en C# pur
+## Catalogue `gameplay-v26` : contrat Content Hub V2
+
+Contrat `schemaVersion: 2` : les dépendances de contenu sont des plages de versions (`minimumVersion` inclus, `maximumVersionExclusive` exclu). Contenu inchangé : seul `pack.json` (métadonnées) change, d'où un patch. Requiert le framework à partir du tag `framework-game-2026-10-19` (modèle Core : `framework-core-2026-10-19`) ; un Hub plus ancien ne lit pas ce catalogue.
+
+- `astra.shmup` **1.1.2** (au lieu de 1.1.1) : release `shmup-v1.1.2`, 104 fichiers, 62757 octets, SHA-256 `6512abc8fa6811073861b046efc26f865eb244ce60df747c17b9fd3c131e56c5` ; dépendances de contenu (plages) : aucune.
+- `astra.template.shmup` **1.1.2** (au lieu de 1.1.1) : release `template-shmup-v1.1.2`, 107 fichiers, 114335 octets, SHA-256 `3ee77e89585ea0d409ae9f2311a64ea92146c5d628bc64c3a3e602673b22987e` ; dépendances de contenu (plages) : `astra.shmup` [1.1.2, 2.0.0).
+
+- **`astra.shmup` 1.1.2** (catégorie `Gameplay`) : simulation à 60 Hz en C# pur
   (`Shmup.Core` : balles et ennemis poolés, grille spatiale, émetteurs de motifs, trajectoires,
   bonus, RNG déterministe), vues Unity (`Shmup.Unity`) et pont vers le framework Astra
   (`Shmup.Astra` : lobby, phases de gameplay, HUD, retour de fin de partie, identifiant de module
@@ -12,11 +19,11 @@ Deux entrées de catalogue pour un shoot'em up horizontal, solo ou en coopérati
   ainsi que le statut de la partie. `ShmupModule` exige cet asset. La 1.1.1 corrige la simulation : les émetteurs ne gardent plus
   d'état (la spirale tourne par tireur, le compteur repart à zéro à chaque phase de boss) et un
   ennemi tué par une balle est crédité au joueur qui l'a tirée ; le hachage d'état change.
-- **`astra.template.shmup` 1.1.1** (catégorie `Templates`) : template de genre avec lobby de un
+- **`astra.template.shmup` 1.1.2** (catégorie `Templates`) : template de genre avec lobby de un
   à deux joueurs, un secteur horizontal (`SectorOne`), deux vaisseaux (Falcon, Hornet), cinq
   ennemis (Scout, Grunt, Turret, Elite, boss `BossCore` en trois phases), une scène de test de
   charge et un `composition.json` (modules `astra.game.spawning`, `astra.game.multiplayer` et
-  `shmup.module`). Il dépend exactement de `astra.shmup` 1.1.1, que le Hub importe dans la même
+  `shmup.module`). Il dépend de `astra.shmup` dans la plage [1.1.2, 2.0.0), que le Hub importe dans la même
   transaction. Les clés de HUD vivent dans `Config/Hud` et un élément de HUD (bombes du joueur 1)
   s'ajoute sans code. Le guide d'extension est livré dans le pack (`README.md` en anglais,
   `README.fr.md` en français) : ennemis, motifs de balles, vagues, contrôles et limites actuelles.

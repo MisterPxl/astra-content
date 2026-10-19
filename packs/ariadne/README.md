@@ -5,6 +5,12 @@ listes verticales et horizontales, grilles, cellules recyclées par pool, taille
 d'item variables, items pleine largeur, sources sectionnées avec leur propre prefab
 d'en-tête, et trois démos jouables sous `Demo/`.
 
+## Catalogue `gameplay-v26` : contrat Content Hub V2
+
+Contrat `schemaVersion: 2` : les dépendances de contenu sont des plages de versions (`minimumVersion` inclus, `maximumVersionExclusive` exclu). Contenu inchangé : seul `pack.json` (métadonnées) change, d'où un patch. Requiert le framework à partir du tag `framework-game-2026-10-19` (modèle Core : `framework-core-2026-10-19`) ; un Hub plus ancien ne lit pas ce catalogue.
+
+- `astra.ariadne` **1.0.1** (au lieu de 1.0.0) : release `ariadne-v1.0.1`, 96 fichiers, 50703 octets, SHA-256 `320a16234cfd7eb97652a08070447b96a6abef795028f83c9935211d044f039a` ; dépendances de contenu (plages) : aucune.
+
 Licence : code et démos Astra sous MIT (`LICENSES/LICENSE.txt` dans le pack). Aucun
 asset tiers.
 

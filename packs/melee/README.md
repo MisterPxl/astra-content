@@ -2,7 +2,14 @@
 
 Deux entrées de catalogue pour un platform fighter local de deux à quatre joueurs.
 
-- **`astra.melee` 4.0.0** (catégorie `Gameplay`) : simulation déterministe en C# pur
+## Catalogue `gameplay-v26` : contrat Content Hub V2
+
+Contrat `schemaVersion: 2` : les dépendances de contenu sont des plages de versions (`minimumVersion` inclus, `maximumVersionExclusive` exclu). Contenu inchangé : seul `pack.json` (métadonnées) change, d'où un patch. Requiert le framework à partir du tag `framework-game-2026-10-19` (modèle Core : `framework-core-2026-10-19`) ; un Hub plus ancien ne lit pas ce catalogue.
+
+- `astra.melee` **4.0.1** (au lieu de 4.0.0) : release `melee-v4.0.1`, 111 fichiers, 118084 octets, SHA-256 `d92b167db93017f5fc1351b36e3943fd4b8819ce77b35edf06d8592bcb6006df` ; dépendances de contenu (plages) : aucune.
+- `astra.template.melee` **4.0.1** (au lieu de 4.0.0) : release `template-melee-v4.0.1`, 237 fichiers, 6998450 octets, SHA-256 `2dd3a9c7a7212d1f5e8af3f6e8ea19ed8fb66f8bdcfc7681c05b7bc4e1477dfb` ; dépendances de contenu (plages) : `astra.melee` [4.0.1, 5.0.0).
+
+- **`astra.melee` 4.0.1** (catégorie `Gameplay`) : simulation déterministe en C# pur
   (`Melee.Core`), vues Unity et pont vers le framework Astra. Contrôle aérien retuné,
   direction au décollage et au double saut, feedback de saut, HUD qui se cale à l'écran.
   La 4.0.0 fait d'une capacité un asset (`MoveAsset`, jusqu'à 32 par combattant, déclencheur par
@@ -16,7 +23,7 @@ Deux entrées de catalogue pour un platform fighter local de deux à quatre joue
   l'import ne compile pas. La 1.2.1 pilotait le lobby et le stage par des phases de gameplay
   (Lobby, Stage) et enregistrait les services du match sur le scope run ; règles de jeu
   inchangées depuis la 1.2.0.
-- **`astra.template.melee` 4.0.0** (catégorie `Templates`) : template de genre avec lobby,
+- **`astra.template.melee` 4.0.1** (catégorie `Templates`) : template de genre avec lobby,
   stage, combattant, cartes joueur et un `composition.json` (identifiants de module
   `astra.game.*` et `melee.module`). Il dépend exactement de
   `astra.melee` 4.0.0, que le Hub importe dans la même transaction. Le guide d'extension est

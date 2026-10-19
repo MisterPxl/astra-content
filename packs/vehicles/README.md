@@ -1,9 +1,17 @@
-# Vehicles — astra.vehicles 1.0.0
+# Vehicles — astra.vehicles 1.0.1
 
 Un seul pack MIT réunit tout le contenu véhicules de MotionTest : voitures,
 bateaux, avions légers et jets, avec leurs variantes arcade. Il contient huit
 prefabs, trois scènes, les configurations, matériaux et meshes procéduraux,
 les commandes clavier/manette, la caméra et la télémétrie.
+
+## Catalogue `gameplay-v26` : contrat Content Hub V2
+
+Contrat `schemaVersion: 2` : les dépendances de contenu sont des plages de versions (`minimumVersion` inclus, `maximumVersionExclusive` exclu). Contenu inchangé : seul `pack.json` (métadonnées) change, d'où un patch. Requiert le framework à partir du tag `framework-game-2026-10-19` (modèle Core : `framework-core-2026-10-19`) ; un Hub plus ancien ne lit pas ce catalogue.
+
+- `astra.vehicles` **1.0.1** (au lieu de 1.0.0) : release `vehicles-v1.0.1`, 257 fichiers, 233879 octets, SHA-256 `9edbec5480d40dbd810f1eaeb370cfd0d9d5108a373094d9e4c6d98c1e8524da` ; dépendances de contenu (plages) : aucune.
+
+La 1.0.1 est réexportée depuis l'archive publiée de la 1.0.0 (`Tools/prepare_pack.py --from-archive` dans astra-authoring) sans réassembler MotionTest, ce qui conserve tous les GUID. La recette d'assemblage et de qualification ci-dessous décrit la 1.0.0 (contrat V1) ; `tools/vehicles` n'est pas adapté au contrat V2.
 
 Le [guide utilisateur inclus](PackReadme.md) décrit les contrôles et prérequis.
 La [licence MIT](LICENSE.txt) couvre le code et les modèles procéduraux.

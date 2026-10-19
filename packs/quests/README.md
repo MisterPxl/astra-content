@@ -1,8 +1,14 @@
 # Quests & Achievements
 
-Pack public `astra.quests` **2.0.0** (catégorie `Gameplay`) : quêtes et succès pilotés par les
+Pack public `astra.quests` **2.0.1** (catégorie `Gameplay`) : quêtes et succès pilotés par les
 données, pour n'importe quel jeu Astra. Le contenu est fait de ScriptableObjects ; le jeu lève
 des signaux, remonte des stats et peut remplacer les vues par défaut.
+
+## Catalogue `gameplay-v26` : contrat Content Hub V2
+
+Contrat `schemaVersion: 2` : les dépendances de contenu sont des plages de versions (`minimumVersion` inclus, `maximumVersionExclusive` exclu). Contenu inchangé : seul `pack.json` (métadonnées) change, d'où un patch. Requiert le framework à partir du tag `framework-game-2026-10-19` (modèle Core : `framework-core-2026-10-19`) ; un Hub plus ancien ne lit pas ce catalogue.
+
+- `astra.quests` **2.0.1** (au lieu de 2.0.0) : release `quests-v2.0.1`, 330 fichiers, 234694 octets, SHA-256 `2fe8324d35031d76304b54745f460d3ea4b25d3b97b58ec04d32474e2b12d400` ; dépendances de contenu (plages) : aucune.
 
 - **`Quests.Core`** : C# pur, sans Unity. Signaux, stats, conditions, objectifs, règles d'échec,
   politiques de répétition, récompenses, services de quêtes et de succès, quêtes chronométrées et

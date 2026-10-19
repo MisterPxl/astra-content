@@ -13,6 +13,12 @@ Le shader attend **Depth Texture** et **Opaque Texture** sur l'asset URP actif ;
 du `WaterSurface` le signale et propose de les activer, sans le faire seul. Qualifié sur
 macOS ; le Hub ne modifie ni les packages ni les réglages de rendu.
 
+## Catalogue `gameplay-v26` : contrat Content Hub V2
+
+Contrat `schemaVersion: 2` : les dépendances de contenu sont des plages de versions (`minimumVersion` inclus, `maximumVersionExclusive` exclu). Contenu inchangé : seul `pack.json` (métadonnées) change, d'où un patch. Requiert le framework à partir du tag `framework-game-2026-10-19` (modèle Core : `framework-core-2026-10-19`) ; un Hub plus ancien ne lit pas ce catalogue.
+
+- `astra.water` **0.2.2** (au lieu de 0.2.1) : release `water-v0.2.2`, 64 fichiers, 428706 octets, SHA-256 `66feb21e19c306a1afae2e5dd1ae010fa206f32b56bb34f9c9582ff3146b9b7d` ; dépendances de contenu (plages) : `astra.shaders.core` [0.1.2, 0.2.0).
+
 Version **0.2.1** : la dépendance passe sur `astra.shaders.core` 0.1.1, sans autre changement.
 Archive : `water-v0.2.1`, 64 fichiers, 428422 octets,
 SHA-256 `7dd707b65abe5f5e15d784c481063157772d48c149cb32f04f10881022c3e755`.

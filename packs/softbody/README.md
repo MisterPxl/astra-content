@@ -1,9 +1,15 @@
 # Soft Body 2D & 3D
 
-Pack public `astra.softbody` **0.3.0** (catégorie `Gameplay`) : simulation de corps mous par
+Pack public `astra.softbody` **0.3.1** (catégorie `Gameplay`) : simulation de corps mous par
 CPU (XPBD) en 2D et en 3D, pour de la gelée, des ballons sous pression et des objets plastiques.
 Il n'a aucune dépendance au framework Astra, à Aegis, à Valkyrie ou à Helios : il s'importe dans
 tout projet Unity 6000.4 URP.
+
+## Catalogue `gameplay-v26` : contrat Content Hub V2
+
+Contrat `schemaVersion: 2` : les dépendances de contenu sont des plages de versions (`minimumVersion` inclus, `maximumVersionExclusive` exclu). Contenu inchangé : seul `pack.json` (métadonnées) change, d'où un patch. Requiert le framework à partir du tag `framework-game-2026-10-19` (modèle Core : `framework-core-2026-10-19`) ; un Hub plus ancien ne lit pas ce catalogue.
+
+- `astra.softbody` **0.3.1** (au lieu de 0.3.0) : release `softbody-v0.3.1`, 171 fichiers, 238302 octets, SHA-256 `0fecd210668ad16facfb65991e0cb0670ad6c77e47d1a4e2866dc22c1e9ead1a` ; dépendances de contenu (plages) : aucune.
 
 | Dimension | Préparation et rendu | Découpe |
 |---|---|---|

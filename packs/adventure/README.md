@@ -2,7 +2,14 @@
 
 Deux entrées de catalogue pour un jeu d'action-aventure à la troisième personne.
 
-- **`astra.adventure` 2.0.1** (catégorie `Gameplay`) : contrôleur action-aventure, Input System et
+## Catalogue `gameplay-v26` : contrat Content Hub V2
+
+Contrat `schemaVersion: 2` : les dépendances de contenu sont des plages de versions (`minimumVersion` inclus, `maximumVersionExclusive` exclu). Contenu inchangé : seul `pack.json` (métadonnées) change, d'où un patch. Requiert le framework à partir du tag `framework-game-2026-10-19` (modèle Core : `framework-core-2026-10-19`) ; un Hub plus ancien ne lit pas ce catalogue.
+
+- `astra.adventure` **2.0.2** (au lieu de 2.0.1) : release `adventure-v2.0.2`, 223 fichiers, 16038244 octets, SHA-256 `01b32f7be9087c2463caa84fcfca22471c5351a597d6a49c2f68a49ef7f9684a` ; dépendances de contenu (plages) : aucune.
+- `astra.template.adventure` **2.0.2** (au lieu de 2.0.1) : release `template-adventure-v2.0.2`, 60 fichiers, 129303 octets, SHA-256 `f12e9fe61dfa864b97f3841f680604794cfcc4af322796c21d9e4d55d0c5bf1e` ; dépendances de contenu (plages) : `astra.adventure` [2.0.2, 3.0.0).
+
+- **`astra.adventure` 2.0.2** (catégorie `Gameplay`) : contrôleur action-aventure, Input System et
   démo humanoïde animée avec caméra, escalade, épée et arc (contenu de la 1.0.0), plus l'assembly
   `Adventure.Astra`, pont vers le framework Astra (caméra, entrées Gameplay, santé en quarts de
   cœur, zones de dégâts et d'arrivée, fin de run), le rig orbital extrait de la caméra de la démo
@@ -18,11 +25,11 @@ Deux entrées de catalogue pour un jeu d'action-aventure à la troisième person
   avait ajouté `Adventure.Astra` et requiert le framework Game Flow Foundation
   (`Game.FlowPresentation`) : le Hub refuse l'import sur une copie plus ancienne.
   `astra.adventure` 1.0.0 reste disponible pour un usage autonome, hors framework.
-- **`astra.template.adventure` 2.0.1** (catégorie `Templates`) : template de genre avec démarrage,
+- **`astra.template.adventure` 2.0.2** (catégorie `Templates`) : template de genre avec démarrage,
   menu puis un parcours linéaire (épée, cibles, ronces, escalade, arc, sanctuaire) et un HUD
   inspiré de Breath of the Wild (cœurs, roue d'endurance, réticule d'arc), avec un
   `composition.json` (identifiants de module `astra.game.*` et `adventure.module`). Il dépend
-  exactement de `astra.adventure` 2.0.1, que le Hub importe dans la même transaction. Le guide
+  de `astra.adventure` dans la plage [2.0.2, 3.0.0), que le Hub importe dans la même transaction. Le guide
   d'extension est livré dans le pack (`README.md` en anglais, `README.fr.md` en français), avec
   ses limites actuelles.
 

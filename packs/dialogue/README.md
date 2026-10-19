@@ -5,6 +5,12 @@ conversations à bulles (Dialogue Studio), un moteur d'exécution autonome avec
 conditions et actions extensibles, des échanges XLSX à comparaison à trois versions,
 une présentation UI Toolkit inspirée d'Animal Crossing et la démo du verger.
 
+## Catalogue `gameplay-v26` : contrat Content Hub V2
+
+Contrat `schemaVersion: 2` : les dépendances de contenu sont des plages de versions (`minimumVersion` inclus, `maximumVersionExclusive` exclu). Contenu inchangé : seul `pack.json` (métadonnées) change, d'où un patch. Requiert le framework à partir du tag `framework-game-2026-10-19` (modèle Core : `framework-core-2026-10-19`) ; un Hub plus ancien ne lit pas ce catalogue.
+
+- `astra.dialogue` **0.1.5** (au lieu de 0.1.4) : release `dialogue-v0.1.5`, 93 fichiers, 96463 octets, SHA-256 `9b0a765815c78abcaed99b086dc106cead00b5f9eb4baf574ff38f7c7b110ced` ; dépendances de contenu (plages) : aucune.
+
 Version **0.1.4**. Elle ajoute l'événement `DialogueSession.ChoiceSelected` (choix pris, avant
 d'entrer dans sa cible), utilisé par les objectifs de dialogue du pont
 [Quests ↔ Dialogue](../quests-dialogue/README.md). La 0.1.3 avait ajouté

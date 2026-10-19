@@ -2,7 +2,14 @@
 
 Deux entrées de catalogue pour un roguelite deckbuilder solo, entièrement en UI.
 
-- **`astra.deckbuilder` 3.0.0** (catégorie `Gameplay`) : simulation de run et de combat au tour
+## Catalogue `gameplay-v26` : contrat Content Hub V2
+
+Contrat `schemaVersion: 2` : les dépendances de contenu sont des plages de versions (`minimumVersion` inclus, `maximumVersionExclusive` exclu). Contenu inchangé : seul `pack.json` (métadonnées) change, d'où un patch. Requiert le framework à partir du tag `framework-game-2026-10-19` (modèle Core : `framework-core-2026-10-19`) ; un Hub plus ancien ne lit pas ce catalogue.
+
+- `astra.deckbuilder` **3.0.1** (au lieu de 3.0.0) : release `deckbuilder-v3.0.1`, 333 fichiers, 227192 octets, SHA-256 `d7f060f265570d95fbb0dfed1ab4f2a6aaa5f7c61099f616f66e74867b53fcba` ; dépendances de contenu (plages) : aucune.
+- `astra.template.deckbuilder` **3.0.1** (au lieu de 3.0.0) : release `template-deckbuilder-v3.0.1`, 173 fichiers, 158743 octets, SHA-256 `6eb4d2e6bd73c4ad1ef843fed0880c84870bfcb55143438d97cbc4910d403f2b` ; dépendances de contenu (plages) : `astra.deckbuilder` [3.0.1, 4.0.0).
+
+- **`astra.deckbuilder` 3.0.1** (catégorie `Gameplay`) : simulation de run et de combat au tour
   en C# pur (`Deckbuilder.Core` : cartes, énergie, intentions ennemies, statuts, carte d'étages,
   récompenses, boutique, repos, méta-progression, RNG déterministe), vues Unity UI et démo
   (`Deckbuilder.Unity`), et pont vers le framework Astra (`Deckbuilder.Astra` : écrans, popups,
@@ -23,10 +30,10 @@ Deux entrées de catalogue pour un roguelite deckbuilder solo, entièrement en U
   dérive de `HudWidgetView`, s'ajoute par `IGameHudService.Add` et s'affiche par `Show<T>` /
   `Hide<T>`) : la 1.1.0 requiert le framework Game à partir du tag `framework-game-2026-10-15`,
   sur un framework plus ancien l'import ne compile pas.
-- **`astra.template.deckbuilder` 3.0.0** (catégorie `Templates`) : template de genre prêt à
+- **`astra.template.deckbuilder` 3.0.1** (catégorie `Templates`) : template de genre prêt à
   jouer, avec configuration de run, cartes, ennemis, rencontres, boss, prefabs d'écrans, textes
   `fr` / `en` et un `composition.json` (identifiants de module `astra.core.localization` et
-  `deckbuilder.module`). Il dépend exactement de `astra.deckbuilder` 3.0.0, que le Hub importe
+  `deckbuilder.module`). Il dépend de `astra.deckbuilder` dans la plage [3.0.1, 4.0.0), que le Hub importe
   dans la même transaction. Le guide d'extension est livré dans le pack (`README.md` en anglais,
   `README.fr.md` en français). La 1.1.0 expose `Shop Rules` et `Rest Rules` dans `RunConfig`,
   prend en compte `MaxEnergy` et `DrawPerTurn` du personnage, et met le guide à jour (ordre des

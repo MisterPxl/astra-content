@@ -1,8 +1,14 @@
 # Quests ↔ Dialogue
 
-Pack public `astra.quests.dialogue` **1.2.0** (catégorie `Bridges`) : le pont entre la
+Pack public `astra.quests.dialogue` **1.2.1** (catégorie `Bridges`) : le pont entre la
 progression de [Quests & Achievements](../quests/README.md) et les conversations d'
 [Astra Dialogue](../dialogue/README.md). Il ne contient aucun contenu de jeu.
+
+## Catalogue `gameplay-v26` : contrat Content Hub V2
+
+Contrat `schemaVersion: 2` : les dépendances de contenu sont des plages de versions (`minimumVersion` inclus, `maximumVersionExclusive` exclu). Contenu inchangé : seul `pack.json` (métadonnées) change, d'où un patch. Requiert le framework à partir du tag `framework-game-2026-10-19` (modèle Core : `framework-core-2026-10-19`) ; un Hub plus ancien ne lit pas ce catalogue.
+
+- `astra.quests.dialogue` **1.2.1** (au lieu de 1.2.0) : release `quests-dialogue-v1.2.1`, 36 fichiers, 23483 octets, SHA-256 `46982de644ab172f4be02b9b02ee38687ed3f32fef9b014244519a5d3d095d01` ; dépendances de contenu (plages) : `astra.quests` [2.0.1, 3.0.0), `astra.dialogue` [0.1.5, 0.2.0).
 
 - **Conditions** de dialogue : progression (quêtes, stats, succès) et objectif de quête terminé.
 - **Actions** de dialogue : accepter, proposer, rendre ou faire échouer une quête, lever un

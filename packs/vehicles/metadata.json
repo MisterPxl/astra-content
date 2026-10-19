@@ -1,7 +1,7 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "id": "astra.vehicles",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "displayName": "Vehicles",
   "description": "Voitures, bateaux, avions légers et jets : physique, variantes arcade, clavier/manette, caméra, télémétrie et démos éditables.",
   "category": "Gameplay",
@@ -32,7 +32,9 @@
   "projectPrerequisites": [
     {
       "kind": "capability",
-      "name": "input-system-enabled"
+      "name": "input-system-enabled",
+      "minimumVersion": "",
+      "maximumVersionExclusive": ""
     },
     {
       "kind": "package",
@@ -49,22 +51,25 @@
     {
       "kind": "package",
       "name": "com.unity.modules.audio",
-      "minimumVersion": "1.0.0"
+      "minimumVersion": "1.0.0",
+      "maximumVersionExclusive": ""
     },
     {
       "kind": "package",
       "name": "com.unity.modules.physics",
-      "minimumVersion": "1.0.0"
+      "minimumVersion": "1.0.0",
+      "maximumVersionExclusive": ""
     },
     {
       "kind": "package",
       "name": "com.unity.modules.imgui",
-      "minimumVersion": "1.0.0"
+      "minimumVersion": "1.0.0",
+      "maximumVersionExclusive": ""
     }
   ],
   "containsCode": true,
   "license": "MIT",
   "attribution": "Copyright (c) 2026 Alexis Gomes. Code et modèles procéduraux issus de MotionTest ; licence MIT.",
   "sources": [],
-  "releaseNotes": "Première version : huit prefabs, trois scènes, quatre assemblies runtime et outils de génération. Références Unity des classes eau, atmosphère et contrôle de vol réparées pour un import autonome."
+  "releaseNotes": "1.0.1 : contrat Content Hub V2 : dépendances par plages de versions, aucun changement de contenu. Requiert le framework à partir du tag framework-game-2026-10-19 (Core : framework-core-2026-10-19) ; un Hub plus ancien ne lit pas le catalogue gameplay-v26. 1.0.0 : Première version : huit prefabs, trois scènes, quatre assemblies runtime et outils de génération. Références Unity des classes eau, atmosphère et contrôle de vol réparées pour un import autonome."
 }
