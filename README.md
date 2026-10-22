@@ -65,6 +65,17 @@ déformable avec couverture des objets ; eau à vagues de Gerstner, réfraction,
 et flottaison ; ciel jour/nuit avec étoiles, lune, nuages, réflexions et horloge de jeu. Quatre
 packs URP indépendants, code et démos sous **licence MIT**, sans asset tiers.
 
+**[Shaders Core 0.1.2](packs/shaders-core/README.md)** (`astra.shaders.core`),
+**[Shaders Stylized 0.1.3](packs/shaders-stylized/README.md)** (`astra.shaders.stylized`),
+**[Shaders FX 0.1.3](packs/shaders-fx/README.md)** (`astra.shaders.fx`) et
+**[Shaders UI 0.1.3](packs/shaders-ui/README.md)** (`astra.shaders.ui`) forment la catégorie
+**[Shaders](packs/shaders/README.md)** : bibliothèque HLSL partagée (hash, bruits, Voronoi, FBM,
+triplanaire, dither, passes `ShadowCaster` / `DepthOnly` / `DepthNormals`) et shaders de debug ;
+éclairage toon avec contour par coque inversée et variante triplanaire ; effets sprite, bouclier,
+traînée, distorsion et particules avec composants sans allocation par frame ; formes SDF, anneaux
+segmentés, cartes holographiques et dissolve pour uGUI en un seul draw call. Code, shaders et démos
+sous **licence MIT** (hash adapté de David Hoskins sous MIT).
+
 Catalogue `gameplay-v26` : contrat Content Hub V2, lisible par le Hub du framework à partir du tag `framework-game-2026-10-19` (Core : `framework-core-2026-10-19`). Les versions antérieures des packs (contrat V1) ne sont plus listées ; leurs archives restent téléchargeables.
 
 Prérequis qualifiés : **Unity 6000.4.0f1**, **URP 17.4.0**, **Input System 1.19.0**,

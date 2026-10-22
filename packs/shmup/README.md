@@ -49,5 +49,5 @@ pavé 0, bombe pavé 1, focus pavé 2) ou manette (stick gauche, tir Sud, bombe 
 gauche). Limites actuelles : pas de graze ni de rejeu, un seul secteur dans le template, interface
 de boss minimale.
 
-Archives publiées via GitHub Releases, tags `shmup-v1.1.1` et `template-shmup-v1.1.1`
-(`shmup-v1.1.0`, `template-shmup-v1.1.0`, `shmup-v1.0.0` et `template-shmup-v1.0.0` restent disponibles).
+Archives publiées via GitHub Releases, tags `shmup-v1.1.2` et `template-shmup-v1.1.2`
+(`shmup-v1.1.1`, `template-shmup-v1.1.1`, `shmup-v1.1.0`, `template-shmup-v1.1.0`, `shmup-v1.0.0` et `template-shmup-v1.0.0` restent disponibles).
