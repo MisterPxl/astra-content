@@ -16,6 +16,10 @@ les archives uniquement à la demande et installe les fichiers éditables sous
 
 ## État du catalogue
 
+**[Tactics 1.0.0](packs/tactics/README.md)** (`astra.tactics` et `astra.template.tactics`) :
+RPG tactique déterministe, éditeur de cartes, démo autonome et campagne de trois chapitres,
+avec préparation, sauvegarde/Continue et contenu original en primitives.
+
 **[Adventure 2.0.2](packs/adventure/README.md)** (`astra.adventure`) regroupe un
 contrôleur action-aventure, Input System et une démo humanoïde animée avec caméra,
 escalade, épée et arc, avec depuis la 1.1.0 un pont vers le framework Astra

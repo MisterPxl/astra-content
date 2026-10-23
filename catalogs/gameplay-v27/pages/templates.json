@@ -1,0 +1,143 @@
+{
+    "schemaVersion": 2,
+    "packs": [
+        {
+            "id": "astra.template.match3",
+            "displayName": "Match3 Template",
+            "description": "Template de genre match-3 prêt à jouer : scène de départ, niveaux, prefabs et composition à appliquer avec Setup, sans écrire une ligne de code.",
+            "category": "Templates",
+            "recommendedVersion": "4.0.1",
+            "manifestUrl": "https://raw.githubusercontent.com/MisterPxl/astra-content/main/manifests/astra.template.match3/4.0.1.json",
+            "manifestSha256": "5f099e867a5eaa2b8841144e45169f2be76cf62cbaa4c1c4a3a794850d3b7275",
+            "tags": [
+                "template",
+                "puzzle",
+                "match3",
+                "mobile",
+                "touch"
+            ],
+            "compressedBytes": 51983,
+            "thumbnail": {
+                "url": "https://raw.githubusercontent.com/MisterPxl/astra-content/main/thumbnails/astra.template.match3/icon.png",
+                "sha256": "987abb19b7bf33aa5004d23d929e2dc26089ee8afae20cbcb929e5d7cbb8b58d",
+                "bytes": 162657
+            }
+        },
+        {
+            "id": "astra.template.melee",
+            "displayName": "Melee Template",
+            "description": "Template de platform fighter local pour deux à quatre joueurs : lobby, stage, combattant et composition à appliquer avec Setup.",
+            "category": "Templates",
+            "recommendedVersion": "4.0.1",
+            "manifestUrl": "https://raw.githubusercontent.com/MisterPxl/astra-content/main/manifests/astra.template.melee/4.0.1.json",
+            "manifestSha256": "5e037ec71781b364031b48ce583bb84d197feb4ed266f15f375b126297096e0e",
+            "tags": [
+                "template",
+                "melee",
+                "platform-fighter",
+                "local-multiplayer"
+            ],
+            "compressedBytes": 6998450,
+            "thumbnail": {
+                "url": "https://raw.githubusercontent.com/MisterPxl/astra-content/main/thumbnails/astra.template.melee/icon.png",
+                "sha256": "f17f8fc6ae27dd689811828fe9893d3a15726b42c10c76a59c6ff18ff9901ca4",
+                "bytes": 147547
+            }
+        },
+        {
+            "id": "astra.template.fps",
+            "displayName": "FPS Template",
+            "description": "Template MW2 : sélection de mode, The Pit et Team Deathmatch contre bots.",
+            "category": "Templates",
+            "recommendedVersion": "2.0.1",
+            "manifestUrl": "https://raw.githubusercontent.com/MisterPxl/astra-content/main/manifests/astra.template.fps/2.0.1.json",
+            "manifestSha256": "0995d2d9aa4e6ba571772fdc5b229de02a9f8ed6bc85ee165a9ae9936cd20f62",
+            "tags": [
+                "fps",
+                "template",
+                "mw2"
+            ],
+            "compressedBytes": 265500,
+            "thumbnail": {
+                "url": "https://raw.githubusercontent.com/MisterPxl/astra-content/main/thumbnails/astra.template.fps/icon.png",
+                "sha256": "bb22b7aa467e26b2d024f6ef9120a11913f58b9d9405d39983f954558b462b5a",
+                "bytes": 159835
+            }
+        },
+        {
+            "id": "astra.template.deckbuilder",
+            "displayName": "Deckbuilder Template",
+            "description": "Template roguelite deckbuilder prêt à jouer : carte de run, combat au tour, sauvegarde et menu Continuer, sans code auteur.",
+            "category": "Templates",
+            "recommendedVersion": "3.0.1",
+            "manifestUrl": "https://raw.githubusercontent.com/MisterPxl/astra-content/main/manifests/astra.template.deckbuilder/3.0.1.json",
+            "manifestSha256": "d10dc61857748f43d15f71eb4abed3e33144c4239907908222f92e4c9e5a5656",
+            "tags": [
+                "template",
+                "deckbuilder",
+                "cards",
+                "roguelite",
+                "turn-based",
+                "mobile",
+                "touch"
+            ],
+            "compressedBytes": 158743,
+            "thumbnail": {
+                "url": "https://raw.githubusercontent.com/MisterPxl/astra-content/main/thumbnails/astra.template.deckbuilder/icon.png",
+                "sha256": "00d15481d9023f91d05388752fb4e5fe879cf00bc52dc3b67a039b271220c4b4",
+                "bytes": 171533
+            }
+        },
+        {
+            "id": "astra.template.adventure",
+            "displayName": "Adventure Template",
+            "description": "Template d'action-aventure à la troisième personne : un parcours linéaire (épée, cibles, ronces, escalade, arc, sanctuaire), des cœurs et une roue d'endurance, à appliquer avec Setup.",
+            "category": "Templates",
+            "recommendedVersion": "2.0.2",
+            "manifestUrl": "https://raw.githubusercontent.com/MisterPxl/astra-content/main/manifests/astra.template.adventure/2.0.2.json",
+            "manifestSha256": "5fc2af1029b4e45852e1c272b8b1378b09c55cffc1579b6cf78bc2e74a3d36a4",
+            "tags": [
+                "template",
+                "adventure",
+                "third-person",
+                "action"
+            ],
+            "compressedBytes": 129303,
+            "thumbnail": {
+                "url": "https://raw.githubusercontent.com/MisterPxl/astra-content/main/thumbnails/astra.template.adventure/icon.png",
+                "sha256": "e76c85f1f109dc501b33627cdacd7669fcfdda387959ca3beaa1edc96a37da24",
+                "bytes": 162304
+            }
+        },
+        {
+            "id": "astra.template.shmup",
+            "displayName": "Shmup Template",
+            "description": "Template shoot'em up horizontal solo ou coop locale (1–2 joueurs).",
+            "category": "Templates",
+            "recommendedVersion": "1.1.2",
+            "manifestUrl": "https://raw.githubusercontent.com/MisterPxl/astra-content/main/manifests/astra.template.shmup/1.1.2.json",
+            "manifestSha256": "9c157db6c4016e98736562c33076232aab3fa6e0a3497f393611445db60bf621",
+            "tags": [
+                "shmup",
+                "template",
+                "local-multiplayer"
+            ],
+            "compressedBytes": 114335
+        },
+        {
+            "id": "astra.template.tactics",
+            "displayName": "Tactics Template",
+            "description": "Three-chapter tactical RPG starter with preparation, combat, objectives and campaign saves.",
+            "category": "Templates",
+            "tags": [
+                "tactics",
+                "grid",
+                "turn-based"
+            ],
+            "recommendedVersion": "1.0.0",
+            "manifestUrl": "https://raw.githubusercontent.com/MisterPxl/astra-content/main/manifests/astra.template.tactics/1.0.0.json",
+            "manifestSha256": "dcbaf5d7a3f440d049ae206b1d192927ce01e4a37cb5890348bbd9f8a31f1dff",
+            "compressedBytes": 228712
+        }
+    ]
+}
