@@ -1,0 +1,95 @@
+{
+    "schemaVersion": 2,
+    "id": "astra.template.tactics",
+    "version": "2.0.0",
+    "displayName": "Tactics Template",
+    "description": "Three-chapter tactical RPG starter with preparation, combat, objectives and campaign saves.",
+    "category": "Templates",
+    "tags": [
+        "tactics",
+        "grid",
+        "turn-based"
+    ],
+    "compatibility": {
+        "minimumUnity": "6000.4.0f1",
+        "maximumUnityExclusive": "6000.5.0a1",
+        "testedUnity": [
+            "6000.4.0f1"
+        ],
+        "renderPipelines": [
+            "urp"
+        ],
+        "platforms": [
+            "StandaloneOSX"
+        ]
+    },
+    "contentDependencies": [
+        {
+            "id": "astra.tactics",
+            "minimumVersion": "2.0.0",
+            "maximumVersionExclusive": "3.0.0"
+        }
+    ],
+    "projectPrerequisites": [
+        {
+            "kind": "capability",
+            "name": "input-system-enabled",
+            "minimumVersion": "",
+            "maximumVersionExclusive": ""
+        },
+        {
+            "kind": "capability",
+            "name": "astra-framework",
+            "minimumVersion": "2.1.0",
+            "maximumVersionExclusive": "3.0.0"
+        },
+        {
+            "kind": "package",
+            "name": "com.unity.inputsystem",
+            "minimumVersion": "1.19.0",
+            "maximumVersionExclusive": "2.0.0"
+        },
+        {
+            "kind": "package",
+            "name": "com.unity.render-pipelines.universal",
+            "minimumVersion": "17.4.0",
+            "maximumVersionExclusive": "18.0.0"
+        },
+        {
+            "kind": "package",
+            "name": "com.unity.ugui",
+            "minimumVersion": "2.0.0",
+            "maximumVersionExclusive": "3.0.0"
+        },
+        {
+            "kind": "assembly",
+            "name": "Astra.Framework.Game.FlowPresentation.Runtime",
+            "minimumVersion": "",
+            "maximumVersionExclusive": ""
+        },
+        {
+            "kind": "assembly",
+            "name": "Astra.Framework.Core.UI.Runtime",
+            "minimumVersion": "",
+            "maximumVersionExclusive": ""
+        },
+        {
+            "kind": "assembly",
+            "name": "Astra.Framework.Game.HUD.Runtime",
+            "minimumVersion": "",
+            "maximumVersionExclusive": ""
+        }
+    ],
+    "containsCode": false,
+    "license": "MIT",
+    "attribution": "Copyright (c) 2026 Alexis Gomes. Contenu sous licence MIT ; aucun asset tiers.",
+    "sources": [],
+    "releaseNotes": "2.0.0: Fire Emblem battle presentation restored: range, threat, objective and path overlays with a cursor, action/context/item/trade menus, two-sided forecast, unit and terrain panels, phase banner, level-up popup, strike/miss/critical animation with popping text, deaths and spawns, undo move, target cycling, danger zone, promotion, localized labels; one coordinator for the standalone demo and the Astra battle. Snapshot format 2 (pending move, trades): 1.0.0 saves are discarded.",
+    "archive": {
+        "url": "https://github.com/MisterPxl/astra-content/releases/download/template-tactics-v2.0.0/astra.template.tactics-2.0.0.zip",
+        "sha256": "aa63a763e322682789d3f903dd787b8411944474b91abd5fe02f51579f27a0f2",
+        "bytes": 324387,
+        "expandedBytes": 1917086,
+        "fileCount": 386
+    }
+}
