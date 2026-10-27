@@ -1,0 +1,101 @@
+{
+    "schemaVersion": 2,
+    "id": "astra.tactics",
+    "version": "2.1.0",
+    "displayName": "Tactics",
+    "description": "Deterministic square-grid tactical RPG simulation, Unity authoring and Astra integration.",
+    "category": "Gameplay",
+    "tags": [
+        "tactics",
+        "grid",
+        "turn-based"
+    ],
+    "compatibility": {
+        "minimumUnity": "6000.4.0f1",
+        "maximumUnityExclusive": "6000.5.0a1",
+        "testedUnity": [
+            "6000.4.0f1"
+        ],
+        "renderPipelines": [
+            "urp"
+        ],
+        "platforms": [
+            "StandaloneOSX"
+        ]
+    },
+    "contentDependencies": [],
+    "projectPrerequisites": [
+        {
+            "kind": "capability",
+            "name": "input-system-enabled",
+            "minimumVersion": "",
+            "maximumVersionExclusive": ""
+        },
+        {
+            "kind": "capability",
+            "name": "astra-framework",
+            "minimumVersion": "2.1.0",
+            "maximumVersionExclusive": "3.0.0"
+        },
+        {
+            "kind": "package",
+            "name": "com.unity.inputsystem",
+            "minimumVersion": "1.19.0",
+            "maximumVersionExclusive": "2.0.0"
+        },
+        {
+            "kind": "package",
+            "name": "com.unity.ugui",
+            "minimumVersion": "2.0.0",
+            "maximumVersionExclusive": "3.0.0"
+        },
+        {
+            "kind": "package",
+            "name": "com.misterpxl.valkyrie",
+            "minimumVersion": "2.1.0",
+            "maximumVersionExclusive": "3.0.0"
+        },
+        {
+            "kind": "assembly",
+            "name": "Astra.Framework.Core.UI.Runtime",
+            "minimumVersion": "",
+            "maximumVersionExclusive": ""
+        },
+        {
+            "kind": "assembly",
+            "name": "Astra.Framework.Game.Flow.Runtime",
+            "minimumVersion": "",
+            "maximumVersionExclusive": ""
+        },
+        {
+            "kind": "assembly",
+            "name": "Astra.Framework.Core.Localization.Runtime",
+            "minimumVersion": "",
+            "maximumVersionExclusive": ""
+        },
+        {
+            "kind": "assembly",
+            "name": "Astra.Framework.Game.HUD.Runtime",
+            "minimumVersion": "",
+            "maximumVersionExclusive": ""
+        },
+        {
+            "kind": "assembly",
+            "name": "Astra.Framework.Game.FlowPresentation.Runtime",
+            "minimumVersion": "",
+            "maximumVersionExclusive": ""
+        }
+    ],
+    "containsCode": true,
+    "license": "MIT",
+    "attribution": "Copyright (c) 2026 Alexis Gomes. Code sous licence MIT.",
+    "sources": [],
+    "releaseNotes": "2.1.0: Tactics Studio chapter editor (Tools/Astra/Tactics/Studio): library, canvas with seven modes and registry brushes, Issues from ChapterValidation, Preview tab (danger zone, move range, forecast, AI dry run, seed), Play from the studio with live state, chapter text import with a reviewed diff and export, scene-view Tactics Stage Paint tool, Aegis chapter and ruleset rules; unit placements gain DeploySlot and an inventory override; chapter names and objectives resolve through the label table. The old Map editor window is removed.",
+    "archive": {
+        "url": "https://github.com/MisterPxl/astra-content/releases/download/tactics-v2.1.0/astra.tactics-2.1.0.zip",
+        "sha256": "3a9ec4c1d146d8ac39e695fc7ba31ebbcd0a318266a2b2da98274f03e95209f5",
+        "bytes": 336731,
+        "expandedBytes": 925397,
+        "fileCount": 352
+    }
+}

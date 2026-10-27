@@ -1,0 +1,20 @@
+{
+    "schemaVersion": 2,
+    "packs": [
+        {
+            "id": "astra.quests.dialogue",
+            "displayName": "Quests \u2194 Dialogue Bridge",
+            "description": "Dialogue et progression : objectifs Conversation termin\u00e9e et Choix pris ; conditions de qu\u00eate, stats et succ\u00e8s ; actions accepter, proposer, rendre, \u00e9chouer, signal et r\u00e9compenses ; provider Astra pour DialogueRunner et preview \u00e9diteur.",
+            "category": "Bridges",
+            "recommendedVersion": "1.2.1",
+            "manifestUrl": "https://raw.githubusercontent.com/MisterPxl/astra-content/main/manifests/astra.quests.dialogue/1.2.1.json",
+            "manifestSha256": "8e5de1783261abc18446ebb9615e588a83f20e9311c20a1581e5419c9c2eef37",
+            "tags": [
+                "bridge",
+                "quests",
+                "dialogue"
+            ],
+            "compressedBytes": 23483
+        }
+    ]
+}
