@@ -16,10 +16,6 @@ les archives uniquement à la demande et installe les fichiers éditables sous
 
 ## État du catalogue
 
-**[Tactics 1.0.0](packs/tactics/README.md)** (`astra.tactics` et `astra.template.tactics`) :
-RPG tactique déterministe, éditeur de cartes, démo autonome et campagne de trois chapitres,
-avec préparation, sauvegarde/Continue et contenu original en primitives.
-
 **[Adventure 2.0.2](packs/adventure/README.md)** (`astra.adventure`) regroupe un
 contrôleur action-aventure, Input System et une démo humanoïde animée avec caméra,
 escalade, épée et arc, avec depuis la 1.1.0 un pont vers le framework Astra
@@ -42,6 +38,20 @@ chronométrées, paliers), avec journal, galerie, suivi HUD et règles Aegis. So
 catégorie **Bridges**) relie la progression aux conversations d'Astra Dialogue : conditions,
 actions et objectifs de dialogue. Code sous **licence MIT**, sans asset tiers.
 
+**[Inventory 1.0.0](packs/inventory/README.md)** (`astra.inventory`, catégorie **Gameplay**) apporte
+un inventaire data-driven : piles avec limites de slots et de poids, équipement par slots typés,
+effets d'utilisation ouverts, tables de loot pondérées déterministes, recettes de craft, sauvegarde,
+valeurs de HUD, vues UGUI et règles Aegis. Quatre ponts (catégorie **Bridges**) le relient au reste du
+catalogue : **[Inventory ↔ Quests 1.0.0](packs/inventory-quests/README.md)** (`astra.inventory.quests`,
+objectifs Collecter / Fabriquer / Équiper, conditions et récompenses d'objets),
+**[Inventory ↔ Dialogue 1.0.0](packs/inventory-dialogue/README.md)** (`astra.inventory.dialogue`,
+conditions et actions d'inventaire dans les conversations),
+**[Adventure ↔ Dialogue 1.0.0](packs/adventure-dialogue/README.md)** (`astra.adventure.dialogue`,
+zone et objet interactif qui lancent une conversation) et
+**[Adventure ↔ Quests 1.0.0](packs/adventure-quests/README.md)** (`astra.adventure.quests`, zone,
+rapporteur de coups et observateur de fin de run qui alimentent la progression). Code sous
+**licence MIT**, sans asset tiers.
+
 **[Soft Body 2D & 3D 0.3.1](packs/softbody/README.md)** (`astra.softbody`) simule des corps mous
 (gelée, ballons sous pression, plastique) en 2D et en 3D, avec préparation de sprites et de
 maillages, découpe libre et playgrounds. Pack URP sans dépendance au framework Astra, code et
@@ -54,10 +64,11 @@ Le code et les modèles procéduraux sont distribués sous **licence MIT**.
 
 **[Match3 4.0.1](packs/match3/README.md)** (`astra.match3`), **[Melee 4.0.1](packs/melee/README.md)**
 (`astra.melee`), **[FPS 2.0.1](packs/fps/README.md)** (`astra.fps`),
-**[Deckbuilder 3.0.1](packs/deckbuilder/README.md)** (`astra.deckbuilder`) et
-**[Shmup 1.1.2](packs/shmup/README.md)** (`astra.shmup`) sont des packs de gameplay
+**[Deckbuilder 3.0.1](packs/deckbuilder/README.md)** (`astra.deckbuilder`),
+**[Shmup 1.1.2](packs/shmup/README.md)** (`astra.shmup`) et
+**[Tactics 2.1.0](packs/tactics/README.md)** (`astra.tactics`) sont des packs de gameplay
 livrés avec leur **template de genre** (`astra.template.match3`, `astra.template.melee`,
-`astra.template.fps`, `astra.template.deckbuilder`, `astra.template.shmup`), publiés dans la catégorie **Templates** du Hub : le template tire son pack
+`astra.template.fps`, `astra.template.deckbuilder`, `astra.template.shmup`, `astra.template.tactics`), publiés dans la catégorie **Templates** du Hub : le template tire son pack
 de gameplay, puis Astra Setup applique sa composition. Code et contenu sous **licence MIT** ; les
 assets Quaternius de Melee Template restent en **CC0-1.0**.
 
@@ -80,7 +91,7 @@ traînée, distorsion et particules avec composants sans allocation par frame ; 
 segmentés, cartes holographiques et dissolve pour uGUI en un seul draw call. Code, shaders et démos
 sous **licence MIT** (hash adapté de David Hoskins sous MIT).
 
-Catalogue `gameplay-v26` : contrat Content Hub V2, lisible par le Hub du framework à partir du tag `framework-game-2026-10-19` (Core : `framework-core-2026-10-19`). Les versions antérieures des packs (contrat V1) ne sont plus listées ; leurs archives restent téléchargeables.
+Catalogue `gameplay-v30` : contrat Content Hub V2, lisible par le Hub du framework à partir du tag `framework-game-2026-10-19` (Core : `framework-core-2026-10-19`). Les versions antérieures des packs (contrat V1) ne sont plus listées ; leurs archives restent téléchargeables.
 
 Prérequis qualifiés : **Unity 6000.4.0f1**, **URP 17.4.0**, **Input System 1.19.0**,
 backend Input System actif et cible macOS. Les prérequis sont à préparer avant
