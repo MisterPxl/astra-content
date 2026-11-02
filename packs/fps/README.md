@@ -2,6 +2,19 @@
 
 Deux entrées de catalogue pour un FPS de style MW2 jouable contre des bots.
 
+## Catalogue `gameplay-v30` : framework 3.0.0
+
+Requiert le framework à partir du tag `framework-game-2026-11-02` (modèle Core :
+`framework-core-2026-11-02`), garanti par le prérequis de capacité `astra-framework` [3.0.0, 4.0.0) :
+le Hub refuse l'import sur un framework 2.x, pour lequel la 2.0.1 reste listée. L'audio passe par le
+package Echo et les retours de gameplay par Pulse (`com.misterpxl.echo` et `com.misterpxl.pulse`
+[1.0.0, 2.0.0), tags `v1.0.0`), à déclarer dans le manifeste du projet. Les spawns n'utilisent plus
+`SpawnCategory`, retiré du framework : la fabrique poolée du pack reconnaît ses effets par marqueur de
+prefab.
+
+- `astra.fps` **2.1.0** : release `fps-v2.1.0`, 155 fichiers, 100313 octets, SHA-256 `1c7c1c2191169cccd21d9901ee0892b8fb0b39edd54d101ffe9124063ded16ce` ; dépendances de contenu (plages) : aucune.
+- `astra.template.fps` **2.1.0** : release `template-fps-v2.1.0`, 163 fichiers, 265640 octets, SHA-256 `d0cf166b4e4c4693bd64bb9ea1e2af7d71a087657605b9e4d38882f196681501` ; dépendances de contenu (plages) : `astra.fps` [2.1.0, 3.0.0).
+
 ## Catalogue `gameplay-v26` : contrat Content Hub V2
 
 Contrat `schemaVersion: 2` : les dépendances de contenu sont des plages de versions (`minimumVersion` inclus, `maximumVersionExclusive` exclu). Contenu inchangé : seul `pack.json` (métadonnées) change, d'où un patch. Requiert le framework à partir du tag `framework-game-2026-10-19` (modèle Core : `framework-core-2026-10-19`) ; un Hub plus ancien ne lit pas ce catalogue.

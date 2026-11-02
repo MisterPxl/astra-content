@@ -1,6 +1,32 @@
 # Adventure
 
-Deux entrées de catalogue pour un jeu d'action-aventure à la troisième personne.
+Deux entrées de catalogue pour un jeu d'action-aventure à la troisième personne, et deux ponts
+(catégorie `Bridges`) vers Dialogue et Quests.
+
+## Catalogue `gameplay-v30` : framework 3.0.0
+
+Requiert le framework à partir du tag `framework-game-2026-11-02` (modèle Core :
+`framework-core-2026-11-02`), garanti par le prérequis de capacité `astra-framework` [3.0.0, 4.0.0) :
+le Hub refuse l'import sur un framework 2.x, pour lequel la 2.0.2 reste listée. Les retours de gameplay
+passent par le package Pulse (`com.misterpxl.pulse` [1.0.0, 2.0.0), tag `v1.0.0`), à déclarer dans le
+manifeste du projet.
+
+- `astra.adventure` **2.1.0** : release `adventure-v2.1.0`, 223 fichiers, 16038633 octets, SHA-256 `a65f07d5ee8a152ea5263205c0a37a19058e699b9cfe3fd3f5b9e3439ae6ab64` ; dépendances de contenu (plages) : aucune.
+- `astra.template.adventure` **2.1.0** : release `template-adventure-v2.1.0`, 60 fichiers, 129419 octets, SHA-256 `45afccaf500eb456839d99a211e6a07af1f09605157183d0e63ab18226dd9ec5` ; dépendances de contenu (plages) : `astra.adventure` [2.1.0, 3.0.0).
+- `astra.adventure.dialogue` **1.0.0** (nouveau, `Bridges`) : release `adventure-dialogue-v1.0.0`, 16 fichiers, 11877 octets, SHA-256 `72e33eb17a2e13ceed5a11698aaa84f53fd3610c606a05f2340fae9d6967c5b8` ; dépendances de contenu (plages) : `astra.adventure` [2.1.0, 3.0.0), `astra.dialogue` [0.1.5, 0.2.0).
+- `astra.adventure.quests` **1.0.0** (nouveau, `Bridges`) : release `adventure-quests-v1.0.0`, 20 fichiers, 13853 octets, SHA-256 `4ad30fe64b3ace2db8a5ec5c39601b3b6ec3ceb6bdd3c09e80e69b1cf1c10f47` ; dépendances de contenu (plages) : `astra.adventure` [2.1.0, 3.0.0), `astra.quests` [2.1.0, 3.0.0).
+
+Le pont vers l'IA, `astra.adventure.ai`, est décrit sur la page [AI](../ai/README.md).
+
+- **`astra.adventure.dialogue`** : une zone de déclenchement (`AdventureDialogueZone`, option `Once`)
+  ou un objet interactif (`AdventureDialogueInteractable`, à portée d'interaction du héros) lance une
+  conversation d'un `DialogueRunner`. Pendant la conversation, le héros est figé et le curseur libéré ;
+  à la fin (complétée, annulée ou en échec), contrôle et curseur reviennent à leur état d'avant. Une
+  référence manquante est une erreur explicite.
+- **`astra.adventure.quests`** : `AdventureQuestSignalZone` (entrée du héros dans un trigger),
+  `AdventureQuestTargetReporter` (coups portés, à l'épée ou à l'arc) et `AdventureQuestRunObserver`
+  (fin de run réussie ou échouée) lèvent un signal et/ou alimentent une stat de la progression. Les
+  composants sont visibles par les règles Aegis de Quests (signal non orphelin, stat alimentée).
 
 ## Catalogue `gameplay-v26` : contrat Content Hub V2
 

@@ -16,16 +16,36 @@ les archives uniquement à la demande et installe les fichiers éditables sous
 
 ## État du catalogue
 
-**[Tactics 1.0.0](packs/tactics/README.md)** (`astra.tactics` et `astra.template.tactics`) :
-RPG tactique déterministe, éditeur de cartes, démo autonome et campagne de trois chapitres,
-avec préparation, sauvegarde/Continue et contenu original en primitives.
+Révision `gameplay-v30` (2 novembre 2026) : les packs qui dépendent du framework Astra en demandent
+la version 3.0.0 (tag `framework-game-2026-11-02`, modèle Core `framework-core-2026-11-02`) et
+utilisent les packages [Echo](https://github.com/MisterPxl/Echo) (audio) et
+[Pulse](https://github.com/MisterPxl/Pulse) (retours de gameplay) 1.0.0. Les versions pour le
+framework 2.x restent listées ; le Hub refuse d'importer une version dont le prérequis
+`astra-framework` n'est pas satisfait.
 
-**[Adventure 2.0.2](packs/adventure/README.md)** (`astra.adventure`) regroupe un
+**[Tactics 2.2.0](packs/tactics/README.md)** (`astra.tactics` et `astra.template.tactics`) :
+RPG tactique déterministe, Tactics Studio (éditeur de chapitres), démo autonome et campagne de trois
+chapitres, avec préparation, sauvegarde/Continue et contenu original en primitives.
+
+**[AI Decision & Perception 1.0.0](packs/ai/README.md)** (`astra.ai`) : moteur de décision
+déterministe en C# pur (états hiérarchiques, Utility AI, séquences, blackboard typé, perception),
+avec sauvegarde, HUD, commandes de debug, simulateur et règles Aegis. Ses ponts
+`astra.adventure.ai` (ennemis Adventure) et `astra.ai.quests` (signaux et objectifs de quête) sont
+dans la catégorie **Bridges**.
+
+**[Inventory 1.0.0](packs/inventory/README.md)** (`astra.inventory`) : inventaire, équipement,
+fabrication et tables de loot pilotés par les données, avec sauvegarde, HUD et règles Aegis. Ses
+ponts `astra.inventory.quests` et `astra.inventory.dialogue` relient l'inventaire aux quêtes et aux
+conversations.
+
+**[Adventure 2.1.0](packs/adventure/README.md)** (`astra.adventure`) regroupe un
 contrôleur action-aventure, Input System et une démo humanoïde animée avec caméra,
 escalade, épée et arc, avec depuis la 1.1.0 un pont vers le framework Astra
 (`Adventure.Astra`). Il est livré avec son **template de genre**
-(`astra.template.adventure` 2.0.2, catégorie **Templates**) : parcours de démarrage et HUD
-cœurs, roue d'endurance et réticule d'arc. La 1.0.0 reste disponible hors framework. Le code et
+(`astra.template.adventure` 2.1.0, catégorie **Templates**) : parcours de démarrage et HUD
+cœurs, roue d'endurance et réticule d'arc. Ses ponts `astra.adventure.dialogue` et
+`astra.adventure.quests` (catégorie **Bridges**) lancent des conversations et alimentent la
+progression depuis le jeu. Le code et
 la démo Astra sont distribués sous **licence MIT** ; les modèles, textures et animations
 Quaternius conservent leurs notices **CC0-1.0**.
 
@@ -35,10 +55,10 @@ actions extensibles, des échanges XLSX à comparaison à trois versions, une pr
 UI Toolkit et la démo du verger. Code et démo distribués sous **licence MIT** ; indifférent
 au pipeline de rendu, sans Input System.
 
-**[Quests & Achievements 2.0.1](packs/quests/README.md)** (`astra.quests`) apporte des quêtes
+**[Quests & Achievements 2.1.0](packs/quests/README.md)** (`astra.quests`) apporte des quêtes
 et des succès pilotés par les données (signaux, stats, conditions, récompenses, quêtes
 chronométrées, paliers), avec journal, galerie, suivi HUD et règles Aegis. Son pont
-**[Quests ↔ Dialogue 1.2.1](packs/quests-dialogue/README.md)** (`astra.quests.dialogue`,
+**[Quests ↔ Dialogue 1.3.0](packs/quests-dialogue/README.md)** (`astra.quests.dialogue`,
 catégorie **Bridges**) relie la progression aux conversations d'Astra Dialogue : conditions,
 actions et objectifs de dialogue. Code sous **licence MIT**, sans asset tiers.
 
@@ -52,10 +72,10 @@ voitures, bateaux, avions légers et jets de MotionTest, avec leurs variantes
 arcade : huit prefabs, trois scènes, physique, clavier/manette, caméra et télémétrie.
 Le code et les modèles procéduraux sont distribués sous **licence MIT**.
 
-**[Match3 4.0.1](packs/match3/README.md)** (`astra.match3`), **[Melee 4.0.1](packs/melee/README.md)**
-(`astra.melee`), **[FPS 2.0.1](packs/fps/README.md)** (`astra.fps`),
-**[Deckbuilder 3.0.1](packs/deckbuilder/README.md)** (`astra.deckbuilder`) et
-**[Shmup 1.1.2](packs/shmup/README.md)** (`astra.shmup`) sont des packs de gameplay
+**[Match3 4.1.0](packs/match3/README.md)** (`astra.match3`), **[Melee 4.1.0](packs/melee/README.md)**
+(`astra.melee`), **[FPS 2.1.0](packs/fps/README.md)** (`astra.fps`),
+**[Deckbuilder 3.1.0](packs/deckbuilder/README.md)** (`astra.deckbuilder`) et
+**[Shmup 1.2.0](packs/shmup/README.md)** (`astra.shmup`) sont des packs de gameplay
 livrés avec leur **template de genre** (`astra.template.match3`, `astra.template.melee`,
 `astra.template.fps`, `astra.template.deckbuilder`, `astra.template.shmup`), publiés dans la catégorie **Templates** du Hub : le template tire son pack
 de gameplay, puis Astra Setup applique sa composition. Code et contenu sous **licence MIT** ; les

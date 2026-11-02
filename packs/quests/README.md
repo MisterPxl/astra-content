@@ -1,8 +1,21 @@
 # Quests & Achievements
 
-Pack public `astra.quests` **2.0.1** (catégorie `Gameplay`) : quêtes et succès pilotés par les
+Pack public `astra.quests` **2.1.0** (catégorie `Gameplay`) : quêtes et succès pilotés par les
 données, pour n'importe quel jeu Astra. Le contenu est fait de ScriptableObjects ; le jeu lève
 des signaux, remonte des stats et peut remplacer les vues par défaut.
+
+## Catalogue `gameplay-v30` : framework 3.0.0
+
+Requiert le framework à partir du tag `framework-game-2026-11-02` (modèle Core :
+`framework-core-2026-11-02`), garanti par le prérequis de capacité `astra-framework` [3.0.0, 4.0.0) :
+le Hub refuse l'import sur un framework 2.x, pour lequel la 2.0.1 reste listée. Seul le message
+d'erreur d'un `QuestsHudValuesAsset` incomplet change : il désigne le champ `QuestsModule.HudValues`.
+
+- `astra.quests` **2.1.0** : release `quests-v2.1.0`, 330 fichiers, 234738 octets, SHA-256 `c86d550708af5b85501c52f2f54b08b6e0c021f5f260a4ac1cd053442bc0d5cd` ; dépendances de contenu (plages) : aucune.
+
+Ponts disponibles : [Quests ↔ Dialogue](../quests-dialogue/README.md), `astra.adventure.quests`
+([Adventure](../adventure/README.md)), `astra.ai.quests` ([AI](../ai/README.md)) et
+`astra.inventory.quests` ([Inventory](../inventory/README.md)).
 
 ## Catalogue `gameplay-v26` : contrat Content Hub V2
 

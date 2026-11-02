@@ -1,8 +1,17 @@
 # Quests ↔ Dialogue
 
-Pack public `astra.quests.dialogue` **1.2.1** (catégorie `Bridges`) : le pont entre la
+Pack public `astra.quests.dialogue` **1.3.0** (catégorie `Bridges`) : le pont entre la
 progression de [Quests & Achievements](../quests/README.md) et les conversations d'
 [Astra Dialogue](../dialogue/README.md). Il ne contient aucun contenu de jeu.
+
+## Catalogue `gameplay-v30` : framework 3.0.0
+
+Requiert le framework à partir du tag `framework-game-2026-11-02` (modèle Core :
+`framework-core-2026-11-02`), garanti par le prérequis de capacité `astra-framework` [3.0.0, 4.0.0) :
+le Hub refuse l'import sur un framework 2.x, pour lequel la 1.2.1 reste listée. Contenu inchangé ;
+la dépendance passe à `astra.quests` 2.1.0, la version installable sur le framework 3.0.0.
+
+- `astra.quests.dialogue` **1.3.0** : release `quests-dialogue-v1.3.0`, 36 fichiers, 23586 octets, SHA-256 `91d5a09566f21642925b7f19371d40ad7876075fbf85ccb2c8c979508fcb0145` ; dépendances de contenu (plages) : `astra.quests` [2.1.0, 3.0.0), `astra.dialogue` [0.1.5, 0.2.0).
 
 ## Catalogue `gameplay-v26` : contrat Content Hub V2
 

@@ -2,6 +2,17 @@
 
 Deux entrées de catalogue pour un platform fighter local de deux à quatre joueurs.
 
+## Catalogue `gameplay-v30` : framework 3.0.0
+
+Requiert le framework à partir du tag `framework-game-2026-11-02` (modèle Core :
+`framework-core-2026-11-02`), garanti par le prérequis de capacité `astra-framework` [3.0.0, 4.0.0) :
+le Hub refuse l'import sur un framework 2.x, pour lequel la 4.0.1 reste listée. Les retours de gameplay
+passent par le package Pulse (`com.misterpxl.pulse` [1.0.0, 2.0.0), tag `v1.0.0`), à déclarer dans le
+manifeste du projet. Les spawns n'utilisent plus `SpawnCategory`, retiré du framework.
+
+- `astra.melee` **4.1.0** : release `melee-v4.1.0`, 111 fichiers, 118478 octets, SHA-256 `bf83e7aa98f9c5bb73cbb4176640ae2d3bcad1fa47744994624322ad0304bec0` ; dépendances de contenu (plages) : aucune.
+- `astra.template.melee` **4.1.0** : release `template-melee-v4.1.0`, 237 fichiers, 6998590 octets, SHA-256 `e52d4b2a19c31dc3cc354f6aeb76a1c481e8d2d202f7682b6fe5a6d211ddb224` ; dépendances de contenu (plages) : `astra.melee` [4.1.0, 5.0.0).
+
 ## Catalogue `gameplay-v26` : contrat Content Hub V2
 
 Contrat `schemaVersion: 2` : les dépendances de contenu sont des plages de versions (`minimumVersion` inclus, `maximumVersionExclusive` exclu). Contenu inchangé : seul `pack.json` (métadonnées) change, d'où un patch. Requiert le framework à partir du tag `framework-game-2026-10-19` (modèle Core : `framework-core-2026-10-19`) ; un Hub plus ancien ne lit pas ce catalogue.

@@ -2,6 +2,17 @@
 
 Deux entrées de catalogue pour un roguelite deckbuilder solo, entièrement en UI.
 
+## Catalogue `gameplay-v30` : framework 3.0.0
+
+Requiert le framework à partir du tag `framework-game-2026-11-02` (modèle Core :
+`framework-core-2026-11-02`), garanti par le prérequis de capacité `astra-framework` [3.0.0, 4.0.0) :
+le Hub refuse l'import sur un framework 2.x, pour lequel la 3.0.1 reste listée. Les retours de gameplay
+passent par le package Pulse (`com.misterpxl.pulse` [1.0.0, 2.0.0), tag `v1.0.0`), à déclarer dans le
+manifeste du projet.
+
+- `astra.deckbuilder` **3.1.0** : release `deckbuilder-v3.1.0`, 333 fichiers, 227504 octets, SHA-256 `d5f1c47ca52f0aa0dbf6345a343df7dc149ec0e35b5fa6f2d29d06c6efe6dfc0` ; dépendances de contenu (plages) : aucune.
+- `astra.template.deckbuilder` **3.1.0** : release `template-deckbuilder-v3.1.0`, 173 fichiers, 158809 octets, SHA-256 `1863d8ce8f3a0ee9fb7c0651d486050e5563520acb04413a456f855367816ff5` ; dépendances de contenu (plages) : `astra.deckbuilder` [3.1.0, 4.0.0).
+
 ## Catalogue `gameplay-v26` : contrat Content Hub V2
 
 Contrat `schemaVersion: 2` : les dépendances de contenu sont des plages de versions (`minimumVersion` inclus, `maximumVersionExclusive` exclu). Contenu inchangé : seul `pack.json` (métadonnées) change, d'où un patch. Requiert le framework à partir du tag `framework-game-2026-10-19` (modèle Core : `framework-core-2026-10-19`) ; un Hub plus ancien ne lit pas ce catalogue.

@@ -2,6 +2,17 @@
 
 Deux entrées de catalogue pour un puzzle match-3 tactile.
 
+## Catalogue `gameplay-v30` : framework 3.0.0
+
+Requiert le framework à partir du tag `framework-game-2026-11-02` (modèle Core :
+`framework-core-2026-11-02`), garanti par le prérequis de capacité `astra-framework` [3.0.0, 4.0.0) :
+le Hub refuse l'import sur un framework 2.x, pour lequel la 4.0.1 reste listée. Les retours de gameplay
+passent par le package Pulse (`com.misterpxl.pulse` [1.0.0, 2.0.0), tag `v1.0.0`), à déclarer dans le
+manifeste du projet.
+
+- `astra.match3` **4.1.0** : release `match3-v4.1.0`, 151 fichiers, 97444 octets, SHA-256 `ad7216c889bdd553566916f4d59996bc2f2b23dda1cf950b272046e376754086` ; dépendances de contenu (plages) : aucune.
+- `astra.template.match3` **4.1.0** : release `template-match3-v4.1.0`, 67 fichiers, 52064 octets, SHA-256 `ce360cbdc415d43778432f4bb9a9da406142408d6a1afbb72665422ca79d45f1` ; dépendances de contenu (plages) : `astra.match3` [4.1.0, 5.0.0).
+
 ## Catalogue `gameplay-v26` : contrat Content Hub V2
 
 Contrat `schemaVersion: 2` : les dépendances de contenu sont des plages de versions (`minimumVersion` inclus, `maximumVersionExclusive` exclu). Contenu inchangé : seul `pack.json` (métadonnées) change, d'où un patch. Requiert le framework à partir du tag `framework-game-2026-10-19` (modèle Core : `framework-core-2026-10-19`) ; un Hub plus ancien ne lit pas ce catalogue.

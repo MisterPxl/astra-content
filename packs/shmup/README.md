@@ -2,6 +2,19 @@
 
 Deux entrées de catalogue pour un shoot'em up horizontal, solo ou en coopération locale à deux joueurs.
 
+## Catalogue `gameplay-v30` : framework 3.0.0
+
+Requiert le framework à partir du tag `framework-game-2026-11-02` (modèle Core :
+`framework-core-2026-11-02`), garanti par le prérequis de capacité `astra-framework` [3.0.0, 4.0.0) :
+le Hub refuse l'import sur un framework 2.x, pour lequel la 1.1.2 reste listée. Les retours de gameplay
+passent par le package Pulse (`com.misterpxl.pulse` [1.0.0, 2.0.0), tag `v1.0.0`), à déclarer dans le
+manifeste du projet. Les spawns n'utilisent plus `SpawnCategory`, retiré du framework : la fabrique
+poolée du pack reconnaît ses objets par marqueur de prefab. Les étincelles reçoivent leur durée de vie
+dès leur premier tick : elles disparaissent et sont réutilisées.
+
+- `astra.shmup` **1.2.0** : release `shmup-v1.2.0`, 104 fichiers, 63580 octets, SHA-256 `3dc8559680d691ac8d02177abc374e225ae6c12571453137f78604c78c068cd3` ; dépendances de contenu (plages) : aucune.
+- `astra.template.shmup` **1.2.0** : release `template-shmup-v1.2.0`, 107 fichiers, 114486 octets, SHA-256 `b7ce5373df99283799fcc0edf35df04e31307b29b3fd9c6c9484a47b8950cf23` ; dépendances de contenu (plages) : `astra.shmup` [1.2.0, 2.0.0).
+
 ## Catalogue `gameplay-v26` : contrat Content Hub V2
 
 Contrat `schemaVersion: 2` : les dépendances de contenu sont des plages de versions (`minimumVersion` inclus, `maximumVersionExclusive` exclu). Contenu inchangé : seul `pack.json` (métadonnées) change, d'où un patch. Requiert le framework à partir du tag `framework-game-2026-10-19` (modèle Core : `framework-core-2026-10-19`) ; un Hub plus ancien ne lit pas ce catalogue.
