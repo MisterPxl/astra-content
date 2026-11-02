@@ -1,0 +1,114 @@
+{
+    "schemaVersion": 2,
+    "packs": [
+        {
+            "id": "astra.quests.dialogue",
+            "displayName": "Quests \u2194 Dialogue Bridge",
+            "description": "Dialogue et progression : objectifs Conversation termin\u00e9e et Choix pris ; conditions de qu\u00eate, stats et succ\u00e8s ; actions accepter, proposer, rendre, \u00e9chouer, signal et r\u00e9compenses ; provider Astra pour DialogueRunner et preview \u00e9diteur.",
+            "category": "Bridges",
+            "recommendedVersion": "1.3.0",
+            "manifestUrl": "https://raw.githubusercontent.com/MisterPxl/astra-content/main/manifests/astra.quests.dialogue/1.3.0.json",
+            "manifestSha256": "cc726220a751db787643c594b9643cd7fd10e28479d35da2ba82d5de0b5603d9",
+            "tags": [
+                "bridge",
+                "quests",
+                "dialogue"
+            ],
+            "compressedBytes": 23586
+        },
+        {
+            "id": "astra.adventure.ai",
+            "displayName": "Adventure AI",
+            "description": "Ennemis Adventure pilot\u00e9s par astra.ai : perception, patrouille, poursuite, \u00e9p\u00e9e, arc et signaux de d\u00e9faite. R\u00e9f\u00e9rences explicites, sans recherche de sc\u00e8ne.",
+            "category": "Bridges",
+            "recommendedVersion": "1.0.0",
+            "manifestUrl": "https://raw.githubusercontent.com/MisterPxl/astra-content/main/manifests/astra.adventure.ai/1.0.0.json",
+            "manifestSha256": "221e84d0bf9396d5e7b22ff40596b6ac03b2f8e24761ca1314b591dea65ce97f",
+            "tags": [
+                "ai",
+                "adventure",
+                "enemies",
+                "combat"
+            ],
+            "compressedBytes": 14122
+        },
+        {
+            "id": "astra.ai.quests",
+            "displayName": "AI Quests Bridge",
+            "description": "Signaux et \u00e9tats IA reli\u00e9s \u00e0 la progression : vaincre des agents, \u00e9viter la d\u00e9tection, conditions d'\u00e9tat et compteurs de statistiques.",
+            "category": "Bridges",
+            "recommendedVersion": "1.0.0",
+            "manifestUrl": "https://raw.githubusercontent.com/MisterPxl/astra-content/main/manifests/astra.ai.quests/1.0.0.json",
+            "manifestSha256": "1b61bcf44fe0ada5246c95f72b5922a8813bb87b1103e611877090d2d2a26b4d",
+            "tags": [
+                "ai",
+                "quests",
+                "progression",
+                "stealth"
+            ],
+            "compressedBytes": 16308
+        },
+        {
+            "id": "astra.inventory.quests",
+            "displayName": "Inventory \u2194 Quests Bridge",
+            "description": "Inventaire et progression : objectifs Collecter, Fabriquer et \u00c9quiper ; conditions Poss\u00e8de et \u00c9quip\u00e9 ; r\u00e9compenses objet et table de loot ; observer qui transforme chaque changement d'inventaire en signaux de qu\u00eate et en stats ; module Astra qui relie IInventoryService \u00e0 IProgression.",
+            "category": "Bridges",
+            "recommendedVersion": "1.0.0",
+            "manifestUrl": "https://raw.githubusercontent.com/MisterPxl/astra-content/main/manifests/astra.inventory.quests/1.0.0.json",
+            "manifestSha256": "5c694801a831ee847a6f03102d2977c016a697b08c104a6ce26b692dcf19a8e9",
+            "tags": [
+                "bridge",
+                "inventory",
+                "quests",
+                "progression"
+            ],
+            "compressedBytes": 26108
+        },
+        {
+            "id": "astra.inventory.dialogue",
+            "displayName": "Inventory \u2194 Dialogue Bridge",
+            "description": "Inventaire et dialogue : conditions Poss\u00e8de, Argent, \u00c9quip\u00e9 et Peut fabriquer ; actions donner, prendre, modifier l'argent et tirer une table de loot ; provider Astra qui expose l'inventaire de l'application \u00e0 un DialogueRunner.",
+            "category": "Bridges",
+            "recommendedVersion": "1.0.0",
+            "manifestUrl": "https://raw.githubusercontent.com/MisterPxl/astra-content/main/manifests/astra.inventory.dialogue/1.0.0.json",
+            "manifestSha256": "c38ff4514d34bf94b343d35f372728824e648d434a6374489bcbdfc51463a380",
+            "tags": [
+                "bridge",
+                "inventory",
+                "dialogue"
+            ],
+            "compressedBytes": 13643
+        },
+        {
+            "id": "astra.adventure.dialogue",
+            "displayName": "Adventure \u2194 Dialogue Bridge",
+            "description": "Aventure et dialogue : zone de d\u00e9clenchement et objet interactif qui lancent une conversation, figent le h\u00e9ros et lib\u00e8rent le curseur pendant qu'elle dure, puis rendent la main \u00e0 la fin.",
+            "category": "Bridges",
+            "recommendedVersion": "1.0.0",
+            "manifestUrl": "https://raw.githubusercontent.com/MisterPxl/astra-content/main/manifests/astra.adventure.dialogue/1.0.0.json",
+            "manifestSha256": "ee2a2aeae4c9dfbef4ac83e3a76d4ef585111cad55f36449ce9cd24f34f6d4a9",
+            "tags": [
+                "bridge",
+                "adventure",
+                "dialogue"
+            ],
+            "compressedBytes": 11877
+        },
+        {
+            "id": "astra.adventure.quests",
+            "displayName": "Adventure \u2194 Quests Bridge",
+            "description": "Aventure et qu\u00eates : zone qui signale l'entr\u00e9e du h\u00e9ros, rapporteur de coups port\u00e9s et observateur de fin de run, qui l\u00e8vent un signal et/ou alimentent une stat de la progression.",
+            "category": "Bridges",
+            "recommendedVersion": "1.0.0",
+            "manifestUrl": "https://raw.githubusercontent.com/MisterPxl/astra-content/main/manifests/astra.adventure.quests/1.0.0.json",
+            "manifestSha256": "da28880993c222808499b25c04fc2d8d8af2419d0d9aa9988bb4be156b2e9b97",
+            "tags": [
+                "bridge",
+                "adventure",
+                "quests",
+                "progression"
+            ],
+            "compressedBytes": 13853
+        }
+    ]
+}

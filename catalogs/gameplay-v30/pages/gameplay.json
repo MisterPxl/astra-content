@@ -1,0 +1,261 @@
+{
+    "schemaVersion": 2,
+    "packs": [
+        {
+            "id": "astra.adventure",
+            "displayName": "Adventure",
+            "description": "Contr\u00f4leur action-aventure, inputs clavier/manette et d\u00e9mo humano\u00efde anim\u00e9e avec cam\u00e9ra, escalade, \u00e9p\u00e9e et arc.",
+            "category": "Gameplay",
+            "recommendedVersion": "2.1.0",
+            "manifestUrl": "https://raw.githubusercontent.com/MisterPxl/astra-content/main/manifests/astra.adventure/2.1.0.json",
+            "manifestSha256": "1a84cac67af3165373b481dfc2e45981adfce93c0d91f6cc904638428ebd28a1",
+            "tags": [
+                "controller",
+                "character",
+                "animation",
+                "demo",
+                "urp"
+            ],
+            "compressedBytes": 16038633,
+            "thumbnail": {
+                "url": "https://raw.githubusercontent.com/MisterPxl/astra-content/main/thumbnails/astra.adventure/icon.png",
+                "sha256": "0574f4b2c26afff4a6e180d9a07dbc4a2427d0ce35363c01927dcdce7f78322e",
+                "bytes": 150095
+            }
+        },
+        {
+            "id": "astra.dialogue",
+            "displayName": "Astra Dialogue",
+            "description": "\u00c9diteur de conversations \u00e0 bulles, conditions de jeu extensibles, \u00e9changes Excel et pr\u00e9sentation chaleureuse avec d\u00e9mo au verger.",
+            "category": "Gameplay",
+            "recommendedVersion": "0.1.5",
+            "manifestUrl": "https://raw.githubusercontent.com/MisterPxl/astra-content/main/manifests/astra.dialogue/0.1.5.json",
+            "manifestSha256": "8986a5220a1a8d872e8fdbb08afa739077094bad9f134bd1e812176ef033a30b",
+            "tags": [
+                "dialogue",
+                "narrative",
+                "editor",
+                "conditions",
+                "xlsx"
+            ],
+            "compressedBytes": 96463,
+            "thumbnail": {
+                "url": "https://raw.githubusercontent.com/MisterPxl/astra-content/main/thumbnails/astra.dialogue/icon.png",
+                "sha256": "21f153795f03dcee380f0bf79a747879206f3bdffb86ab247d0aba5a6ca8614b",
+                "bytes": 51392
+            }
+        },
+        {
+            "id": "astra.vehicles",
+            "displayName": "Vehicles",
+            "description": "Voitures, bateaux, avions l\u00e9gers et jets : physique, variantes arcade, clavier/manette, cam\u00e9ra, t\u00e9l\u00e9m\u00e9trie et d\u00e9mos \u00e9ditables.",
+            "category": "Gameplay",
+            "recommendedVersion": "1.0.1",
+            "manifestUrl": "https://raw.githubusercontent.com/MisterPxl/astra-content/main/manifests/astra.vehicles/1.0.1.json",
+            "manifestSha256": "628774c48b6f62b3373ddc5378364efa2993558697ec25fb6fc45b29dd44dfd0",
+            "tags": [
+                "vehicles",
+                "car",
+                "boat",
+                "plane",
+                "arcade",
+                "physics",
+                "demo",
+                "urp"
+            ],
+            "compressedBytes": 233879,
+            "thumbnail": {
+                "url": "https://raw.githubusercontent.com/MisterPxl/astra-content/main/thumbnails/astra.vehicles/icon.png",
+                "sha256": "597d0a9738deb8b717518f6b1b37a1cdba89373044d205b1d404803384ac3b31",
+                "bytes": 146386
+            }
+        },
+        {
+            "id": "astra.match3",
+            "displayName": "Match3",
+            "description": "R\u00e8gles, plateau et scoring d'un puzzle match-3 tactile, en C# pur et test\u00e9, pr\u00eat \u00e0 \u00eatre branch\u00e9 au framework par un template.",
+            "category": "Gameplay",
+            "recommendedVersion": "4.1.0",
+            "manifestUrl": "https://raw.githubusercontent.com/MisterPxl/astra-content/main/manifests/astra.match3/4.1.0.json",
+            "manifestSha256": "99893859a88232a5b822ef8b6673ed6d6ca76633ed445672d29783917d80b8ee",
+            "tags": [
+                "puzzle",
+                "match3",
+                "mobile",
+                "touch"
+            ],
+            "compressedBytes": 97444,
+            "thumbnail": {
+                "url": "https://raw.githubusercontent.com/MisterPxl/astra-content/main/thumbnails/astra.match3/icon.png",
+                "sha256": "4ca87f179a6a994066ab96efb993330a6784b9419da971f2a552d1b2195b5593",
+                "bytes": 102960
+            }
+        },
+        {
+            "id": "astra.melee",
+            "displayName": "Melee",
+            "description": "Simulation d\u00e9terministe et vues Unity pour un platform fighter local, avec int\u00e9gration au framework Astra.",
+            "category": "Gameplay",
+            "recommendedVersion": "4.1.0",
+            "manifestUrl": "https://raw.githubusercontent.com/MisterPxl/astra-content/main/manifests/astra.melee/4.1.0.json",
+            "manifestSha256": "66bec9cf67fc9af2958cd4bc6ca52a4da5d795f9e5904ae590ddb9c73c3f7d2e",
+            "tags": [
+                "melee",
+                "platform-fighter",
+                "local-multiplayer"
+            ],
+            "compressedBytes": 118478,
+            "thumbnail": {
+                "url": "https://raw.githubusercontent.com/MisterPxl/astra-content/main/thumbnails/astra.melee/icon.png",
+                "sha256": "70b7c17bc8ea25ebfbae2073c411be9feb4ef6b715f2ba9bbf42f5659c7b66bf",
+                "bytes": 116721
+            }
+        },
+        {
+            "id": "astra.fps",
+            "displayName": "FPS",
+            "description": "Simulation FPS (armes, sant\u00e9, modes, bots), vues Unity et int\u00e9gration au framework Astra.",
+            "category": "Gameplay",
+            "recommendedVersion": "2.1.0",
+            "manifestUrl": "https://raw.githubusercontent.com/MisterPxl/astra-content/main/manifests/astra.fps/2.1.0.json",
+            "manifestSha256": "95c38960c30a0ddadb0891f3d13a166b5dd845b54f557fa27e70168831a651a1",
+            "tags": [
+                "fps",
+                "shooter",
+                "mw2-style"
+            ],
+            "compressedBytes": 100313,
+            "thumbnail": {
+                "url": "https://raw.githubusercontent.com/MisterPxl/astra-content/main/thumbnails/astra.fps/icon.png",
+                "sha256": "ad60a4e9123b3272f74f516d8c67cf58452056294d2058898896ff80f49f455c",
+                "bytes": 122870
+            }
+        },
+        {
+            "id": "astra.deckbuilder",
+            "displayName": "Deckbuilder",
+            "description": "Simulation de run et de combat au tour pour un deckbuilder roguelite, pr\u00e9sentation Unity UI et int\u00e9gration au framework Astra.",
+            "category": "Gameplay",
+            "recommendedVersion": "3.1.0",
+            "manifestUrl": "https://raw.githubusercontent.com/MisterPxl/astra-content/main/manifests/astra.deckbuilder/3.1.0.json",
+            "manifestSha256": "991bca21b0149f76703dd1020191791e81af3cf497ced7320107b75e0467a245",
+            "tags": [
+                "deckbuilder",
+                "cards",
+                "roguelite",
+                "turn-based",
+                "mobile",
+                "touch"
+            ],
+            "compressedBytes": 227504,
+            "thumbnail": {
+                "url": "https://raw.githubusercontent.com/MisterPxl/astra-content/main/thumbnails/astra.deckbuilder/icon.png",
+                "sha256": "6f909024a48c3b786cc605b835adbd6dc9d174ebd8335edac51af4770d7ac11e",
+                "bytes": 143662
+            }
+        },
+        {
+            "id": "astra.softbody",
+            "displayName": "Soft Body 2D & 3D",
+            "description": "Simulation XPBD 2D et 3D, gel\u00e9e, ballons et plasticit\u00e9, pr\u00e9paration de sprites/meshes, contacts, d\u00e9coupe libre et profils de simulation PC.",
+            "category": "Gameplay",
+            "recommendedVersion": "0.3.1",
+            "manifestUrl": "https://raw.githubusercontent.com/MisterPxl/astra-content/main/manifests/astra.softbody/0.3.1.json",
+            "manifestSha256": "709f6154e33a53f137cf93d7f23a13c8604af329a87221df494e4fd8a3d675bc",
+            "tags": [
+                "soft-body",
+                "physics",
+                "2d",
+                "3d",
+                "jelly",
+                "balloon",
+                "destruction"
+            ],
+            "compressedBytes": 238302
+        },
+        {
+            "id": "astra.quests",
+            "displayName": "Quests & Achievements",
+            "description": "Qu\u00eates et achievements data-driven (signaux, stats, conditions, r\u00e9compenses, qu\u00eates chronom\u00e9tr\u00e9es et quotidiennes, paliers, plateformes) : Core pur, assets Unity, modules Astra avec journal, galerie, suivi HUD et toast rempla\u00e7ables.",
+            "category": "Gameplay",
+            "recommendedVersion": "2.1.0",
+            "manifestUrl": "https://raw.githubusercontent.com/MisterPxl/astra-content/main/manifests/astra.quests/2.1.0.json",
+            "manifestSha256": "c2f73564339d39103c9feb21120cebbc93a447a0f8a52ecd6912f716970783c4",
+            "tags": [
+                "quests",
+                "achievements",
+                "progression",
+                "meta"
+            ],
+            "compressedBytes": 234738
+        },
+        {
+            "id": "astra.shmup",
+            "displayName": "Shmup",
+            "description": "Simulation 60 Hz et vues Unity pour un shoot'em up horizontal solo ou coop locale, avec int\u00e9gration au framework Astra.",
+            "category": "Gameplay",
+            "recommendedVersion": "1.2.0",
+            "manifestUrl": "https://raw.githubusercontent.com/MisterPxl/astra-content/main/manifests/astra.shmup/1.2.0.json",
+            "manifestSha256": "0c65c5f4fda4f3ac778806605bbf19c16f8e1c262fa849f380479f614922e627",
+            "tags": [
+                "shmup",
+                "shoot-em-up",
+                "local-multiplayer",
+                "2d"
+            ],
+            "compressedBytes": 63580
+        },
+        {
+            "id": "astra.tactics",
+            "displayName": "Tactics",
+            "description": "Deterministic square-grid tactical RPG simulation, Unity authoring and Astra integration.",
+            "category": "Gameplay",
+            "recommendedVersion": "2.2.0",
+            "manifestUrl": "https://raw.githubusercontent.com/MisterPxl/astra-content/main/manifests/astra.tactics/2.2.0.json",
+            "manifestSha256": "c1534d610ddc4919047722c7b81b168772e702aaf447b49b9a120bf4b301a344",
+            "tags": [
+                "tactics",
+                "grid",
+                "turn-based"
+            ],
+            "compressedBytes": 337190
+        },
+        {
+            "id": "astra.ai",
+            "displayName": "AI Decision & Perception (HFSM + Utility AI)",
+            "description": "Moteur IA d\u00e9terministe en C# pur : \u00e9tats, Utility AI, s\u00e9quences, blackboard typ\u00e9 et perception. Authoring polymorphe, sauvegarde, HUD, commandes de debug, simulateur et r\u00e8gles Aegis.",
+            "category": "Gameplay",
+            "recommendedVersion": "1.0.0",
+            "manifestUrl": "https://raw.githubusercontent.com/MisterPxl/astra-content/main/manifests/astra.ai/1.0.0.json",
+            "manifestSha256": "b6d338eac2a89e4a4c16833c5e163d6d752a5b7c8174e5a6c605c502462af556",
+            "tags": [
+                "ai",
+                "utility-ai",
+                "fsm",
+                "blackboard",
+                "perception",
+                "stealth",
+                "combat"
+            ],
+            "compressedBytes": 90545
+        },
+        {
+            "id": "astra.inventory",
+            "displayName": "Inventory, Equipment & Crafting",
+            "description": "Inventaire data-driven (piles, poids, conteneurs, \u00e9quipement par slots typ\u00e9s, tables de loot pond\u00e9r\u00e9es, recettes de craft) : Core C# pur d\u00e9terministe, assets Unity ouverts, module Astra avec sauvegarde, valeurs de HUD, vues UGUI et r\u00e8gles Aegis.",
+            "category": "Gameplay",
+            "recommendedVersion": "1.0.0",
+            "manifestUrl": "https://raw.githubusercontent.com/MisterPxl/astra-content/main/manifests/astra.inventory/1.0.0.json",
+            "manifestSha256": "28f58de42e32b1807a9e23d00ee27b6ff93b12239d89776026fba0e5c869ca8d",
+            "tags": [
+                "inventory",
+                "equipment",
+                "crafting",
+                "loot",
+                "items",
+                "rpg"
+            ],
+            "compressedBytes": 78942
+        }
+    ]
+}

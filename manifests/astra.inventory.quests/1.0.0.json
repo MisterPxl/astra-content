@@ -1,0 +1,87 @@
+{
+    "schemaVersion": 2,
+    "id": "astra.inventory.quests",
+    "version": "1.0.0",
+    "displayName": "Inventory \u2194 Quests Bridge",
+    "description": "Inventaire et progression : objectifs Collecter, Fabriquer et \u00c9quiper ; conditions Poss\u00e8de et \u00c9quip\u00e9 ; r\u00e9compenses objet et table de loot ; observer qui transforme chaque changement d'inventaire en signaux de qu\u00eate et en stats ; module Astra qui relie IInventoryService \u00e0 IProgression.",
+    "category": "Bridges",
+    "tags": [
+        "bridge",
+        "inventory",
+        "quests",
+        "progression"
+    ],
+    "compatibility": {
+        "minimumUnity": "6000.4.0f1",
+        "maximumUnityExclusive": "6000.5.0a1",
+        "testedUnity": [
+            "6000.4.0f1"
+        ],
+        "renderPipelines": [
+            "urp"
+        ],
+        "platforms": []
+    },
+    "contentDependencies": [
+        {
+            "id": "astra.inventory",
+            "minimumVersion": "1.0.0",
+            "maximumVersionExclusive": "2.0.0"
+        },
+        {
+            "id": "astra.quests",
+            "minimumVersion": "2.1.0",
+            "maximumVersionExclusive": "3.0.0"
+        }
+    ],
+    "projectPrerequisites": [
+        {
+            "kind": "capability",
+            "name": "astra-framework",
+            "minimumVersion": "3.0.0",
+            "maximumVersionExclusive": "4.0.0"
+        },
+        {
+            "kind": "package",
+            "name": "com.misterpxl.valkyrie",
+            "minimumVersion": "2.1.0",
+            "maximumVersionExclusive": "3.0.0"
+        },
+        {
+            "kind": "package",
+            "name": "com.unity.ugui",
+            "minimumVersion": "2.0.0",
+            "maximumVersionExclusive": "3.0.0"
+        },
+        {
+            "kind": "assembly",
+            "name": "Astra.Framework.Core.App.Runtime",
+            "minimumVersion": "",
+            "maximumVersionExclusive": ""
+        },
+        {
+            "kind": "assembly",
+            "name": "Astra.Framework.Core.Initialization.Runtime",
+            "minimumVersion": "",
+            "maximumVersionExclusive": ""
+        },
+        {
+            "kind": "assembly",
+            "name": "Astra.Framework.Core.Services.Runtime",
+            "minimumVersion": "",
+            "maximumVersionExclusive": ""
+        }
+    ],
+    "containsCode": true,
+    "license": "MIT",
+    "attribution": "Copyright (c) 2026 Alexis Gomes.",
+    "sources": [],
+    "releaseNotes": "1.0.0 : premi\u00e8re version. Objectifs Collecter un objet (acquis ou poss\u00e9d\u00e9), Fabriquer une recette et \u00c9quiper un objet ; conditions Poss\u00e8de un objet et Objet \u00e9quip\u00e9 ; r\u00e9compenses Donner un objet et Donner une table de loot (graine d\u00e9terministe) ; InventoryProgressionObserver (signaux code-keyed, stats optionnelles par objet) ; module inventory.quests.bridge et son \u00e9tape d'initialisation. D\u00e9pend de astra.inventory [1.0.0, 2.0.0), astra.quests [2.1.0, 3.0.0). Requiert astra-framework [3.0.0, 4.0.0) ; le Hub refuse un framework 2.x.",
+    "archive": {
+        "url": "https://github.com/MisterPxl/astra-content/releases/download/inventory-quests-v1.0.0/astra.inventory.quests-1.0.0.zip",
+        "sha256": "b2f6d98cb2f08295a26cbf08f939f40aaba2148f3929954238303c16bca96d82",
+        "bytes": 26108,
+        "expandedBytes": 50877,
+        "fileCount": 35
+    }
+}
