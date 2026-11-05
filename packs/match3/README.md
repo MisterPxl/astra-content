@@ -2,6 +2,20 @@
 
 Deux entrées de catalogue pour un puzzle match-3 tactile.
 
+## Catalogue `gameplay-v31` : compatibilité framework 4.x
+
+Versions publiées le 5 novembre 2026. Les packs ci-dessous acceptent `astra-framework`
+`[3.0.0, 5.0.0)` et leurs dépendances de contenu ciblent les versions corrigées.
+Les anciennes versions restent disponibles dans le catalogue.
+
+- `astra.match3` **4.1.1** : [release `match3-v4.1.1`](https://github.com/MisterPxl/astra-content/releases/tag/match3-v4.1.1), 151 fichiers, 97565 octets, SHA-256 `f9480a7aa261f0afa9de0b52aa9f298480e55f2d17e7e53516919ecd6a2ea7a8` ; dépendances : aucune.
+- `astra.template.match3` **4.1.1** : [release `template-match3-v4.1.1`](https://github.com/MisterPxl/astra-content/releases/tag/template-match3-v4.1.1), 67 fichiers, 52171 octets, SHA-256 `ee8c19371f4b619dd13bf383a5533f02bfbafb1491c496eea694e80e3efb07e3` ; dépendances : `astra.match3 [4.1.1, 5.0.0)`.
+
+Qualification sur des consommateurs propres Astra Framework 4.1.0 : imports Hub et
+vérification des scripts, scènes, matériaux et GUID ; dépendances minimales et les plus
+récentes pour les packs dépendants ; smokes et Aegis 0 erreur / 0 avertissement pour les
+compositions. Archives publiques téléchargées sans authentification et contrôlées par SHA-256.
+
 ## Catalogue `gameplay-v30` : framework 3.0.0
 
 Requiert le framework à partir du tag `framework-game-2026-11-02` (modèle Core :

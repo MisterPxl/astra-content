@@ -3,6 +3,21 @@
 Trois entrées de catalogue : le moteur de décision `astra.ai` (catégorie `Gameplay`) et deux ponts
 (catégorie `Bridges`) vers Adventure et Quests.
 
+## Catalogue `gameplay-v31` : compatibilité framework 4.x
+
+Versions publiées le 5 novembre 2026. Les packs ci-dessous acceptent `astra-framework`
+`[3.0.0, 5.0.0)` et leurs dépendances de contenu ciblent les versions corrigées.
+Les anciennes versions restent disponibles dans le catalogue.
+
+- `astra.ai` **1.0.1** : [release `ai-v1.0.1`](https://github.com/MisterPxl/astra-content/releases/tag/ai-v1.0.1), 137 fichiers, 90713 octets, SHA-256 `fe3438db3d3235fba83ce3698ad6c81b6e2733d9296e4b4b5fbd725155cf91c8` ; dépendances : aucune.
+- `astra.adventure.ai` **1.0.1** : [release `adventure-ai-v1.0.1`](https://github.com/MisterPxl/astra-content/releases/tag/adventure-ai-v1.0.1), 18 fichiers, 14278 octets, SHA-256 `fa4889098045588d34f10ec39be08cfe0e75577e887b20cd6f08ace9c84490c4` ; dépendances : `astra.ai [1.0.1, 2.0.0)`, `astra.adventure [2.1.1, 3.0.0)`.
+- `astra.ai.quests` **1.0.1** : [release `ai-quests-v1.0.1`](https://github.com/MisterPxl/astra-content/releases/tag/ai-quests-v1.0.1), 27 fichiers, 16471 octets, SHA-256 `b4eb89c96e15e96e21013be89f1e38b5bcd5cb1c4fe595c268ec9d370eaffa0d` ; dépendances : `astra.ai [1.0.1, 2.0.0)`, `astra.quests [2.1.1, 3.0.0)`.
+
+Qualification sur des consommateurs propres Astra Framework 4.1.0 : imports Hub et
+vérification des scripts, scènes, matériaux et GUID ; dépendances minimales et les plus
+récentes pour les packs dépendants ; smokes et Aegis 0 erreur / 0 avertissement pour les
+compositions. Archives publiques téléchargées sans authentification et contrôlées par SHA-256.
+
 ## Catalogue `gameplay-v30` : première publication
 
 Requiert le framework à partir du tag `framework-game-2026-11-02` (modèle Core :

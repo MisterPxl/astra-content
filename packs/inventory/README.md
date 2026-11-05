@@ -3,6 +3,23 @@
 Trois entrées de catalogue : l'inventaire `astra.inventory` (catégorie `Gameplay`) et deux ponts
 (catégorie `Bridges`) vers Quests et Dialogue.
 
+## Catalogue `gameplay-v31` : compatibilité framework 4.x
+
+Versions publiées le 5 novembre 2026. Les packs ci-dessous acceptent `astra-framework`
+`[3.0.0, 5.0.0)` et leurs dépendances de contenu ciblent les versions corrigées.
+Exception : **`astra.inventory.quests` 2.0.0 exige `[4.1.0, 5.0.0)`**, car son module
+utilise `[PackCompositionMember]` pour la composition automatique.
+Les anciennes versions restent disponibles dans le catalogue.
+
+- `astra.inventory` **1.0.1** : [release `inventory-v1.0.1`](https://github.com/MisterPxl/astra-content/releases/tag/inventory-v1.0.1), 112 fichiers, 79079 octets, SHA-256 `fcc2193fdf5332caefa81bbaf9ec18d559fc8038542dc056d3e40373e655163d` ; dépendances : aucune.
+- `astra.inventory.quests` **2.0.0** : [release `inventory-quests-v2.0.0`](https://github.com/MisterPxl/astra-content/releases/tag/inventory-quests-v2.0.0), 35 fichiers, 26526 octets, SHA-256 `b088717628e26aced7efdcbf1e836c8ac8ea6e01626de32f9fa512d398f51c4a` ; dépendances : `astra.inventory [1.0.1, 2.0.0)`, `astra.quests [2.1.1, 3.0.0)`.
+- `astra.inventory.dialogue` **1.0.1** : [release `inventory-dialogue-v1.0.1`](https://github.com/MisterPxl/astra-content/releases/tag/inventory-dialogue-v1.0.1), 21 fichiers, 13783 octets, SHA-256 `48db1ff8f33dd91f421af08bc26fa28688a76ae6ec0413f1149bae8cfdf29b3b` ; dépendances : `astra.inventory [1.0.1, 2.0.0)`, `astra.dialogue [0.1.5, 0.2.0)`.
+
+Qualification sur des consommateurs propres Astra Framework 4.1.0 : imports Hub et
+vérification des scripts, scènes, matériaux et GUID ; dépendances minimales et les plus
+récentes pour les packs dépendants ; smokes et Aegis 0 erreur / 0 avertissement pour les
+compositions. Archives publiques téléchargées sans authentification et contrôlées par SHA-256.
+
 ## Catalogue `gameplay-v30` : première publication
 
 Requiert le framework à partir du tag `framework-game-2026-11-02` (modèle Core :

@@ -2,6 +2,20 @@
 
 Deux entrées de catalogue pour un platform fighter local de deux à quatre joueurs.
 
+## Catalogue `gameplay-v31` : compatibilité framework 4.x
+
+Versions publiées le 5 novembre 2026. Les packs ci-dessous acceptent `astra-framework`
+`[3.0.0, 5.0.0)` et leurs dépendances de contenu ciblent les versions corrigées.
+Les anciennes versions restent disponibles dans le catalogue.
+
+- `astra.melee` **4.1.1** : [release `melee-v4.1.1`](https://github.com/MisterPxl/astra-content/releases/tag/melee-v4.1.1), 111 fichiers, 118592 octets, SHA-256 `af3975237b183c8bb9a92b6f9b19a66e8e720bd24134c3bdef3a772b7357db8d` ; dépendances : aucune.
+- `astra.template.melee` **4.1.1** : [release `template-melee-v4.1.1`](https://github.com/MisterPxl/astra-content/releases/tag/template-melee-v4.1.1), 237 fichiers, 6998695 octets, SHA-256 `49f45cf04686d19da19445efc64b5578477030b7359dc3a751ff0e26e91863de` ; dépendances : `astra.melee [4.1.1, 5.0.0)`.
+
+Qualification sur des consommateurs propres Astra Framework 4.1.0 : imports Hub et
+vérification des scripts, scènes, matériaux et GUID ; dépendances minimales et les plus
+récentes pour les packs dépendants ; smokes et Aegis 0 erreur / 0 avertissement pour les
+compositions. Archives publiques téléchargées sans authentification et contrôlées par SHA-256.
+
 ## Catalogue `gameplay-v30` : framework 3.0.0
 
 Requiert le framework à partir du tag `framework-game-2026-11-02` (modèle Core :

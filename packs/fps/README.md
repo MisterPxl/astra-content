@@ -2,6 +2,20 @@
 
 Deux entrées de catalogue pour un FPS de style MW2 jouable contre des bots.
 
+## Catalogue `gameplay-v31` : compatibilité framework 4.x
+
+Versions publiées le 5 novembre 2026. Les packs ci-dessous acceptent `astra-framework`
+`[3.0.0, 5.0.0)` et leurs dépendances de contenu ciblent les versions corrigées.
+Les anciennes versions restent disponibles dans le catalogue.
+
+- `astra.fps` **2.1.1** : [release `fps-v2.1.1`](https://github.com/MisterPxl/astra-content/releases/tag/fps-v2.1.1), 155 fichiers, 100436 octets, SHA-256 `e138355a0b0cb7e97321b41068a94a0812967e6c8b81388f09b44b3e9aa7c322` ; dépendances : aucune.
+- `astra.template.fps` **2.1.1** : [release `template-fps-v2.1.1`](https://github.com/MisterPxl/astra-content/releases/tag/template-fps-v2.1.1), 163 fichiers, 265773 octets, SHA-256 `070b5e4bac8e0985790291b68f7ef263e45b3f1f226219fa2703a54c03f02750` ; dépendances : `astra.fps [2.1.1, 3.0.0)`.
+
+Qualification sur des consommateurs propres Astra Framework 4.1.0 : imports Hub et
+vérification des scripts, scènes, matériaux et GUID ; dépendances minimales et les plus
+récentes pour les packs dépendants ; smokes et Aegis 0 erreur / 0 avertissement pour les
+compositions. Archives publiques téléchargées sans authentification et contrôlées par SHA-256.
+
 ## Catalogue `gameplay-v30` : framework 3.0.0
 
 Requiert le framework à partir du tag `framework-game-2026-11-02` (modèle Core :

@@ -2,6 +2,20 @@
 
 Deux entrées de catalogue pour un roguelite deckbuilder solo, entièrement en UI.
 
+## Catalogue `gameplay-v31` : compatibilité framework 4.x
+
+Versions publiées le 5 novembre 2026. Les packs ci-dessous acceptent `astra-framework`
+`[3.0.0, 5.0.0)` et leurs dépendances de contenu ciblent les versions corrigées.
+Les anciennes versions restent disponibles dans le catalogue.
+
+- `astra.deckbuilder` **3.1.1** : [release `deckbuilder-v3.1.1`](https://github.com/MisterPxl/astra-content/releases/tag/deckbuilder-v3.1.1), 333 fichiers, 227631 octets, SHA-256 `2db4703d9bed115532c675d6b8192831f26c35a84721d16956a623164e9f1f6d` ; dépendances : aucune.
+- `astra.template.deckbuilder` **3.1.1** : [release `template-deckbuilder-v3.1.1`](https://github.com/MisterPxl/astra-content/releases/tag/template-deckbuilder-v3.1.1), 173 fichiers, 158956 octets, SHA-256 `1fc912552dac41a06c5a3b61acb4cb8ee10f0915f2d4f5f5df258fb21f97df2f` ; dépendances : `astra.deckbuilder [3.1.1, 4.0.0)`.
+
+Qualification sur des consommateurs propres Astra Framework 4.1.0 : imports Hub et
+vérification des scripts, scènes, matériaux et GUID ; dépendances minimales et les plus
+récentes pour les packs dépendants ; smokes et Aegis 0 erreur / 0 avertissement pour les
+compositions. Archives publiques téléchargées sans authentification et contrôlées par SHA-256.
+
 ## Catalogue `gameplay-v30` : framework 3.0.0
 
 Requiert le framework à partir du tag `framework-game-2026-11-02` (modèle Core :

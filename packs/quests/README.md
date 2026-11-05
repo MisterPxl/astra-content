@@ -1,8 +1,21 @@
 # Quests & Achievements
 
-Pack public `astra.quests` **2.1.0** (catégorie `Gameplay`) : quêtes et succès pilotés par les
+Pack public `astra.quests` **2.1.1** (catégorie `Gameplay`) : quêtes et succès pilotés par les
 données, pour n'importe quel jeu Astra. Le contenu est fait de ScriptableObjects ; le jeu lève
 des signaux, remonte des stats et peut remplacer les vues par défaut.
+
+## Catalogue `gameplay-v31` : compatibilité framework 4.x
+
+Versions publiées le 5 novembre 2026. Les packs ci-dessous acceptent `astra-framework`
+`[3.0.0, 5.0.0)` et leurs dépendances de contenu ciblent les versions corrigées.
+Les anciennes versions restent disponibles dans le catalogue.
+
+- `astra.quests` **2.1.1** : [release `quests-v2.1.1`](https://github.com/MisterPxl/astra-content/releases/tag/quests-v2.1.1), 330 fichiers, 234874 octets, SHA-256 `88cde28f3298338c36c86f88ba24785f51b6bbc5a1e1213f9835b04a74f52ee1` ; dépendances : aucune.
+
+Qualification sur des consommateurs propres Astra Framework 4.1.0 : imports Hub et
+vérification des scripts, scènes, matériaux et GUID ; dépendances minimales et les plus
+récentes pour les packs dépendants ; smokes et Aegis 0 erreur / 0 avertissement pour les
+compositions. Archives publiques téléchargées sans authentification et contrôlées par SHA-256.
 
 ## Catalogue `gameplay-v30` : framework 3.0.0
 

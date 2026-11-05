@@ -2,6 +2,20 @@
 
 Deux entrées de catalogue pour un shoot'em up horizontal, solo ou en coopération locale à deux joueurs.
 
+## Catalogue `gameplay-v31` : compatibilité framework 4.x
+
+Versions publiées le 5 novembre 2026. Les packs ci-dessous acceptent `astra-framework`
+`[3.0.0, 5.0.0)` et leurs dépendances de contenu ciblent les versions corrigées.
+Les anciennes versions restent disponibles dans le catalogue.
+
+- `astra.shmup` **1.2.1** : [release `shmup-v1.2.1`](https://github.com/MisterPxl/astra-content/releases/tag/shmup-v1.2.1), 104 fichiers, 63703 octets, SHA-256 `a153e1d0100b02078e69bca33df3514f74b323339a5ba6e718c1174ceb2136c7` ; dépendances : aucune.
+- `astra.template.shmup` **1.2.1** : [release `template-shmup-v1.2.1`](https://github.com/MisterPxl/astra-content/releases/tag/template-shmup-v1.2.1), 107 fichiers, 114620 octets, SHA-256 `14a369b447f928170d2d9ccf1c4b3092a20e86da17ae84a65ee7ee411ac810be` ; dépendances : `astra.shmup [1.2.1, 2.0.0)`.
+
+Qualification sur des consommateurs propres Astra Framework 4.1.0 : imports Hub et
+vérification des scripts, scènes, matériaux et GUID ; dépendances minimales et les plus
+récentes pour les packs dépendants ; smokes et Aegis 0 erreur / 0 avertissement pour les
+compositions. Archives publiques téléchargées sans authentification et contrôlées par SHA-256.
+
 ## Catalogue `gameplay-v30` : framework 3.0.0
 
 Requiert le framework à partir du tag `framework-game-2026-11-02` (modèle Core :

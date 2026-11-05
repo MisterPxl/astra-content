@@ -8,6 +8,20 @@ Importer **astra.template.tactics** dans le Content Hub, puis appliquer sa compo
 Astra Setup. La dépendance **astra.tactics** est installée dans la même transaction.
 Unity **6000.4.0f1**, URP, Input System et uGUI ; qualification sur macOS uniquement.
 
+## Catalogue `gameplay-v31` : compatibilité framework 4.x
+
+Versions publiées le 5 novembre 2026. Les packs ci-dessous acceptent `astra-framework`
+`[3.0.0, 5.0.0)` et leurs dépendances de contenu ciblent les versions corrigées.
+Les anciennes versions restent disponibles dans le catalogue.
+
+- `astra.tactics` **2.2.1** : [release `tactics-v2.2.1`](https://github.com/MisterPxl/astra-content/releases/tag/tactics-v2.2.1), 352 fichiers, 337341 octets, SHA-256 `7873cc809b8db2078c6c637fe7e8df0d079dad9d28163185cf5150109a6aca23` ; dépendances : aucune.
+- `astra.template.tactics` **2.2.1** : [release `template-tactics-v2.2.1`](https://github.com/MisterPxl/astra-content/releases/tag/template-tactics-v2.2.1), 399 fichiers, 332436 octets, SHA-256 `339875b9614eebb0910afd35b4f97b0a98be0a349ab9a84f6b84b0c7c59f7da4` ; dépendances : `astra.tactics [2.2.1, 3.0.0)`.
+
+Qualification sur des consommateurs propres Astra Framework 4.1.0 : imports Hub et
+vérification des scripts, scènes, matériaux et GUID ; dépendances minimales et les plus
+récentes pour les packs dépendants ; smokes et Aegis 0 erreur / 0 avertissement pour les
+compositions. Archives publiques téléchargées sans authentification et contrôlées par SHA-256.
+
 ## Catalogue `gameplay-v30` : framework 3.0.0
 
 Requiert le framework à partir du tag `framework-game-2026-11-02` (modèle Core :

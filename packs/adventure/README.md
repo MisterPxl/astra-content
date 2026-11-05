@@ -3,6 +3,22 @@
 Deux entrées de catalogue pour un jeu d'action-aventure à la troisième personne, et deux ponts
 (catégorie `Bridges`) vers Dialogue et Quests.
 
+## Catalogue `gameplay-v31` : compatibilité framework 4.x
+
+Versions publiées le 5 novembre 2026. Les packs ci-dessous acceptent `astra-framework`
+`[3.0.0, 5.0.0)` et leurs dépendances de contenu ciblent les versions corrigées.
+Les anciennes versions restent disponibles dans le catalogue.
+
+- `astra.adventure` **2.1.1** : [release `adventure-v2.1.1`](https://github.com/MisterPxl/astra-content/releases/tag/adventure-v2.1.1), 223 fichiers, 16038762 octets, SHA-256 `a9349330daf71568b376f827ce03bf3f6eae5a826303d26eee647cd3163d33ed` ; dépendances : aucune.
+- `astra.template.adventure` **2.1.1** : [release `template-adventure-v2.1.1`](https://github.com/MisterPxl/astra-content/releases/tag/template-adventure-v2.1.1), 60 fichiers, 129551 octets, SHA-256 `de733ce83e39d91dcca21644de3293a0dc6bda6bbad5152a2ba0fa7799de6008` ; dépendances : `astra.adventure [2.1.1, 3.0.0)`.
+- `astra.adventure.dialogue` **1.0.1** : [release `adventure-dialogue-v1.0.1`](https://github.com/MisterPxl/astra-content/releases/tag/adventure-dialogue-v1.0.1), 16 fichiers, 12032 octets, SHA-256 `7da19e5b017c387c4c16213d797a8f6864982d6c1e252842309980dd2636048f` ; dépendances : `astra.adventure [2.1.1, 3.0.0)`, `astra.dialogue [0.1.5, 0.2.0)`.
+- `astra.adventure.quests` **1.0.1** : [release `adventure-quests-v1.0.1`](https://github.com/MisterPxl/astra-content/releases/tag/adventure-quests-v1.0.1), 20 fichiers, 13997 octets, SHA-256 `f46a0ffe26c2e39de81d06187526495b715407390909878a94e7f48697b9402f` ; dépendances : `astra.adventure [2.1.1, 3.0.0)`, `astra.quests [2.1.1, 3.0.0)`.
+
+Qualification sur des consommateurs propres Astra Framework 4.1.0 : imports Hub et
+vérification des scripts, scènes, matériaux et GUID ; dépendances minimales et les plus
+récentes pour les packs dépendants ; smokes et Aegis 0 erreur / 0 avertissement pour les
+compositions. Archives publiques téléchargées sans authentification et contrôlées par SHA-256.
+
 ## Catalogue `gameplay-v30` : framework 3.0.0
 
 Requiert le framework à partir du tag `framework-game-2026-11-02` (modèle Core :
