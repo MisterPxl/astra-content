@@ -1,0 +1,95 @@
+{
+    "schemaVersion": 2,
+    "id": "astra.template.tactics",
+    "version": "2.2.1",
+    "displayName": "Tactics Template",
+    "description": "Three-chapter tactical RPG starter with preparation, combat, objectives and campaign saves.",
+    "category": "Templates",
+    "tags": [
+        "tactics",
+        "grid",
+        "turn-based"
+    ],
+    "compatibility": {
+        "minimumUnity": "6000.4.0f1",
+        "maximumUnityExclusive": "6000.5.0a1",
+        "testedUnity": [
+            "6000.4.0f1"
+        ],
+        "renderPipelines": [
+            "urp"
+        ],
+        "platforms": [
+            "StandaloneOSX"
+        ]
+    },
+    "contentDependencies": [
+        {
+            "id": "astra.tactics",
+            "minimumVersion": "2.2.1",
+            "maximumVersionExclusive": "3.0.0"
+        }
+    ],
+    "projectPrerequisites": [
+        {
+            "kind": "capability",
+            "name": "input-system-enabled",
+            "minimumVersion": "",
+            "maximumVersionExclusive": ""
+        },
+        {
+            "kind": "capability",
+            "name": "astra-framework",
+            "minimumVersion": "3.0.0",
+            "maximumVersionExclusive": "5.0.0"
+        },
+        {
+            "kind": "package",
+            "name": "com.unity.inputsystem",
+            "minimumVersion": "1.19.0",
+            "maximumVersionExclusive": "2.0.0"
+        },
+        {
+            "kind": "package",
+            "name": "com.unity.render-pipelines.universal",
+            "minimumVersion": "17.4.0",
+            "maximumVersionExclusive": "18.0.0"
+        },
+        {
+            "kind": "package",
+            "name": "com.unity.ugui",
+            "minimumVersion": "2.0.0",
+            "maximumVersionExclusive": "3.0.0"
+        },
+        {
+            "kind": "assembly",
+            "name": "Astra.Framework.Game.FlowPresentation.Runtime",
+            "minimumVersion": "",
+            "maximumVersionExclusive": ""
+        },
+        {
+            "kind": "assembly",
+            "name": "Astra.Framework.Core.UI.Runtime",
+            "minimumVersion": "",
+            "maximumVersionExclusive": ""
+        },
+        {
+            "kind": "assembly",
+            "name": "Astra.Framework.Game.HUD.Runtime",
+            "minimumVersion": "",
+            "maximumVersionExclusive": ""
+        }
+    ],
+    "containsCode": false,
+    "license": "MIT",
+    "attribution": "Copyright (c) 2026 Alexis Gomes. Contenu sous licence MIT ; aucun asset tiers.",
+    "sources": [],
+    "releaseNotes": "2.2.1 : pr\u00e9requis Astra Framework [3.0.0, 5.0.0), compatible avec le framework 4.1.0. Plage \u00e9largie aux frameworks 4.x ; contenu et code inchang\u00e9s. 2.2.0: requires astra.tactics 2.2.0 and framework 3.0.0 (Echo and Pulse as packages, no content change). Depends on astra.tactics [2.2.0, 3.0.0). Requires astra-framework [3.0.0, 4.0.0); on a 2.x framework the import does not compile. 2.1.0: chapters authored as text (Chapters/*.txt, read by the builder) and edited in Tactics Studio; chapter names and objectives are label keys of Localization/tactics-en; player units are deploy slots; Aegis rule assets and TacticsPlaytestSettings for the studio Play button. Requires astra.tactics 2.1.0.",
+    "archive": {
+        "url": "https://github.com/MisterPxl/astra-content/releases/download/template-tactics-v2.2.1/astra.template.tactics-2.2.1.zip",
+        "sha256": "339875b9614eebb0910afd35b4f97b0a98be0a349ab9a84f6b84b0c7c59f7da4",
+        "bytes": 332436,
+        "expandedBytes": 1929683,
+        "fileCount": 399
+    }
+}
